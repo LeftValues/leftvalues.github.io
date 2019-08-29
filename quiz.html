@@ -1,0 +1,114 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href='style.css' rel='stylesheet' type='text/css'>
+<title>8values Quiz</title>
+<link rel="icon" type="x-icon" href="icon.png">
+<link rel="shortcut icon" type="x-icon" href="icon.png">
+<meta charset="utf-8">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6511426299019766",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<body>
+<script type="application/javascript"
+        src="questions.js">
+</script>
+<h1>8values</h1>
+<hr>
+<h2 style="text-align:center;" id="question-number">Loading...</h2>
+<p class="question" id="question-text"></p>
+<button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
+<button class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Agree</button> <br>
+<button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
+<button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
+<button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
+<button class="small_button" onclick="prev_question()" id="back_button">Back</button>
+<button class="small_button_off" id="back_button_off">Back</button><br>
+
+<!-- Website visit statistics - no personal information is collected! -->
+<script type="text/javascript">
+var sc_project=11325211;
+var sc_invisible=1;
+var sc_security="fd9f0659";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
+stats"></a></div></noscript>
+
+<!-- JavaScript for the test itself -->
+<script>
+    var max_a, max_b, max_c, max_d; // Max possible scores
+    max_a = max_b = max_c = max_d = 0;
+    var a, b, c, d; // User's scores
+    a = b = c = d = 0;
+    var qn = 0; // Question number
+    var prev_answer = null;
+    init_question();
+    for (var i = 0; i < questions.length; i++) {
+        max_a += Math.abs(questions[i].effect.a)
+        max_b += Math.abs(questions[i].effect.b)
+        max_c += Math.abs(questions[i].effect.c)
+        max_d += Math.abs(questions[i].effect.d)
+    }
+    function init_question() {
+        document.getElementById("question-text").innerHTML = questions[qn].question;
+        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length);
+        if (prev_answer == null) {
+            document.getElementById("back_button").style.display = 'none';
+            document.getElementById("back_button_off").style.display = 'block';
+        } else {
+            document.getElementById("back_button").style.display = 'block';
+            document.getElementById("back_button_off").style.display = 'none';
+        }
+
+    }
+
+    function next_question(mult) {
+        a += mult*questions[qn].effect.a
+        b += mult*questions[qn].effect.b
+        c += mult*questions[qn].effect.c
+        d += mult*questions[qn].effect.d
+        qn++;
+        prev_answer = mult;
+        if (qn < questions.length) {
+            init_question();
+        } else {
+            results();
+        }
+    }
+    function prev_question() {
+        if (prev_answer == null) {
+            return;
+        }
+        qn--;
+        a -= prev_answer * questions[qn].effect.a;
+        b -= prev_answer * questions[qn].effect.b;
+        c -= prev_answer * questions[qn].effect.c;
+        d -= prev_answer * questions[qn].effect.d;
+        prev_answer = null;
+        init_question();
+
+    }
+    function calc_score(score,max) {
+        return (100*(max+score)/(2*max)).toFixed(1)
+    }
+    function results() {
+        location.href = `results.html`
+            + `?a=${calc_score(a,max_a)}`
+            + `&b=${calc_score(b,max_b)}`
+            + `&c=${calc_score(c,max_c)}`
+            + `&d=${calc_score(d,max_d)}`
+    }
+</script>
+</body>
