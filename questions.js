@@ -176,5 +176,94 @@ questions = [
 			"e": 0,
 			"f": 0
         }
-    }
+    },
+	//central vs decentral
+	{
+		"question": "An economy is designed better when it is organized bottom-up rather than top-down.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": -10,
+            "d": 0,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "Local planners, rather than a national planners, are more efficient at running an economy.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": -5,
+            "d": 0,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "A centrally planned economy based around computers is a concept worth investigating.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 5,
+            "d": 0,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "In underdeveloped societies a centrally planned economy is the only way to make rapid progress.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 10,
+            "d": 0,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "The principles of workplace democracy and self-management are desirable.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": -5,
+            "d": 0,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "A highly centralized planned economy is not socialism but rather state capitalism.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": -5,
+            "d": 0,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "Bureaucracy and inefficiency are inherent in centrally planned economies.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": -10,
+            "d": 0,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "The government should be capable of assigning individuals to workplaces.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 10,
+            "d": 0,
+			"e": 0,
+			"f": 0
+        }
+    },
 ];
