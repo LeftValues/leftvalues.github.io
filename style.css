@@ -189,6 +189,16 @@ div.union {
     text-align: right;
     border-left-style: solid;
 }
+div.industry {
+    background-color: #804E00;
+    text-align: left;
+    border-right-style: solid;
+}
+div.ecology {
+    background-color: #586808;
+    text-align: right;
+    border-left-style: solid;
+}
 span.weight-300 {
     font-weight: 300;
 }

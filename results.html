@@ -51,10 +51,17 @@
     <div class="bar union" id="bar-union"><div class="text-wrapper" id="union"></div></div>
     <img id="img-union" src="value_images/union.png" height="128pt"/>
 </div>
+<h2><span class="weight-300" id="f-label"></span></h2>
+<div class="axis">
+    <img id="img-industry" src="value_images/industry.png" height="128pt"/>
+    <div class="bar industry" id="bar-industry"><div class="text-wrapper" id="industry"></div></div>
+    <div class="bar ecology" id="bar-ecology"><div class="text-wrapper" id="ecology"></div></div>
+    <img id="img-ecology" src="value_images/ecology.png" height="128pt"/>
+</div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 <hr/>
-<canvas id="banner" width=800 height=800 style="font-family:Montserrat"></canvas>
+<canvas id="banner" width=800 height=900 style="font-family:Montserrat"></canvas>
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
 <!-- Website visit statistics - no personal information is collected! -->
 <script type="text/javascript">
@@ -99,6 +106,7 @@ stats"></a></div></noscript>
     cArray = ["Extremely Pro-Centralization","Pro-Centralization","Moderately Pro-Centralization","Balanced","Moderately Pro-Decentralization","Pro-Decentralization","Extremely Pro-Decentralization"]
     dArray = ["Extremely Internationalist","Internationalist","Moderately Internationalist","Neutral","Moderately Nationalist","Nationalist","Extremely Nationalist"]
 	eArray = ["Extremely Pro-Party","Pro-Party","Moderately Pro-Party","Indifferent","Moderately Pro-Union","Pro-Union","Extremely Pro-Union"]
+	fArray = ["Extremely Industrial","Industrial","Moderately Industrial","Indifferent","Moderately Ecological","Ecological","Extremely Ecological"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -117,11 +125,13 @@ stats"></a></div></noscript>
     central   = getQueryVariable("c")
     international  = getQueryVariable("d")
 	party  = getQueryVariable("e")
+	industry  = getQueryVariable("f")
     reform    = (100 - revolution).toFixed(1)
     utopian     = (100 - scientific   ).toFixed(1)
     decentral = (100 - central ).toFixed(1)
     national = (100 - international).toFixed(1)
 	union = (100 - party).toFixed(1)
+	ecology = (100 - industry).toFixed(1)
 
     setBarValue("revolution", revolution)
     setBarValue("reform", reform)
@@ -133,12 +143,15 @@ stats"></a></div></noscript>
     setBarValue("international", international)
 	setBarValue("party", party)
     setBarValue("union", union)
+	setBarValue("industry", industry)
+    setBarValue("ecology", ecology)
 
     document.getElementById("a-label").innerHTML = setLabel(revolution, aArray)
     document.getElementById("b-label").innerHTML = setLabel(scientific, bArray)
     document.getElementById("c-label").innerHTML = setLabel(central, cArray)
     document.getElementById("d-label").innerHTML = setLabel(international, dArray)
 	document.getElementById("e-label").innerHTML = setLabel(party, eArray)
+	document.getElementById("f-label").innerHTML = setLabel(industry, fArray)
 
     ideology = ""
     ideodist = Infinity
@@ -149,6 +162,7 @@ stats"></a></div></noscript>
         dist += Math.pow(Math.abs(ideologies[i].stats.b - scientific), 1.73856063)
         dist += Math.pow(Math.abs(ideologies[i].stats.d - international), 1.73856063)
 		dist += Math.pow(Math.abs(ideologies[i].stats.e - party), 1.73856063)
+		dist += Math.pow(Math.abs(ideologies[i].stats.f - industry), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -190,6 +204,10 @@ stats"></a></div></noscript>
         ctx.drawImage(img, 20, 650, 100, 100)
         img = document.getElementById("img-union")
         ctx.drawImage(img, 680, 650, 100, 100)
+		img = document.getElementById("img-industry")
+        ctx.drawImage(img, 20, 770, 100, 100)
+        img = document.getElementById("img-ecology")
+        ctx.drawImage(img, 680, 770, 100, 100)
 
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 180, 560, 80)
@@ -197,6 +215,7 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
 		ctx.fillRect(120, 660, 560, 80)
+		ctx.fillRect(120, 780, 560, 80)
         ctx.fillStyle="#890000"
         ctx.fillRect(120, 184, 5.6*revolution-2, 72)
         ctx.fillStyle="#FC5959"
@@ -217,6 +236,10 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 664, 5.6*party-2, 72)
         ctx.fillStyle="#7F333B"
         ctx.fillRect(682-5.6*union, 664, 5.6*union-2, 72)
+		ctx.fillStyle="#804E00"
+        ctx.fillRect(120, 784, 5.6*industry-2, 72)
+        ctx.fillStyle="#586808"
+        ctx.fillRect(682-5.6*ecology, 784, 5.6*ecology-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
@@ -230,12 +253,14 @@ stats"></a></div></noscript>
         if (central   > 30) {ctx.fillText(central + "%", 130, 477.5)}
         if (international > 30) {ctx.fillText(international + "%", 130, 597.5)}
 		if (party > 30) {ctx.fillText(party + "%", 130, 717.5)}
+		if (industry > 30) {ctx.fillText(industry + "%", 130, 837.5)}
         ctx.textAlign="right"
         if (reform    > 30) {ctx.fillText(reform + "%", 670, 237.5)}
         if (utopian     > 30) {ctx.fillText(utopian + "%", 670, 357.5)}
         if (decentral > 30) {ctx.fillText(decentral + "%", 670, 477.5)}
         if (national  > 30) {ctx.fillText(national + "%", 670, 597.5)}
 		if (union  > 30) {ctx.fillText(union + "%", 670, 717.5)}
+		if (ecology  > 30) {ctx.fillText(ecology + "%", 670, 837.5)}
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("leftvalues.github.io", 780, 60)
@@ -245,6 +270,7 @@ stats"></a></div></noscript>
         ctx.fillText("" + document.getElementById("c-label").innerHTML, 400, 415)
         ctx.fillText("" + document.getElementById("d-label").innerHTML, 400, 535)
 		ctx.fillText("" + document.getElementById("e-label").innerHTML, 400, 655)
+		ctx.fillText("" + document.getElementById("f-label").innerHTML, 400, 775)
     }
     </script>
 </body>
