@@ -355,4 +355,93 @@ questions = [
 			"f": 0
         }
     },
+	//party vs union
+	{
+		"question": "Socialist political parties should participate in liberal democratic elections.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 5,
+			"f": 0
+        }
+    },
+	{
+		"question": "Trade unions and workers councils should form the basis of a socialist society.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": -5,
+			"f": 0
+        }
+    },
+	{
+		"question": "The leadership of political parties in the progression towards socialism will always lead to dictatorship.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": -10,
+			"f": 0
+        }
+    },
+	{
+		"question": "Democratic centralism is an authoritarian organizational structure that disregards the masses.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": -5,
+			"f": 0
+        }
+    },
+	{
+		"question": "Only a mass workers party can achieve any meaningful goals.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 10,
+			"f": 0
+        }
+    },
+	{
+		"question": "Mass spontaneous actions are more effective than carefully planned actions.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": -5,
+			"f": 0
+        }
+    },
+	{
+		"question": "The fact that so many workers vote for bourgeois parties over socialist parties is proof that party politics are no longer relevant.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": -10,
+			"f": 0
+        }
+    },
+	{
+		"question": "Socialist organizations are better off when organized loosely and decentrally.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": -10,
+			"f": 0
+        }
+    },
 ];
