@@ -69,8 +69,8 @@ a {
 img.center {
     display: block;
     margin: 1em auto;
-    width: 50%;
-    min-width: 500pt;
+    width: 20%;
+    min-width: 400pt;
 }
 .button {
     background-color: #2196f3;
