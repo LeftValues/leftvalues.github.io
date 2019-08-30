@@ -444,4 +444,93 @@ questions = [
 			"f": 0
         }
     },
+	//industry vs ecology
+	{
+		"question": "Climate change is a major global threat that all socialists must fiercly combat.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -5
+        }
+    },
+	{
+		"question": "Measures to defeat climate change are unacceptable if they result in significant decreases in production and quality of life.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 10
+        }
+    },
+	{
+		"question": "Renewable sources of energy are incapable of efficiently replacing fossil fuels.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 5
+        }
+    },
+	{
+		"question": "Industrialized farming practices must be abolished.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -5
+        }
+    },
+	{
+		"question": "It will be important to implement extensive environmental protections as part of achieving socialism.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -10
+        }
+    },
+	{
+		"question": "Experimental environmentally-friendly food sources like cultured meat are worth investing in.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -5
+        }
+    },
+	{
+		"question": "Personal vehicles should be replaced with free public transport.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -5
+        }
+    },
+	{
+		"question": "We must accept that the socialist states of the 20th century failed to seriously address environmental issues.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -5
+        }
+    }
 ];
