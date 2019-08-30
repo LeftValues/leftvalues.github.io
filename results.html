@@ -245,6 +245,7 @@ Analytics"></a></div></noscript>
         ctx.font="50px Montserrat"
         ctx.fillText(ideology, 20, 140)
 
+		ctx.fillStyle="#dddddd"
         ctx.textAlign="left"
         if (revolution  > 30) {ctx.fillText(revolution + "%", 130, 237.5)}
         if (scientific     > 30) {ctx.fillText(scientific + "%", 130, 357.5)}
@@ -259,7 +260,8 @@ Analytics"></a></div></noscript>
         if (national  > 30) {ctx.fillText(national + "%", 670, 597.5)}
 		if (union  > 30) {ctx.fillText(union + "%", 670, 717.5)}
 		if (ecology  > 30) {ctx.fillText(ecology + "%", 670, 837.5)}
-
+		
+		ctx.fillStyle="#222222"
         ctx.font="300 30px Montserrat"
         ctx.fillText("leftvalues.github.io", 780, 60)
         ctx.textAlign="center"
