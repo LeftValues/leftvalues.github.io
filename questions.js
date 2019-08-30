@@ -266,4 +266,93 @@ questions = [
 			"f": 0
         }
     },
+	//international vs national
+	{
+		"question": "A world socialist republic is a realistic and desirable goal.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 5,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "Nationalism and patriotism are impulses that are unacceptable in a socialist society.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 10,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "The global socialist movement should be led by a single party or organization.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 5,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "Foreign officials have no right to dictate policy in another country.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": -5,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "Open borders between likeminded socialist countries is desirable.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 5,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "Mass immigration policies are naïve and should not be implemented.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": -10,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "People of similar cultures should unite in federations.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 5,
+			"e": 0,
+			"f": 0
+        }
+    },
+	{
+		"question": "The international proletariat belongs to no country.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 10,
+			"e": 0,
+			"f": 0
+        }
+    },
 ];
