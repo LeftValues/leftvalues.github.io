@@ -33,6 +33,17 @@ ideologies = [
         }
     },
 	{
+        "name": "Council Communism",
+        "stats": {
+            "a": 90,
+            "b": 70,
+            "c": 30,
+            "d": 80,
+			"e": 40,
+			"f": 50
+        }
+    },
+	{
         "name": "Left Communism",
         "stats": {
             "a": 100,
