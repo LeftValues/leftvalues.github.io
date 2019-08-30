@@ -190,7 +190,7 @@ questions = [
         }
     },
 	{
-		"question": "Local planners, rather than a national planners, are more efficient at running an economy.",
+		"question": "Local planners, rather than national planners, are more efficient at running a planned economy.",
         "effect": {
             "a": 0,
             "b": 0,
