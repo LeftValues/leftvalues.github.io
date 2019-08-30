@@ -44,10 +44,17 @@
     <div class="bar national" id="bar-national"><div class="text-wrapper" id="national"></div></div>
     <img id="img-national" src="value_images/national.png" height="128pt"/>
 </div>
+<h2><span class="weight-300" id="e-label"></span></h2>
+<div class="axis">
+    <img id="img-party" src="value_images/party.png" height="128pt"/>
+    <div class="bar party" id="bar-party"><div class="text-wrapper" id="party"></div></div>
+    <div class="bar union" id="bar-union"><div class="text-wrapper" id="union"></div></div>
+    <img id="img-union" src="value_images/union.png" height="128pt"/>
+</div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 <hr/>
-<canvas id="banner" width=800 height=650 style="font-family:Montserrat"></canvas>
+<canvas id="banner" width=800 height=800 style="font-family:Montserrat"></canvas>
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
 <!-- Website visit statistics - no personal information is collected! -->
 <script type="text/javascript">
@@ -87,10 +94,11 @@ stats"></a></div></noscript>
         }
     }
 
-    aArray = ["Communist","Socialist","Social","Centrist","Market","Capitalist","Laissez-Faire"]
-    bArray = ["Cosmopolitan","Internationalist","Peaceful","Balanced","Patriotic","Nationalist","Chauvinist"]
-    cArray = ["Anarchist","Libertarian","Liberal","Moderate","Statist","Authoritarian","Totalitarian"]
-    dArray = ["Revolutionary","Very Progressive","Progressive","Neutral","Traditional","Very Traditional","Reactionary"]
+    aArray = ["Extremely Revolutionary","Revolutionary","Moderately Revolutionary","Centrist","Moderately Reformist","Reformist","Extremely Reformist"]
+	bArray = ["Extremely Scientific","Scientific","Moderately Scientific","Moderate","Moderately Utopian","Utopian","Extremely Utopian"]
+    cArray = ["Extremely Pro-Centralization","Pro-Centralization","Moderately Pro-Centralization","Balanced","Moderately Pro-Decentralization","Pro-Decentralization","Extremely Pro-Decentralization"]
+    dArray = ["Extremely Internationalist","Internationalist","Moderately Internationalist","Neutral","Moderately Nationalist","Nationalist","Extremely Nationalist"]
+	eArray = ["Extremely Pro-Party","Pro-Party","Moderately Pro-Party","Indifferent","Moderately Pro-Union","Pro-Union","Extremely Pro-Union"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -108,10 +116,12 @@ stats"></a></div></noscript>
     utopian     = getQueryVariable("b")
     central   = getQueryVariable("c")
     national  = getQueryVariable("d")
+	party  = getQueryVariable("e")
     reform    = (100 - revolution).toFixed(1)
     scientific     = (100 - utopian   ).toFixed(1)
     decentral = (100 - central ).toFixed(1)
     international = (100 - national).toFixed(1)
+	union = (100 - party).toFixed(1)
 
     setBarValue("revolution", revolution)
     setBarValue("reform", reform)
@@ -121,11 +131,14 @@ stats"></a></div></noscript>
     setBarValue("decentral", decentral)
     setBarValue("national", national)
     setBarValue("international", international)
+	setBarValue("party", party)
+    setBarValue("union", union)
 
     document.getElementById("a-label").innerHTML = setLabel(revolution, aArray)
     document.getElementById("b-label").innerHTML = setLabel(utopian, bArray)
     document.getElementById("c-label").innerHTML = setLabel(central, cArray)
     document.getElementById("d-label").innerHTML = setLabel(national, dArray)
+	document.getElementById("e-label").innerHTML = setLabel(party, eArray)
 
     ideology = ""
     ideodist = Infinity
@@ -135,6 +148,7 @@ stats"></a></div></noscript>
         dist += Math.pow(Math.abs(ideologies[i].stats.c - central), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.b - utopian), 1.73856063)
         dist += Math.pow(Math.abs(ideologies[i].stats.d - national), 1.73856063)
+		dist += Math.pow(Math.abs(ideologies[i].stats.e - party), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -154,7 +168,7 @@ stats"></a></div></noscript>
         var c = document.getElementById("banner")
         var ctx = c.getContext("2d")
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,600)
+        ctx.fillRect(0,0,800,1000)
 
         img = document.getElementById("img-revolution")
         ctx.drawImage(img, 20, 170, 100, 100);
@@ -172,28 +186,37 @@ stats"></a></div></noscript>
         ctx.drawImage(img, 20, 530, 100, 100)
         img = document.getElementById("img-national")
         ctx.drawImage(img, 680, 530, 100, 100)
+		img = document.getElementById("img-party")
+        ctx.drawImage(img, 20, 650, 100, 100)
+        img = document.getElementById("img-union")
+        ctx.drawImage(img, 680, 650, 100, 100)
 
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 180, 560, 80)
         ctx.fillRect(120, 300, 560, 80)
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
-        ctx.fillStyle="#f44336"
+		ctx.fillRect(120, 660, 560, 80)
+        ctx.fillStyle="#890000"
         ctx.fillRect(120, 184, 5.6*revolution-2, 72)
-        ctx.fillStyle="#00897b"
+        ctx.fillStyle="#FC5959"
         ctx.fillRect(682-5.6*reform, 184, 5.6*reform-2, 72)
-        ctx.fillStyle="#ff9800"
+        ctx.fillStyle="#88232B"
         ctx.fillRect(120, 304, 5.6*scientific-2, 72)
-        ctx.fillStyle="#03a9f4"
+        ctx.fillStyle="#7F0037"
         ctx.fillRect(682-5.6*utopian, 304, 5.6*utopian-2, 72)
-        ctx.fillStyle="#ffeb3b"
+        ctx.fillStyle="#560000"
         ctx.fillRect(120, 424, 5.6*central-2, 72)
-        ctx.fillStyle="#3f51b5"
+        ctx.fillStyle="#000000"
         ctx.fillRect(682-5.6*decentral, 424, 5.6*decentral-2, 72)
-        ctx.fillStyle="#8bc34a"
+        ctx.fillStyle="#782F52"
         ctx.fillRect(120, 544, 5.6*international-2, 72)
-        ctx.fillStyle="#9c27b0"
+        ctx.fillStyle="#7F3300"
         ctx.fillRect(682-5.6*national, 544, 5.6*national-2, 72)
+		ctx.fillStyle="#963B33"
+        ctx.fillRect(120, 664, 5.6*party-2, 72)
+        ctx.fillStyle="#7F333B"
+        ctx.fillRect(682-5.6*union, 664, 5.6*union-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
@@ -206,11 +229,13 @@ stats"></a></div></noscript>
         if (scientific     > 30) {ctx.fillText(scientific + "%", 130, 357.5)}
         if (central   > 30) {ctx.fillText(central + "%", 130, 477.5)}
         if (international > 30) {ctx.fillText(international + "%", 130, 597.5)}
+		if (party > 30) {ctx.fillText(party + "%", 130, 717.5)}
         ctx.textAlign="right"
         if (reform    > 30) {ctx.fillText(reform + "%", 670, 237.5)}
         if (utopian     > 30) {ctx.fillText(utopian + "%", 670, 357.5)}
         if (decentral > 30) {ctx.fillText(decentral + "%", 670, 477.5)}
         if (national  > 30) {ctx.fillText(national + "%", 670, 597.5)}
+		if (union  > 30) {ctx.fillText(union + "%", 670, 717.5)}
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("leftvalues.github.io", 780, 60)
@@ -219,6 +244,7 @@ stats"></a></div></noscript>
         ctx.fillText("" + document.getElementById("b-label").innerHTML, 400, 295)
         ctx.fillText("" + document.getElementById("c-label").innerHTML, 400, 415)
         ctx.fillText("" + document.getElementById("d-label").innerHTML, 400, 535)
+		ctx.fillText("" + document.getElementById("e-label").innerHTML, 400, 655)
     }
     </script>
 </body>

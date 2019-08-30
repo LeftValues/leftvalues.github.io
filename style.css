@@ -150,34 +150,44 @@ div.reform {
     border-left-style: solid;
 }
 div.central {
-    background-color: #ffeb3b;
+    background-color: #560000;
     text-align: left;
     border-right-style: solid;
 }
 div.decentral {
-    background-color: #3f51b5;
+    background-color: #000000;
     text-align: right;
     border-left-style: solid;
 }
 div.utopian {
-    background-color: #03a9f4;
+    background-color: #7F0037;
     text-align: right;
     border-left-style: solid;
 }
 div.scientific {
-    background-color: #ff9800;
+    background-color: #88232B;
     text-align: left;
     border-right-style: solid;
 }
 div.national {
-    background-color: #9c27b0;
+    background-color: #7F3300;
     text-align: right;
     border-left-style: solid;
 }
 div.international {
-    background-color: #8bc34a;
+    background-color: #782F52;
     text-align: left;
     border-right-style: solid;
+}
+div.party {
+    background-color: #963B33;
+    text-align: left;
+    border-right-style: solid;
+}
+div.union {
+    background-color: #7F333B;
+    text-align: right;
+    border-left-style: solid;
 }
 span.weight-300 {
     font-weight: 300;
