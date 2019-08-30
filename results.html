@@ -113,14 +113,14 @@ stats"></a></div></noscript>
     }
 
     revolution  = getQueryVariable("a")
-    utopian     = getQueryVariable("b")
+    scientific  = getQueryVariable("b")
     central   = getQueryVariable("c")
-    national  = getQueryVariable("d")
+    international  = getQueryVariable("d")
 	party  = getQueryVariable("e")
     reform    = (100 - revolution).toFixed(1)
-    scientific     = (100 - utopian   ).toFixed(1)
+    utopian     = (100 - scientific   ).toFixed(1)
     decentral = (100 - central ).toFixed(1)
-    international = (100 - national).toFixed(1)
+    national = (100 - international).toFixed(1)
 	union = (100 - party).toFixed(1)
 
     setBarValue("revolution", revolution)
@@ -135,9 +135,9 @@ stats"></a></div></noscript>
     setBarValue("union", union)
 
     document.getElementById("a-label").innerHTML = setLabel(revolution, aArray)
-    document.getElementById("b-label").innerHTML = setLabel(utopian, bArray)
+    document.getElementById("b-label").innerHTML = setLabel(scientific, bArray)
     document.getElementById("c-label").innerHTML = setLabel(central, cArray)
-    document.getElementById("d-label").innerHTML = setLabel(national, dArray)
+    document.getElementById("d-label").innerHTML = setLabel(international, dArray)
 	document.getElementById("e-label").innerHTML = setLabel(party, eArray)
 
     ideology = ""
@@ -146,8 +146,8 @@ stats"></a></div></noscript>
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.a - revolution), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.c - central), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.b - utopian), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.d - national), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.b - scientific), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.d - international), 1.73856063)
 		dist += Math.pow(Math.abs(ideologies[i].stats.e - party), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
