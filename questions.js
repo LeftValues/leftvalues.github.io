@@ -534,7 +534,7 @@ questions = [
     },
 	//production vs ecology
 	{
-		"question": "Climate change is a major global threat that all socialists must fiercly combat.",
+		"question": "Climate change is a major global threat that all socialists must fiercely combat.",
         "effect": {
             "a": 0,
             "b": 0,
