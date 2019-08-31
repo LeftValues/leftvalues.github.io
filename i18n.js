@@ -120,6 +120,10 @@ const i18n = {
         "en": "Click here to start!",
         "de": "Klicke hier um anzufangen!"
     },
+    "index-h2-whatis" : {
+        "en": "What is LeftValues?",
+        "de": "Was ist LeftValues?"
+    },
     "index-p-answer": {
         "en": "LeftValues is a leftist quiz inspired by and based upon the <a href='https://8values.github.io/'>8values</a> quiz that seeks to identify your position on the left-wing spectrum. " + 
         "If you are not a leftist, this quiz is obviously not suited for you. You will be presented with a statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each answer slightly affecting your scores. The questions for each axes are presented in order, rather than scattered. At the end of the quiz, your answers will be compared to the maximum possible for each value, thus giving you a percentage. Answer honestly!<br/><br/>" +
