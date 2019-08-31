@@ -14,7 +14,7 @@
 <h1>LeftValues</h1>
 <hr>
 
-<h1>Results</h1>
+<h1 data-i18n="result-h1">Results</h1>
 
 <h2><span class="weight-300" id="a-label"></span></h2>
 <div class="axis">
@@ -65,12 +65,12 @@
     <div class="bar progressive" id="bar-progressive"><div class="text-wrapper" id="progressive"></div></div>
     <img id="img-progressive" src="value_images/progressive.png" height="128pt"/>
 </div>
-<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
+<h2 data-i18n="result-h2-match">Closest Match:<span class="weight-300" id="ideology-label"></span></h2>
 <h3><span class="weight-300" id="ideodesc-label"></span></h3>
-<p><br>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
+<p data-i18n="result-url"><br>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 
-<h2>I don't like my scores!</h2>
-    <p>If you have any suggestions or constructive criticism please fill out this <a href="https://forms.gle/6WZYMb5GXkkDLhxr5">short form</a> or open an issue on the <a href="https://github.com/LeftValues/leftvalues.github.io">GitHub Page</a>.</p>
+<h2 data-i18n="result-h2-score">I don't like my scores!</h2>
+    <p data-i18n="result-issues">If you have any suggestions or constructive criticism please fill out this <a href="https://forms.gle/6WZYMb5GXkkDLhxr5">short form</a> or open an issue on the <a href="https://github.com/LeftValues/leftvalues.github.io">GitHub Page</a>.</p>
 <hr/>
 <canvas id="banner" width=800 height=1000 style="font-family:Montserrat"></canvas>
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
@@ -88,6 +88,8 @@ href="https://statcounter.com/" target="_blank"><img class="statcounter"
 src="https://c.statcounter.com/12079783/0/fa5443fa/1/" alt="Web
 Analytics"></a></div></noscript>
 <!-- End of Statcounter Code -->
+<!-- JavaScript for the test itself -->
+<script type="application/javascript"src="i18n.js"></script>
 <script>
     function getQueryVariable(variable)
     {
@@ -109,14 +111,6 @@ Analytics"></a></div></noscript>
             innerel.style.visibility = "hidden"
         }
     }
-
-    aArray = ["Extremely Revolutionary","Very Revolutionary","Revolutionary","Neutral","Reformist","Very Reformist","Extremely Reformist"]
-	bArray = ["Extremely Scientific","Very Scientific","Scientific","Neutral","Utopian","Very Utopian","Extremely Utopian"]
-    cArray = ["Extremely Centralist","Very Centralist","Centralist","Neutral","Decentralist","Very Decentralist","Extremely Decentralist"]
-    dArray = ["Extremely Internationalist","Very Internationalist","Internationalist","Neutral","Nationalist","Very Nationalist","Extremely Nationalist"]
-	eArray = ["Extremely Leans Party","Highly Leans Party","Leans Party","Neutral","Leans Union","Highly Leans Union","Extremely Leans Union"]
-	fArray = ["Extremely Productivist","Very Productivist","Productivist","Neutral","Ecological","Very Ecological","Extremely Ecological"]
-	gArray = ["Extremely Conservative","Very Conservative","Conservative","Neutral","Progressive","Very Progressive","Extremely Progressive"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -160,13 +154,13 @@ Analytics"></a></div></noscript>
 	setBarValue("conservative", conservative)
     setBarValue("progressive", progressive)
 
-    document.getElementById("a-label").innerHTML = setLabel(revolution, aArray)
-    document.getElementById("b-label").innerHTML = setLabel(scientific, bArray)
-    document.getElementById("c-label").innerHTML = setLabel(central, cArray)
-    document.getElementById("d-label").innerHTML = setLabel(international, dArray)
-	document.getElementById("e-label").innerHTML = setLabel(party, eArray)
-	document.getElementById("f-label").innerHTML = setLabel(industry, fArray)
-	document.getElementById("g-label").innerHTML = setLabel(conservative, gArray)
+    document.getElementById("a-label").innerHTML = setLabel(revolution, i18n.getString("result-a-label"))
+    document.getElementById("b-label").innerHTML = setLabel(scientific, i18n.getString("result-b-label"))
+    document.getElementById("c-label").innerHTML = setLabel(central, i18n.getString("result-c-label"))
+    document.getElementById("d-label").innerHTML = setLabel(international, i18n.getString("result-d-label"))
+	document.getElementById("e-label").innerHTML = setLabel(party, i18n.getString("result-e-label"))
+	document.getElementById("f-label").innerHTML = setLabel(industry, i18n.getString("result-f-label"))
+	document.getElementById("g-label").innerHTML = setLabel(conservative, i18n.getString("result-g-label"))
 
     ideology = ""
 	ideodesc = ""
@@ -181,8 +175,8 @@ Analytics"></a></div></noscript>
 		dist += Math.pow(Math.abs(ideologies[i].stats.f - industry), 1.73856063)
 		dist += Math.pow(Math.abs(ideologies[i].stats.g - conservative), 1.73856063)
         if (dist < ideodist) {
-            ideology = ideologies[i].name
-			ideodesc = ideologies[i].desc
+            ideology = (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].name : ideologies[i].name
+			ideodesc = (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].desc : ideologies[i].desc
             ideodist = dist
         }
     }

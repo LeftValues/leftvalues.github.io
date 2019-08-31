@@ -12,15 +12,16 @@
 </script>
 <h1>LeftValues</h1>
 <hr>
-<h2 style="text-align:center;" id="question-number">Loading...</h2>
+<h2 data-i18n="quiz-loading" style="text-align:center;" id="question-number">Loading...</h2>
 <p class="question" id="question-text"></p>
-<button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
-<button class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Agree</button> <br>
-<button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
-<button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
-<button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
-<button class="small_button" onclick="prev_question()" id="back_button">Back</button>
-<button class="small_button_off" id="back_button_off">Back</button><br>
+<button data-i18n="quiz-strongly-agree" class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
+<button data-i18n="quiz-agree" class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Agree</button> <br>
+<button data-i18n="quiz-neutral" class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
+<button data-i18n="quiz-disagree" class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
+<button data-i18n="quiz-strongly-disagree" class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
+<button data-i18n="quiz-back" class="small_button" onclick="prev_question()" id="back_button">Back</button>
+<button data-i18n="quiz-back" class="small_button_off" id="back_button_off">Back</button>
+<br>
 
 <!-- Default Statcounter code for LeftValues http://leftvalues.github.io -->
 <script type="text/javascript">
@@ -38,13 +39,14 @@ Analytics"></a></div></noscript>
 <!-- End of Statcounter Code -->
 
 <!-- JavaScript for the test itself -->
+<script type="application/javascript"src="i18n.js"></script>
 <script>
-    var max_a, max_b, max_c, max_d, max_e, max_f, max_g; // Max possible scores
-    max_a = max_b = max_c = max_d = max_e = max_f = max_g = 0;
-    var a, b, c, d, e, f, g; // User's scores
-    a = b = c = d = e = f = g = 0;
-    var qn = 0; // Question number
-    var prev_answer = null;
+    var max_a, max_b, max_c, max_d, max_e, max_f, max_g// Max possible scores
+    max_a = max_b = max_c = max_d = max_e = max_f = max_g = 0
+    var a, b, c, d, e, f, g // User's scores
+    a = b = c = d = e = f = g = 0
+    var qn = 0 // Question number
+    var prev_answer = null
     init_question();
     for (var i = 0; i < questions.length; i++) {
         max_a += Math.abs(questions[i].effect.a)
@@ -56,14 +58,14 @@ Analytics"></a></div></noscript>
 		max_g += Math.abs(questions[i].effect.g)
     }
     function init_question() {
-        document.getElementById("question-text").innerHTML = questions[qn].question;
-        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length);
+        document.getElementById("question-text").innerHTML = (userLang in questions[qn].i18n) ? questions[qn].i18n[userLang] : questions[qn].question
+        document.getElementById("question-number").innerHTML = i18n.getString("quiz-question-of", [qn, questions])
         if (prev_answer == null) {
-            document.getElementById("back_button").style.display = 'none';
-            document.getElementById("back_button_off").style.display = 'block';
+            document.getElementById("back_button").style.display = 'none'
+            document.getElementById("back_button_off").style.display = 'block'
         } else {
-            document.getElementById("back_button").style.display = 'block';
-            document.getElementById("back_button_off").style.display = 'none';
+            document.getElementById("back_button").style.display = 'block'
+            document.getElementById("back_button_off").style.display = 'none'
         }
 
     }
@@ -76,28 +78,28 @@ Analytics"></a></div></noscript>
 		e += mult*questions[qn].effect.e
 		f += mult*questions[qn].effect.f
 		g += mult*questions[qn].effect.g
-        qn++;
-        prev_answer = mult;
+        qn++
+        prev_answer = mult
         if (qn < questions.length) {
-            init_question();
+            init_question()
         } else {
-            results();
+            results()
         }
     }
     function prev_question() {
         if (prev_answer == null) {
-            return;
+            return
         }
-        qn--;
-        a -= prev_answer * questions[qn].effect.a;
-        b -= prev_answer * questions[qn].effect.b;
-        c -= prev_answer * questions[qn].effect.c;
-        d -= prev_answer * questions[qn].effect.d;
-		e -= prev_answer * questions[qn].effect.e;
-		f -= prev_answer * questions[qn].effect.f;
-		g -= prev_answer * questions[qn].effect.g;
-        prev_answer = null;
-        init_question();
+        qn--
+        a -= prev_answer * questions[qn].effect.a
+        b -= prev_answer * questions[qn].effect.b
+        c -= prev_answer * questions[qn].effect.c
+        d -= prev_answer * questions[qn].effect.d
+		e -= prev_answer * questions[qn].effect.e
+		f -= prev_answer * questions[qn].effect.f
+		g -= prev_answer * questions[qn].effect.g
+        prev_answer = null
+        init_question()
 
     }
     function calc_score(score,max) {
