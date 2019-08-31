@@ -457,7 +457,7 @@ questions = [
         }
     },
 	{
-		"question": "Measures to defeat climate change are unacceptable if they result in significant decreases in production and quality of life.",
+		"question": "Measures to address environmental issues are unacceptable if they result in significant decreases in production and quality of life.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -468,7 +468,7 @@ questions = [
         }
     },
 	{
-		"question": "Renewable sources of energy are incapable of efficiently replacing fossil fuels.",
+		"question": "It is foolish to expect renewable energy sources to be able to replace fossil fuels.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -479,7 +479,7 @@ questions = [
         }
     },
 	{
-		"question": "Industrialized farming practices must be abolished.",
+		"question": "Industrialized farming practices must be abolished even if it leads to lower outputs.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -512,7 +512,7 @@ questions = [
         }
     },
 	{
-		"question": "Personal vehicles should be replaced with free public transport.",
+		"question": "Personal motor vehicles, such as cars, should be replaced with free public transport.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -520,6 +520,50 @@ questions = [
             "d": 0,
 			"e": 0,
 			"f": -5
+        }
+    },
+	{
+		"question": "It is acceptable for humanity to suffer to some notable extent in order to preserve the natural ecosystem.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -10
+        }
+    },
+	{
+		"question": "We must radically alter our food consumption in order to limit the exploitation of nature.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -10
+        }
+    },
+	{
+		"question": "Human population growth must be curbed to prevent an ecological disaster. ",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -10
+        }
+    },
+	{
+		"question": "Some small scale destruction of nature is acceptable if it notably benefits humanity.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 5
         }
     },
 	{
