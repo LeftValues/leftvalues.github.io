@@ -376,15 +376,15 @@ questions = [
         }
     },
 	{
-		"question": "Mass foreign immigration policies are naïve and should not be implemented.",
+		"question": "Any socialist country should be dedicated to exporting their ideology abroad.",
         "effect": {
             "a": 0,
             "b": 0,
             "c": 0,
-            "d": -10,
+            "d": 10,
 			"e": 0,
 			"f": 0,
-			"g": 5
+			"g": 0
         }
     },
 	{
@@ -485,7 +485,7 @@ questions = [
         }
     },
 	{
-		"question": "Only a mass workers party can achieve any meaningful goals.",
+		"question": "Only a mass workers party can achieve any meaningful long-term goals.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -525,9 +525,21 @@ questions = [
         "effect": {
             "a": 0,
             "b": 0,
+            "c": -5,
+            "d": 0,
+			"e": -5,
+			"f": 0,
+			"g": 0
+        }
+    },
+	{
+		"question": "Trade unionism has been largely corrupted by the ruling class and is no longer a viable structure for a socialist organization.",
+        "effect": {
+            "a": 0,
+            "b": 0,
             "c": 0,
             "d": 0,
-			"e": -10,
+			"e": 5,
 			"f": 0,
 			"g": 0
         }
@@ -642,7 +654,7 @@ questions = [
         }
     },
 	{
-		"question": "Human population growth must be curbed to prevent an ecological disaster. ",
+		"question": "Human population growth must be curbed to prevent an ecological disaster.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -650,7 +662,7 @@ questions = [
             "d": 0,
 			"e": 0,
 			"f": -5,
-			"g": 0
+			"g": 5
         }
     },
 	{
@@ -662,6 +674,18 @@ questions = [
             "d": 0,
 			"e": 0,
 			"f": 5,
+			"g": 0
+        }
+    },
+	{
+		"question": "Humanity must return to the primitive ways of the past to overcome long-term climate issues.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -5,
 			"g": 0
         }
     },
@@ -703,15 +727,15 @@ questions = [
         }
     },
 	{
-		"question": "Marriage is a positive way of forging bonds between partners.",
+		"question": "Marriage is a patriarchal social construct that should be phased out.",
         "effect": {
             "a": 0,
-            "b": 0,
+            "b": 5,
             "c": 0,
             "d": 0,
 			"e": 0,
 			"f": 0,
-			"g": 5
+			"g": -5
         }
     },
 	{
@@ -727,7 +751,7 @@ questions = [
         }
     },
 	{
-		"question": "Religion has a mostly positive effect and should remain influential in society.",
+		"question": "Religions overall have a mostly positive effect and should remain influential in society.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -751,7 +775,7 @@ questions = [
         }
     },
 	{
-		"question": "A socialist government has no right to disrupt religious or cultural traditions.",
+		"question": "A socialist government has no right to disrupt religious or cultural traditions in any situation.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -760,6 +784,30 @@ questions = [
 			"e": 0,
 			"f": 0,
 			"g": 10
+        }
+    },
+	{
+		"question": "Prisons are oppressive and antiquated institutions that need to be abolished.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": -5
+        }
+    },
+	{
+		"question": "Mass foreign immigration policies are naïve and should not be implemented.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": 5
         }
     },
 	{
