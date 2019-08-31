@@ -59,6 +59,14 @@ h2 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
+h3 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18pt;
+    line-height: 18pt;
+    margin-top: 12pt;
+    margin-bottom: 0pt;
+}
 li {
     font-size: 16pt;
     text-indent: 16pt;

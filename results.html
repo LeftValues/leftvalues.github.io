@@ -66,7 +66,8 @@
     <img id="img-progressive" src="value_images/progressive.png" height="128pt"/>
 </div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-<p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
+<h3><span class="weight-300" id="ideodesc-label"></span></h3>
+<p><br>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 
 <h2>I don't like my scores!</h2>
     <p>If you have any suggestions or constructive criticism please fill out this <a href="https://forms.gle/6WZYMb5GXkkDLhxr5">short form</a> or open an issue on the <a href="https://github.com/LeftValues/leftvalues.github.io">GitHub Page</a>.</p>
@@ -168,6 +169,7 @@ Analytics"></a></div></noscript>
 	document.getElementById("g-label").innerHTML = setLabel(conservative, gArray)
 
     ideology = ""
+	ideodesc = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
@@ -180,10 +182,12 @@ Analytics"></a></div></noscript>
 		dist += Math.pow(Math.abs(ideologies[i].stats.g - conservative), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
+			ideodesc = ideologies[i].desc
             ideodist = dist
         }
     }
     document.getElementById("ideology-label").innerHTML = ideology
+	document.getElementById("ideodesc-label").innerHTML = ideodesc
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
