@@ -1,22 +1,19 @@
 const langElements = document.querySelectorAll('[data-i18n]')
-const userLang = navigator.language || navigator.userLanguage;
-const labels = {
-    
-}
+const userLang = navigator.language || navigator.userLanguage
 const i18n = {
     getString(name, arguments=null) {
-        if (arguments) {
-            if (userLang in i18n[name]) {
-                return i18n[name][userLang](...arguments)
-            }
-            return i18n[name]["en"](...arguments)
-        } else {
-            if (userLang in i18n[name]) {
-                return i18n[name][userLang]
-            }
-            return i18n[name]["en"]
+        if (userLang in i18n[name]) {
+             if (arguments) {
+                 return i18n[name][userLang](...arguments)
+             }
+             return i18n[name][userLang]
         }
+        if (arguments) {
+            return i18n[name]["en"](...arguments)
+        }
+        return i18n[name]["en"]  
     },
+    "lang": userLang,
     // quiz.html
     "quiz-loading": {
         "de": "Laden…"
