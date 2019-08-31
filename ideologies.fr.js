@@ -48,7 +48,7 @@ ideologies = [
         }
     },
 	{
-        "name": "Gauche communiste",
+        "name": "Gauche Communiste",
         "stats": {
             "a": 100,
             "b": 60,
@@ -72,7 +72,7 @@ ideologies = [
         }
     },
 	{
-        "name": "Anarchisme vert",
+        "name": "Anarchisme Vert",
         "stats": {
             "a": 90,
             "b": 50,
@@ -84,7 +84,7 @@ ideologies = [
         }
     },
 	{
-        "name": "Anarcho-capitalisme",
+        "name": "Anarcho-Capitalisme",
         "stats": {
             "a": 20,
             "b": 40,
