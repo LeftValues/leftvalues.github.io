@@ -72,6 +72,9 @@ img.center {
     width: 20%;
     min-width: 400pt;
 }
+.language {
+    text-decoration: none;
+}
 .button {
     background-color: #2196f3;
     font-family: 'Montserrat', sans-serif;

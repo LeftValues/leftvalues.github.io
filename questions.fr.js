@@ -1,7 +1,7 @@
 questions = [
 	//revolution vs reform
     {
-        "question": "Reforming capitalist society to achieve better rights for workers is desirable, even when it's not the final goal.",
+        "question": "Réformer la société capitaliste pour obtenir de meilleurs droits pour les travailleur·euse·s est souhaitable, même quand ce n'est pas l'objectif final.",
         "effect": {
             "a": -5,
             "b": 0,
@@ -13,7 +13,7 @@ questions = [
         }
 	},
 	{
-		"question": "Revolution is the best way of achieving a socialist society.",
+		"question": "La révolution est le seul moyen de parvenir à une société socialiste.",
         "effect": {
             "a": 10,
             "b": 0,
@@ -25,7 +25,7 @@ questions = [
         },
 	},
 	{
-		"question": "The negative consequences of a revolution generally outweigh the advantages.",
+		"question": "Les conséquences négatives d'une révolution sont plus importantes que les conséquences positives.",
         "effect": {
             "a": -10,
             "b": 0,
@@ -37,7 +37,7 @@ questions = [
         }
 	},
 	{
-		"question": "Liberal democracy is a viable way of achieving a socialist society.",
+		"question": "La démocratie à l'occidentale est un moyen viable de parvenir à une société socialiste.",
         "effect": {
             "a": -10,
             "b": 0,
@@ -49,7 +49,7 @@ questions = [
         }
 	},
 	{
-		"question": "A socialist revolution is made inevitable by the conditions of capitalism.",
+		"question": "Une révolution socialiste est rendue inévitable à cause du fonctionnement du système capitaliste.",
         "effect": {
             "a": 5,
             "b": 0,
@@ -61,7 +61,7 @@ questions = [
         }
 	},
 	{
-		"question": "Workplace democracy within capitalism is an acceptable alternative to a complete socialization of the economy.",
+		"question": "La démocratie au travail, dans un système capitaliste, est une alternative acceptable à une socialisation complète de l'économie.",
         "effect": {
             "a": -10,
             "b": 0,
@@ -73,7 +73,7 @@ questions = [
         }
 	},
 	{
-		"question": "Revolutionary violence is acceptable as long as the final outcome is positive.",
+		"question": "La violence révolutionnaire est acceptable du moment qu'il en sort quelque chose de positif.",
         "effect": {
             "a": 5,
             "b": 0,
@@ -85,7 +85,7 @@ questions = [
         }
 	},
 	{
-		"question": "Redistributing wealth away from the wealthy through taxes is a viable way of defeating inequality.",
+		"question": "Redistribuer les richesses en prenant aux riches à travers les impôts et les taxes est un moyen viable de combattre les inégalités.",
         "effect": {
             "a": -5,
             "b": 0,
@@ -97,7 +97,7 @@ questions = [
         }
     },
 	{
-		"question": "Modern social democracy is a betrayal of left-wing values.",
+		"question": "La social-démocratie est une trahison des valeurs de gauche.",
         "effect": {
             "a": 5,
             "b": 0,
@@ -109,7 +109,7 @@ questions = [
         }
     },
 	{
-		"question": "Oppressed peoples have the right to engage in a violent uprising when all other options have been exhausted.",
+		"question": "Les peuples opprimés ont le droit de s'engager dans une révolte violente quand tous les autres moyens d'actions ont été épuisés.",
         "effect": {
             "a": 5,
             "b": 0,
@@ -122,7 +122,7 @@ questions = [
     },
 	//scientific vs utopian
 	{
-		"question": "Material conditions and needs are the dominant drive behind socioeconomic changes.",
+		"question": "Les conditions et besoins matériels sont le moteur principal des changements socio-économiques.",
         "effect": {
             "a": 0,
             "b": 10,
@@ -134,7 +134,7 @@ questions = [
         }
     },
 	{
-		"question": "Socialism can only be fully achieved in developed industrialized societies.",
+		"question": "Le socialisme ne peut être pleinement appliqué que dans des sociétés industrialisées et développées.",
         "effect": {
             "a": 0,
             "b": 5,
@@ -146,7 +146,7 @@ questions = [
         }
     },
 	{
-		"question": "It is possible to peacefully convince the ruling class to conform to a socialist society.",
+		"question": "Il est possible de convaincre pacifiquement la classe dominante de s'adapter à une société socialiste.",
         "effect": {
             "a": -5,
             "b": -10,
@@ -158,7 +158,7 @@ questions = [
         }
     },
 	{
-		"question": "Capitalism will induce its own demise through contradictions that result in crisis.",
+		"question": "Le système capitaliste se détruira de lui-même à travers ses contradictions, ce qui déclenchera une crise.",
         "effect": {
             "a": 0,
             "b": 5,
@@ -170,7 +170,7 @@ questions = [
         }
     },
 	{
-		"question": "Class conflict is a force that has influenced much of human history.",
+		"question": "La lutte des classes est une force qui a influencé la majeure partie de l'Histoire.",
         "effect": {
             "a": 0,
             "b": 10,
@@ -182,7 +182,7 @@ questions = [
         }
     },
 	{
-		"question": "The establishment of socialism is a gradual process, rather than an instant or rapid one.",
+		"question": "L'instauration du socialisme est un processus qui prend du temps, plutôt qu'un processus instantané ou rapide.",
         "effect": {
             "a": 0,
             "b": 5,
@@ -194,7 +194,7 @@ questions = [
         }
     },
 	{
-		"question": "Society is chiefly driven by individuals and ideas.",
+		"question": "La société est guidée principalement par l'individualisme et les idéologies.",
         "effect": {
             "a": 0,
             "b": -10,
@@ -206,7 +206,7 @@ questions = [
         }
     },
 	{
-		"question": "Total economic and social equality is realistically possible to achieve.",
+		"question": "Une égalité sociale et économique totale est tout à fait possible à atteindre.",
         "effect": {
             "a": 0,
             "b": -10,
@@ -219,7 +219,7 @@ questions = [
     },
 	//central vs decentral
 	{
-		"question": "An economy is generally designed better when it is organized bottom-up rather than top-down.",
+		"question": "L'économie est mieux conçue lorsqu'elle est organisée du bas vers le haut plutôt que lorsqu'elle fait du ruissellement par le haut.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -231,7 +231,7 @@ questions = [
         }
     },
 	{
-		"question": "Local planners, rather than national planners, are more efficient at running a planned economy.",
+		"question": "Dans le cadre d'une économie planifiée, il est plus efficace de planifier au niveau local que national.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -243,7 +243,7 @@ questions = [
         }
     },
 	{
-		"question": "A centrally planned economy based around computers is a concept worth investigating.",
+		"question": "Une économie planifiée et centralisée, fondée sur l'utilisation d'algorithmes, est un concept qui mérite d'être étudié.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -255,7 +255,7 @@ questions = [
         }
     },
 	{
-		"question": "In underdeveloped societies a centrally planned economy is the best way to make rapid progress.",
+		"question": "Dans des sociétés sous-développées, une économie planifiée et centralisée est le seul moyen de faire des progrès rapidement.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -267,7 +267,7 @@ questions = [
         }
     },
 	{
-		"question": "The principles of workplace democracy and self-management are desirable.",
+		"question": "Les principes de la démocratie au travail et du self-management sont souhaitables.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -279,7 +279,7 @@ questions = [
         }
     },
 	{
-		"question": "A highly centralized planned economy is not socialism but rather state capitalism.",
+		"question": "Une économie planifiée et hautement centralisée s'apparente plus à du capitalisme d'État que du socialisme.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -291,7 +291,7 @@ questions = [
         }
     },
 	{
-		"question": "Bureaucracy and inefficiency are always inherent in centrally planned economies.",
+		"question": "La bureaucratie et l'inefficacité sont inévitables dans les économies planifiées et centralisées.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -303,7 +303,7 @@ questions = [
         }
     },
 	{
-		"question": "The government should be capable of assigning individuals to workplaces.",
+		"question": "Le gouvernement devrait être en capacité d'affecter des individus à des lieux de travail.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -316,7 +316,7 @@ questions = [
     },
 	//international vs national
 	{
-		"question": "A world socialist republic is a realistic and desirable goal.",
+		"question": "Une république socialiste mondiale est un objectif réaliste et souhaitable.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -328,7 +328,7 @@ questions = [
         }
     },
 	{
-		"question": "Nationalism and patriotism are impulses that are unacceptable in a socialist society.",
+		"question": "Le nationalisme et le patriotisme sont des choses inacceptables dans une société socialiste.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -340,7 +340,7 @@ questions = [
         }
     },
 	{
-		"question": "The global socialist movement should be led by a single party or organization.",
+		"question": "Le mouvement socialiste à l'échelle mondiale ne devrait être conduit que par un seul parti politique ou union syndicale.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -352,7 +352,7 @@ questions = [
         }
     },
 	{
-		"question": "Foreign officials have no right to dictate policy in another country.",
+		"question": "Les chefs étrangers n'ont pas le droit de dicter la conduite qu'un autre pays devrait adopter.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -364,7 +364,7 @@ questions = [
         }
     },
 	{
-		"question": "Open borders between likeminded socialist countries is desirable.",
+		"question": "L'ouverture des frontières entre les pays socialistes étant sur la même longueur d'onde est souhaitable.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -376,7 +376,7 @@ questions = [
         }
     },
 	{
-		"question": "Mass foreign immigration policies are naïve and should not be implemented.",
+		"question": "Les politiques d'immigration de masse sont des politiques naïves et ne devraient pas être mises en place.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -388,7 +388,7 @@ questions = [
         }
     },
 	{
-		"question": "People of similar cultures should unite in federations or confederations.",
+		"question": "Les peuples ayant des cultures similaires devraient s'unir et former des fédérations.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -400,7 +400,7 @@ questions = [
         }
     },
 	{
-		"question": "The international proletariat belongs to no country.",
+		"question": "Le prolétariat n'appartient à aucun pays.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -412,7 +412,7 @@ questions = [
         }
     },
 	{
-		"question": "National liberation, or self determination for all peoples, is a good concept.",
+		"question": "La libération nationale, ou l'auto-détermination de tous les peuples, est un bon concept.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -424,7 +424,7 @@ questions = [
         }
     },
 	{
-		"question": "I would be willing to sacrifice economic resources in my home country in order to help other countries.",
+		"question": "Je serais prêt·e à sacrifier des ressources économiques de mon pays pour aider d'autres pays.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -437,7 +437,7 @@ questions = [
     },
 	//party vs union
 	{
-		"question": "Socialist political parties should participate in liberal democratic elections.",
+		"question": "Les partis politiques socialistes devraient participer aux élections des pays ayant adopté la démocratie à l'occidentale.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -449,7 +449,7 @@ questions = [
         }
     },
 	{
-		"question": "Trade unions and workers councils should form the basis of a socialist society.",
+		"question": "Les organisations syndicales et les comités d'entreprise devraient former la base d'une société socialiste.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -461,7 +461,7 @@ questions = [
         }
     },
 	{
-		"question": "The leadership of political parties in the progression towards socialism will always lead to dictatorship.",
+		"question": "Laisser les partis politiques mener la transition vers une société socialiste conduira toujours à l'instauration d'une dictature.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -473,7 +473,7 @@ questions = [
         }
     },
 	{
-		"question": "Democratic centralism is an authoritarian organizational structure that disregards the masses.",
+		"question": "Le centralisme démocratique est une structure d'organisation autoritariste qui méprise le peuple.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -485,7 +485,7 @@ questions = [
         }
     },
 	{
-		"question": "Only a mass workers party can achieve any meaningful goals.",
+		"question": "Seul un parti populaire ouvrier peut atteindre des objectifs pertinents.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -497,7 +497,7 @@ questions = [
         }
     },
 	{
-		"question": "Mass spontaneous actions are more effective than carefully planned actions.",
+		"question": "Les actions spontanées de masse sont plus efficaces que des actions soigneusement préparées.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -509,7 +509,7 @@ questions = [
         }
     },
 	{
-		"question": "The fact that so many workers vote for bourgeois parties over socialist parties is proof that party politics are no longer relevant.",
+		"question": "S'il y a autant de travailleur·euse·s qui votent pour des partis politiques ayant pour objectif de défendre la bourgeoisie au lieu de partis socialistes, c'est bien la preuve que les partis politiques n'ont plus lieu d'être.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -521,7 +521,7 @@ questions = [
         }
     },
 	{
-		"question": "Socialist organizations are generally better off when organized loosely and decentrally.",
+		"question": "Les organisations socialistes se portent mieux quand elles sont gérées à la légère et de façon décentralisée.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -534,7 +534,7 @@ questions = [
     },
 	//production vs ecology
 	{
-		"question": "Climate change is a major global threat that all socialists must fiercly combat.",
+		"question": "Le dérèglement climatique est une menace planétaire majeure que tou·te·s les socialistes doivent fièrement combattre.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -546,7 +546,7 @@ questions = [
         }
     },
 	{
-		"question": "Measures to address environmental issues are unacceptable if they result in significant decreases in production and quality of life.",
+		"question": "Les solutions pour lutter contre les problèmes environnementaux sont inacceptables si elles impliquent une baisse significative de la qualité de vie et de notre rythme de production.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -558,7 +558,7 @@ questions = [
         }
     },
 	{
-		"question": "It is foolish to expect renewable energy sources to be able to replace fossil fuels.",
+		"question": "Il est naïf de croire que les énergies renouvelables sont capables de remplacer les énergies fossiles.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -570,7 +570,7 @@ questions = [
         }
     },
 	{
-		"question": "Industrialized farming practices must be abolished even if it leads to lower outputs.",
+		"question": "L'agriculture intensive et industrialisée doit être abolie, même si ça mène à une baisse de production.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -582,7 +582,7 @@ questions = [
         }
     },
 	{
-		"question": "It will be important to implement extensive environmental protections as part of achieving socialism.",
+		"question": "Pour créer une société socialiste, il sera important de mettre en place des mesures poussées en matière de protection de l'environnement.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -594,7 +594,7 @@ questions = [
         }
     },
 	{
-		"question": "Experimental environmentally-friendly food sources like cultured meat are worth investing in.",
+		"question": "Les sources de nourriture expérimentales bonnes pour l'environnement, comme la viande de culture, devraient être étudiées.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -606,7 +606,7 @@ questions = [
         }
     },
 	{
-		"question": "Personal motor vehicles, such as cars, should be replaced with free public transport.",
+		"question": "Les véhicules personnels (les voitures par exemple) devraient être remplacés par des transports en commun gratuits.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -618,7 +618,7 @@ questions = [
         }
     },
 	{
-		"question": "It is acceptable for humanity to suffer to some notable extent in order to preserve the natural ecosystem.",
+		"question": "Il est acceptable que l'humanité doive souffrir jusqu'à un certain point afin de préserver l'écosystème.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -630,7 +630,7 @@ questions = [
         }
     },
 	{
-		"question": "We must radically alter our food consumption in order to limit the exploitation of nature.",
+		"question": "Nous devons radicalement changer nos habitudes de consommation alimentaires pour limiter l'exploitation de la nature.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -642,7 +642,7 @@ questions = [
         }
     },
 	{
-		"question": "Human population growth must be curbed to prevent an ecological disaster.",
+		"question": "La croissance démographique doit être freinée afin d'éviter un désastre écologique.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -654,7 +654,7 @@ questions = [
         }
     },
 	{
-		"question": "Some small scale destruction of nature is acceptable if it notably benefits humanity.",
+		"question": "Quelques actes de destruction de la nature sur une petite échelle sont acceptables si ça profite à l'humanité.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -666,7 +666,7 @@ questions = [
         }
     },
 	{
-		"question": "We must accept that the socialist states of the 20th century failed to seriously address environmental issues.",
+		"question": "Nous devons admettre que les États socialistes du 20ème siècle ont échoué à prendre au sérieux les problèmes environnementaux.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -679,7 +679,7 @@ questions = [
     },
 	//conservative vs progressive
 	{
-		"question": "The oppression of LGBTQ+ people is a major issue that needs to be seriously addressed.",
+		"question": "L'oppression des personnes LGBTQ+ est un problème majeur qui doit être sérieusement réglé.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -691,7 +691,7 @@ questions = [
         }
     },
 	{
-		"question": "Traditional gender roles, such as women being homemakers, need to be overcome.",
+		"question": "Les rôles genrés traditionnels, comme les femmes devant rester à la cuisine, doivent appartenir au passé.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -703,7 +703,7 @@ questions = [
         }
     },
 	{
-		"question": "Marriage is a positive way of forging bonds between partners.",
+		"question": "Le mariage est un moyen positif de créer du lien entre des partenaires.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -715,7 +715,7 @@ questions = [
         }
     },
 	{
-		"question": "Abortion is an immoral act that should be banned or significantly limited.",
+		"question": "L'avortement est un acte immoral qui devrait être interdit ou du moins très restreint.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -727,7 +727,7 @@ questions = [
         }
     },
 	{
-		"question": "Religion has a mostly positive effect and should remain influential in society.",
+		"question": "La religion a globalement un impact positif et devrait rester influente dans une société.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -739,7 +739,7 @@ questions = [
         }
     },
 	{
-		"question": "Ethnic minorities should be considered equal to the majority population.",
+		"question": "Les minorités ethniques devraient être considérées égales à la population majoritaire.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -751,7 +751,7 @@ questions = [
         }
     },
 	{
-		"question": "A socialist government has no right to disrupt religious or cultural traditions.",
+		"question": "Un gouvernement socialiste n'a aucunement le droit de rompre avec les traditions religieuses ou culturelles.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -763,7 +763,7 @@ questions = [
         }
     },
 	{
-		"question": "You cannot achieve a socialist society without also making significant social progress.",
+		"question": "Tu ne peux pas avoir une société socialiste sans également faire de progrès social.",
         "effect": {
             "a": 0,
             "b": 0,
