@@ -1,7 +1,7 @@
 questions = [
 	//revolution vs reform
     {
-        "question": "Reforming capitalist society to achieve better rights for workers is desirable.",
+        "question": "Reforming capitalist society to achieve better rights for workers is desirable, even when it's not the final goal.",
         "effect": {
             "a": -5,
             "b": 0,
@@ -13,7 +13,7 @@ questions = [
         }
 	},
 	{
-		"question": "Revolution is the only way of achieving a socialist society.",
+		"question": "Revolution is the best way of achieving a socialist society.",
         "effect": {
             "a": 10,
             "b": 0,
@@ -96,6 +96,30 @@ questions = [
 			"g": 0
         }
     },
+	{
+		"question": "Modern social democracy is a betrayal of left-wing values.",
+        "effect": {
+            "a": 5,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": 0
+        }
+    },
+	{
+		"question": "Oppressed peoples have the right to engage in a violent uprising when all other options have been exhausted.",
+        "effect": {
+            "a": 5,
+            "b": 0,
+            "c": 0,
+            "d": 5,
+			"e": 0,
+			"f": 0,
+			"g": 0
+        }
+    },
 	//scientific vs utopian
 	{
 		"question": "Material conditions and needs are the dominant drive behind socioeconomic changes.",
@@ -124,7 +148,7 @@ questions = [
 	{
 		"question": "It is possible to peacefully convince the ruling class to conform to a socialist society.",
         "effect": {
-            "a": 0,
+            "a": -5,
             "b": -10,
             "c": 0,
             "d": 0,
@@ -231,7 +255,7 @@ questions = [
         }
     },
 	{
-		"question": "In underdeveloped societies a centrally planned economy is the only way to make rapid progress.",
+		"question": "In underdeveloped societies a centrally planned economy is the best way to make rapid progress.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -387,6 +411,30 @@ questions = [
 			"g": 0
         }
     },
+	{
+		"question": "National liberation, or self determination for all peoples, is a good concept.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 5,
+			"e": 0,
+			"f": 0,
+			"g": 0
+        }
+    },
+	{
+		"question": "I would be willing to sacrifice economic resources in my home country in order to help other countries.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 5,
+			"e": 0,
+			"f": 0,
+			"g": 0
+        }
+    },
 	//party vs union
 	{
 		"question": "Socialist political parties should participate in liberal democratic elections.",
@@ -484,7 +532,7 @@ questions = [
 			"g": 0
         }
     },
-	//industry vs ecology
+	//production vs ecology
 	{
 		"question": "Climate change is a major global threat that all socialists must fiercly combat.",
         "effect": {
