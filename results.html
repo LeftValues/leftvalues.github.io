@@ -58,13 +58,20 @@
     <div class="bar ecology" id="bar-ecology"><div class="text-wrapper" id="ecology"></div></div>
     <img id="img-ecology" src="value_images/ecology.png" height="128pt"/>
 </div>
+<h2><span class="weight-300" id="g-label"></span></h2>
+<div class="axis">
+    <img id="img-conservative" src="value_images/conservative.png" height="128pt"/>
+    <div class="bar conservative" id="bar-conservative"><div class="text-wrapper" id="conservative"></div></div>
+    <div class="bar progressive" id="bar-progressive"><div class="text-wrapper" id="progressive"></div></div>
+    <img id="img-progressive" src="value_images/progressive.png" height="128pt"/>
+</div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 
 <h2>I don't like my scores!</h2>
     <p>If you have any suggestions or constructive criticism please fill out this <a href="https://forms.gle/6WZYMb5GXkkDLhxr5">short form</a> or open an issue on the <a href="https://github.com/LeftValues/leftvalues.github.io">GitHub Page</a>.</p>
 <hr/>
-<canvas id="banner" width=800 height=900 style="font-family:Montserrat"></canvas>
+<canvas id="banner" width=800 height=1000 style="font-family:Montserrat"></canvas>
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
 <!-- Default Statcounter code for LeftValues http://leftvalues.github.io -->
 <script type="text/javascript">
@@ -108,6 +115,7 @@ Analytics"></a></div></noscript>
     dArray = ["Extremely Internationalist","Very Internationalist","Internationalist","Neutral","Nationalist","Very Nationalist","Extremely Nationalist"]
 	eArray = ["Extremely Leans Party","Highly Leans Party","Leans Party","Neutral","Leans Union","Highly Leans Union","Extremely Leans Union"]
 	fArray = ["Extremely Industrial","Very Industrial","Industrial","Neutral","Ecological","Very Ecological","Extremely Ecological"]
+	gArray = ["Extremely Conservative","Very Conservative","Conservative","Neutral","Progressive","Very Progressive","Extremely Progressive"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -127,12 +135,14 @@ Analytics"></a></div></noscript>
     international  = getQueryVariable("d")
 	party  = getQueryVariable("e")
 	industry  = getQueryVariable("f")
+	conservative  = getQueryVariable("g")
     reform    = (100 - revolution).toFixed(1)
     utopian     = (100 - scientific   ).toFixed(1)
     decentral = (100 - central ).toFixed(1)
     national = (100 - international).toFixed(1)
 	union = (100 - party).toFixed(1)
 	ecology = (100 - industry).toFixed(1)
+	progressive = (100 - conservative).toFixed(1)
 
     setBarValue("revolution", revolution)
     setBarValue("reform", reform)
@@ -146,6 +156,8 @@ Analytics"></a></div></noscript>
     setBarValue("union", union)
 	setBarValue("industry", industry)
     setBarValue("ecology", ecology)
+	setBarValue("conservative", conservative)
+    setBarValue("progressive", progressive)
 
     document.getElementById("a-label").innerHTML = setLabel(revolution, aArray)
     document.getElementById("b-label").innerHTML = setLabel(scientific, bArray)
@@ -153,6 +165,7 @@ Analytics"></a></div></noscript>
     document.getElementById("d-label").innerHTML = setLabel(international, dArray)
 	document.getElementById("e-label").innerHTML = setLabel(party, eArray)
 	document.getElementById("f-label").innerHTML = setLabel(industry, fArray)
+	document.getElementById("g-label").innerHTML = setLabel(conservative, gArray)
 
     ideology = ""
     ideodist = Infinity
@@ -164,6 +177,7 @@ Analytics"></a></div></noscript>
         dist += Math.pow(Math.abs(ideologies[i].stats.d - international), 1.73856063)
 		dist += Math.pow(Math.abs(ideologies[i].stats.e - party), 1.73856063)
 		dist += Math.pow(Math.abs(ideologies[i].stats.f - industry), 1.73856063)
+		dist += Math.pow(Math.abs(ideologies[i].stats.g - conservative), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -209,6 +223,10 @@ Analytics"></a></div></noscript>
         ctx.drawImage(img, 20, 770, 100, 100)
         img = document.getElementById("img-ecology")
         ctx.drawImage(img, 680, 770, 100, 100)
+		img = document.getElementById("img-conservative")
+        ctx.drawImage(img, 20, 890, 100, 100)
+        img = document.getElementById("img-progressive")
+        ctx.drawImage(img, 680, 890, 100, 100)
 
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 180, 560, 80)
@@ -217,6 +235,7 @@ Analytics"></a></div></noscript>
         ctx.fillRect(120, 540, 560, 80)
 		ctx.fillRect(120, 660, 560, 80)
 		ctx.fillRect(120, 780, 560, 80)
+		ctx.fillRect(120, 900, 560, 80)
         ctx.fillStyle="#890000"
         ctx.fillRect(120, 184, 5.6*revolution-2, 72)
         ctx.fillStyle="#FC5959"
@@ -241,6 +260,10 @@ Analytics"></a></div></noscript>
         ctx.fillRect(120, 784, 5.6*industry-2, 72)
         ctx.fillStyle="#586808"
         ctx.fillRect(682-5.6*ecology, 784, 5.6*ecology-2, 72)
+		ctx.fillStyle="#27577A"
+        ctx.fillRect(120, 904, 5.6*conservative-2, 72)
+        ctx.fillStyle="#C4A717"
+        ctx.fillRect(682-5.6*progressive, 904, 5.6*progressive-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
@@ -256,6 +279,7 @@ Analytics"></a></div></noscript>
         if (international > 30) {ctx.fillText(international + "%", 130, 597.5)}
 		if (party > 30) {ctx.fillText(party + "%", 130, 717.5)}
 		if (industry > 30) {ctx.fillText(industry + "%", 130, 837.5)}
+		if (conservative > 30) {ctx.fillText(conservative + "%", 130, 957.5)}
         ctx.textAlign="right"
         if (reform    > 30) {ctx.fillText(reform + "%", 670, 237.5)}
         if (utopian     > 30) {ctx.fillText(utopian + "%", 670, 357.5)}
@@ -263,6 +287,7 @@ Analytics"></a></div></noscript>
         if (national  > 30) {ctx.fillText(national + "%", 670, 597.5)}
 		if (union  > 30) {ctx.fillText(union + "%", 670, 717.5)}
 		if (ecology  > 30) {ctx.fillText(ecology + "%", 670, 837.5)}
+		if (progressive  > 30) {ctx.fillText(progressive + "%", 670, 957.5)}
 		
 		ctx.fillStyle="#222222"
         ctx.font="300 30px Montserrat"
@@ -274,6 +299,7 @@ Analytics"></a></div></noscript>
         ctx.fillText("" + document.getElementById("d-label").innerHTML, 400, 535)
 		ctx.fillText("" + document.getElementById("e-label").innerHTML, 400, 655)
 		ctx.fillText("" + document.getElementById("f-label").innerHTML, 400, 775)
+		ctx.fillText("" + document.getElementById("g-label").innerHTML, 400, 895)
     }
     </script>
 </body>

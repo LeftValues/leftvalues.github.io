@@ -199,6 +199,16 @@ div.ecology {
     text-align: right;
     border-left-style: solid;
 }
+div.conservative {
+    background-color: #27577A;
+    text-align: left;
+    border-right-style: solid;
+}
+div.progressive {
+    background-color: #C4A717;
+    text-align: right;
+    border-left-style: solid;
+}
 span.weight-300 {
     font-weight: 300;
 }

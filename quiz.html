@@ -39,10 +39,10 @@ Analytics"></a></div></noscript>
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_a, max_b, max_c, max_d, max_e, max_f; // Max possible scores
-    max_a = max_b = max_c = max_d = max_e = max_f = 0;
-    var a, b, c, d; // User's scores
-    a = b = c = d = e = f = 0;
+    var max_a, max_b, max_c, max_d, max_e, max_f, max_g; // Max possible scores
+    max_a = max_b = max_c = max_d = max_e = max_f = max_g = 0;
+    var a, b, c, d, e, f, g; // User's scores
+    a = b = c = d = e = f = g = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
@@ -53,6 +53,7 @@ Analytics"></a></div></noscript>
         max_d += Math.abs(questions[i].effect.d)
 		max_e += Math.abs(questions[i].effect.e)
 		max_f += Math.abs(questions[i].effect.f)
+		max_g += Math.abs(questions[i].effect.g)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -74,6 +75,7 @@ Analytics"></a></div></noscript>
         d += mult*questions[qn].effect.d
 		e += mult*questions[qn].effect.e
 		f += mult*questions[qn].effect.f
+		g += mult*questions[qn].effect.g
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -93,6 +95,7 @@ Analytics"></a></div></noscript>
         d -= prev_answer * questions[qn].effect.d;
 		e -= prev_answer * questions[qn].effect.e;
 		f -= prev_answer * questions[qn].effect.f;
+		g -= prev_answer * questions[qn].effect.g;
         prev_answer = null;
         init_question();
 
@@ -108,6 +111,7 @@ Analytics"></a></div></noscript>
             + `&d=${calc_score(d,max_d)}`
 			+ `&e=${calc_score(e,max_e)}`
 			+ `&f=${calc_score(f,max_f)}`
+			+ `&g=${calc_score(g,max_g)}`
     }
 </script>
 </body>

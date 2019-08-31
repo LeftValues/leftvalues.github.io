@@ -1,14 +1,15 @@
 questions = [
 	//revolution vs reform
     {
-        "question": "Reforming capitalist society to achieve better rights for workers is acceptable and desirable.",
+        "question": "Reforming capitalist society to achieve better rights for workers is desirable.",
         "effect": {
             "a": -5,
             "b": 0,
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
 	},
 	{
@@ -19,18 +20,20 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         },
 	},
 	{
-		"question": "The negative consequences of a revolution outweigh the advantages.",
+		"question": "The negative consequences of a revolution generally outweigh the advantages.",
         "effect": {
             "a": -10,
             "b": 0,
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
 	},
 	{
@@ -41,7 +44,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
 	},
 	{
@@ -52,7 +56,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
 	},
 	{
@@ -63,7 +68,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
 	},
 	{
@@ -74,7 +80,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
 	},
 	{
@@ -85,7 +92,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	//scientific vs utopian
@@ -97,7 +105,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -108,7 +117,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -119,7 +129,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -130,18 +141,20 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
-		"question": "Class conflict is a force that has influenced much of history.",
+		"question": "Class conflict is a force that has influenced much of human history.",
         "effect": {
             "a": 0,
             "b": 10,
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -152,7 +165,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -163,30 +177,33 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
-		"question": "Total economic and social equality is possible to achieve.",
+		"question": "Total economic and social equality is realistically possible to achieve.",
         "effect": {
             "a": 0,
             "b": -10,
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	//central vs decentral
 	{
-		"question": "An economy is designed better when it is organized bottom-up rather than top-down.",
+		"question": "An economy is generally designed better when it is organized bottom-up rather than top-down.",
         "effect": {
             "a": 0,
             "b": 0,
             "c": -10,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -197,7 +214,8 @@ questions = [
             "c": -5,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -208,7 +226,8 @@ questions = [
             "c": 5,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -219,7 +238,8 @@ questions = [
             "c": 10,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -230,7 +250,8 @@ questions = [
             "c": -5,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -241,18 +262,20 @@ questions = [
             "c": -5,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
-		"question": "Bureaucracy and inefficiency are inherent in centrally planned economies.",
+		"question": "Bureaucracy and inefficiency are always inherent in centrally planned economies.",
         "effect": {
             "a": 0,
             "b": 0,
             "c": -10,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -263,7 +286,8 @@ questions = [
             "c": 10,
             "d": 0,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	//international vs national
@@ -275,7 +299,8 @@ questions = [
             "c": 0,
             "d": 5,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -286,7 +311,8 @@ questions = [
             "c": 0,
             "d": 10,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": -5
         }
     },
 	{
@@ -297,7 +323,8 @@ questions = [
             "c": 0,
             "d": 5,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -308,7 +335,8 @@ questions = [
             "c": 0,
             "d": -5,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -319,29 +347,32 @@ questions = [
             "c": 0,
             "d": 5,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
-		"question": "Mass immigration policies are naïve and should not be implemented.",
+		"question": "Mass foreign immigration policies are naïve and should not be implemented.",
         "effect": {
             "a": 0,
             "b": 0,
             "c": 0,
             "d": -10,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 5
         }
     },
 	{
-		"question": "People of similar cultures should unite in federations.",
+		"question": "People of similar cultures should unite in federations or confederations.",
         "effect": {
             "a": 0,
             "b": 0,
             "c": 0,
             "d": 5,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -352,7 +383,8 @@ questions = [
             "c": 0,
             "d": 10,
 			"e": 0,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	//party vs union
@@ -364,7 +396,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 5,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -375,7 +408,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": -5,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -386,7 +420,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": -10,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -397,7 +432,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": -5,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -408,7 +444,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 10,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -419,7 +456,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": -5,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
@@ -430,18 +468,20 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": -10,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	{
-		"question": "Socialist organizations are better off when organized loosely and decentrally.",
+		"question": "Socialist organizations are generally better off when organized loosely and decentrally.",
         "effect": {
             "a": 0,
             "b": 0,
             "c": 0,
             "d": 0,
 			"e": -10,
-			"f": 0
+			"f": 0,
+			"g": 0
         }
     },
 	//industry vs ecology
@@ -453,7 +493,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -5
+			"f": -5,
+			"g": 0
         }
     },
 	{
@@ -464,7 +505,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 10
+			"f": 10,
+			"g": 0
         }
     },
 	{
@@ -475,7 +517,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 5
+			"f": 5,
+			"g": 0
         }
     },
 	{
@@ -486,7 +529,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -5
+			"f": -5,
+			"g": 0
         }
     },
 	{
@@ -497,7 +541,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -10
+			"f": -10,
+			"g": 0
         }
     },
 	{
@@ -508,7 +553,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -5
+			"f": -5,
+			"g": 0
         }
     },
 	{
@@ -519,7 +565,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -5
+			"f": -5,
+			"g": 0
         }
     },
 	{
@@ -530,7 +577,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -10
+			"f": -10,
+			"g": 0
         }
     },
 	{
@@ -541,7 +589,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -10
+			"f": -10,
+			"g": 0
         }
     },
 	{
@@ -552,7 +601,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -10
+			"f": -5,
+			"g": 0
         }
     },
 	{
@@ -563,7 +613,8 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": 5
+			"f": 5,
+			"g": 0
         }
     },
 	{
@@ -574,7 +625,105 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -5
+			"f": -5,
+			"g": 0
+        }
+    },
+	//conservative vs progressive
+	{
+		"question": "The oppression of LGBTQ+ people is a major issue that needs to be seriously addressed.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": -10
+        }
+    },
+	{
+		"question": "Traditional gender roles, such as women being homemakers, need to be overcome.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": -5
+        }
+    },
+	{
+		"question": "Marriage is a positive way of forging bonds between partners.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": 5
+        }
+    },
+	{
+		"question": "Abortion is an immoral act that should be banned or significantly limited.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": 10
+        }
+    },
+	{
+		"question": "Religion has a mostly positive effect and should remain influential in society.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": 5
+        }
+    },
+	{
+		"question": "Ethnic minorities should be considered equal to the majority population.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": 5
+        }
+    },
+	{
+		"question": "A socialist government has no right to disrupt religious or cultural traditions.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": 10
+        }
+    },
+	{
+		"question": "You cannot achieve a socialist society without also making significant social progress.",
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": -10
         }
     }
 ];
