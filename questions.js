@@ -469,18 +469,18 @@ questions = [
         }
     },
 	{
-        "question": "Mass foreign immigration policies are naïve and should not be implemented.",
+        "question": "Any socialist country should be dedicated to exporting their ideology abroad.",
         "i18n": {
-            "de": "Masseneinwanderungspolitik ist naiv und sollte nicht umgesetzt werden."
+            "de": "Jedes sozialistische Land sollte sich dem Export seiner Ideologie ins Ausland widmen."
         },
         "effect": {
             "a": 0,
             "b": 0,
             "c": 0,
-            "d": -10,
+            "d": 10,
 			"e": 0,
 			"f": 0,
-			"g": 5
+			"g": 0
         }
     },
 	{
@@ -605,9 +605,9 @@ questions = [
         }
     },
 	{
-        "question": "Only a mass workers party can achieve any meaningful goals.",
+        "question": "Only a mass workers party can achieve any meaningful long-term goals.",
         "i18n": {
-            "de": "Nur eine Massenarbeiterpartei kann bedeutungsvolle Ziele erreichen."
+            "de": "Nur eine Massenarbeiterpartei kann bedeutungsvolle langzeit Ziele erreichen."
         },
         "effect": {
             "a": 0,
@@ -657,9 +657,21 @@ questions = [
         "effect": {
             "a": 0,
             "b": 0,
+            "c": -5,
+            "d": 0,
+			"e": -5,
+			"f": 0,
+			"g": 0
+        }
+    },
+	{
+		"question": "Trade unionism has been largely corrupted by the ruling class and is no longer a viable structure for a socialist organization.",
+        "effect": {
+            "a": 0,
+            "b": 0,
             "c": 0,
             "d": 0,
-			"e": -10,
+			"e": 5,
 			"f": 0,
 			"g": 0
         }
@@ -812,7 +824,7 @@ questions = [
             "d": 0,
 			"e": 0,
 			"f": -5,
-			"g": 0
+			"g": 5
         }
     },
 	{
@@ -830,6 +842,21 @@ questions = [
 			"g": 0
         }
     },
+  {
+        "question": "Humanity must return to the primitive ways of the past to overcome long-term climate issues.",
+        "i18n": {
+          "de": "Die Menschheit muss zu den primitiven Wegen der Vergangenheit zurückkehren, um langfristige Klimaprobleme zu überwinden."
+        }
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": -5,
+			"g": 0
+        }
+    },
 	{
         "question": "We must accept that the socialist states of the 20th century failed to seriously address environmental issues.",
         "i18n": {
@@ -844,7 +871,7 @@ questions = [
 			"f": -5,
 			"g": 0
         }
-    },
+},
 	//conservative vs progressive
 	{
         "question": "The oppression of LGBTQ+ people is a major issue that needs to be seriously addressed.",
@@ -877,18 +904,18 @@ questions = [
         }
     },
 	{
-        "question": "Marriage is a positive way of forging bonds between partners.",
+        "question": "Marriage is a patriarchal social construct that should be phased out.",
         "i18n": {
-            "de": "Die Ehe ist ein positiver Weg, um Bindungen zwischen Partnern zu knüpfen."
+            "de": "Die Ehe ist ein patriarchalisches soziales Konstrukt, das abgeschaft werden sollte"
         },
         "effect": {
             "a": 0,
-            "b": 0,
+            "b": 5,
             "c": 0,
             "d": 0,
 			"e": 0,
 			"f": 0,
-			"g": 5
+			"g": -5
         }
     },
 	{
@@ -907,10 +934,11 @@ questions = [
         }
     },
 	{
-        "question": "Religion has a mostly positive effect and should remain influential in society.",
+        "question": "Religions overvall have a mostly positive effect and should remain influential in society.",
         "i18n": {
-            "de": "Religion wirkt sich überwiegend positiv aus und sollte gesellschaftlich einflussreich bleiben."
+            "de": "Religionen im Allgemeinen wirken sich überwiegend positiv aus und sollten gesellschaftlich einflussreich bleiben."
         },
+		"question": "Religions overall have a mostly positive effect and should remain influential in society.",
         "effect": {
             "a": 0,
             "b": 0,
@@ -937,9 +965,9 @@ questions = [
         }
     },
 	{
-        "question": "A socialist government has no right to disrupt religious or cultural traditions.",
+        "question": "A socialist government has no right to disrupt religious or cultural traditions in any situation.",
         "i18n": {
-            "de": "Eine sozialistische Regierung hat kein Recht, religiöse oder kulturelle Traditionen zu stören."
+            "de": "Eine sozialistische Regierung hat kein Recht, religiöse oder kulturelle Traditionen zu stören in irgendeiner Situation."
         },
         "effect": {
             "a": 0,
@@ -952,10 +980,25 @@ questions = [
         }
     },
 	{
-        "question": "You cannot achieve a socialist society without also making significant social progress.",
-        "i18n": {
+		"question": "Prisons are oppressive and antiquated institutions that need to be abolished.",
+    "i18n": {
+            "de": "Gefängnisse sind unterdrückerische und veraltete Institutionen, die abgeschafft werden müssen."
+    },
+    "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": -5
+        }
+    },
+	{
+		"question": "You cannot achieve a socialist society without also making significant social progress.",
+    "i18n": {
             "de": "Man kann keine sozialistische Gesellschaft erreichen, ohne auch signifikante soziale Fortschritte zu erzielen."
-        },
+    },
         "effect": {
             "a": 0,
             "b": 0,
