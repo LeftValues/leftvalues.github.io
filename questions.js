@@ -995,6 +995,21 @@ questions = [
         }
     },
 	{
+		"question": "Mass foreign immigration policies are naïve and should not be implemented.",
+	 "i18n": {
+            "de": "Massenauswanderungspolitik ist naiv und sollte nicht umgesetzt werden."
+    	},
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "d": 0,
+			"e": 0,
+			"f": 0,
+			"g": 5
+        }
+    },
+	{
 		"question": "You cannot achieve a socialist society without also making significant social progress.",
     "i18n": {
             "de": "Man kann keine sozialistische Gesellschaft erreichen, ohne auch signifikante soziale Fortschritte zu erzielen."
