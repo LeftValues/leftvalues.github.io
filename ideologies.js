@@ -1,21 +1,21 @@
 ideologies = [
 	{
         "name": "Marxism-Leninism",
-		"desc": "Marxism-Leninism is a form of Marxism that was forged in the 20th century in the Soviet Union. Marxist-Leninists heavily favor the use of a communist political party as the platform for both achieving revolution and establishing socialism. Many Marxist-Leninists are more nationalistic and patriotic than many other Marxists, and may favor industrial progress over environmental goals.",
+		"desc": "Marxism-Leninism is a form of Marxism that was forged in the 20th century in the Soviet Union. Marxist-Leninists heavily favor the use of a communist political party as the platform for both achieving revolution and establishing socialism. Many Marxist-Leninists are somewhat more nationalistic and patriotic than many other Marxists, and may favor industrial progress over environmental goals.",
         "i18n": {
             "de": {
                 "name": "Marxismus-Leninismus",
-                "desc": "Der Marxismus-Leninismus ist eine Form des Marxismus, der im 20. Jahrhundert in der Sowjetunion geschmiedet wurde. Die Marxisten-Leninisten befürworten nachdrücklich den Einsatz einer kommunistischen politischen Partei als Plattform für die Erreichung der Revolution und die Errichtung des Sozialismus. Viele Marxisten-Leninisten sind nationalistischer und patriotischer als viele andere Marxisten und bevorzugen möglicherweise den industriellen Fortschritt gegenüber Umweltzielen."
+                "desc": "Der Marxismus-Leninismus ist eine Form des Marxismus, der im 20. Jahrhundert in der Sowjetunion geschmiedet wurde. Die Marxisten-Leninisten befürworten nachdrücklich den Einsatz einer kommunistischen politischen Partei als Plattform für die Erreichung der Revolution und die Errichtung des Sozialismus. Viele Marxisten-Leninisten sind etwas nationalistischer und patriotischer als viele andere Marxisten und bevorzugen möglicherweise den industriellen Fortschritt gegenüber Umweltzielen."
             }
         },
         "stats": {
-            "a": 70,
+            "a": 80,
             "b": 80,
             "c": 90,
-            "d": 40,
+            "d": 50,
 			"e": 100,
-			"f": 80,
-			"g": 70
+			"f": 70,
+			"g": 50
         }
     },
     {
