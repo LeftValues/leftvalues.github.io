@@ -846,7 +846,7 @@ questions = [
         "question": "Humanity must return to the primitive ways of the past to overcome long-term climate issues.",
         "i18n": {
           "de": "Die Menschheit muss zu den primitiven Wegen der Vergangenheit zurückkehren, um langfristige Klimaprobleme zu überwinden."
-        }
+        },
         "effect": {
             "a": 0,
             "b": 0,
