@@ -439,7 +439,7 @@ questions = [
 	{
 		"question": "Socialist political parties should participate in liberal democratic elections.",
         "effect": {
-            "a": 0,
+            "a": 5,
             "b": 0,
             "c": 0,
             "d": 0,
@@ -685,7 +685,7 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -5,
+			"f": -10,
 			"g": 0
         }
     },
