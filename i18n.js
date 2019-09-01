@@ -134,6 +134,10 @@ const i18n = {
         "en": ["Extremely Conservative","Very Conservative","Conservative","Neutral","Progressive","Very Progressive","Extremely Progressive"],
         "de": ["Extrem Konservativ", "Sehr Konservativ", "Konservativ", "Neutral", "Progressiv", "Sehr Progressiv", "Extrem Progressiv"],
     },
+    "result-back": {
+        "en": "Back",
+        "de": "Zurück"
+    },
     // index.html
     "index-b-start": {
         "en": "Click here to start!",
