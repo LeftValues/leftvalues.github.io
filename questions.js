@@ -575,9 +575,9 @@ questions = [
         }
     },
     {
-        "question": "The leadership of political parties in the progression towards socialism will always lead to dictatorship.",
+        "question": "The leadership of political parties in the progression towards socialism will always lead to authoritarianism.",
         "i18n": {
-            "de": "Die Führung der politischen Parteien auf dem Weg zum Sozialismus wird immer zur Diktatur führen."
+            "de": "Die Führung der politischen Parteien auf dem Weg zum Sozialismus wird immer zum Autoritarismus führen."
         },
         "effect": {
             "a": 0,
@@ -666,6 +666,9 @@ questions = [
     },
     {
         "question": "Trade unionism has been largely corrupted by the ruling class and is no longer a viable structure for a socialist organization.",
+		"i18n": {
+            "de": "Die Gewerkschaftsbewegung wurde von der herrschenden Klasse weitgehend korrumpiert und ist für eine sozialistische Organisation nicht mehr lebensfähig."
+        },
         "effect": {
             "a": 0,
             "b": 0,
