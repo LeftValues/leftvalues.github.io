@@ -18,7 +18,7 @@ const languages = [
         "code": "en"
     },
     {
-        "name": "german",
+        "name": "deutsch",
         "code": "de"
     }
 ]
@@ -123,8 +123,8 @@ const i18n = {
         "de": ["Extrem Internationalistisch", "Sehr Internationalistisch", "Internationalistisch", "Neutral", "Nationalistisch", "Sehr Nationalistisch", "Extrem Nationalistisch"]
     },
     "result-e-label": {
-        "en": ["Extremely Leans Party","Highly Leans Party","Leans Party","Neutral","Leans Union","Highly Leans Union","Extremely Leans Union"],
-        "de": ["Extrem Parteilich", "Sehr Parteilich", "Parteilich", "Neutral", "Gewerkschaftlich", "Sehr Gewerkschaftlich", "Extrem Gewerkschaftlich"],
+        "en": ["Extremely Partisan","Very Partisan","Partisan","Neutral","Unionist","Very Unionist","Extremely Unionist"],
+        "de": ["Extrem Parteiisch", "Sehr Parteiisch", "Parteiisch", "Neutral", "Gewerkschaftlich", "Sehr Gewerkschaftlich", "Extrem Gewerkschaftlich"],
     },
     "result-f-label": {
         "en": ["Extremely Productivist","Very Productivist","Productivist","Neutral","Ecological","Very Ecological","Extremely Ecological"],
