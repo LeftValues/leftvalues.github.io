@@ -170,11 +170,11 @@ Analytics"></a></div></noscript>
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.a - revolution), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.c - central), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.b - scientific), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.d - international), 1.73856063)
-		dist += Math.pow(Math.abs(ideologies[i].stats.e - party), 1.73856063)
-		dist += Math.pow(Math.abs(ideologies[i].stats.f - industry), 1.73856063)
-		dist += Math.pow(Math.abs(ideologies[i].stats.g - conservative), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.b - scientific), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.d - international), 2)
+		dist += Math.pow(Math.abs(ideologies[i].stats.e - party), 2)
+		dist += Math.pow(Math.abs(ideologies[i].stats.f - industry), 2)
+		dist += Math.pow(Math.abs(ideologies[i].stats.g - conservative), 2)
         if (dist < ideodist) {
             ideology = (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].name : ideologies[i].name
 			ideodesc = (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].desc : ideologies[i].desc
