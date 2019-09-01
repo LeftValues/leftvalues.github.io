@@ -41,7 +41,7 @@ const i18n = {
         "de": "Laden…"
     },
     "quiz-strongly-agree": {
-        "en": "Strongly agree",
+        "en": "Strongly Agree",
         "de": "Stimme voll zu"        
     },
     "quiz-agree": {
