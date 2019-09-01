@@ -230,3 +230,8 @@ canvas {
     margin-left: auto;
     margin-right: auto;
 }
+#langPicker {
+    position: absolute;
+    right: 10em;
+    top: 1em;
+}
