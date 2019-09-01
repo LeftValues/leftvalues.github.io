@@ -1,9 +1,9 @@
 questions = [
     //revolution vs reform
     {
-        "question": "Reforming capitalist society to achieve better rights for workers is desirable, even when it's not the final goal.",
+        "question": "Reforming capitalist society to achieve better rights for workers is desirable.",
         "i18n": {
-            "de": "Es ist wünschenswert, die kapitalistische Gesellschaft zu reformieren, um bessere Rechte für die Arbeitnehmer zu erreichen, auch wenn dies nicht das endgültige Ziel ist."
+            "de": "Es ist wünschenswert, die kapitalistische Gesellschaft zu reformieren, um bessere Rechte für die Arbeitnehmer zu erreichen."
         },
         "effect": {
             "a": -5,
@@ -150,6 +150,21 @@ questions = [
             "g": 0
         }
     },
+	{
+        "question": "The means of production, such as factories and farms, must be publicly owned.",
+        "i18n": {
+            "de": "Die Produktionsmittel wie Fabriken und Farmen müssen in öffentlichem Besitz sein."
+        },
+        "effect": {
+            "a": 5,
+            "b": 5,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0
+        }
+    },
     //scientific vs utopian
     {
         "question": "Material conditions and needs are the dominant drive behind socioeconomic changes.",
@@ -170,6 +185,21 @@ questions = [
         "question": "Socialism can only be fully achieved in developed industrialized societies.",
         "i18n": {
             "de": "Der Sozialismus kann nur in entwickelten Industriegesellschaften voll verwirklicht werden."
+        },
+        "effect": {
+            "a": 0,
+            "b": 5,
+            "c": 0,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0
+        }
+    },
+	{
+        "question": "''From each according to his ability, to each according to his needs'' is a good principle.",
+        "i18n": {
+            "de": "''Jeder nach seinen Fähigkeiten, jedem nach seinen Bedürfnissen'' ist ein guter Grundsatz."
         },
         "effect": {
             "a": 0,
@@ -347,6 +377,21 @@ questions = [
             "g": 0
         }
     },
+	{
+        "question": "The state can be best defined as a monopoly on violence and oppression.",
+        "i18n": {
+            "de": "Der Staat kann am besten als Gewalt- und Unterdrückungsmonopol definiert werden."
+        },
+        "effect": {
+            "a": 0,
+            "b": 0,
+            "c": -5,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0
+        }
+    },
     {
         "question": "A highly centralized planned economy is not socialism but rather state capitalism.",
         "i18n": {
@@ -371,6 +416,21 @@ questions = [
             "a": 0,
             "b": 0,
             "c": -10,
+            "d": 0,
+            "e": 0,
+            "f": 0,
+            "g": 0
+        }
+    },
+	{
+        "question": "It is necessary to establish a dictatorship of the proletariat as a transitionary stage between capitalism and socialism.",
+        "i18n": {
+            "de": "Es ist notwendig, eine Diktatur des Proletariats als Übergangsphase zwischen Kapitalismus und Sozialismus zu etablieren."
+        },
+        "effect": {
+            "a": 0,
+            "b": 5,
+            "c": 5,
             "d": 0,
             "e": 0,
             "f": 0,
