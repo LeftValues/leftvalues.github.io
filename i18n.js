@@ -1,5 +1,27 @@
+function getCookie (name) {
+    let value = '; ' + document.cookie
+    let parts = value.split('; ' + name + '=')
+    if (parts.length === 2) return parts.pop().split(';').shift()
+}
+function setCookie (cname, cvalue, exhours) {
+    let d = new Date()
+    d.setTime(Date.now() + (exhours * 60 * 60 * 1000))
+    let expires = 'expires=' + d.toUTCString()
+    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/'
+}
+
 const langElements = document.querySelectorAll('[data-i18n]')
-const userLang = navigator.language || navigator.userLanguage
+const userLang = getCookie("lang") || navigator.language || navigator.userLanguage
+const languages = [
+    {
+        "name": "english",
+        "code": "en"
+    },
+    {
+        "name": "german",
+        "code": "de"
+    }
+]
 const i18n = {
     getString(name, arguments=null) {
         if (userLang in i18n[name]) {
@@ -211,3 +233,24 @@ langElements.forEach((element) =>  {
         element.innerHTML = i18n[value][userLang]
     }
 })
+
+let langPicker = document.getElementById("langPicker")
+languages.forEach(language => {
+    let option = document.createElement("option");
+    option.text = language.name
+    option.value = language.code
+    langPicker.add(option); 
+})
+if (langPicker) {
+    for (let option of langPicker.options) {
+        if(option.value == userLang) {
+            langPicker.value = userLang
+        }
+    }
+        
+    langPicker.onchange = function() {
+        let language = langPicker.options[langPicker.selectedIndex].value
+        setCookie("lang", language, 5)
+        location.reload()
+    }   
+}
