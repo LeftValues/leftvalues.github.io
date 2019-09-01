@@ -550,7 +550,7 @@ questions = [
             "de": "Sozialistische Parteien sollten an liberalen demokratischen Wahlen teilnehmen."
         },
         "effect": {
-            "a": 0,
+            "a": 5,
             "b": 0,
             "c": 0,
             "d": 0,
@@ -853,7 +853,7 @@ questions = [
             "c": 0,
             "d": 0,
 			"e": 0,
-			"f": -5,
+			"f": -10,
 			"g": 0
         }
     },
