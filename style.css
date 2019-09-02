@@ -71,6 +71,13 @@ li {
     font-size: 16pt;
     text-indent: 16pt;
 }
+dt {
+    font-family: 'Montserrat', sans-serif;
+}
+dd {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 12pt;
+}
 a {
     font-family: inherit;
 }

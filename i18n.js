@@ -98,6 +98,14 @@ const i18n = {
         "en": "Closest Match: <span class='weight-300' id='ideology-label'> </span>",
         "de": "Höchste Übereinstimmung: <span class='weight-300' id='ideology-label'> </span>",
     },
+    "result-h2-next-matches": {
+        "en": "Next closest matches",
+        "de": "Nächst höchste Überstimmungen"
+    },
+    "next-matches-percent": {
+        "en": "With your closest match as 100% and farthest as 0%, here is how closely you matched the other ideologies.",
+        "de": "Hier sind die Ideologien mit denen du am meisten übereinstimmst, wo volle Übereinstimmung 100% ist und keine 0%."
+    },
     "result-h2-score": {
         "en": "I don't like my scores!",
         "de": "Ich mag meine Ergebnisse nicht"

@@ -70,6 +70,11 @@
 <h3><span class="weight-300" id="ideodesc-label"></span></h3>
 <p data-i18n="result-url"><br>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 
+<h2 data-i18n="result-h2-next-matches">Next closest matches</h2>
+    <p data-i18n="next-matches-percent">With your closest match as 100% and farthest as 0%, here is how closely you matched the other ideologies.</p>
+
+<dl id="next-matches"></dl>
+
 <h2 data-i18n="result-h2-score">I don't like my scores!</h2>
     <p data-i18n="result-issues">Please remember that you are not intended to get a 100% score in any of the categories. The point of the quiz is to challenge your views. If you have any suggestions or constructive criticism please fill out this <a href="https://forms.gle/6WZYMb5GXkkDLhxr5">short form</a> or open an issue on the <a href="https://github.com/LeftValues/leftvalues.github.io">GitHub Page</a>.</p>
 <hr/>
@@ -125,6 +130,14 @@ Analytics"></a></div></noscript>
         	{return ""}
     }
 
+    function getIdeologyNameByIndex(i) {
+        return (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].name : ideologies[i].name;
+    }
+
+    function getIdeologyDescriptionByIndex(i) {
+        return (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].desc : ideologies[i].desc;
+    }
+
     revolution  = getQueryVariable("a")
     scientific  = getQueryVariable("b")
     central   = getQueryVariable("c")
@@ -166,6 +179,9 @@ Analytics"></a></div></noscript>
     ideology = ""
 	ideodesc = ""
     ideodist = Infinity
+    ideologyToDistance = {};
+    sortedIdeologies = [];
+    ideologyIndexAndDistance = [];
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.a - revolution), 2)
@@ -175,14 +191,37 @@ Analytics"></a></div></noscript>
 		dist += Math.pow(Math.abs(ideologies[i].stats.e - party), 2)
 		dist += Math.pow(Math.abs(ideologies[i].stats.f - industry), 2)
 		dist += Math.pow(Math.abs(ideologies[i].stats.g - conservative), 2)
-        if (dist < ideodist) {
-            ideology = (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].name : ideologies[i].name
-			ideodesc = (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].desc : ideologies[i].desc
-            ideodist = dist
-        }
+
+        ideologyToDistance[ideologies[i].name] = dist;
+        ideologyIndexAndDistance.push({index: i, distance: dist});
     }
-    document.getElementById("ideology-label").innerHTML = ideology
-	document.getElementById("ideodesc-label").innerHTML = ideodesc
+    
+    ideologyIndexAndDistance.sort(function(a, b) {
+        return a.distance - b.distance;
+    });
+
+    distances = ideologyIndexAndDistance.map(function(indexAndDistance) {
+        return indexAndDistance.distance;
+    });
+
+    closestDistance = distances[0];
+    farthestDistance = distances[distances.length - 1];
+    distanceSpan = farthestDistance - closestDistance;
+
+    closestMatch = ideologyIndexAndDistance[0];
+    document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.index);
+	document.getElementById("ideodesc-label").innerHTML = getIdeologyDescriptionByIndex(closestMatch.index);
+
+    nextMatches = document.getElementById('next-matches');
+    nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function(indexAndDistance) {
+        i = indexAndDistance.index;
+        ideology = getIdeologyNameByIndex(i);
+        ideodesc = getIdeologyDescriptionByIndex(i);
+        relativeDistance = 1 - (indexAndDistance.distance - closestDistance)/distanceSpan;
+        relativeDistancePercent = Math.round(relativeDistance * 1000)/10;
+        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
+            "<dd>" + ideodesc + "</dd>";
+    }).join("\n");
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
