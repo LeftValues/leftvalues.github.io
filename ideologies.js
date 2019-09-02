@@ -6,6 +6,9 @@ ideologies = [
             "de": {
                 "name": "Marxismus-Leninismus",
                 "desc": "Der Marxismus-Leninismus ist eine Form des Marxismus, der im 20. Jahrhundert in der Sowjetunion geschmiedet wurde. Die Marxisten-Leninisten befürworten nachdrücklich den Einsatz einer kommunistischen politischen Partei als Plattform für die Erreichung der Revolution und die Errichtung des Sozialismus. Viele Marxisten-Leninisten sind etwas nationalistischer und patriotischer als viele andere Marxisten und bevorzugen möglicherweise den industriellen Fortschritt gegenüber Umweltzielen."
+            },
+            "fr": {
+                "name": "Marxisme-Léninisme"
             }
         },
         "stats": {
@@ -25,6 +28,9 @@ ideologies = [
             "de": {
                 "name": "Orthodoxer Marxismus",
                 "desc": "Der orthodoxe Marxismus ist eine Form des Marxismus, die Ansichten annimmt, die der ursprünglich verfassten marxistischen Theorie entsprechen, insbesondere zum Thema des dialektischen Materialismus. Orthodoxe Marxisten sind hochrevolutionär und internationalistisch und halten nichtindustrielle Gesellschaften für unfähig, den Sozialismus zu verwirklichen."
+            },
+            "fr": {
+                "name": "Marxisme Orthodoxe"
             }
         },
         "stats": {
@@ -44,6 +50,9 @@ ideologies = [
             "de": {
                 "name": "Öko-Marxismus",
                 "desc": "Der Öko-Marxismus ist eine Form des orthodoxen Marxismus, der in der heutigen Zeit häufiger anzutreffen ist und der Umweltfragen einen besonderen Stellenwert einräumt. Öko-Marxisten bevorzugen im Allgemeinen die zentrale Wirtschaftsplanung als Mittel zur Bekämpfung von Klimaproblemen."
+            },
+            "fr": {
+                "name": "Écosocialisme"
             }
         },
         "stats": {
@@ -63,7 +72,8 @@ ideologies = [
             "de": {
                 "name": "Zentristischer Marxismus",
                 "desc": "Der zentristische Marxismus ist eine Form des Marxismus, der die marxistischen Ansichten über die Gesellschaft und die Wirtschaft aufgreift und gleichzeitig davon Abstand nimmt, eine endgültige Position in Bezug auf Revolution und Reformismus einzunehmen. Viele zentristische Marxisten sind möglicherweise auch nationalistischer als andere Marxisten."
-            }
+            },
+            "fr": {}
         },
         "stats": {
             "a": 40,
@@ -82,6 +92,9 @@ ideologies = [
             "de": {
                 "name": "Konzilkommunismus",
                 "desc": "Der Konzilskommunismus ist eine Form des Marxismus, die sich dafür einsetzt, dass die Arbeiterräte das Kernfundament einer sozialistischen Gesellschaft bilden. Die Kommunisten des Rates lehnen im Allgemeinen die Existenz eines starken Einflusses der politischen Parteien innerhalb des sozialistischen politischen Systems ab und befürworten die Demokratie des Rates."
+            },
+            "fr": {
+                "name": "Conseillisme"
             }
         },
         "stats": {
@@ -101,6 +114,9 @@ ideologies = [
             "de": {
                 "name": "Linkskommunismus",
                 "desc": "Der Linkskommunismus ist eine Form des Marxismus, die sich zu sogenannten ultralinken Positionen neigt. Dazu gehören die bedingungslose Unterstützung der Revolution und des Internationalismus, die Ablehnung von Gewerkschaften und die Teilnahme an der liberalen Demokratie sowie die Ablehnung der nationalen Befreiung und Selbstbestimmung."
+            },
+            "fr": {
+                "name": "Gauche Communiste"
             }
         },
         "stats": {
@@ -120,6 +136,9 @@ ideologies = [
             "de": {
                 "name": "Anarcho-Kommunismus",
                 "desc": "Der Anarcho-Kommunismus ist eine Form des Anarchismus, der sich für die Abschaffung des Kapitalismus und des Staates sowie für das kollektive Eigentum an den Produktionsmitteln einsetzt. Anarcho-Kommunisten unterstützen eine dezentrale Wirtschaft und Regierung, wobei der Anarcho-Syndikalismus ein üblicher Weg ist, eine solche Gesellschaft zu organisieren."
+            },
+            "fr": {
+                "name": "Anarcho-Communisme"
             }
         },
         "stats": {
@@ -139,6 +158,9 @@ ideologies = [
             "de": {
                 "name": "Öko-Anarchismus",
                 "desc": "Der Öko-Anarchismus oder Grüne Anarchismus ist eine Form des Anarchismus, bei dem Umweltfragen einen besonderen Stellenwert einnehmen. Es ist oft mit ausgeprägteren Ideologien wie dem Anarcho-Syndikalismus verbunden. Öko-Anarchisten sind im Allgemeinen revolutionär und unterstützen die Nutzung einer dezentralisierten egalitären Wirtschaft, um Umweltziele zu erreichen."
+            },
+            "fr": {
+                "name": "Anarchisme Vert"
             }
         },
         "stats": {
@@ -158,6 +180,9 @@ ideologies = [
             "de": {
                 "name": "Marktanarchismus",
                 "desc": "Der Marktanarchismus ist eine Form des Anarchismus, der anarchistische Ziele wie die Abschaffung der Hierarchie, des Staates und des Kapitalismus mit einem erhöhten Individualismus und einem gemäßigten reformistischen Ansatz vermischt. Dies sollte nicht mit dem Anarcho-Kapitalismus verwechselt werden."
+            },
+            "fr": {
+                "name": "Anarcho-Capitalisme"
             }
         },
         "stats": {
@@ -177,6 +202,9 @@ ideologies = [
             "de": {
                 "name": "Utopischer Sozialismus",
                 "desc": "Der utopische Sozialismus ist eine Form des vormarxistischen Sozialismus, der an eine egalitäre, moralistische und idealistische Grundlage für eine sozialistische Gesellschaft glaubt. Die utopischen Sozialisten lehnen eine gewaltsame Revolution im Allgemeinen ab und glauben oft, dass die herrschende Klasse davon überzeugt werden kann, den Sozialismus zu übernehmen."
+            },
+            "fr": {
+                "name": "Socialisme Utopiste"
             }
         },
         "stats": {
@@ -196,6 +224,9 @@ ideologies = [
             "de": {
                 "name": "Demokratischer Sozialismus",
                 "desc": "Der demokratische Sozialismus ist eine Form des Sozialismus, der versucht, die liberale Demokratie als Mittel zur Erreichung einer sozialistischen Wirtschaft und Gesellschaft zu nutzen. Demokratische Sozialisten lehnen Revolution und eine zentral geplante Wirtschaft ab und unterstützen stattdessen gemäßigtes soziales Eigentum in Form von öffentlichen Versorgungsunternehmen und demokratischer Selbstverwaltung am Arbeitsplatz."
+            },
+            "fr": {
+                "name": "Socialisme Démocratique"
             }
         },
         "stats": {
@@ -215,6 +246,9 @@ ideologies = [
             "de": {
                 "name": "Sozialdemokratie",
                 "desc": "Die Sozialdemokratie ist eine Mitte-Links-Ideologie, die sich dafür einsetzt, linksgerichtete Werte wie soziale Wohlfahrt und Unternehmensregulierung mit dem Kapitalismus und der liberalen Demokratie in Form einer gemischten Wirtschaft zu vermischen. Viele moderne Sozialdemokraten befürworten die keynesianische Wirtschaft."
+            },
+            "fr": {
+                "name": "Social-Démocratie"
             }
         },
         "stats": {
