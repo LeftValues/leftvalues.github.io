@@ -1,9 +1,11 @@
+<!DOCTYPE html>
+<html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7CRoboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
 <title>LeftValues</title>
-<link rel="icon" type="x-icon" href="icon.png">
-<link rel="shortcut icon" type="x-icon" href="icon.png">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="shortcut icon" type="image/png" href="icon.png">
 <meta charset="utf-8">
 </head>
 <body>
@@ -12,7 +14,7 @@
 <select id="langPicker"></select> 
 <hr>
 <button data-i18n="index-b-start" class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Click here to start!</button>
-<img src="values.png" class="center"></img>
+<img src="values.png" class="center" alt="The values being differentiated in this quiz" />
 
 <h2 data-i18n="index-h2-whatis">What is LeftValues?</h2>
     <p data-i18n="index-p-answer">LeftValues is a leftist quiz inspired by and based upon the <a href="https://8values.github.io/">8values</a> quiz that seeks to identify your position on the left-wing spectrum. If you are not a leftist, this quiz is obviously not suited for you. You will be presented with a statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each answer slightly affecting your scores. The questions for each axes are presented in order, rather than scattered. At the end of the quiz, your answers will be compared to the maximum possible for each value, thus giving you a percentage. Answer honestly!<br /><br />
@@ -61,9 +63,10 @@ document.getElementsByTagName("body")[0].appendChild(statcounterscript);
 <!-- End of Statcounter Code -->
 
 <!-- This is the script for the page itself -->
-<script type="application/javascript"src="questions.js"></script>
-<script type="application/javascript"src="i18n.js"></script>
+<script type="application/javascript" src="questions.js"></script>
+<script type="application/javascript" src="i18n.js"></script>
 <script type="text/javascript">
     document.getElementById("numOfQuestions").innerHTML = questions.length 
 </script>
 </body>
+</html>
