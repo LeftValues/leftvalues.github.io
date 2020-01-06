@@ -15,6 +15,8 @@ function setBodyClassUserLang(userLang) {
 
 const langElements = document.querySelectorAll('[data-i18n]')
 const userLang = getCookie("lang") || navigator.language || navigator.userLanguage
+setBodyClassUserLang(userLang)
+
 const languages = [
     {
         "name": "english",
