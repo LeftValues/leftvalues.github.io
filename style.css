@@ -62,7 +62,10 @@ h2 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
-body.__i18n-ko h2 {line-height: 120%; margin-top: 0.5em}
+body.__i18n-ko h2 {
+    line-height: 120%;
+    margin-top: 0.5em
+}
 h3 {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
