@@ -9,6 +9,9 @@ function setCookie (cname, cvalue, exhours) {
     let expires = 'expires=' + d.toUTCString()
     document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/'
 }
+function setBodyClassUserLang(userLang) {
+  document.getElementsByTagName('body')[0].classList.add(`__i18n-${userLang}`)
+}
 
 const langElements = document.querySelectorAll('[data-i18n]')
 const userLang = getCookie("lang") || navigator.language || navigator.userLanguage
