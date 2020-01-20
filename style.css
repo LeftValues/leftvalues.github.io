@@ -20,6 +20,9 @@ p {
     line-height: 1;
     margin: 4pt;
 }
+body.__i18n-ko p {
+    line-height: 140%
+}
 p.value-description {
     text-indent: -16pt;
     margin-left: 20pt;
@@ -58,6 +61,10 @@ h2 {
     line-height: 36pt;
     margin-top: 12pt;
     margin-bottom: 0pt;
+}
+body.__i18n-ko h2 {
+    line-height: 120%;
+    margin-top: 0.5em
 }
 h3 {
     color: #333333;
