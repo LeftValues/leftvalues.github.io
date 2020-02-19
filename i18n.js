@@ -83,13 +83,13 @@ const i18n = {
         "en": "Strongly Disagree",
         "de": "Stimme überhaupt nicht zu",
         "ko": "결코 동의하지 않음",
-        "ru": "полностью не согласен"
+        "ru": "Полностью не согласен"
     },
     "quiz-back": {
         "de": "back",
         "de": "Zurück",
         "ko": "뒤로",
-        "ru": "Предыдущий вопрос"
+        "ru": "Назад"
     },
     "quiz-question-of": {
         en(qn, questions) {return `Question ${qn + 1} of ${questions.length}`},
@@ -108,7 +108,7 @@ const i18n = {
         "en": "You will be presented with a series of statements. For each one, click the button with your opinion on it.",
         "de": "Sie erhalten eine Reihe von Stellungnahmen. Klicken Sie jeweils auf die Schaltfläche mit Ihrer Meinung dazu.",
         "ko": "당신은 일련의 질문들을 받게 될 것입니다. 해당되는 답변을 클릭하세요.",
-        "ru": "Вам будет предложен ряд утверждений. Для каждого нажмите на кнопку с вашим мнением о нем."
+        "ru": "Вам будет предложен ряд утверждений. Для каждого нажмите на кнопку с вашим мнением о нём."
     },
     "inst-gotit": {
         "en": "Got it!",
