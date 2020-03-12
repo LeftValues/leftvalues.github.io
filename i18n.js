@@ -27,11 +27,11 @@ const languages = [
         "code": "de"
     },
     {
-        "name": "korean",
+        "name": "한국어",
         "code": "ko"
     },
     {
-        "name": "russian",
+        "name": "ру́сский",
         "code": "ru"
     },
     {
