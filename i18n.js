@@ -79,7 +79,7 @@ const i18n = {
         "de": "Neutral/Unsicher",
         "ko": "중립/잘 모름",
         "ru": "Не знаю/Не уверен",
-        "cn": "中立"
+        "cn": "中立/不确定"
     },
     "quiz-disagree": {
         "en": "Disagree",
@@ -151,91 +151,91 @@ const i18n = {
         "de": "<br>Sie können diese Ergebnisse senden, indem Sie die URL oben auf der Seite kopieren und einfügen oder das folgende Bild verwenden.",
         "ko": "<br>당신은 상단의 URL을 복사하거나 아래 이미지를 이용해 설문 결과를 공유할 수 있습니다.",
         "ru": "<br>Вы можете отправить эти результаты, скопировав и вставив URL в верхней части страницы или используя изображение ниже.",
-        "cn": "<br>你可以复制页面顶端的URL或是使用下方的图片来分享结果。"
+        "cn": "<br>你可以复制粘贴页面顶端的URL或是使用下方的图片来分享结果。"
     },
     "result-h2-match": {
         "en": "Closest Match: <span class='weight-300' id='ideology-label'> </span>",
         "de": "Höchste Übereinstimmung: <span class='weight-300' id='ideology-label'> </span>",
         "ko": `가장 일치하는 성향: <span class="weight-300" id="ideology-label"> </span>`,
         "ru": "Ближайшее совпадение: <span class='weight-300' id='ideology-label'> </span>",
-        "cn": "最接近: <span class='weight-300' id='ideology-label'> </span>"
+        "cn": "最接近的匹配: <span class='weight-300' id='ideology-label'> </span>"
     },
     "result-h2-next-matches": {
         "en": "Next closest matches",
         "de": "Nächst höchste Überstimmungen",
         "ko": "다음으로 일치하는 성향",
         "ru": "Следующие ближайшие совпадения",
-        "cn": "其他结果"
+        "cn": "接下来最接近的匹配"
     },
     "next-matches-percent": {
         "en": "With your closest match as 100% and farthest as 0%, here is how closely you matched the other ideologies.",
         "de": "Hier sind die Ideologien mit denen du am meisten übereinstimmst, wo volle Übereinstimmung 100% ist und keine 0%.",
         "ko": "당신과 가장 일치하는 성향을 100%로, 가장 일치하지 않는 성향을 0%로 둘 때, 아래 사상들은 당신의 성향에 가까운 다른 다른 사상들 입니다.",
         "ru": "С вашим самым близким соответствием в 100% и самым дальним на 0%, вот как близко вы подходите к другим идеологиям.",
-        "cn": "这是你与其他思想之间的匹配程度，最大时为100%，最小时为0%。"
+        "cn": "这是你与其他意识形态之间的匹配程度，最接近的为100%，最远的为0%。"
     },
     "result-h2-score": {
         "en": "I don't like my scores!",
         "de": "Ich mag meine Ergebnisse nicht",
         "ko": "제 결과가 마음에 들지 않습니다.",
         "ru": "Мне не нравятся мои результаты!",
-        "cn": "我不喜欢这结果！"
+        "cn": "我不喜欢我的分数！"
     },
     "result-issues": {
         "en": "Please remember that you are not intended to get a 100% score in any of the categories. The point of the quiz is to challenge your views. If you have any suggestions or constructive criticism please fill out this <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>short form</a> or open an issue on the <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub Page</a>.",
         "de": "Bitte denken Sie daran, dass Sie in keiner der Kategorien eine 100%-ige Punktzahl erzielen möchten. Ziel des Quiz ist es, Ihre Ansichten zu hinterfragen. Wenn Sie Anregungen oder konstruktive Kritik haben, füllen Sie bitte dieses <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>Kurzformular</a> aus oder öffnen Sie ein Problem auf der <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub-Seite</a>.",
         "ko": `어떠한 범주에서든 100%의 점수를 얻을 수 없다는 것을 기억하십시오. 이 설문의 목적은 당신 자신의 관점에 직면하는 것에 있습니다. 의견이나 건설적인 비판은 <a href="https://forms.gle/6WZYMb5GXkkDLhxr5">이 양식</a>이나 <a href="https://github.com/LeftValues/leftvalues.github.io">GitHub Page</a>의 이슈를 통해 개진할 수 있습니다.`,
         "ru": "Пожалуйста, помните, что вы не намерены получить 100%-ый результат ни в одной из осей. Смысл викторины заключается в том, чтобы оспорить ваши взгляды. Если у вас какие-либо предложения или конструктивная критика, то, пожалуйста, заполните эту <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>короткую форму</a> или откройте вкладку ''issue'' на <a href='https://github.com/LeftValues/leftvalues.github.io'>странице GitHub</a>.",
-        "cn": "请记住你没必要取得100%的分数，这份问卷的目的是考察你的观点。如果你有任何意见或是建设性的批评，请填写<a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>这份表格</a>或是在<a href='https://github.com/LeftValues/leftvalues.github.io'>该项目的GitHub Page</a>上开个issue。"
+        "cn": "请记住，你没必要在任何一类中获得100%的分数。测验的重点是挑战你的观点。如果你有任何建议或是建设性的批评，请填写<a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>这份表格</a>或是在<a href='https://github.com/LeftValues/leftvalues.github.io'>该项目的GitHub Page</a>上开个issue。"
     },
     "result-a-label": {
         "en": ["Extremely Revolutionary","Very Revolutionary","Revolutionary","Neutral","Reformist","Very Reformist","Extremely Reformist"],
         "de": ["Extrem Revolutionär", "Sehr Revolutionär", "Revolutionär", "Neutral", "Reformistisch", "Sehr Reformistisch", "Extrem Reformistisch"],
         "ko": ["극단적 혁명주의","강경한 혁명주의","혁명주의","중립","개혁주의","강경한 개혁주의","극단적 개혁주의"],
         "ru": ["Крайне Революционный","Очень Революционный","Революционный","Нейтральный","Реформистский","Очень Реформистский","Крайне Реформистский"],
-        "cn": ["极端的革命派","坚定的革命派","革命派","中立","改良主义","坚定的改良主义","极端的改良主义"]
+        "cn": ["极端革命派","非常革命派","革命派","中立","改良派","非常改良派","极端改良派"]
     },
     "result-b-label": {
         "en": ["Extremely Scientific","Very Scientific","Scientific","Neutral","Utopian","Very Utopian","Extremely Utopian"],
         "de": ["Extrem Wissenschaftlich", "Sehr Wissenschaftlich", "Wissenschaftlich", "Neutral", "Utopisch", "Sehr Utopisch", "Extrem Utopisch"],
         "ko": ["극단적 과학주의","강경한 과학주의","과학주의","중립","공상주의","강경한 공상주의","극단적 공상주의"],
         "ru": ["Крайне Научный","Очень Научный","Научный","Нейтральный","Утопичный","Очень Утопичный","Крайне Утопичный"],
-        "cn": ["极端的偏向科学","坚定的偏向科学","偏向科学","中立","空想主义者","坚定的空想主义者","极端的空想主义者"]
+        "cn": ["极端科学社会主义","非常科学社会主义","科学社会主义","中立","空想社会主义","非常空想社会主义","极端空想社会主义"]
     },
     "result-c-label": {
         "en": ["Extremely Centralist","Very Centralist","Centralist","Neutral","Decentralist","Very Decentralist","Extremely Decentralist"],
         "de": ["Extrem Zentralisiert", "Sehr Zentralisiert", "Zentralisiert", "Neutral", "Dezentralisiert", "Sehr Dezentralisiert", "Extrem Dezentralisiert"],
         "ko": ["극단적 중앙집권주의", "강경한 중앙집권주의", "중앙집권주의", "중립", "분권주의", "강경한 분권주의", "극단적 분권주의"],
         "ru": ["Крайне Централизованный","Очень Централизованный","Централизованный","Нейтральный","Децентрализованный","Очень Децентрализованный","Крайне Децентрализованный"],
-        "cn": ["极端的集权主义","坚定的集权主义","集权主义","中立","分权主义","坚定的分权主义","极端的分权主义"]
+        "cn": ["极端中央集权","非常中央集权","中央集权","中立","地方分权","非常地方分权","极端地方分权"]
     },
     "result-d-label": {
         "en": ["Extremely Internationalist","Very Internationalist","Internationalist","Neutral","Nationalist","Very Nationalist","Extremely Nationalist"],
         "de": ["Extrem Internationalistisch", "Sehr Internationalistisch", "Internationalistisch", "Neutral", "Nationalistisch", "Sehr Nationalistisch", "Extrem Nationalistisch"],
         "ko": ["극단적 세계주의","강경한 세계주의","세계주의","중립","국가주의","강경한 국가주의","극단적 국가주의"],
         "ru": ["Крайне Интернациональный","Очень Интернациональный","Интернациональный","Нейтральный","Национальный","Очень Национальный","Крайне Национальный"],
-        "cn": ["极端的国际主义","坚定的国际主义","国际主义","中立","民族主义","坚定的民族主义","极端的民族主义"]
+        "cn": ["极端国际主义","非常国际主义","国际主义","中立","民族主义","非常民族主义","极端民族主义"]
     },
     "result-e-label": {
         "en": ["Extremely Partisan","Very Partisan","Partisan","Neutral","Unionist","Very Unionist","Extremely Unionist"],
         "de": ["Extrem Parteiisch", "Sehr Parteiisch", "Parteiisch", "Neutral", "Gewerkschaftlich", "Sehr Gewerkschaftlich", "Extrem Gewerkschaftlich"],
         "ko": ["극단적 정당주의", "강경한 정당주의", "정당주의", "중립", "조합주의", "강경한 조합주의", "극단적 조합주의"],
         "ru": ["Крайне Партийный","Очень Партийный","Партийный","Нейтральный","Профсоюзный","Очень Профсоюзный","Крайне Профсоюзный"],
-        "cn": ["极端的偏向党派","坚定的偏向党派","偏向党派","中立","偏向工会","坚定的偏向工会","极端的偏向工会"]
+        "cn": ["极端偏向党派","非常偏向党派","偏向党派","中立","偏向工会","非常偏向工会","极端偏向工会"]
     },
     "result-f-label": {
         "en": ["Extremely Productivist","Very Productivist","Productivist","Neutral","Ecological","Very Ecological","Extremely Ecological"],
         "de": ["Extrem Produktivist", "Sehr Produktivist", "Produktivist", "Neutral", "Ökologisch", "Sehr Ökologisch", "Extrem Ökologisch"],
         "ko": ["극단적 생산주의", "강경한 생산주의", "생산주의", "중립", "생태주의", "강경한 생태주의", "극단적 생태주의"],
         "ru": ["Крайне Производственный","Очень Производственный","Производственный","Нейтральный","Экологический","Очень Экологический","Крайне Экологический"],
-        "cn": ["极端的生产主义","坚定的生产主义","生产主义","中立","生态主义","坚定的生态主义","极端的生态主义"]
+        "cn": ["极端生产主义","非常生产主义","生产主义","中立","生态主义","非常生态主义","极端生态主义"]
     },
     "result-g-label": {
         "en": ["Extremely Conservative","Very Conservative","Conservative","Neutral","Progressive","Very Progressive","Extremely Progressive"],
         "de": ["Extrem Konservativ", "Sehr Konservativ", "Konservativ", "Neutral", "Progressiv", "Sehr Progressiv", "Extrem Progressiv"],
         "ko": ["극단적 보수주의", "강경한 보수주의", "보수주의", "중립", "진보주의", "강경한 진보주의", "극단적 진보주의"],
         "ru": ["Крайне Консервативный", "Очень Консервативный", "Консервативный", "Нейтральный", "Прогрессивный", "Очень Прогрессивный", "Крайне Прогрессивный"],
-        "cn": ["极端的保守主义","坚定的保守主义","保守主义","中立","进步主义","坚定的进步主义","极端的进步主义"]
+        "cn": ["极端保守主义","非常保守主义","保守主义","中立","进步主义","非常进步主义","极端进步主义"]
     },
     "result-back": {
         "en": "Back",
@@ -274,7 +274,7 @@ const i18n = {
         "ru": "LeftValues — это ''левая'' политическая викторина, вдохновлённая и основанная на викторине <a href='https://8values.github.io/'>8values</a>, цель которой — определить вашу позицию на левом политическом спектре. " + 
         "Если вы не придерживаетесь левых взглядов, эта викторина, очевидно, не подходит для вас. Вам будут даны утверждения, по каждому из которых вы должны ответить своим мнением, от <b>Полностью согласен</b> до <b>Полностью не согласен</b>, каждый ответ будет слегка влиять на ваши значения по каждой оси. Вопросы по каждой из осей представлены по порядку, а не разбросаны в случайном порядке. В конце викторины, ваши ответы будут сравниваться с максимально возможным для каждого значения, таким образом, давая вам процент. Отвечайте честно!<br/><br/>" +
         "В данном тесте <b><u><span id='numOfQuestions'></span></u></b> вопросов.",
-        "cn": "LeftValues是一个确定你在左派光谱中的位置的左派测试，其由<a href='https://8values.github.io/'>8values测试</a>启发。" +
+        "cn": "LeftValues是一个确定你在左翼光谱中的位置的左派测试，受<a href='https://8values.github.io/'>8values测试</a>启发并基于此制作。" +
         "如果你不是左派，这个测试明显不适合你。你会看到一系列观点，然后你需要回答你对这些观点的看法。从<b>强烈同意</b>到<b>强烈反对</b>，每个回答都会影响你的结果。关于每个坐标轴的问题都会依次给出。测试结束时，你的答案会和最大值做比较，最后得出一个百分比。请认真作答！<br/><br/>" +
         "一共有<b><u><span id='numOfQuestions'></span></u></b>个问题。"
     },
