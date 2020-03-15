@@ -6,7 +6,7 @@ questions = [
             "de": "Es ist wünschenswert, die kapitalistische Gesellschaft zu reformieren, um bessere Rechte für die Arbeitnehmer zu erreichen.",
             "ko": "노동자의 권리를 향상시키기 위해 자본주의 사회를 개혁하는 것이 바람직하다.",
             "ru": "Желательно реформировать капиталистическое общество, чтобы добиться лучших прав трудящихся.",
-            "cn": "改革资本主义社会，为工人争取更好的权利是可取的。"
+            "cn": "改革资本主义社会以给工人争取更好的权利是可取的。"
         },
         "effect": {
             "a": -5,
@@ -24,7 +24,7 @@ questions = [
             "de": "Revolution ist der beste Weg zur sozialistischen Revolution.",
             "ko": "혁명은 사회주의 사회를 달성하는 가장 좋은 방법이다.",
             "ru": "Революция — это лучший способ достижения социалистического общества.",
-            "cn": "革命是建设社会主义社会的最佳途径。"
+            "cn": "革命是实现社会主义社会的最佳途径。"
         },
         "effect": {
             "a": 10,
@@ -42,7 +42,7 @@ questions = [
             "de": "Die negativen Folgen einer Revolution überwiegen im Allgemeinen die Vorteile.",
             "ko": "일반적으로 혁명의 부정적인 효과가 긍정적인 효과보다 더 크다.",
             "ru": "Негативные последствия революции, как правило, перевешивают её преимущества.",
-            "cn": "一场革命的负面影响通常大于它的好处。"
+            "cn": "革命通常弊大于利。"
         },
         "effect": {
             "a": -10,
@@ -60,7 +60,7 @@ questions = [
             "de": "Die liberale Demokratie ist ein realistischer Weg, um eine sozialistische Gesellschaft zu erreichen.",
             "ko": "자유 민주주의는 사회주의 사회를 달성 할 수 있는 가장 실용적인 방법이다.",
             "ru": "Либеральная демократия является жизнеспособным способом достижения социалистического общества.",
-            "cn": "自由民主主义是实现社会主义社会的一种可行途径。"
+            "cn": "自由民主制是实现社会主义社会的一种可行途径。"
         },
         "effect": {
             "a": -10,
@@ -96,7 +96,7 @@ questions = [
             "de": "Die Demokratie am Arbeitsplatz im Kapitalismus ist eine akzeptable Alternative zu einer vollständigen Sozialisierung der Wirtschaft.",
             "ko": "자본주의사회에서 직장 내 민주주의는 경제의 완전한 사회주의화에 대한 수용 가능한 대안이다.",
             "ru": "Демократия на рабочем месте при капитализме является приемлемой альтернативой полной социализации экономики.",
-            "cn": "资本主义内部的工作场所民主是一个可以接受的替代经济完全社会化的选择。"
+            "cn": "资本主义内部的工作场所民主是一个相比于经济完全社会化来说可以接受的替代选择。"
         },
         "effect": {
             "a": -10,
@@ -132,7 +132,7 @@ questions = [
             "de": "Die Umverteilung von Reichtum der Reichen durch Steuern ist ein realistischer Weg, um die Ungleichheit zu besiegen.",
             "ko": "세금을 통해 부유층의 부를 재분배하는 것은 불평등을 해소하는 실용적인 방법이다.",
             "ru": "Перераспределение богатств от богатых с помощью налогов — это реальный способ победить неравенство.",
-            "cn": "通过收税将财富从富人手中重新分配，是消除不平等的可行方法。"
+            "cn": "通过税收将财富从富人手中重新分配是消除不平等的一种可行方法。"
         },
         "effect": {
             "a": -5,
@@ -168,7 +168,7 @@ questions = [
             "de": "Unterdrückte Völker haben das Recht, sich an einem gewaltsamen Aufstand zu beteiligen, wenn alle anderen Möglichkeiten ausgeschöpft sind.",
             "ko": "피억압자들에게 다른 선택지가 없다면 폭동을 일으킬 권리가 있다.",
             "ru": "Угнетённые народы имеют право вступить в насильственное восстание, когда все другие возможности исчерпаны.",
-            "cn": "被压迫的人民在所有其他选择都已用尽时，有权进行暴力起义。"
+            "cn": "当所有其他选择都已用尽时，被压迫的人民有权进行暴力起义。"
         },
         "effect": {
             "a": 5,
@@ -186,7 +186,7 @@ questions = [
             "de": "Die Produktionsmittel wie Fabriken und Farmen müssen in öffentlichem Besitz sein.",
             "ko": "공장 및 농장과 같은 생산 수단은 공공의 소유여야 한다.",
             "ru": "Средства производства, такие как фабрики и фермы, должны находиться в общественной собственности.",
-            "cn": "如工厂和农场这类生产资料必须是公有的。"
+            "cn": "如工厂和农场之类的生产资料必须是公有的。"
         },
         "effect": {
             "a": 5,
@@ -223,7 +223,7 @@ questions = [
             "de": "Der Sozialismus kann nur in entwickelten Industriegesellschaften voll verwirklicht werden.",
             "ko": "사회주의는 선진 산업화된 사회에서만 온전히 달성 될 수있다.",
             "ru": "Социализм может быть полностью достигнут только в развитых индустриальных обществах.",
-            "cn": "社会主义只有在发达的工业化社会中才能充分实现。"
+            "cn": "只有在发达的工业化社会中才能完全实现社会主义。"
         },
         "effect": {
             "a": 0,
@@ -241,7 +241,7 @@ questions = [
             "de": "''Jeder nach seinen Fähigkeiten, jedem nach seinen Bedürfnissen'' ist ein guter Grundsatz.",
             "ko": `"자기 자신의 능력에 따라, 각자의 필요에 따라". 이것이 바로 좋은 원칙이다.`,
             "ru": "''От каждого по способностям, каждому по потребностям'' — это хороший принцип.",
-            "cn": "''各尽所能，按需分配''是一个很好的原则。"
+            "cn": "“各尽所能、各取所需”是一个很好的原则。"
         },
         "effect": {
             "a": 0,
@@ -259,7 +259,7 @@ questions = [
             "de": "Es ist möglich, die herrschende Klasse friedlich davon zu überzeugen, sich einer sozialistischen Gesellschaft zu richten.",
             "ko": "지배 계급을 사회주의 사회에 순응하도록 평화롭게 설득하는 것이 가능하다.",
             "ru": "Можно мирно убедить правящий класс подчиниться социалистическому обществу.",
-            "cn": "和平地说服统治阶级进入社会主义社会是可能的。"
+            "cn": "和平地说服统治阶级顺应社会主义社会是可能的。"
         },
         "effect": {
             "a": -5,
@@ -295,7 +295,7 @@ questions = [
             "de": "Klassenkonflikte sind eine Kraft, die einen Großteil der menschlichen Geschichte beeinflusst haben.",
             "ko": "계급 갈등은 인류 역사의 많은 부분에 영향을 미쳤다.",
             "ru": "Классовая борьба — это сила, которая оказала влияние на бóльшую часть истории человечества.",
-            "cn": "阶级冲突是一种极大地影响了人类历史的因素。"
+            "cn": "阶级冲突是一种很大地影响了人类历史的力量。"
         },
         "effect": {
             "a": 0,
@@ -331,7 +331,7 @@ questions = [
             "de": "Die Gesellschaft wird hauptsächlich von Individuen und Ideen angetrieben.",
             "ko": "사회를 주도하는 것은 개인과 이상이다.",
             "ru": "Общество в основном движется личностями и идеями.",
-            "cn": "社会主要是由个人和思想驱动的。"
+            "cn": "社会主要由个人和思想驱动。"
         },
         "effect": {
             "a": 0,
@@ -368,7 +368,7 @@ questions = [
             "de": "Eine Wirtschaft ist im Allgemeinen besser konzipiert, wenn sie von unten nach oben und nicht von oben nach unten organisiert ist.",
             "ko": "일반적으로 경제는 하향식이 아닌 상향식 구성일 때 더 잘 설계할 수 있다.",
             "ru": "Экономика, как правило, разработана лучше, когда она организована ''снизу вверх'', а не ''сверху вниз''.",
-            "cn": "当一个经济体是由下而上而不是由上而下组织起来时，它通常会更好。"
+            "cn": "当一个经济是由下而上而不是由上而下组织起来时，它通常会设计得更好。"
         },
         "effect": {
             "a": 0,
@@ -386,7 +386,7 @@ questions = [
             "de": "Lokale Planer sind effizienter als nationale Planer, wenn es um die Führung einer Planwirtschaft geht.",
             "ko": "국가 입안자들보다 지역 입안자들이 계획경제를 더 효율적으로 운영할 수 있다.",
             "ru": "Местные плановики более эффективны в ведении плановой экономики, нежели национальные.",
-            "cn": "地方规划者比国家规划者更能有效地管理计划经济。"
+            "cn": "地方计划者比国家计划者更能有效地运行计划经济。"
         },
         "effect": {
             "a": 0,
@@ -404,7 +404,7 @@ questions = [
             "de": "Eine zentral auf Computern basierende Planwirtschaft ist ein Konzept, das wert ist, untersucht zu werden.",
             "ko": "컴퓨터를 기반으로 한 중앙 계획적 경제는 조사할 만한 가치가 있는 개념이다.",
             "ru": "Централизованная плановая экономика, основанная на компьютерах, является концепцией, заслуживающей изучения.",
-            "cn": "以计算机为基础的中央计划经济是一个值得研究的概念。"
+            "cn": "基于计算机的中央计划经济是一个值得研究的概念。"
         },
         "effect": {
             "a": 0,
@@ -422,7 +422,7 @@ questions = [
             "de": "In unterentwickelten Gesellschaften ist eine zentral geplante Wirtschaft der beste Weg, um rasche Fortschritte zu erzielen.",
             "ko": "저개발 사회에서는 중앙 계획적 경제가 빠른 발전을 위한 가장 좋은 방법이다.",
             "ru": "В слаборазвитых обществах централизованно планируемая экономика является наилучшим способом достижения быстрого прогресса.",
-            "cn": "在不发达的社会中，中央计划经济是取得迅速进步的最佳途径。"
+            "cn": "在欠发达社会中，中央计划经济是实现快速发展的最佳途径。"
         },
         "effect": {
             "a": 0,
@@ -476,7 +476,7 @@ questions = [
             "de": "Eine stark zentralisierte Planwirtschaft ist nicht Sozialismus, sondern Staatskapitalismus.",
             "ko": "고도로 중앙 집중화된 계획 경제는 사회주의가 아니라 국가 자본주의라고 할 수 있다.",
             "ru": "Высокоцентрализованная плановая экономика — это не социализм, а государственный капитализм.",
-            "cn": "高度集中的计划经济不是社会主义，而更像是国家资本主义。"
+            "cn": "高度集中的计划经济不是社会主义，而是国家资本主义。"
         },
         "effect": {
             "a": 0,
@@ -494,7 +494,7 @@ questions = [
             "de": "Bürokratie und Ineffizienz sind in zentral geplanten Volkswirtschaften immer vorhanden.",
             "ko": "중앙 계획적 경제에는 언제나 관료주의와 비효율성이 내제되어 있었다.",
             "ru": "Бюрократия и неэффективность всегда присущи централизованно планируемой экономике.",
-            "cn": "中央计划经济总是官僚主义和低效率的。"
+            "cn": "官僚主义和低效是中央计划经济所固有的。"
         },
         "effect": {
             "a": 0,
@@ -530,7 +530,7 @@ questions = [
             "de": "Die Regierung sollte in der Lage sein, Individuen Arbeitsplätzen zuzuweisen.",
             "ko": "정부는 개인들을 직장에 배치할 수 있어야 한다.",
             "ru": "Правительство должно иметь возможность назначать людей на рабочие места.",
-            "cn": "政府应该能够将人分配到工作场所。"
+            "cn": "政府应有能力将个人分配到工作场所。"
         },
         "effect": {
             "a": 0,
@@ -567,7 +567,7 @@ questions = [
             "de": "Nationalismus und Patriotismus sind Impulse, die in einer sozialistischen Gesellschaft inakzeptabel sind.",
             "ko": "민족주의와 애국심은 사회주의 사회에서라면 결코 받아들여질 수 없는 충동이다.",
             "ru": "Национализм и патриотизм — это импульсы, неприемлемые в социалистическом обществе.",
-            "cn": "民族主义和爱国主义是社会主义社会所不能接受的。"
+            "cn": "民族主义和爱国主义是社会主义社会无法接受的冲动。"
         },
         "effect": {
             "a": 0,
@@ -585,7 +585,7 @@ questions = [
             "de": "Die globale sozialistische Bewegung sollte von einer einzigen Partei oder Organisation geführt werden.",
             "ko": "국제 사회주의 운동은 단일 정당 혹은 조직에 의해 주도되어야 한다.",
             "ru": " Глобальное социалистическое движение должно возглавляться одной партией или организацией.",
-            "cn": "全球的社会主义运动应当由一个党或一个组织领导。"
+            "cn": "全球的社会主义运动应当由一个政党或组织领导。"
         },
         "effect": {
             "a": 0,
@@ -657,7 +657,7 @@ questions = [
             "de": "Menschen ähnlicher Kulturen sollten sich zu Vereinigungen oder Verbände zusammenschließen.",
             "ko": "비슷한 문화권의 사람들은 연방이나 연합으로 결속되어야 한다.",
             "ru": "Люди схожих культур должны объединиться в федерации или конфедерации.",
-            "cn": "具有相似文化的人应该联合起来建立联邦或同盟。"
+            "cn": "具有相似文化的人们应该联合起来建立联邦或同盟。"
         },
         "effect": {
             "a": 0,
@@ -693,7 +693,7 @@ questions = [
             "de": "Nationale Befreiung oder Selbstbestimmung für alle Völker ist ein gutes Konzept.",
             "ko": "민족해방과 민족자결권은 좋은 개념이다.",
             "ru": "Национальное освобождение, или самоопределение всех народов, является хорошей концепцией.",
-            "cn": "民族解放，或者说全体人民的自决，是一个很好的想法。"
+            "cn": "民族解放，或者说全体人民的自决，是一个很好的概念。"
         },
         "effect": {
             "a": 0,
@@ -711,7 +711,7 @@ questions = [
             "de": "Ich wäre bereit, wirtschaftliche Ressourcen in meinem Heimatland zu opfern, um anderen Ländern zu helfen.",
             "ko": "다른 나라를 돕기 위해서라면 내 조국의 경제자원도 기꺼이 희생할 것이다.",
             "ru": "Я готов пожертвовать экономическими ресурсами у себя на родине, чтобы помочь другим странам.",
-            "cn": "我愿意牺牲祖国的经济资源来帮助其他国家。"
+            "cn": "我愿意牺牲本国的经济资源来帮助其他国家。"
         },
         "effect": {
             "a": 0,
@@ -766,7 +766,7 @@ questions = [
             "de": "Die Führung der politischen Parteien auf dem Weg zum Sozialismus wird immer zum Autoritarismus führen.",
             "ko": "사회주의를 향한 진보의 과정에서 정당의 리더쉽은 항상 권위주의를 향할 것이다.",
             "ru": "Лидерство политических партий в продвижении к социализму всегда будет приводить к авторитаризму.",
-            "cn": "在走向社会主义的过程中，政党的领导总是会导致专制主义。"
+            "cn": "在走向社会主义的过程中，政党的领导总是会导致威权主义。"
         },
         "effect": {
             "a": 0,
@@ -784,7 +784,7 @@ questions = [
             "de": "Demokratischer Zentralismus ist eine autoritäre Organisationsstruktur, die die Massen missachtet.",
             "ko": "민주주의 중심주의는 대중을 무시하는 권위주의적 조직 구조이다.",
             "ru": "Демократический централизм — это авторитарная организационная структура, игнорирующая массы.",
-            "cn": "民主集中制是一种无视群众的专制组织结构。"
+            "cn": "民主集中制是一种无视群众的威权组织结构。"
         },
         "effect": {
             "a": 0,
@@ -802,7 +802,7 @@ questions = [
             "de": "Nur eine Massenarbeiterpartei kann bedeutungsvolle langzeit Ziele erreichen.",
             "ko": "대중 노동자 정당만이 의미있는 장기적 목표를 달성할 수 있다.",
             "ru": "Только массовая рабочая партия может достичь каких-либо значимых долгосрочных целей.",
-            "cn": "只有由广大工人群众组成的政党才能实现任何有意义的长期目标。"
+            "cn": "只有群众性的工人政党才能实现任何有意义的长期目标。"
         },
         "effect": {
             "a": 0,
@@ -838,7 +838,7 @@ questions = [
             "de": "Die Tatsache, dass so viele Arbeiter für bürgerliche Parteien über sozialistische Parteien stimmen, ist ein Beweis dafür, dass Parteipolitik nicht mehr relevant ist.",
             "ko": "많은 노동자들이 사회주의 정당보다 부르주아 정당에 투표한다는 사실은 정당정치가 더이상 관련이 없다는 증거이다",
             "ru": "Тот факт, что так много рабочих голосует за буржуазные партии, а не за социалистические, является доказательством того, что партийная политика больше не актуальна.",
-            "cn": "如此多的工人投票给资产阶级政党而不是社会主义政党。这一事实证明，政党政治已不再重要。"
+            "cn": "如此多的工人投票给资产阶级政党而不是社会主义政党，这一事实证明政党政治已不合时宜。"
         },
         "effect": {
             "a": 0,
@@ -874,7 +874,7 @@ questions = [
             "de": "Die Gewerkschaftsbewegung wurde von der herrschenden Klasse weitgehend korrumpiert und ist für eine sozialistische Organisation nicht mehr lebensfähig.",
             "ko": "노동조합주의는 지배계급에 의해 크게 훼손되었으며 더는 사회주의 조직에 적합한 구조라 할 수 없다.",
             "ru": "Профсоюзный подход был в значительной степени коррумпирован правящим классом и больше не является жизнеспособной структурой социалистической организации.",
-            "cn": "工会已被统治阶级严重腐败，不再是一个可行的社会主义组织结构。"
+            "cn": "工会主义已被统治阶级严重腐化，不再是一个可行的社会主义组织结构。"
         },
         "effect": {
             "a": 0,
@@ -893,7 +893,7 @@ questions = [
             "de": "Der Klimawandel ist eine große globale Bedrohung, gegen die sich alle Sozialisten entschieden wehren müssen.",
             "ko": "기후변화는 모든 사회주의자들이 치열하게 싸워야 할 주요한 국제적 위협이다.",
             "ru": "Изменение климата является одной из основных глобальных угроз, с которой должны вести ожесточённую борьбу все социалисты.",
-            "cn": "气候变化是一个重大的全球威胁，所有社会主义者都必须与之激烈斗争。"
+            "cn": "气候变化是一个主要的全球威胁，所有社会主义者都必须与之激烈斗争。"
         },
         "effect": {
             "a": 0,
@@ -911,7 +911,7 @@ questions = [
             "de": "Maßnahmen zur Bewältigung von Umweltproblemen sind nicht hinnehmbar, wenn sie zu erheblichen Einbußen bei Produktion und Lebensqualität führen.",
             "ko": "생산 및 삶의 질을 현저하게 저하시킬 수 있는 환경문제에 대한 조치는 허용할 수 없다.",
             "ru": "Меры по решению экологических проблем неприемлемы, если они приводят к значительному снижению производства и качества жизни.",
-            "cn": "如果解决环境问题的措施导致生产和生活质量的显著下降，则是不可接受的。"
+            "cn": "如果解决环境问题的措施导致生产和生活质量显著下降，则他们是不可接受的。"
         },
         "effect": {
             "a": 0,
@@ -947,7 +947,7 @@ questions = [
             "de": "Die industrialisierten landwirtschaftlichen Praktiken müssen abgeschafft werden, auch wenn sie zu geringeren Produktionsleistungen führen.",
             "ko": "생산량을 낮추는 한이 있더라도 산업화된 농업 관행을 폐지해야 한다.",
             "ru": "Индустриализированные методы ведения сельского хозяйства должны быть упразднены, даже если это приведёт к снижению объемов производства.",
-            "cn": "尽管这样做会导致产量下降，但工业化的耕作方式必须废除。"
+            "cn": "工业化的耕作方式必须废除，即使这样做会导致产量下降。"
         },
         "effect": {
             "a": 0,
@@ -965,7 +965,7 @@ questions = [
             "de": "Es wird wichtig sein, im Rahmen der Verwirklichung des Sozialismus umfassende Umweltschutzmaßnahmen zu ergreifen.",
             "ko": "사회주의 달성의 목표에 광범위한 환경보호를 추가해야 한다.",
             "ru": "В рамках достижения социализма важно будет осуществлять экстенсивные меры по охране окружающей среды.",
-            "cn": "广泛保护环境是实现社会主义的重要内容。"
+            "cn": "实施广泛的环境保护是实现社会主义的重要组成部分。"
         },
         "effect": {
             "a": 0,
@@ -983,7 +983,7 @@ questions = [
             "de": "Es lohnt sich, in experimentelle umweltfreundliche Nahrungsquellen wie z. B. kultiviertem Fleisch zu investieren.",
             "ko": "배양육과 같은 환경 친화적인 식품원에 투자할 가치가 있다.",
             "ru": "Экспериментальные экологически чистые источники пищи, такие как искусственное мясо из пробирки, стоят того, чтобы в них инвестировать.",
-            "cn": "实验各种环境友好的食物来源，如人工养殖的肉是值得的。"
+            "cn": "实验性的环境友好型食物来源（如人造肉）值得投资。"
         },
         "effect": {
             "a": 0,
@@ -1073,7 +1073,7 @@ questions = [
             "de": "Eine geringfügige Zerstörung der Natur ist akzeptabel, wenn dies insbesondere der Menschheit zugute kommt.",
             "ko": "인류에게 유익하다면 소규모의 자연 파괴는 허용될 수 있다.",
             "ru": "Некоторое мелкомасштабное разрушение природы допустимо, если это принесёт значительную пользу человечеству.",
-            "cn": "如果对人类有益，那么对自然的小规模破坏是可以接受的。"
+            "cn": "如果特别对人类有益，那么对自然的小规模破坏是可以接受的。"
         },
         "effect": {
             "a": 0,
@@ -1091,7 +1091,7 @@ questions = [
             "de": "Die Menschheit muss zu den primitiven Wegen der Vergangenheit zurückkehren, um langfristige Klimaprobleme zu überwinden.",
             "ko": "기후문제를 극복하기 위해 장기적으로 인류는 과거의 원시적인 삶의 방식으로 되돌아가야 한다.",
             "ru": "Для преодоления долгосрочных климатических проблем человечество должно вернуться к примитивным путям прошлого.",
-            "cn": "人类必须回到过去的生活方式来克服长期的气候问题。"
+            "cn": "人类必须回到过去原始的生活方式来克服长期的气候问题。"
         },
         "effect": {
             "a": 0,
@@ -1128,7 +1128,7 @@ questions = [
             "de": "Die Unterdrückung von LGBTQ+ Personen ist ein wichtiges Thema, das ernsthaft angegangen werden muss.",
             "ko": "LGBTQ+에 대한 억압은 해결해야할 심각하고 중요한 문제이다.",
             "ru": "Угнетение ЛГБТ-сообщества — это серьёзная проблема, которую необходимо решить.",
-            "cn": "对LGBTQ+人群的压迫是一个需要严肃对待的重大问题。"
+            "cn": "对LGBTQ+群体的压迫是一个需要严肃解决的重大问题。"
         },
         "effect": {
             "a": 0,
@@ -1146,7 +1146,7 @@ questions = [
             "de": "Traditionelle Geschlechterrollen wie Frauen als Hausfrauen müssen überwunden werden.",
             "ko": "'여성인 주부'와 같은 전통적인 성역할을 극복해야 한다.",
             "ru": "Необходимо преодолеть традиционные гендерные роли, такие как роль женщин в качестве домохозяек.",
-            "cn": "传统的性别角色看法，如家庭主妇等，需要被克服。"
+            "cn": "传统的性别角色（如家庭主妇）需要被克服。"
         },
         "effect": {
             "a": 0,
@@ -1164,7 +1164,7 @@ questions = [
             "de": "Die Ehe ist ein patriarchalisches soziales Konstrukt, das abgeschaft werden sollte",
             "ko": "결혼은 가부장적인 사회구조이며 단계적으로 폐지되어야 한다.",
             "ru": "Брак — это патриархальная социальная конструкция, которая должна постепенно ликвидироваться.",
-            "cn": "婚姻是一个父权社会结构，应该被淘汰。"
+            "cn": "婚姻是一个父权制社会结构，应该被逐步淘汰。"
         },
         "effect": {
             "a": 0,
@@ -1182,7 +1182,7 @@ questions = [
             "de": "Abtreibung ist eine unmoralische Handlung, die verboten oder erheblich eingeschränkt werden sollte.",
             "ko": "낙태는 금지되거나 제한되어야 하는 부도덕한 행위이다.",
             "ru": "Аборт — это аморальный акт, который должен быть запрещён или значительно ограничен.",
-            "cn": "堕胎是一种不道德的行为，应该被禁止或大大限制。"
+            "cn": "堕胎是一种不道德的行为，应该被禁止或严格限制。"
         },
         "effect": {
             "a": 0,
@@ -1200,7 +1200,7 @@ questions = [
             "de": "Religionen im Allgemeinen wirken sich überwiegend positiv aus und sollten gesellschaftlich einflussreich bleiben.",
             "ko": "일반적으로 종교는 긍정적인 영향을 미치며 사회적인 영향력을 유지해야 한다.",
             "ru": "Религии в общем имеют положительный эффект и должны оставаться влиятельными в обществе.",
-            "cn": "总的来说，宗教有积极的影响，应该在社会中保持影响力。"
+            "cn": "总的来说，宗教主要具有积极影响，应该在社会中保持影响力。"
         },
         "effect": {
             "a": 0,
@@ -1218,7 +1218,7 @@ questions = [
             "de": "Ethnische Minderheiten sollten der Mehrheitsbevölkerung gleichgestellt werden.",
             "ko": "소수 민족은 대다수의 인구와 동등하게 대우받아야 한다.",
             "ru": "Этнические меньшинства должны считаться равными бóльшей части населения.",
-            "cn": "少数民族和有大多数人口的民族是平等的。"
+            "cn": "少数民族应被视为与多数民族是平等的。"
         },
         "effect": {
             "a": 0,
@@ -1254,7 +1254,7 @@ questions = [
             "de": "Gefängnisse sind unterdrückerische und veraltete Institutionen, die abgeschafft werden müssen.",
             "ko": "교도소는 억압적이고 구시대적인 기관이므로 폐지되어야 한다.",
             "ru": "Тюрьмы — это деспотические и устаревшие институты, которые необходимо упразднить.",
-            "cn": "监狱是压迫性的，陈旧的制度。需要被废除。"
+            "cn": "监狱是压迫性的、陈旧的制度，需要被废除。"
         },
         "effect": {
             "a": 0,
@@ -1272,7 +1272,7 @@ questions = [
             "de": "Massenauswanderungspolitik ist naiv und sollte nicht umgesetzt werden.",
             "ko": "대규모 외국 이민 정책은 순진하기 짝이 없으므로 적용되어선 안된다.",
             "ru": "Массовая внешняя иммиграционная политика наивна и не должна осуществляться.",
-            "cn": "支持大规模的外国移民的政策是幼稚的，不应该实施。"
+            "cn": "大规模的外国移民政策是幼稚的，不应该实施。"
         },
         "effect": {
             "a": 0,
@@ -1290,7 +1290,7 @@ questions = [
             "de": "Man kann keine sozialistische Gesellschaft erreichen, ohne auch signifikante soziale Fortschritte zu erzielen.",
             "ko": "상당한 사회적 발전 없이는 사회주의 사회를 달성할 수 없다.",
             "ru": "Невозможно добиться социалистического общества, не добившись при этом значительного социального прогресса.",
-            "cn": "没有显著的社会进步，就无法达到社会主义社会。"
+            "cn": "没有取得显著的社会进步，就无法实现社会主义社会。"
         },
         "effect": {
             "a": 0,
