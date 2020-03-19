@@ -295,7 +295,7 @@ questions = [
             "de": "Klassenkonflikte sind eine Kraft, die einen Großteil der menschlichen Geschichte beeinflusst haben.",
             "ko": "계급 갈등은 인류 역사의 많은 부분에 영향을 미쳤다.",
             "ru": "Классовая борьба — это сила, которая оказала влияние на бóльшую часть истории человечества.",
-            "cn": "阶级冲突是一种很大地影响了人类历史的力量。"
+            "cn": "阶级斗争是影响了人类大部分历史的力量。"
         },
         "effect": {
             "a": 0,
@@ -349,7 +349,7 @@ questions = [
             "de": "Eine vollständige wirtschaftliche und soziale Gleichstellung ist realistisch erreichbar.",
             "ko": "완전한 경제, 사회적 평등은 현실적으로 달성 가능하다.",
             "ru": "Полное экономическое и социальное равенство реально достижимо.",
-            "cn": "全面的经济和社会平等在现实中是有可能实现的。"
+            "cn": "在现实中有可能实现全面的经济与社会平等。"
         },
         "effect": {
             "a": 0,
@@ -368,7 +368,7 @@ questions = [
             "de": "Eine Wirtschaft ist im Allgemeinen besser konzipiert, wenn sie von unten nach oben und nicht von oben nach unten organisiert ist.",
             "ko": "일반적으로 경제는 하향식이 아닌 상향식 구성일 때 더 잘 설계할 수 있다.",
             "ru": "Экономика, как правило, разработана лучше, когда она организована ''снизу вверх'', а не ''сверху вниз''.",
-            "cn": "当一个经济是由下而上而不是由上而下组织起来时，它通常会设计得更好。"
+            "cn": "当经济体是自下而上而不是自上而下组织起来时，它通常会被设计得更好。"
         },
         "effect": {
             "a": 0,
@@ -458,7 +458,7 @@ questions = [
             "de": "Der Staat kann am besten als Gewalt- und Unterdrückungsmonopol definiert werden.",
             "ko": "국가는 폭력과 억압에 대한 독점으로 가장 잘 정의할 수 있다.",
             "ru": "Лучше всего государство можно определить как монополию на насилие и угнетение.",
-            "cn": "国家的最准确定义为对暴力和压迫的垄断。"
+            "cn": "国家的最准确定义是：对暴力和压迫的垄断。"
         },
         "effect": {
             "a": 0,
@@ -657,7 +657,7 @@ questions = [
             "de": "Menschen ähnlicher Kulturen sollten sich zu Vereinigungen oder Verbände zusammenschließen.",
             "ko": "비슷한 문화권의 사람들은 연방이나 연합으로 결속되어야 한다.",
             "ru": "Люди схожих культур должны объединиться в федерации или конфедерации.",
-            "cn": "具有相似文化的人们应该联合起来建立联邦或同盟。"
+            "cn": "具有相似文化的民族应该联合起来建立联邦或同盟。"
         },
         "effect": {
             "a": 0,
@@ -748,7 +748,7 @@ questions = [
             "de": "Gewerkschaften und Arbeiterräte sollten die Grundlage einer sozialistischen Gesellschaft bilden.",
             "ko": "사회주의 사회의 기초는 노동조합과 노동자평의회가 형성해야 한다.",
             "ru": "Профсоюзы и рабочие советы должны составлять основу социалистического общества.",
-            "cn": "工会和工人委员会应该成为社会主义社会的基础。"
+            "cn": "工会和工人委员会应当组成社会主义社会的基石。"
         },
         "effect": {
             "a": 0,
@@ -1164,7 +1164,7 @@ questions = [
             "de": "Die Ehe ist ein patriarchalisches soziales Konstrukt, das abgeschaft werden sollte",
             "ko": "결혼은 가부장적인 사회구조이며 단계적으로 폐지되어야 한다.",
             "ru": "Брак — это патриархальная социальная конструкция, которая должна постепенно ликвидироваться.",
-            "cn": "婚姻是一个父权制社会结构，应该被逐步淘汰。"
+            "cn": "婚姻属于父权制社会结构，应该被逐步淘汰。"
         },
         "effect": {
             "a": 0,
