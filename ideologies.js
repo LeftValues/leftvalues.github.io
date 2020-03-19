@@ -18,6 +18,10 @@ ideologies = [
             "cn": {
                 "name": "马克思列宁主义（Marxism-Leninism）",
                 "desc": "马克思列宁主义（简称马列主义）是20世纪在苏联形成的马克思主义的一种形式。马列主义者非常赞成把共产主义政党作为实现革命和建立社会主义的平台。许多马列主义者比其他马克思主义者更具有民族主义和爱国主义色彩，而且可能更倾向于工业进步而不是环境目标。"
+            },
+			"sh": {
+                "name": "Marksizam-Lenjinizam",
+                "desc": "Marksizam-lenjinizam je forma marksizma stvorena u XX vijeku u Sovjetskom Savezu. Marksisti-lenjinisti snažno podržavaju komunističke političke stranke kao platforme za postizanje revolucije i osnivanje socijalizma. Mnogi marksisti-lenjinisti su donekle više nacionalistički od drugih marksista, i ponekad teže industrijskom napretku prije nego očuvanju prirodne sredine."
             }
         },
         "stats": {
@@ -49,6 +53,10 @@ ideologies = [
             "cn": {
                 "name": "正统马克思主义（Orthodox Marxism）",
                 "desc": "正统马克思主义是马克思主义的一种形式，它采用的观点与初创时的马克思主义理论相一致，特别是其关于辩证唯物主义的主题。正统的马克思主义者具有高度革命性和国际主义色彩，并认为非工业社会不可能实现社会主义。"
+            },
+			"sh": {
+                "name": "Ortodoksni Marksizam",
+                "desc": ""
             }
         },
         "stats": {
@@ -80,6 +88,10 @@ ideologies = [
             "cn": {
                 "name": "生态马克思主义（Eco-Marxism）",
                 "desc": "生态马克思主义是正统马克思主义的一种形式，在现代更为普遍，它特别强调环境问题。生态马克思主义者通常倾向于使用中央计划经济对抗气候问题。"
+            },
+			"sh": {
+                "name": "Eko-Marksizam",
+                "desc": ""
             }
         },
         "stats": {
@@ -111,6 +123,10 @@ ideologies = [
             "cn": {
                 "name": "中间派马克思主义（Centrist Marxism）",
                 "desc": "中间派马克思主义是马克思主义的一种形式，它既采用了马克思主义关于社会和经济的观点，又避免对革命和改良主义采取明确的立场。许多中间派马克思主义者也可能比其他马克思主义者更具有民族主义倾向。"
+            },
+			"sh": {
+                "name": "Centristički Marksizam",
+                "desc": ""
             }
         },
         "stats": {
@@ -142,6 +158,10 @@ ideologies = [
             "cn": {
                 "name": "委员会共产主义（Council Communism）",
                 "desc": "委员会共产主义是马克思主义的一种形式，主张把工人委员会作为社会主义社会的核心基础。委员会共产主义者普遍反对在社会主义政治体制内存在强大的政党影响力，而赞成委员会民主。"
+            },
+			"sh": {
+                "name": "Vijećnički Komunizam",
+                "desc": ""
             }
         },
         "stats": {
@@ -173,6 +193,10 @@ ideologies = [
             "cn": {
                 "name": "左翼共产主义（Left Communism）",
                 "desc": "左翼共产主义是马克思主义的一种形式，倾向于所谓的极左立场。这些包括无条件地支持革命和国际主义，拒绝工会和参加自由民主制，以及拒绝民族解放与自决。"
+            },
+			"sh": {
+                "name": "Ljevi Komunizam",
+                "desc": ""
             }
         },
         "stats": {
@@ -204,6 +228,10 @@ ideologies = [
             "cn": {
                 "name": "无政府共产主义（Anarcho-Communism）",
                 "desc": "无政府共产主义是无政府主义的一种形式，主张废除资本主义、国家及及生产资料的集体所有制。无政府共产主义者支持分权的经济与政府。无政府工团主义是组织这种社会的一种常见方式。"
+            },
+			"sh": {
+                "name": "Anarho-Komunizam",
+                "desc": ""
             }
         },
         "stats": {
@@ -235,6 +263,10 @@ ideologies = [
             "cn": {
                 "name": "生态无政府主义（Eco-Anarchism）",
                 "desc": "生态无政府主义（或称绿色无政府主义）是无政府主义的一种形式，特别强调环境问题。它常常与诸如无政府工团主义等更独特的意识形态联系在一起。生态无政府主义者通常是革命性的，并支持使用分权的平等主义经济来实现环境目标。"
+            },
+			"sh": {
+                "name": "Eko-Anarhizam",
+                "desc": ""
             }
         },
         "stats": {
@@ -266,6 +298,10 @@ ideologies = [
             "cn": {
                 "name": "市场无政府主义（Market Anarchism）",
                 "desc": "市场无政府主义是无政府主义的一种形式，它混合了废除等级制度、国家和资本主义等无政府主义目标和高度的个人主义和温和的改良主义方法。这不应与无政府资本主义混为一谈。"
+            },
+			"sh": {
+                "name": "Tržišni Anarhizam",
+                "desc": ""
             }
         },
         "stats": {
@@ -297,6 +333,10 @@ ideologies = [
             "cn": {
                 "name": "空想社会主义（Utopian Socialism）",
                 "desc": "空想社会主义（直译为乌托邦社会主义）是在马克思主义出现前的社会主义的一种形式，它高度相信社会主义社会的基础是平等主义、道德主义和理想主义。空想社会主义者普遍反对暴力革命，并通常相信可以说服统治阶级采用社会主义。"
+            },
+			"sh": {
+                "name": "Utopijski Socijalizam",
+                "desc": ""
             }
         },
         "stats": {
@@ -328,6 +368,10 @@ ideologies = [
             "cn": {
                 "name": "民主社会主义（Democratic Socialism）",
                 "desc": "民主社会主义是社会主义的一种形式，它试图利用自由民主制作为实现社会主义经济和社会的手段。民主社会主义者反对革命和中央计划经济，取而代之的是支持适度的社会所有制，以公用事业和民主的工作场所自我管理为其形式。"
+            },
+			"sh": {
+                "name": "Demokratski Socijalizam",
+                "desc": ""
             }
         },
         "stats": {
@@ -359,6 +403,10 @@ ideologies = [
             "cn": {
                 "name": "社会民主主义（Social Democracy）",
                 "desc": "社会民主主义是一种中间偏左的意识形态，主张将如社会福利和企业监管等左倾的价值观与资本主义和自由民主制以混合经济的形式结合在一起。许多现代社会民主主义者支持凯恩斯主义经济学。"
+            },
+			"sh": {
+                "name": "Socijaldemokratija",
+                "desc": ""
             }
         },
         "stats": {
@@ -390,6 +438,10 @@ ideologies = [
             "cn": {
                 "name": "左翼民族主义（Left-Wing Nationalism）",
                 "desc": "左翼民族主义是将左翼经济学与非排外的民族主义和爱国主义相结合的一种意识形态。许多左翼民族主义者同时支持国际团结，并可能支持武装斗争。"
+            },
+			"sh": {
+                "name": "Ljevi Nacionalizam",
+                "desc": ""
             }
         },
         "stats": {

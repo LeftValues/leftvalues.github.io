@@ -257,7 +257,7 @@ const i18n = {
         "ko": ["극단적 생산주의", "강경한 생산주의", "생산주의", "중립", "생태주의", "강경한 생태주의", "극단적 생태주의"],
         "ru": ["Крайне Производственный","Очень Производственный","Производственный","Нейтральный","Экологический","Очень Экологический","Крайне Экологический"],
         "cn": ["极端生产主义","非常生产主义","生产主义","中立","生态主义","非常生态主义","极端生态主义"],
-		"sh": ["Izuzetno Produktivistički","Vrlo Produktivistički","Produktivistički","Neutralni","Ekološki","Vrlo Ekološki","Izuzetno Ekološki"]
+		"sh": ["Izuzetno Proizvođački","Vrlo Proizvođački","Proizvođački","Neutralni","Ekološki","Vrlo Ekološki","Izuzetno Ekološki"]
     },
     "result-g-label": {
         "en": ["Extremely Conservative","Very Conservative","Conservative","Neutral","Progressive","Very Progressive","Extremely Progressive"],
@@ -310,7 +310,7 @@ const i18n = {
         "cn": "LeftValues是一个确定你在左翼光谱中的位置的左派测试，受<a href='https://8values.github.io/'>8values测试</a>启发并基于其制作。" +
         "如果你不是左派，这个测试明显不适合你。你会看到一系列观点，然后你需要回答你对这些观点的看法。从<b>强烈同意</b>到<b>强烈反对</b>，每个回答都会影响你的分数。关于每个坐标轴的问题将依次给出，而不是打乱的。测试结束时，你的答案会和每个价值观的最大可能值做比较，从而得出一个百分比。请诚实作答！<br/><br/>" +
         "测试中一共有<b><u><span id='numOfQuestions'></span></u></b>个问题。",
-		"sh": "LeftValues je ljevičarski kviz inspirisan i zasnovan na <a href='https://8values.github.io/'>8values</a> kvizu koji identifikuje vap pološaj na ljevičarskom političkom spektru. " + 
+		"sh": "LeftValues je ljevičarski kviz inspirisan i zasnovan na <a href='https://8values.github.io/'>8values</a> kvizu koji identifikuje vaš pološaj na ljevičarskom političkom spektru. " + 
         "Ako niste ljevičar, ovaj kviz očigledno nije prikladan za vas. Biće vam postavljena pitanja, i onda ćete odgovoriti sa vašim mišljenjem o tom pitanju, od <b>Potpuno Se Slažem</b> do <b>Uopšte Se Ne Slažem</b>. Svaki odgovor utiče na vaše rezultate. Pitanja za svaku osu su postavljena u redu. Na kraju kviza, vaši odgovori će biti upoređeni sa maksimumom mogućim za svaku osu. Odgovarajte iskreno!<br/><br/>" +
         "U testu su <b><u><span id='numOfQuestions'></span></u></b> pitanja."
     },
@@ -341,7 +341,7 @@ const i18n = {
         "Те, кто имеет более высокий балл Революции, склонны поддерживать радикальное и быстрое свержение капиталистической системы посредством массового восстания. Те, кто имеет более высокий балл Реформ, склонны выступать за постепенные изменения внутри капиталистических структур, таких как либеральная демократия, с конечной целью достижения социализма.",
         "cn": "<b style='color:#890000;'>革命</b> <b>vs.</b> <b style='color:#FC5959;'>改良</b><br/>" +
         "革命得分较高的人倾向于支持通过大规模起义来激进和迅速地推翻资本主义制度。改革得分较高的人倾向于支持在资本主义结构（如自由民主制）中引导渐进的变化，最终目标是实现社会主义。",
-		"sh": "<b style='color:#890000;'>Revolucija</b> <b>vs.</b> <b style='color:#FC5959;'>Reforma</b><br/>" +
+		"sh": "<b style='color:#890000;'>Revolucija</b> <b>protiv</b> <b style='color:#FC5959;'>Reforme</b><br/>" +
 		 "Oni sa višom vrijednošću revolucije inače podržavaju brzo i radikalno svrgavanje kapitalističkog sistema putem masovnog ustanka. Oni sa višom vrijednošću reforme inače preferiraju uvođenje postepenih promjena u kapitalističke strukture, kao što je liberalna demokratija, sa eventualnim ciljem dostizanja socijalizma."
     },
     "index-sci-desc": {
@@ -353,7 +353,9 @@ const i18n = {
         "ru": "<b style='color:#88232B;'>Научность</b> <b>vs.</b> <b style='color:#7F0037;'>Утопия</b><br/>" +
         "Те, кто имеет более высокий балл Научности, склонны поддерживать или симпатизировать Марксистскому анализу общества по линии диалектического материализма. Те, кто имеет более высокий балл Утопии, склонны верить в более идеалистический анализ общества и отвергать материалистические подходы.",
         "cn": "<b style='color:#88232B;'>科学社会主义</b> <b>vs.</b> <b style='color:#7F0037;'>空想社会主义</b><br/>" +
-        "科学社会主义得分较高的人倾向于支持或赞同对社会采用马克思主义的辩证唯物主义分析。空想社会主义得分较高的人倾向于相信对社会采用更理想主义的分析，而拒绝唯物主义的方法。"
+        "科学社会主义得分较高的人倾向于支持或赞同对社会采用马克思主义的辩证唯物主义分析。空想社会主义得分较高的人倾向于相信对社会采用更理想主义的分析，而拒绝唯物主义的方法。",
+		"sh": "<b style='color:#88232B;'>Naučni Pristup</b> <b>protiv</b> <b style='color:#7F0037;'>Utopizma</b><br/>" +
+        "Oni sa višom naučnom vrijednošću inače podržavaju Marksističku analizu društva na osnovi dijalektičkog materijalizma. Oni sa višom utopijskom vrijednošću inače vjeruju u više idealističku analizu društva i odbacuju materijalističke pristupe."
     },
     "index-cent-desc": {
         "en": "<b style='color:#560000;'>Central</b> <b>vs.</b> <b style='color:#000000;'>Decentral</b><br/>" + 
@@ -364,7 +366,9 @@ const i18n = {
         "ru": "<b style='color:#560000;'>Централизация</b> <b>vs.</b> <b style='color:#000000;'>Децентрализация</b><br/>" + 
         "Те, кто имеет более высокий балл Централизации, как правило, поддерживают экономическую структуру, основанную на централизованном национальном планировании. Те, кто имеет более высокий балл Децентрализации, как правило, поддерживают экономическую структуру, основанную на децентрализованном планировании, как правило, на более локальном уровне.",
         "cn": "<b style='color:#560000;'>集权</b> <b>vs.</b> <b style='color:#000000;'>分权</b><br/>" + 
-        "集权得分较高的人倾向于支持基于国家中央计划的经济结构。分权得分较高的人倾向于支持基于分散计划的经济结构，通常更侧重于地方。"
+        "集权得分较高的人倾向于支持基于国家中央计划的经济结构。分权得分较高的人倾向于支持基于分散计划的经济结构，通常更侧重于地方。",
+		"sh": "<b style='color:#560000;'>Centralizam</b> <b>protiv</b> <b style='color:#000000;'>Decentralizma</b><br/>" + 
+        "Oni sa višom vrijednošću centralizma inače podržavaju ekonomsku strukturu zasnovanu na nacionalnom planiranju. Oni sa višom vrijednošću decentralizma inače podržavaju ekonomsku strukturu zasnovanu na decentraliziranom planiranju, uglavnom na lokalnom nivou."
     },
     "index-int-desc": {
         "en": "<b style='color:#782F52;'>International</b> <b>vs.</b> <b style='color:#7F3300;'>National</b><br/>" +
@@ -375,7 +379,9 @@ const i18n = {
         "ru": "<b style='color:#782F52;'>Интернационализм</b> <b>vs.</b> <b style='color:#7F3300;'>Национализм</b><br/>" +
         "Те, кто имеет более высокий балл Интернационализма, как правило, поддерживают формирование международного социалистического движения, зачастую с конечной целью ликвидации государств. Те, кто имеет более высокий балл Национализма, склонны отдавать приоритет построению социализма в рамках существующих границ и отвергать цель мировой социалистической республики.",
         "cn": "<b style='color:#782F52;'>国际主义</b> <b>vs.</b> <b style='color:#7F3300;'>民族主义</b><br/>" +
-        "国际主义得分较高的人倾向于支持建立国际社会主义运动，其最终目标往往是废除国家。民族主义得分较高的人倾向于优先在现有国界内建设社会主义，而拒绝世界社会主义共和国的目标。"
+        "国际主义得分较高的人倾向于支持建立国际社会主义运动，其最终目标往往是废除国家。民族主义得分较高的人倾向于优先在现有国界内建设社会主义，而拒绝世界社会主义共和国的目标。",
+		"sh": "<b style='color:#782F52;'>Internacionalizam</b> <b>protiv</b> <b style='color:#7F3300;'>Nacionalizma</b><br/>" +
+        "Oni sa višom vrijednošću internacionalizma inače podržavaju formiranje međunarodnog socijalističkog pokreta, često sa eventualnim ciljem ukidanja nacija. Oni sa višom vrijednošću nacionalizma inače prioritiziraju građenje socijalizma unutar postojećih granica i odbijaju cilj svjetske socijalističke republike."
     },
     "index-party-desc": {
         "en": "<b style='color:#963B33;'>Party</b> <b>vs.</b> <b style='color:#7F333B;'>Union</b><br/>" +
@@ -386,7 +392,9 @@ const i18n = {
         "ru": "<b style='color:#963B33;'>Партия</b> <b>vs.</b> <b style='color:#7F333B;'>Профсоюзы</b><br/>" +
         "Те, кто имеет более высокий балл Партии, склонны отдавать предпочтение использованию политических партий в качестве основы социалистического движения. Те, кто имеет более высокий балл Профсоюзов, склонны отдавать предпочтение использованию профсоюзов и других форм массовой организации как основы социалистического движения. Быть пропартийным не обязательно означает выступать против профсоюзов, и наоборот, речь идёт скорее о предпочтениях.",
         "cn": "<b style='color:#963B33;'>党派</b> <b>vs.</b> <b style='color:#7F333B;'>工会</b><br/>" +
-        "党派得分较高的人倾向于把政党作为社会主义运动的基础。工会得分较高的人倾向于把工会和其他形式的群众组织作为社会主义运动的基础。倾向党派并不一定意味着你反对工会，反之亦然，这更多的是体现一种偏好。"
+        "党派得分较高的人倾向于把政党作为社会主义运动的基础。工会得分较高的人倾向于把工会和其他形式的群众组织作为社会主义运动的基础。倾向党派并不一定意味着你反对工会，反之亦然，这更多的是体现一种偏好。",
+		"sh": "<b style='color:#963B33;'>Partija</b> <b>protiv</b> <b style='color:#7F333B;'>Sindikata</b><br/>" +
+        "Oni sa višom vrijednošću partije inače preferiraju političke partije kao osnovu socijalističkog pokreta. Oni sa višom vrijednošću sindikata inače podržavaju upotrijebu radničkih sindikata i drugih oblika masovnog organizovanja kao osnovu socijalističkog pokreta. Biti za partiju ne znaći nužno da ste protiv sindikata ili obrnuto, ovo je jednostavno pitanje preference."
     },
     "index-prod-desc": {
         "en": "<b style='color:#804E00;'>Production</b> <b>vs.</b> <b style='color:#76890B;'>Nature</b><br/>" +
@@ -397,7 +405,9 @@ const i18n = {
         "ru": "<b style='color:#804E00;'>Производство</b> <b>vs.</b> <b style='color:#586808;'>Природа</b><br/>" +
         "Те, кто имеет более высокий балл Производства, склонны отдавать предпочтение промышленному производству и самообеспеченности перед экологическими целями. Те, кто имеет более высокий балл Природы, имеют тенденцию поддерживать экологически ориентированную экономику со строгой экологической защитой.",
         "cn": "<b style='color:#804E00;'>生产</b> <b>vs.</b> <b style='color:#76890B;'>自然</b><br/>" +
-        "生产得分较高的人倾向于将工业产出和自给自足置于生态目标之上。自然得分较高的人倾向于支持采取严格的生态保护措施的环境导向型经济。"
+        "生产得分较高的人倾向于将工业产出和自给自足置于生态目标之上。自然得分较高的人倾向于支持采取严格的生态保护措施的环境导向型经济。",
+		"sh": "<b style='color:#804E00;'>Proizvodnja</b> <b>protiv</b> <b style='color:#76890B;'>Prirode</b><br/>" +
+        "Oni sa višom vrijednošću proizvodnje inače prioritiziraju industrijsku proizvodnju i samoodrživost nad ekološkim ciljevima. Oni sa višom vrijednošću prirode (odnosno ekologije) inače podržavaju ekonomiju orijentisanu očuvanju okoline."
     },
     "index-cons-desc": {
         "en": "<b style='color:#27577A;'>Conservative</b> <b>vs.</b> <b style='color:#C4A717;'>Progressive</b><br/>" +
@@ -408,49 +418,57 @@ const i18n = {
         "ru": "<b style='color:#27577A;'>Консерватизм</b> <b>vs.</b> <b style='color:#C4A717;'>Прогрессивизм</b><br/>" +
         "Те, кто имеет более высокий балл Консерватизма, склонны отдавать предпочтение более социально консервативной политике и взглядам. Те, кто имеет более высокий балл Прогрессивизма, склонны поддерживать более социально прогрессивную политику и взгляды.",
         "cn": "<b style='color:#27577A;'>保守主义</b> <b>vs.</b> <b style='color:#C4A717;'>进步主义</b><br/>" +
-        "保守主义得分较高的人倾向于支持在社会方面更保守的政策和观点。进步主义得分较高的人倾向于支持在社会方面更进步的政策和观点。"
+        "保守主义得分较高的人倾向于支持在社会方面更保守的政策和观点。进步主义得分较高的人倾向于支持在社会方面更进步的政策和观点。",
+		"sh": "<b style='color:#27577A;'>Konzervativnost</b> <b>protiv</b> <b style='color:#C4A717;'>Progresivnosti</b><br/>" +
+        "Oni sa višom vrijednošću konzervativnosti inače podržavaju više društveno konzervativnu politiku. Oni sa višom progresivnom vrijednošću inače podržavaju više društveno progresivnu politiku."
     },
     "index-h2-closest": {
         "en": "What does \"Closest Match\" mean in the results?",
         "de": "Was bedeutet \"Nächste Übereinstimmung\" in den Ergebnissen?",
         "ko": `결과의 "가장 일치하는 성향"이 무엇을 의미합니까?`,
         "ru": "Что означает \"Ближайшее совпадение\" в результатах?",
-        "cn": "结果中的\“最接近的匹配\”意味着什么？"
+        "cn": "结果中的\“最接近的匹配\”意味着什么？",
+		"sh": "Šta \"Najbliže Podudaranje\" znači u rezultatima?"
     },
     "index-p-similar": {
         "en": "Similar to 8values, this quiz will attempt to match you with a specific leftist ideology. There are currently thirteen possible ideologies, with more to come in the future. This is a work in progress and may not work as intended. Suggestions are very welcome. The current ideologies are: Marxism-Leninism, Orthodox Marxism, Eco-Marxism, Centrist Marxism, Council Communism, Left Communism, Anarcho-Communism, Eco-Anarchism, Market Anarchism, Utopian Socialism, Democratic Socialism, Social Democracy and Left-Wing Nationalism.",
         "de": "Ähnlich wie bei 8values wird dieses Quiz versuchen, Sie mit einer bestimmten linken Ideologie in Einklang zu bringen. Derzeit gibt es zwölf mögliche Ideologien, von denen in Zukunft weitere folgen werden. Dies ist eine laufende Arbeit und funktioniert möglicherweise nicht wie beabsichtigt. Vorschläge sind sehr willkommen. Die gegenwärtigen Ideologien sind: Marxismus-Leninismus, orthodoxer Marxismus, Öko-Marxismus, zentristischer Marxismus, Kommunismus des Rates, Linkskommunismus, Anarcho-Kommunismus, Öko-Anarchismus, Marktanarchismus, utopischer Sozialismus, demokratischer Sozialismus, Sozialdemokratie und Linksnationalismus.",
         "ko": "8Values와 비슷하게, 이 설문은 특정한 좌파 이념과 당신을 짝지으려 할 것입니다. 현재 12개의 가능한 이념이 있고, 미래에는 더 많은 이념들이 있을 수 있습니다. 이는 진행중인 작업이며, 의도한대로 작동하지 않을 수도 있습니다. 제안은 언제나 환영합니다. 현재 준비된 이념은 마르크스-레닌주의, 정통 마르크스주의, 생태-마르크스주의, 중도 마르크스주의, 평의회 공산주의, 좌익 공산주의, 아나코-코뮤니즘, 생태-아나키즘, 시장 아나키즘, 공상적 사회주의, 민주사회주의, 사회민주주의 등이 있습니다.",
         "ru": "Подобно 8values, эта викторина также пытается сопоставить вас с политической идеологией. В настоящее время в тесте существует тринадцать идеологий, и в будущем их будет ещё больше. Это незавершённая работа и гораздо менее точная, чем значения и оси, так что не воспринимайте её слишком серьезно. Предложения по улучшению также очень приветствуются. В настоящее время существуют следующие идеологии: Марксизм-ленинизм, Ортодоксальный марксизм, Экосоциализм, Центристский марксизм, Коммунизм рабочих советов, Левый коммунизм, Анархо-коммунизм, Зелёный анархизм, Рыночный анархизм, Утопический социализм, Демократический социализм, Социал-демократия и Левый национализм.",
-        "cn": "类似于8Values，这个测验试图将你与一种特定的左派意识形态相匹配。当前有13种可能的意识形态，未来还会有更多。这是一个正在进行的项目，可能无法按预期工作。非常欢迎提出建议。当前的意识形态有:<br/>马克思列宁主义（Marxism-Leninism）、正统马克思主义（Orthodox Marxism）、生态马克思主义（Eco-Marxism）、中间派马克思主义（Centrist Marxism）、委员会共产主义（Council Communism）、左翼共产主义（Left Communism）、无政府共产主义（Anarcho-Communism）、生态无政府主义（Eco-Anarchism）、市场无政府主义（Market Anarchism）、空想社会主义（Utopian Socialism）、民主社会主义（Democratic Socialism）、社会民主主义（Social Democracy）和左翼民族主义（Left-Wing Nationalism）。"
+        "cn": "类似于8Values，这个测验试图将你与一种特定的左派意识形态相匹配。当前有13种可能的意识形态，未来还会有更多。这是一个正在进行的项目，可能无法按预期工作。非常欢迎提出建议。当前的意识形态有:<br/>马克思列宁主义（Marxism-Leninism）、正统马克思主义（Orthodox Marxism）、生态马克思主义（Eco-Marxism）、中间派马克思主义（Centrist Marxism）、委员会共产主义（Council Communism）、左翼共产主义（Left Communism）、无政府共产主义（Anarcho-Communism）、生态无政府主义（Eco-Anarchism）、市场无政府主义（Market Anarchism）、空想社会主义（Utopian Socialism）、民主社会主义（Democratic Socialism）、社会民主主义（Social Democracy）和左翼民族主义（Left-Wing Nationalism）。",
+		"sh": "Slično kao i u 8values, ovaj kviz će pokušati da odredi vama najbližu specifičnu ljevičarsku idelogiju. Trenutno ih je 13, i više će biti dodano u budućnosti. Prijedlozi su dobrodošli. Trenutno, ideologije su: Marksizam-Lenjinizam, Ortodoksni Marksizam, Eko-Marksizam, Centristički Marksizam, Vijećnički Komunizam, Ljevi Komunizam, Anarho-Komunizam, Eko-Anarhizam, Tržišni Anarhizam, Utopijski Socijalizam, Demokratski Socijalizam, Socijaldemokratija i Ljevi Nacionalizam."
     },
     "index-h2-scores": {
         "en": "I don't like my scores!",
         "de": "Ich mag meine Ergebnisse nicht!",
         "ko": "제 점수가 마음에 들지 않습니다",
         "ru": "Мне не нравятся мои результаты!",
-        "cn": "我不喜欢我的分数！"
+         "cn": "我不喜欢我的分数！",
+		"sh": "Ne sviđaju mi se moji rezultati!"
     },
     "index-p-scores": {
         "en": "Please remember that you are not intended to get a 100% score in any of the categories. The point of the quiz is to challenge your views. If you have any suggestions or constructive criticism please fill out this <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>short form</a> or open an issue on the <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub Page</a>.",
         "de": "Bitte denken Sie daran, dass Sie in keiner der Kategorien eine 100%-ige Punktzahl erzielen möchten. Ziel des Quiz ist es, Ihre Ansichten zu hinterfragen. Wenn Sie Anregungen oder konstruktive Kritik haben, füllen Sie bitte dieses <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>Kurzformular</a> aus oder öffnen Sie ein Problem auf der <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub-Seite</a>.",
         "ko": `어떠한 범주에서든 100%의 점수를 얻을 수 없다는 것을 기억하십시오. 이 설문의 목적은 당신 자신의 관점에 직면하는 것에 있습니다. 의견이나 건설적인 비판은 <a href="https://forms.gle/6WZYMb5GXkkDLhxr5">이 양식</a>이나 <a href="https://github.com/LeftValues/leftvalues.github.io">GitHub Page</a>의 이슈를 통해 개진할 수 있습니다.`,
         "ru": "Пожалуйста, помните, что вы не намерены получить 100%-ый результат ни в одной из осей. Смысл викторины заключается в том, чтобы оспорить ваши взгляды. Если у вас какие-либо предложения или конструктивная критика, то, пожалуйста, заполните эту <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>короткую форму</a> или откройте вкладку ''issue'' на <a href='https://github.com/LeftValues/leftvalues.github.io'>странице GitHub</a>.",
-        "cn": "请记住，你没必要在任何一类中获得100%的分数。测验的重点是挑战你的观点。如果你有任何建议或是建设性的批评，请填写<a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>这份表格</a>或是在<a href='https://github.com/LeftValues/leftvalues.github.io'>该项目的GitHub Page</a>上开个issue。"
+        "cn": "请记住，你没必要在任何一类中获得100%的分数。测验的重点是挑战你的观点。如果你有任何建议或是建设性的批评，请填写<a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>这份表格</a>或是在<a href='https://github.com/LeftValues/leftvalues.github.io'>该项目的GitHub Page</a>上开个issue。",
+		"sh": "Imajte na umu da cilj nije da dobijete 100% na bilo kojoj kategoriji. Smisao kviza je da izazove vaše mišljenje. Ako imate bilo kakve prijedloge ili konstruktivnu kritiku molimo vas da ispunite ovaj <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>kratki formular</a> ili otvorite pitanje na <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub stranici</a>."
     },
     "index-h2-tracked": {
         "en": "Am I being tracked?",
         "de": "Werde ich getracked?",
         "ko": "제가 추적되고 있습니까?",
         "ru": "За мной следят?",
-        "cn": "我被追踪了吗？"
+        "cn": "我被追踪了吗？",
+		"sh": "Da li me stranica prati?"
     },
     "index-p-tracked": {
         "en": "LeftValues does utilize very basic tracking to get an idea of the amount of visitors. No personal information is collected and answers/results are not saved. If you do not believe me, the code is open source and available for all to see. For transparency purposes, the collected data for the first week since release can be viewed on this <a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Google Document</a>.",
         "de": "LeftValues verwendet ein sehr einfaches Tracking, um sich einen Überblick über die Anzahl der Besucher zu verschaffen. Es werden keine persönlichen Informationen gesammelt und Antworten/Ergebnisse werden nicht gespeichert. Wenn Sie mir nicht glauben, ist der Code Open Source und für alle sichtbar.",
         "ko": `LeftValues는 방문자 수를 파악하기 위해 매우 기본적인 추적 기능을 사용하고 있습니다. 개인 정보는 수집되지 않으며 응답과 결과는 저장되지 않습니다. 이 서비스를 위해 사용한 코드는 모든 사람들에게 오픈되어 있으므로 만일 당신이 우릴 믿지 못하겠다면 살펴볼 수 있습니다. 우리가 수집하는 정보의 투명성을 위해 이 서비스가 오픈된 지 첫 주동안 수집된 데이터를 <a href="https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing">Google Document</a>에 공개해두었습니다.`,
         "ru": "LeftValues использует очень простое отслеживание, чтобы получить представление о количестве посетителей. Личная информация не собирается, а ответы/результаты не сохраняются. Если вы нам не верите, код открыт и доступен для всех. В целях обеспечения прозрачности, собранные данные за первую неделю с момента выпуска можно просмотреть в этом <a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Гугл-документе</a>.",
-        "cn": "LeftValues确实使用了非常基本的追踪方法来了解访问者的数量。不会收集任何个人信息，也不会保存答案/结果。如果你不相信我，代码是开源的，可供所有人查看。为了透明起见，发布后第一周收集的数据可以在这份<a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Google文档</a>中查看。"
+        "cn": "LeftValues确实使用了非常基本的追踪方法来了解访问者的数量。不会收集任何个人信息，也不会保存答案/结果。如果你不相信我，代码是开源的，可供所有人查看。为了透明起见，发布后第一周收集的数据可以在这份<a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Google文档</a>中查看。",
+		"sh": "LeftValues koristi vrlo osnovno praćenje broja posjetioca. Ne sakuplja lične podakte i odgovori/rezultati nisu sačuvani. Ako nam ne vjerujete, kod je open source i dostupan svima na pregled. Radi transparentnost, prikupljeni podaci za prvu sedmicu od objave mogu se vidjeti u ovom <a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Google dokumentu</a>."
     }
 }
 
