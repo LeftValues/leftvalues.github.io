@@ -184,7 +184,7 @@ const i18n = {
         "de": "Nächst höchste Überstimmungen",
         "ko": "다음으로 일치하는 성향",
         "ru": "Следующие ближайшие совпадения",
-        "cn": "接下来最接近的匹配",
+        "cn": "次接近匹配",
 		"sh": "Sledeća najbliža podudaranja"
     },
     "next-matches-percent": {
@@ -289,7 +289,7 @@ const i18n = {
         "de": "Was ist LeftValues?",
         "ko": "LeftValues가 무엇입니까?",
         "ru": "Что такое LeftValues?",
-        "cn": "什么是LeftValues？",
+        "cn": "LeftValues是什么？",
 		"sh": "Šta je LeftValues?"
     },
     "index-p-answer": {
