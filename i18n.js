@@ -125,7 +125,7 @@ const i18n = {
     "quiz-back": {
         "en": "back",
         "de": "Zurück",
-        "fr": "Retour"
+        "fr": "Retour",
         "ko": "뒤로",
         "ru": "Назад",
         "cn": "返回"
@@ -133,7 +133,7 @@ const i18n = {
     "quiz-question-of": {
         en(qn, questions) {return `Question ${qn + 1} of ${questions.length}`},
         de(qn, questions) {return `Frage ${qn +1} von ${questions.length}`},
-        fr(qn, questions) {retrun `Question ${qn +1} sur ${questions.length}`},
+        fr(qn, questions) {return `Question ${qn +1} sur ${questions.length}`},
         ko(qn, questions) {return `${questions.length}개 질문 중 ${qn +1} 번째`},
         ru(qn, questions) {return `Вопрос ${qn + 1} из ${questions.length}`},
         cn(qn, questions) {return `第 ${qn + 1} 题，共 ${questions.length} 题`}
@@ -158,10 +158,10 @@ const i18n = {
     "inst-gotit": {
         "en": "Got it!",
         "de": "Verstanden",
-        "fr": "Compris !"
+        "fr": "Compris !",
         "ko": "알겠습니다",
         "ru": "Понял!",
-        "cn": "知道了！",
+        "cn": "知道了！"
     },
     "inst-nvm": {
         "en": "Wait, nevermind!",
@@ -347,17 +347,17 @@ const i18n = {
         "cn": "当前一共有七个坐标轴，其各自代表了一对相反的价值观。它们是："
     },
     "index-rev-desc": {
-        "en": `<b style='color:${colors.rev};'>Revolution</b> <b>vs.</b> <b style='color:${colors.rev};'>Reform</b><br/>` +
+        "en": `<b style='color:${colors.rev};'>Revolution</b> <b>vs.</b> <b style='color:${colors.ref};'>Reform</b><br/>` +
         "Those with a higher revolution score tend to support a radical and rapid overthrow of the capitalist system through a mass uprising. Those with a higher reform score tend to favor inducing gradual changes within capitalist structures, such as liberal democracy, with the eventual goal of reaching socialism.",       
-        "de": `<b style='color:${colors.rev};'>Revolution</b> <b>vs.</b> <b style='color:${colors.rev};'>Reform</b><br/>` +
+        "de": `<b style='color:${colors.rev};'>Revolution</b> <b>vs.</b> <b style='color:${colors.ref};'>Reform</b><br/>` +
         "Diejenigen mit einem höheren Revolutionswert unterstützen tendenziell einen radikalen und raschen Sturz des kapitalistischen Systems durch einen Massenaufstand. Diejenigen mit einem höheren Reformwert tendieren dazu, allmähliche Veränderungen in kapitalistischen Strukturen wie der liberalen Demokratie herbeizuführen, mit dem eventuellen Ziel des Sozialismus.",
-        "fr": `<b style='color:${colors.rev};'>Révolution</b> <b>vs.</b> <b style='color:${colors.rev};'>Réformisme</b><br/>` +
+        "fr": `<b style='color:${colors.rev};'>Révolution</b> <b>vs.</b> <b style='color:${colors.ref};'>Réformisme</b><br/>` +
         "Celleux avec un pourcentage élevé en faveur de la révolution ont tendance à soutenir un renversement radical et efficace du système capitaliste à travers une révolte de masse. Celleux avec un pourcentage élevé en faveur du réformisme ont tendance à favoriser l'impulsion graduelle de changements au sein de structures capitalistes, comme une démocratie à l'occidentale (aussi appelée libérale), avec comme objectif de créer une société socialiste.",
-        "ko": `<b style="color:#890000;">혁명</b> <b>vs.</b> <b style="color:#FC5959;">개혁</b><br/>
+        "ko": `<b style="color:${colors.rev};">혁명</b> <b>vs.</b> <b style="color:${colors.ref};">개혁</b><br/>
         혁명 점수가 높은 사람들은 대중 봉기를 통한 자본주의체제의 급진적이고 빠른 전복을 지지하는 경향이 있습니다. 개혁 점수가 높은 사람들은 자유주의 민주주의와 같은 자본주의 구조 내에서 점진적으로 사회주의에 도달하려는 목표를 가지고 변화를 유도하는 경향이 있습니다.`,
-        "ru": "<b style='color:#890000;'>Революция</b> <b>vs.</b> <b style='color:#FC5959;'>Реформы</b><br/>" +
+        "ru": `<b style='color:${colors.rev};'>Революция</b> <b>vs.</b> <b style='color:${colors.ref};'>Реформы</b><br/>` +
         "Те, кто имеет более высокий балл Революции, склонны поддерживать радикальное и быстрое свержение капиталистической системы посредством массового восстания. Те, кто имеет более высокий балл Реформ, склонны выступать за постепенные изменения внутри капиталистических структур, таких как либеральная демократия, с конечной целью достижения социализма.",
-        "cn": "<b style='color:#890000;'>革命</b> <b>vs.</b> <b style='color:#FC5959;'>改良</b><br/>" +
+        "cn": `<b style='color:${colors.rev};'>革命</b> <b>vs.</b> <b style='color:${colors.ref};'>改良</b><br/>` +
         "革命得分较高的人倾向于支持通过大规模起义来激进和迅速地推翻资本主义制度。改革得分较高的人倾向于支持在资本主义结构（如自由民主制）中引导渐进的变化，最终目标是实现社会主义。"
     },
     "index-sci-desc": {
@@ -367,10 +367,10 @@ const i18n = {
         "Diejenigen mit einer höheren wissenschaftlichen Punktzahl neigen dazu, die marxistische Gesellschaftsanalyse im Sinne des dialektischen Materialismus zu unterstützen oder zu sympathisieren. Diejenigen mit einer höheren utopischen Bewertung neigen dazu, an eine idealistischere Analyse der Gesellschaft zu glauben und materialistische Ansätze abzulehnen.",  
         "fr": `<b style="color:${colors.sci};">Scientifique</b> <b>vs.</b> <b style="color:${colors.uto};">Utopiste</b><br/>` +
         "Celleux avec un pourcentage élevé du côté scientifique ont tendance à soutenir ou sympathiser avec l'analyse marxiste de la société qui suit la dialectique matérialiste. Celleux avec un pourcentage élevé du côté utopiste ont tendance à croire en une analyse plus idéaliste de la société et rejettent les approches matérialistes.",
-        "ko": `<b style="color:#88232B;">과학주의</b> <b>vs.</b> <b style="color:#7F0037;">공상주의</b><br/> 과학주의 점수가 높은 사람들은 변증법적 유물론의 기준으로 사회에 대한 마르크스주의 분석을 지지하거나 공감하는 경향이 있습니다. 공상주의 점수가 높은 사람들은 사회에 대한 이상적인 분석을 믿고 물질주의적 접근을 거부하는 경향이 있습니다.`,
-        "ru": "<b style='color:#88232B;'>Научность</b> <b>vs.</b> <b style='color:#7F0037;'>Утопия</b><br/>" +
+        "ko": `<b style="color:${colors.sci};">과학주의</b> <b>vs.</b> <b style="color:${colors.uto};">공상주의</b><br/> 과학주의 점수가 높은 사람들은 변증법적 유물론의 기준으로 사회에 대한 마르크스주의 분석을 지지하거나 공감하는 경향이 있습니다. 공상주의 점수가 높은 사람들은 사회에 대한 이상적인 분석을 믿고 물질주의적 접근을 거부하는 경향이 있습니다.`,
+        "ru": `<b style='color:${colors.sci};'>Научность</b> <b>vs.</b> <b style='color:${colors.uto};'>Утопия</b><br/>` +
         "Те, кто имеет более высокий балл Научности, склонны поддерживать или симпатизировать Марксистскому анализу общества по линии диалектического материализма. Те, кто имеет более высокий балл Утопии, склонны верить в более идеалистический анализ общества и отвергать материалистические подходы.",
-        "cn": "<b style='color:#88232B;'>科学社会主义</b> <b>vs.</b> <b style='color:#7F0037;'>空想社会主义</b><br/>" +
+        "cn": `<b style='color:${colors.sci};'>科学社会主义</b> <b>vs.</b> <b style='color:${colors.uto};'>空想社会主义</b><br/>` +
         "科学社会主义得分较高的人倾向于支持或赞同对社会采用马克思主义的辩证唯物主义分析。空想社会主义得分较高的人倾向于相信对社会采用更理想主义的分析，而拒绝唯物主义的方法。"
     },
     "index-cent-desc": {
@@ -380,10 +380,10 @@ const i18n = {
         "Diejenigen mit einer höheren zentralen Punktzahl neigen dazu, eine Wirtschaftsstruktur zu unterstützen, die auf einer zentralisierten nationalen Planung beruht. Diejenigen mit einer höheren dezentralen Punktzahl neigen dazu, eine Wirtschaftsstruktur zu unterstützen, die auf einer dezentralen Planung beruht, normalerweise in einem lokaleren Maßstab.",
         "fr": `<b style="color:${colors.cent};">Centralisation</b> <b>vs.</b> <b style="color:${colors.dec};">Décentralisation</b><br/>` +
         "Celleux avec un pourcentage élevé du côté de la centralisation ont tendance à soutenir une structure économique fondée sur une planification centralisée et nationalisée. Celleux avec un pourcentage élevé du côté de la décentralisation ont tendance à soutenir une structure économique fondée sur une planification décentralisée, habituellement appliquée sur une échelle plus locale.",
-        "ko": `<b style="color:#560000;">중앙집권주의</b> <b>vs.</b> <b style="color:#000000;">분권주의</b><br/> 중앙집권주의 점수가 높은 사람들은 중앙집중식 국가계획을 기반한 경제 구조를 지지하는 경향이 있습니다. 분권주의 점수가 높은 사람들은 분산계획을 중심으로 한 경제 구조를 지지하는 경향이 있습니다.`,
-        "ru": "<b style='color:#560000;'>Централизация</b> <b>vs.</b> <b style='color:#000000;'>Децентрализация</b><br/>" + 
+        "ko": `<b style="color:${colors.cent};">중앙집권주의</b> <b>vs.</b> <b style="color:${colors.dec};">분권주의</b><br/> 중앙집권주의 점수가 높은 사람들은 중앙집중식 국가계획을 기반한 경제 구조를 지지하는 경향이 있습니다. 분권주의 점수가 높은 사람들은 분산계획을 중심으로 한 경제 구조를 지지하는 경향이 있습니다.`,
+        "ru": `<b style='color:${colors.cent};'>Централизация</b> <b>vs.</b> <b style='color:${colors.dec};'>Децентрализация</b><br/>` + 
         "Те, кто имеет более высокий балл Централизации, как правило, поддерживают экономическую структуру, основанную на централизованном национальном планировании. Те, кто имеет более высокий балл Децентрализации, как правило, поддерживают экономическую структуру, основанную на децентрализованном планировании, как правило, на более локальном уровне.",
-        "cn": "<b style='color:#560000;'>集权</b> <b>vs.</b> <b style='color:#000000;'>分权</b><br/>" + 
+        "cn": `<b style='color:${colors.cent};'>集权</b> <b>vs.</b> <b style='color:${colors.dec};'>分权</b><br/>` + 
         "集权得分较高的人倾向于支持基于国家中央计划的经济结构。分权得分较高的人倾向于支持基于分散计划的经济结构，通常更侧重于地方。"
     },
     "index-int-desc": {
@@ -393,10 +393,10 @@ const i18n = {
         "Diejenigen mit einer höheren internationalen Punktzahl neigen dazu, die Bildung einer internationalen sozialistischen Bewegung zu unterstützen, oft mit dem Ziel, Nationen abzuschaffen. Diejenigen mit einer höheren nationalen Punktzahl neigen dazu, den Aufbau des Sozialismus innerhalb der bestehenden Grenzen zu priorisieren und das Ziel einer sozialistischen Weltrepublik abzulehnen.",
         "fr": `<b style="color:${colors.int};">International</b> <b>vs.</b> <b style="color:${colors.nat};">National</b><br/>` +
         "Celleux avec un pourcentage élevé du côté international ont tendance à soutenir la formation d'un mouvement socialiste international, avec souvent l'objectif final d'abolir les frontières. Celleux avec un pourcentage élevé du côté national ont tendance à prioriser l'avènement du socialisme au sein des frontières existantes et rejettent l'objectif d'une république socialiste mondiale.",
-        "ko": `<b style="color:#782F52;">세계</b> <b>vs.</b> <b style="color:#7F3300;">국가</b><br/> 세계주의 점수가 높은 사람들은 종종 국가를 폐지하겠다는 궁극적 목표를 가지고 국제 사회주의 운동을 지원하는 경향이 있습니다. 높은 국가주의 점수를 받은 사람들은 기존 국경 내에서 사회주의 구축을 우선하고 국제 사회주의 공화국의 목표는 거부하는 경향이 있습니다.`,
-        "ru": "<b style='color:#782F52;'>Интернационализм</b> <b>vs.</b> <b style='color:#7F3300;'>Национализм</b><br/>" +
+        "ko": `<b style="color:${colors.int};">세계</b> <b>vs.</b> <b style="color:${colors.nat};">국가</b><br/> 세계주의 점수가 높은 사람들은 종종 국가를 폐지하겠다는 궁극적 목표를 가지고 국제 사회주의 운동을 지원하는 경향이 있습니다. 높은 국가주의 점수를 받은 사람들은 기존 국경 내에서 사회주의 구축을 우선하고 국제 사회주의 공화국의 목표는 거부하는 경향이 있습니다.`,
+        "ru": `<b style='color:${colors.int};'>Интернационализм</b> <b>vs.</b> <b style='color:${colors.nat};'>Национализм</b><br/>` +
         "Те, кто имеет более высокий балл Интернационализма, как правило, поддерживают формирование международного социалистического движения, зачастую с конечной целью ликвидации государств. Те, кто имеет более высокий балл Национализма, склонны отдавать приоритет построению социализма в рамках существующих границ и отвергать цель мировой социалистической республики.",
-        "cn": "<b style='color:#782F52;'>国际主义</b> <b>vs.</b> <b style='color:#7F3300;'>民族主义</b><br/>" +
+        "cn": `<b style='color:${colors.int};'>国际主义</b> <b>vs.</b> <b style='color:${colors.nat};'>民族主义</b><br/>` +
         "国际主义得分较高的人倾向于支持建立国际社会主义运动，其最终目标往往是废除国家。民族主义得分较高的人倾向于优先在现有国界内建设社会主义，而拒绝世界社会主义共和国的目标。"
     },
     "index-party-desc": {
@@ -406,23 +406,23 @@ const i18n = {
         "Diejenigen mit einer höheren Parteibewertung bevorzugen es, politische Parteien als Grundlage einer sozialistischen Bewegung zu verwenden. Diejenigen mit einer höheren Gewerkschaftsbewertung bevorzugen es, Gewerkschaften und andere Formen der Massenorganisation als Grundlage einer sozialistischen Bewegung zu verwenden. Partei bedeutet nicht unbedingt, dass Sie gegen Gewerkschaften sind und umgekehrt, es geht mehr um Präferenzen.",
         "fr": `<b style="color:${colors.party};">Parti politique</b> <b>vs.</b> <b style="color:${colors.syn};">Syndicat</b><br/>` +
         "Celleux avec un pourcentage élevé du côté du parti politique ont tendance à favoriser l'usage des partis politiques comme base d'un mouvement socialiste. Celleux avec un pourcentage élevé du côté du syndicat ont tendance à favoriser l'usage des organisations syndicales et d'autres formes d'organisations de masse comme base d'un mouvement socialiste. Être pro-parti ne veut pas forcément dire que tu t'oppose aux syndicats et inversement, c'est plus une question de préférence.",
-        "ko": `<b style="color:#963B33;">정당</b> <b>vs.</b> <b style="color:#7F333B;">조합</b><br/> 정당주의 점수가 높은 사람들은 정당을 사회주의 운동의 기초로 삼는 것을 선호하는 경향이 있습니다. 조합주의 점수가 높은 사람들은 조합과 다른 형태의 대중조직을 사회주의 운동의 기초로 삼는 것을 좋아합니다. 정당이라고 해서 반드시 조합에 반대한다는 의미는 아니며 그 반대 또한 마찬가지입니다.`,
-        "ru": "<b style='color:#963B33;'>Партия</b> <b>vs.</b> <b style='color:#7F333B;'>Профсоюзы</b><br/>" +
+        "ko": `<b style="color:${colors.party};">정당</b> <b>vs.</b> <b style="color:${colors.syn};">조합</b><br/> 정당주의 점수가 높은 사람들은 정당을 사회주의 운동의 기초로 삼는 것을 선호하는 경향이 있습니다. 조합주의 점수가 높은 사람들은 조합과 다른 형태의 대중조직을 사회주의 운동의 기초로 삼는 것을 좋아합니다. 정당이라고 해서 반드시 조합에 반대한다는 의미는 아니며 그 반대 또한 마찬가지입니다.`,
+        "ru": `<b style='color:${colors.party};'>Партия</b> <b>vs.</b> <b style='color:${colors.syn};'>Профсоюзы</b><br/>` +
         "Те, кто имеет более высокий балл Партии, склонны отдавать предпочтение использованию политических партий в качестве основы социалистического движения. Те, кто имеет более высокий балл Профсоюзов, склонны отдавать предпочтение использованию профсоюзов и других форм массовой организации как основы социалистического движения. Быть пропартийным не обязательно означает выступать против профсоюзов, и наоборот, речь идёт скорее о предпочтениях.",
-        "cn": "<b style='color:#963B33;'>党派</b> <b>vs.</b> <b style='color:#7F333B;'>工会</b><br/>" +
+        "cn": `<b style='color:${colors.party};'>党派</b> <b>vs.</b> <b style='color:${colors.syn};'>工会</b><br/>` +
         "党派得分较高的人倾向于把政党作为社会主义运动的基础。工会得分较高的人倾向于把工会和其他形式的群众组织作为社会主义运动的基础。倾向党派并不一定意味着你反对工会，反之亦然，这更多的是体现一种偏好。"
     },
     "index-prod-desc": {
-        "en": `<b style='color:${colors.prod};'>Production</b> <b>vs.</b> <b style='color:#76890B;'>Nature</b><br/>` +
+        "en": `<b style='color:${colors.prod};'>Production</b> <b>vs.</b> <b style='color:${colors.eco};'>Nature</b><br/>` +
         "Those with a higher production score tend to prioritize industrial output and self-sustainability over ecological goals. Those with a higher nature score tend to support an environmentally oriented economy with strict ecological protections.",
-        "de": `<b style='color:${colors.prod};'>Produktion</b> <b>vs.</b> <b style='color:#76890B;'>Ökologie</b><br/>` +
+        "de": `<b style='color:${colors.prod};'>Produktion</b> <b>vs.</b> <b style='color:${colors.eco};'>Ökologie</b><br/>` +
         "Diejenigen mit einem höheren Produktionsfaktor tendieren dazu, die Industrieproduktion und die Selbstverträglichkeit vor ökologischen Zielen zu priorisieren. Diejenigen mit einem höheren ökologischen Faktor tendieren dazu, eine umweltorientierte Wirtschaft mit strengen ökologischen Schutzmaßnahmen zu unterstützen.",
         "fr": `<b style="color:${colors.prod};">Productivisme</b> <b>vs.</b> <b style="color:${colors.eco};">Écologie</b><br/>` +
         "Celleux avec un pourcentage élevé du côté du productivisme ont tendance à prioriser le développement industriel et l'autosuffisance aux objectifs écologiques. Celleux avec un pourcentage élevé du côté de l'écologie ont tendance à soutenir une économie orientée sur la protection de l'environnement avec des mesures strictes en la matière.",
-        "ko": `<b style="color:#804E00;">생산</b> <b>vs.</b> <b style="color:#76890B;">생태</b><br/> 생산주의 점수가 높을 수록 생태학적 목표보다 산업 생산량과 산업의 지속가능성을 우선시하는 경향이 있습니다. 높은 생태주의 점수를 가진 사람들은 엄격한 생태 보호를 통한 환경 지향적 경제를 지지하는 경향이 있습니다.`,
-        "ru": "<b style='color:#804E00;'>Производство</b> <b>vs.</b> <b style='color:#586808;'>Природа</b><br/>" +
+        "ko": `<b style="color:${colors.cent};">생산</b> <b>vs.</b> <b style="color:${colors.eco};">생태</b><br/> 생산주의 점수가 높을 수록 생태학적 목표보다 산업 생산량과 산업의 지속가능성을 우선시하는 경향이 있습니다. 높은 생태주의 점수를 가진 사람들은 엄격한 생태 보호를 통한 환경 지향적 경제를 지지하는 경향이 있습니다.`,
+        "ru": `<b style='color:${colors.cent};'>Производство</b> <b>vs.</b> <b style='color:${colors.eco};'>Природа</b><br/>` +
         "Те, кто имеет более высокий балл Производства, склонны отдавать предпочтение промышленному производству и самообеспеченности перед экологическими целями. Те, кто имеет более высокий балл Природы, имеют тенденцию поддерживать экологически ориентированную экономику со строгой экологической защитой.",
-        "cn": "<b style='color:#804E00;'>生产</b> <b>vs.</b> <b style='color:#76890B;'>自然</b><br/>" +
+        "cn": `<b style='color:${colors.cent};'>生产</b> <b>vs.</b> <b style='color:${colors.eco};'>自然</b><br/>` +
         "生产得分较高的人倾向于将工业产出和自给自足置于生态目标之上。自然得分较高的人倾向于支持采取严格的生态保护措施的环境导向型经济。"
     },
     "index-cons-desc": {
@@ -432,18 +432,16 @@ const i18n = {
         "Diejenigen mit einer höheren konservativen Bewertung tendieren dazu, sozial konservativere Strategien und Ansichten zu bevorzugen. Diejenigen mit einer höheren progressiven Punktzahl unterstützen tendenziell eine sozial progressivere Politik und Sichtweise.",
         "fr": `<b style='color:${colors.cons};'>Conservatisme</b> <b>vs.</b> <b style="color:${colors.prog};">Progressisme</b><br/>` +
         "Celleux avec un pourcentage élevé du côté du conservatisme ont tendance à favoriser des points de vue et des politiques socialement conservatrices. Celleux avec un pourcentage élevé du côté du progressisme ont tendance à favoriser des points de vue et des politiques socialement progressistes.",
-        "de": "<b style='color:#27577A;'>Konservativ</b> <b>vs.</b> <b style='color:#C4A717;'>Progressiv</b><br/>" +
-        "Diejenigen mit einer höheren konservativen Bewertung tendieren dazu, sozial konservativere Strategien und Ansichten zu bevorzugen. Diejenigen mit einer höheren progressiven Punktzahl unterstützen tendenziell eine sozial progressivere Politik und Sichtweise.",
-        "ko": `<b style="color:#27577A;">보수</b> <b>vs.</b> <b style="color:#C4A717;">진보</b><br/> 보수주의 점수가 높은 사람들은 사회적으로 보수적인 정책과 견해를 선호하는 경향이 있습니다. 진보주의 점수가 높은 사람들은 사회적으로 진보적인 정책과 견해를 지지하는 경향이 있습니다.`,
-        "ru": "<b style='color:#27577A;'>Консерватизм</b> <b>vs.</b> <b style='color:#C4A717;'>Прогрессивизм</b><br/>" +
+        "ko": `<b style="color:${colors.cons};">보수</b> <b>vs.</b> <b style="color:${colors.prog};">진보</b><br/> 보수주의 점수가 높은 사람들은 사회적으로 보수적인 정책과 견해를 선호하는 경향이 있습니다. 진보주의 점수가 높은 사람들은 사회적으로 진보적인 정책과 견해를 지지하는 경향이 있습니다.`,
+        "ru": `<b style='color:${colors.cons};'>Консерватизм</b> <b>vs.</b> <b style='color:${colors.prog};'>Прогрессивизм</b><br/>` +
         "Те, кто имеет более высокий балл Консерватизма, склонны отдавать предпочтение более социально консервативной политике и взглядам. Те, кто имеет более высокий балл Прогрессивизма, склонны поддерживать более социально прогрессивную политику и взгляды.",
-        "cn": "<b style='color:#27577A;'>保守主义</b> <b>vs.</b> <b style='color:#C4A717;'>进步主义</b><br/>" +
+        "cn": `<b style='color:${colors.cons};'>保守主义</b> <b>vs.</b> <b style='color:${colors.prog};'>进步主义</b><br/>` +
         "保守主义得分较高的人倾向于支持在社会方面更保守的政策和观点。进步主义得分较高的人倾向于支持在社会方面更进步的政策和观点。"
     },
     "index-h2-closest": {
         "en": "What does \"Closest Match\" mean in the results?",
         "de": "Was bedeutet \"Nächste Übereinstimmung\" in den Ergebnissen?",
-        "fr": "Qu'est-ce que \"Résultat le plus proche\" signifie ?"
+        "fr": "Qu'est-ce que \"Résultat le plus proche\" signifie ?",
         "ko": `결과의 "가장 일치하는 성향"이 무엇을 의미합니까?`,
         "ru": "Что означает \"Ближайшее совпадение\" в результатах?",
         "cn": "结果中的\“最接近的匹配\”意味着什么？"
