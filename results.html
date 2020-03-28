@@ -1,15 +1,16 @@
+<!DOCTYPE html>
+<html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7CRoboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
 <title>LeftValues Results</title>
-<link rel="icon" type="x-icon" href="icon.png">
-<link rel="shortcut icon" type="x-icon" href="icon.png">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="shortcut icon" type="image/png" href="icon.png">
 <meta charset="utf-8">
-</head>
 <script type="application/javascript"
         src="ideologies.js">
 </script>
-
+</head>
 <body>
 <h1>LeftValues</h1>
 <select id="langPicker"></select>
@@ -70,27 +71,32 @@
 <h3><span class="weight-300" id="ideodesc-label"></span></h3>
 <p data-i18n="result-url"><br>You can send these results by copying and pasting the URL at the top of the page or using the image below.</p>
 
+<h2 data-i18n="result-h2-next-matches">Next closest matches</h2>
+    <p data-i18n="next-matches-percent">With your closest match as 100% and farthest as 0%, here is how closely you matched the other ideologies.</p>
+
+<dl id="next-matches"></dl>
+
 <h2 data-i18n="result-h2-score">I don't like my scores!</h2>
     <p data-i18n="result-issues">Please remember that you are not intended to get a 100% score in any of the categories. The point of the quiz is to challenge your views. If you have any suggestions or constructive criticism please fill out this <a href="https://forms.gle/6WZYMb5GXkkDLhxr5">short form</a> or open an issue on the <a href="https://github.com/LeftValues/leftvalues.github.io">GitHub Page</a>.</p>
 <hr/>
 <canvas id="banner" width=800 height=1000 style="font-family:Montserrat"></canvas>
 <button data-i18n="result-back" class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
-<!-- Default Statcounter code for LeftValues http://leftvalues.github.io -->
+<!-- Privacy respecting Statcounter code for LeftValues http://leftvalues.github.io -->
 <script type="text/javascript">
 var sc_project=12079783; 
 var sc_invisible=1; 
 var sc_security="fa5443fa"; 
-var sc_https=1; 
+var sc_https=1;
+if(navigator.doNotTrack != 1) {
+var statcounterscript=document.createElement('script');
+statcounterscript.setAttribute("type","text/javascript");
+statcounterscript.setAttribute("src", "https://www.statcounter.com/counter/counter.js");
+document.getElementsByTagName("body")[0].appendChild(statcounterscript);
+}
 </script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/12079783/0/fa5443fa/1/" alt="Web
-Analytics"></a></div></noscript>
 <!-- End of Statcounter Code -->
 <!-- JavaScript for the test itself -->
-<script type="application/javascript"src="i18n.js"></script>
+<script type="application/javascript" src="i18n.js"></script>
 <script>
     function getQueryVariable(variable)
     {
@@ -123,6 +129,14 @@ Analytics"></a></div></noscript>
         if (val >= 10) { return ary[5] } else
         if (val >= 0) { return ary[6] } else
         	{return ""}
+    }
+
+    function getIdeologyNameByIndex(i) {
+        return (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].name : ideologies[i].name;
+    }
+
+    function getIdeologyDescriptionByIndex(i) {
+        return (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].desc : ideologies[i].desc;
     }
 
     revolution  = getQueryVariable("a")
@@ -166,6 +180,9 @@ Analytics"></a></div></noscript>
     ideology = ""
 	ideodesc = ""
     ideodist = Infinity
+    ideologyToDistance = {};
+    sortedIdeologies = [];
+    ideologyIndexAndDistance = [];
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.a - revolution), 2)
@@ -175,14 +192,37 @@ Analytics"></a></div></noscript>
 		dist += Math.pow(Math.abs(ideologies[i].stats.e - party), 2)
 		dist += Math.pow(Math.abs(ideologies[i].stats.f - industry), 2)
 		dist += Math.pow(Math.abs(ideologies[i].stats.g - conservative), 2)
-        if (dist < ideodist) {
-            ideology = (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].name : ideologies[i].name
-			ideodesc = (userLang in ideologies[i].i18n) ? ideologies[i].i18n[userLang].desc : ideologies[i].desc
-            ideodist = dist
-        }
+
+        ideologyToDistance[ideologies[i].name] = dist;
+        ideologyIndexAndDistance.push({index: i, distance: dist});
     }
-    document.getElementById("ideology-label").innerHTML = ideology
-	document.getElementById("ideodesc-label").innerHTML = ideodesc
+    
+    ideologyIndexAndDistance.sort(function(a, b) {
+        return a.distance - b.distance;
+    });
+
+    distances = ideologyIndexAndDistance.map(function(indexAndDistance) {
+        return indexAndDistance.distance;
+    });
+
+    closestDistance = distances[0];
+    farthestDistance = distances[distances.length - 1];
+    distanceSpan = farthestDistance - closestDistance;
+
+    closestMatch = ideologyIndexAndDistance[0];
+    document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.index);
+	document.getElementById("ideodesc-label").innerHTML = getIdeologyDescriptionByIndex(closestMatch.index);
+
+    nextMatches = document.getElementById('next-matches');
+    nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function(indexAndDistance) {
+        i = indexAndDistance.index;
+        ideology = getIdeologyNameByIndex(i);
+        ideodesc = getIdeologyDescriptionByIndex(i);
+        relativeDistance = 1 - (indexAndDistance.distance - closestDistance)/distanceSpan;
+        relativeDistancePercent = Math.round(relativeDistance * 1000)/10;
+        return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
+            "<dd>" + ideodesc + "</dd>";
+    }).join("\n");
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
@@ -268,7 +308,7 @@ Analytics"></a></div></noscript>
         ctx.textAlign="left"
         ctx.fillText("LeftValues", 20, 90)
         ctx.font="50px Montserrat"
-        ctx.fillText(ideology, 20, 140)
+        ctx.fillText(getIdeologyNameByIndex(closestMatch.index), 20, 140)
 
 		ctx.fillStyle="#dddddd"
         ctx.textAlign="left"
@@ -302,3 +342,4 @@ Analytics"></a></div></noscript>
     }
     </script>
 </body>
+</html>
