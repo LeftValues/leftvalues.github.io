@@ -186,7 +186,7 @@ questions = [
             "de": "Die Produktionsmittel wie Fabriken und Farmen müssen in öffentlichem Besitz sein.",
             "ko": "공장 및 농장과 같은 생산 수단은 공공의 소유여야 한다.",
             "ru": "Средства производства, такие как фабрики и фермы, должны находиться в общественной собственности.",
-            "cn": "如工厂和农场之类的生产资料必须是公有的。"
+            "cn": "诸如工厂和农场之类的生产资料必须是公有的。"
         },
         "effect": {
             "a": 5,
