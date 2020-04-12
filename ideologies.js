@@ -1,7 +1,7 @@
 ideologies = [
 	{
         "name": "Marxism-Leninism",
-		"desc": "Marxism-Leninism is a form of Marxism that was forged in the 20th century in the Soviet Union. Marxist-Leninists heavily favor the use of a communist political party as the platform for both achieving revolution and establishing socialism. Many Marxist-Leninists are somewhat more nationalistic and patriotic than many other Marxists, and may favor industrial progress over environmental goals.",
+		    "desc": "Marxism-Leninism is a form of Marxism that was forged in the 20th century in the Soviet Union. Marxist-Leninists heavily favor the use of a communist political party as the platform for both achieving revolution and establishing socialism. Many Marxist-Leninists are somewhat more nationalistic and patriotic than many other Marxists, and may favor industrial progress over environmental goals.",
         "i18n": {
             "de": {
                 "name": "Marxismus-Leninismus",
@@ -18,6 +18,10 @@ ideologies = [
             "cn": {
                 "name": "马克思列宁主义",
                 "desc": "马克思列宁主义（Marxism-Leninism，简称马列主义）是20世纪在苏联形成的马克思主义的一种形式。马列主义者非常赞成把共产主义政党作为实现革命和建立社会主义的平台。许多马列主义者比其他马克思主义者更具有民族主义和爱国主义色彩，而且可能更倾向于工业进步而不是环保目标。"
+            },
+			      "sh": {
+                "name": "Marksizam-Lenjinizam",
+                "desc": "Marksizam-lenjinizam je forma marksizma stvorena u XX vijeku u Sovjetskom Savezu. Marksisti-lenjinisti snažno podržavaju komunističke političke partije kao platforme za postizanje revolucije i osnivanje socijalizma. Mnogi marksisti-lenjinisti su donekle više nacionalistički od drugih marksista, i ponekad teže industrijskom napretku prije nego očuvanju prirodne sredine."
             }
         },
         "stats": {
@@ -25,14 +29,14 @@ ideologies = [
             "b": 80,
             "c": 90,
             "d": 50,
-			"e": 90,
-			"f": 70,
-			"g": 50
+            "e": 90,
+            "f": 70,
+            "g": 50
         }
     },
     {
         "name": "Orthodox Marxism",
-		"desc": "Orthodox Marxism is a form of Marxism that adopts views that conform to Marxist theory as it was originally written, particularily on the topic of dialectical materialism. Orthodox Marxists are highly revolutionary and internationalist and hold that nonindustrial societies are incapable of achieving socialism.",
+		    "desc": "Orthodox Marxism is a form of Marxism that adopts views that conform to Marxist theory as it was originally written, particularily on the topic of dialectical materialism. Orthodox Marxists are highly revolutionary and internationalist and hold that nonindustrial societies are incapable of achieving socialism.",
         "i18n": {
             "de": {
                 "name": "Orthodoxer Marxismus",
@@ -49,6 +53,10 @@ ideologies = [
             "cn": {
                 "name": "正统马克思主义",
                 "desc": "正统马克思主义（Orthodox Marxism）是马克思主义的一种形式，它采用的观点与初创时的马克思主义理论相一致，尤其是在辩证唯物主义的主题上。正统的马克思主义者具有高度革命性和国际主义色彩，并认为非工业社会不可能实现社会主义。"
+            },
+			      "sh": {
+                "name": "Ortodoksni Marksizam",
+                "desc": "Ortodoksni marksizam je oblik marksizma koji usvaja gledišta u skladu sa marksističkom teorijom onakvom kakva je izvorno napisana, pogotovo na temu dijalektičkog materijalizma. Ortodoksni marksisti su revolucionarni, internacionalisti i smatraju da neindustrijalizovana društva ne mogu postići socijalizam."
             }
         },
         "stats": {
@@ -56,14 +64,14 @@ ideologies = [
             "b": 80,
             "c": 60,
             "d": 80,
-			"e": 70,
-			"f": 50,
-			"g": 30
+            "e": 70,
+            "f": 50,
+            "g": 30
         }
     },
 	{
         "name": "Eco-Marxism",
-		"desc": "Eco-Marxism is a form of Orthodox Marxism more commonly found in the modern day that places a particular emphasis on environmental issues. Eco-Marxists generally favor central economic planning as a way of combating climate issues.",
+		    "desc": "Eco-Marxism is a form of Orthodox Marxism more commonly found in the modern day that places a particular emphasis on environmental issues. Eco-Marxists generally favor central economic planning as a way of combating climate issues.",
         "i18n": {
             "de": {
                 "name": "Öko-Marxismus",
@@ -79,7 +87,11 @@ ideologies = [
             },
             "cn": {
                 "name": "生态马克思主义",
-                "desc": "生态马克思主义（Eco-Marxism）是正统马克思主义的一种形式，在现代更为普遍，它特别强调环境问题。生态马克思主义者通常倾向于通过中央计划经济应对气候问题。"
+                "desc": "生态马克思主义（Eco-Marxism）是正统马克思主义的一种形式，在现代更为普遍，它特别强调环境问题。生态马克思主义者通常倾向于通过中央计划经济应对气候问题。",
+            },
+			      "sh": {
+                "name": "Eko-Marksizam",
+                "desc": "Eko-marksizam je oblik ortodoksnog marksizma sa naglaskom na ekološka pitanja prisutniji u savremenom svijetu. Eko-marksisti su uglavnom naklonjeni centralnom ekonomskom planiranju kao metodi borbe sa klimatskim problemima."
             }
         },
         "stats": {
@@ -87,14 +99,14 @@ ideologies = [
             "b": 80,
             "c": 60,
             "d": 80,
-			"e": 70,
-			"f": 20,
-			"g": 30
+			      "e": 70,
+			      "f": 20,
+			      "g": 30
         }
     },
 	{
         "name": "Centrist Marxism",
-		"desc": "Centrist Marxism is a form of Marxism that adopts Marxist views on society and the economy while also refraining from taking a definitive position on revolution and reformism. Many Centrist Marxists may also be more nationalistic than other Marxists.",
+		    "desc": "Centrist Marxism is a form of Marxism that adopts Marxist views on society and the economy while also refraining from taking a definitive position on revolution and reformism. Many Centrist Marxists may also be more nationalistic than other Marxists.",
         "i18n": {
             "de": {
                 "name": "Zentristischer Marxismus",
@@ -111,6 +123,10 @@ ideologies = [
             "cn": {
                 "name": "中间派马克思主义",
                 "desc": "中间派马克思主义（Centrist Marxism）是马克思主义的一种形式，它既采用了马克思主义关于社会和经济的观点，又避免对革命和改良主义采取明确的立场。许多中间派马克思主义者也可能比其他马克思主义者更具有民族主义倾向。"
+            },
+			      "sh": {
+                "name": "Centristički Marksizam",
+                "desc": "Centristički marksizam je oblik marksizma koji usvaja marksističke poglede na društvo i ekonomiju, suzdržavajući se od zauzimanja zaključnih položaja po pitanju revolucije i reformizma. Mnogi centristički marksisti su donekle više nacionalistički od drugih marksista."
             }
         },
         "stats": {
@@ -118,14 +134,14 @@ ideologies = [
             "b": 80,
             "c": 50,
             "d": 50,
-			"e": 60,
-			"f": 40,
-			"g": 40
+            "e": 60,
+            "f": 40,
+            "g": 40
         }
     },
 	{
         "name": "Council Communism",
-		"desc": "Council Communism is a form of Marxism that advocates for workers councils being the core foundation of a socialist society. Council Communists generally oppose the existence of strong influence from political parties within the socialist political system, favoring council democracy.",
+		    "desc": "Council Communism is a form of Marxism that advocates for workers councils being the core foundation of a socialist society. Council Communists generally oppose the existence of strong influence from political parties within the socialist political system, favoring council democracy.",
         "i18n": {
             "de": {
                 "name": "Konzilkommunismus",
@@ -142,6 +158,10 @@ ideologies = [
             "cn": {
                 "name": "委员会共产主义",
                 "desc": "委员会共产主义（Council Communism）是马克思主义的一种形式，主张把工人委员会作为社会主义社会的核心基础。委员会共产主义者普遍反对在社会主义政治体制内存在强大的政党影响力，而赞成委员会民主。"
+            },
+			      "sh": {
+                "name": "Komunizam Radničkih Savjeta",
+                "desc": "Komunizam radničkih savjeta je oblik marksizma koji zagovara za to da radnički savjeti budu temelj socijalističkog društva. Komunisti radničkih savjeta se uglavnom suprotstavljaju postojanju snažnog uticaja od strane političkih partija unutuar socijalističkog političkog sistema, naklonjeni demokratiji radničkih savjeta."
             }
         },
         "stats": {
@@ -149,14 +169,14 @@ ideologies = [
             "b": 70,
             "c": 30,
             "d": 80,
-			"e": 40,
-			"f": 50,
-			"g": 30
+            "e": 40,
+            "f": 50,
+            "g": 30
         }
     },
 	{
         "name": "Left Communism",
-		"desc": "Left Communism is a form of Marxism that leans towards so called ultra-left positions. These include unconditional support for revolution and internationalism, a rejection of unions and participation in liberal democracy, and a rejection of national liberation and self-determination.",
+		    "desc": "Left Communism is a form of Marxism that leans towards so called ultra-left positions. These include unconditional support for revolution and internationalism, a rejection of unions and participation in liberal democracy, and a rejection of national liberation and self-determination.",
         "i18n": {
             "de": {
                 "name": "Linkskommunismus",
@@ -173,6 +193,10 @@ ideologies = [
             "cn": {
                 "name": "左翼共产主义",
                 "desc": "左翼共产主义（Left Communism）是马克思主义的一种形式，倾向于所谓的极左立场。这些包括无条件地支持革命和国际主义，拒绝工会和参加自由民主制，以及拒绝民族解放与自决。"
+            },
+			      "sh": {
+                "name": "Ljevi Komunizam",
+                "desc": "Ljevi komunizam je oblik marksizma koji se naginje ka takozvanim ultraljevičarskim položajima. Oni uključuju bezuslovnu podršku za revoluciju i internacionalizam, odbacivanje sindikata i učestvovanja u liberalnoj demokratiji, i odbacivanje nacionalnog oslobođenja i samoopredeljenja."
             }
         },
         "stats": {
@@ -180,14 +204,14 @@ ideologies = [
             "b": 60,
             "c": 50,
             "d": 80,
-			"e": 80,
-			"f": 50,
-			"g": 30
+            "e": 80,
+            "f": 50,
+            "g": 30
         }
     },
 	{
         "name": "Anarcho-Communism",
-		"desc": "Anarcho-Communism is a form of anarchism that advocates for the abolition of capitalism and the state, as well as the collective ownership of the means of production. Anarcho-Communists support a decentralized economy and government, with Anarcho-Syndicalism being a common way of organizing such a society.",
+		    "desc": "Anarcho-Communism is a form of anarchism that advocates for the abolition of capitalism and the state, as well as the collective ownership of the means of production. Anarcho-Communists support a decentralized economy and government, with Anarcho-Syndicalism being a common way of organizing such a society.",
         "i18n": {
             "de": {
                 "name": "Anarcho-Kommunismus",
@@ -204,6 +228,10 @@ ideologies = [
             "cn": {
                 "name": "无政府共产主义",
                 "desc": "无政府共产主义（Anarcho-Communism）是无政府主义的一种形式，主张废除资本主义、国家及及生产资料的集体所有制。无政府共产主义者支持分权的经济与政府。无政府工团主义是组织这种社会的一种常见方式。"
+            },
+			      "sh": {
+                "name": "Anarho-Komunizam",
+                "desc": "Anarho-komunizam je oblik anarhizma koji zagovara ukidanje kapitalizma i države, kao i kolektivno vlasništvo proizvodnih sredstava. Anarho-komunisti podržavaju decentraliziranu ekonomiju i vlast, pri čemu je anarho-sindikalizam čest način organizovanja takvog društva."
             }
         },
         "stats": {
@@ -211,14 +239,14 @@ ideologies = [
             "b": 50,
             "c": 20,
             "d": 80,
-			"e": 10,
-			"f": 50,
-			"g": 30
+            "e": 10,
+            "f": 50,
+            "g": 30
         }
     },
 	{
         "name": "Eco-Anarchism",
-		"desc": "Eco-Anarchism, or Green Anarchism, is a form of anarchism that places a particular emphasis on environmental issues. It is often linked to more distinct ideologies such as Anarcho-Syndicalism. Eco-Anarchists are generally revolutionary and support using a decentralized egalitarian economy to achieve environmental goals.",
+		    "desc": "Eco-Anarchism, or Green Anarchism, is a form of anarchism that places a particular emphasis on environmental issues. It is often linked to more distinct ideologies such as Anarcho-Syndicalism. Eco-Anarchists are generally revolutionary and support using a decentralized egalitarian economy to achieve environmental goals.",
         "i18n": {
             "de": {
                 "name": "Öko-Anarchismus",
@@ -235,6 +263,10 @@ ideologies = [
             "cn": {
                 "name": "生态无政府主义",
                 "desc": "生态无政府主义（Eco-Anarchism，或称绿色无政府主义）是无政府主义的一种形式，特别强调环境问题。它常常与诸如无政府工团主义等更独特的意识形态联系在一起。生态无政府主义者通常是革命性的，并支持使用分权的平等主义经济来实现环境目标。"
+            },
+			      "sh": {
+                "name": "Eko-Anarhizam",
+                "desc": "Eko-anarhizam, ili zeleni anarhizam, je oblik anarhizma sa posebnim naglaskom na ekološka pitanja. Često se dovodi u vezu sa više izraženim ideologijama kao što je anarho-sindikalizam. Eko-anarhisti su uglavnom revolucionarni i podržavaju upotrijebu decentralizirane egalitarne ekonomije da bi se dostigli ekološki ciljevi."
             }
         },
         "stats": {
@@ -242,14 +274,14 @@ ideologies = [
             "b": 50,
             "c": 20,
             "d": 80,
-			"e": 10,
-			"f": 20,
-			"g": 30
+            "e": 10,
+            "f": 20,
+            "g": 30
         }
     },
 	{
         "name": "Market Anarchism",
-		"desc": "Market Anarchism is a form of anarchism that mixes anarchist goals such as the abolition of hierarchy, the state and capitalism with heightened individualism and a moderate reformist approach. This should not be confused with Anarcho-Capitalism.",
+		    "desc": "Market Anarchism is a form of anarchism that mixes anarchist goals such as the abolition of hierarchy, the state and capitalism with heightened individualism and a moderate reformist approach. This should not be confused with Anarcho-Capitalism.",
         "i18n": {
             "de": {
                 "name": "Marktanarchismus",
@@ -266,6 +298,10 @@ ideologies = [
             "cn": {
                 "name": "市场无政府主义",
                 "desc": "市场无政府主义（Market Anarchism）是无政府主义的一种形式，它混合了废除等级制度、国家和资本主义等无政府主义目标和高度的个人主义和温和的改良主义方法。这不应与无政府资本主义混为一谈。"
+            },
+			      "sh": {
+                "name": "Tržišni Anarhizam",
+                "desc": "Tržišni anarhizam je oblik anarhizma koji miješa anarhističke ciljeve kao što su ukidanje hierarhije, države i kapitalizma sa povišenim individualizmom i umjerenim reformističkim pristupom. Ovo se ne bi trebalo pomiješati sa anarho-kapitalizmom."
             }
         },
         "stats": {
@@ -273,14 +309,14 @@ ideologies = [
             "b": 40,
             "c": 30,
             "d": 70,
-			"e": 10,
-			"f": 60,
-			"g": 30
+            "e": 10,
+            "f": 60,
+            "g": 30
         }
     },
 	{
         "name": "Utopian Socialism",
-		"desc": "Utopian Socialism is a form of pre-Marxist socialism that believes highly in an egalitarian, moralistic and idealistic foundation for a socialist society. Utopian Socialists generally reject violent revolution and often believe the ruling class can be convinced to adopt socialism.",
+		    "desc": "Utopian Socialism is a form of pre-Marxist socialism that believes highly in an egalitarian, moralistic and idealistic foundation for a socialist society. Utopian Socialists generally reject violent revolution and often believe the ruling class can be convinced to adopt socialism.",
         "i18n": {
             "de": {
                 "name": "Utopischer Sozialismus",
@@ -297,6 +333,10 @@ ideologies = [
             "cn": {
                 "name": "空想社会主义",
                 "desc": "空想社会主义（Utopian Socialism，直译为乌托邦社会主义）是在马克思主义出现前的社会主义的一种形式，它高度相信社会主义社会的基础是平等主义、道德主义和理想主义。空想社会主义者普遍反对暴力革命，并通常相信可以说服统治阶级采用社会主义。"
+            },
+			      "sh": {
+                "name": "Utopijski Socijalizam",
+                "desc": "Utopijski socijalizam je oblik premarksističkog socijalizma koji vjeruje u egalitarnu, moralističku i idealističku osnovu za socijalističko društvo. Utopijski socijalisti uglavnom odbacuju nasilnu revoluciju i često vjeruju da je vladajuću klasu moguće ubjediti da prihvati socijalizam."
             }
         },
         "stats": {
@@ -304,14 +344,14 @@ ideologies = [
             "b": 20,
             "c": 40,
             "d": 20,
-			"e": 50,
-			"f": 40,
-			"g": 50
+            "e": 50,
+            "f": 40,
+            "g": 50
         }
     },
 	{
         "name": "Democratic Socialism",
-		"desc": "Democratic Socialism is a form of socialism that seeks to utilize liberal democracy as a means to achieve a socialist economy and society. Democratic Socialist reject revolution and a centrally planned economy, instead supporting moderate social ownership in the form of publicly owned utilities and democratic workplace self-management.",
+		    "desc": "Democratic Socialism is a form of socialism that seeks to utilize liberal democracy as a means to achieve a socialist economy and society. Democratic Socialist reject revolution and a centrally planned economy, instead supporting moderate social ownership in the form of publicly owned utilities and democratic workplace self-management.",
         "i18n": {
             "de": {
                 "name": "Demokratischer Sozialismus",
@@ -328,6 +368,10 @@ ideologies = [
             "cn": {
                 "name": "民主社会主义",
                 "desc": "民主社会主义（Democratic Socialism）是社会主义的一种形式，它试图利用自由民主制作为实现社会主义经济和社会的手段。民主社会主义者反对革命和中央计划经济，取而代之的是支持适度的社会所有制，以公用事业和民主的工作场所自我管理为其形式。"
+             },
+			      "sh": {
+                "name": "Demokratski Socijalizam",
+                "desc": "Demokratski socijalizam je oblik socijalizma koji strijemi da upotrijebi liberalnu demokratiju kao sredstvo za dostizanje socijalističke ekonomije i društva. Demokratski socijalisti odbacuju revoluciju i centralno planiranu ekonomiju, umjesto toga podržavajući umjereno javno vlasništvo u obliku komunalnih usluga i demokratskog samoupravljanja na radnom mjestu."
             }
         },
         "stats": {
@@ -335,14 +379,14 @@ ideologies = [
             "b": 30,
             "c": 30,
             "d": 60,
-			"e": 60,
-			"f": 30,
-			"g": 20
+            "e": 60,
+            "f": 30,
+            "g": 20
         }
     },
 	{
         "name": "Social Democracy",
-		"desc": "Social Democracy is a centre-left ideology that advocates for mixing left-leaning values such as social welfare and corporate regulation with capitalism and liberal democracy in the form of a mixed economy. Many modern Social Democrats favor Keynesian economics.",
+		    "desc": "Social Democracy is a centre-left ideology that advocates for mixing left-leaning values such as social welfare and corporate regulation with capitalism and liberal democracy in the form of a mixed economy. Many modern Social Democrats favor Keynesian economics.",
         "i18n": {
             "de": {
                 "name": "Sozialdemokratie",
@@ -359,6 +403,10 @@ ideologies = [
             "cn": {
                 "name": "社会民主主义",
                 "desc": "社会民主主义（Social Democracy）是一种中间偏左的意识形态，主张将如社会福利和企业监管等左倾的价值观与资本主义和自由民主制以混合经济的形式结合在一起。许多现代社会民主主义者支持凯恩斯主义经济学。"
+            },
+			      "sh": {
+                "name": "Socijaldemokratija",
+                "desc": "Socijaldemokratija je ideologija ljevog centra koja zagovara miješanje ljevo naslonjenih vrijednosti kao što je socijalna zaštita i regulacija korporacija sa kapitalizmom i liberalnom demokratijom u obliku miješane ekonomije. Mnogi savremeni socijaldemokrate su naklonjeni kejnezijskoj ekonomiji."
             }
         },
         "stats": {
@@ -366,14 +414,14 @@ ideologies = [
             "b": 30,
             "c": 50,
             "d": 40,
-			"e": 80,
-			"f": 50,
-			"g": 30
+            "e": 80,
+            "f": 50,
+            "g": 30
         }
     },
 	{
         "name": "Left-Wing Nationalism",
-		"desc": "Left-Wing Nationalism is an ideology that mixes left-wing economics with non-xenophobic nationalism and patriotism. Many Left-Wing Nationalists are simultaneously supportive of international solidarity, and may be supportive of armed struggle.",
+		    "desc": "Left-Wing Nationalism is an ideology that mixes left-wing economics with non-xenophobic nationalism and patriotism. Many Left-Wing Nationalists are simultaneously supportive of international solidarity, and may be supportive of armed struggle.",
         "i18n": {
             "de": {
                 "name": "Linksnationalismus",
@@ -390,6 +438,10 @@ ideologies = [
             "cn": {
                 "name": "左翼民族主义",
                 "desc": "左翼民族主义（Left-Wing Nationalism）是将左翼经济学与非排外的民族主义和爱国主义相结合的一种意识形态。许多左翼民族主义者同时支持国际团结，并可能支持武装斗争。"
+            },
+			      "sh": {
+                "name": "Ljevi Nacionalizam",
+                "desc": "Ljevi nacionalizam je ideologija koja miješa ljevičarsku ekonomsku politiku sa ne-ksenofobičnim nacionalizmom i patriotizmom. Mnogi ljevičarski nacionalisti istovremeno podržavaju internacionalnu solidarnost, i mogu podržavati oružanu borbu."
             }
         },
         "stats": {
@@ -397,9 +449,9 @@ ideologies = [
             "b": 60,
             "c": 60,
             "d": 30,
-			"e": 70,
-			"f": 40,
-			"g": 30
+            "e": 70,
+            "f": 40,
+            "g": 30
         }
     }
 ];
