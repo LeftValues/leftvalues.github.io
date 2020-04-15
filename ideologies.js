@@ -22,6 +22,10 @@ ideologies = [
 			"sh": {
 				"name": "Marksizam-Lenjinizam",
 				"desc": "Marksizam-lenjinizam je forma marksizma stvorena u XX vijeku u Sovjetskom Savezu. Marksisti-lenjinisti snažno podržavaju komunističke političke partije kao platforme za postizanje revolucije i osnivanje socijalizma. Mnogi marksisti-lenjinisti su donekle više nacionalistički od drugih marksista, i ponekad teže industrijskom napretku prije nego očuvanju prirodne sredine."
+            },
+            "es": {
+                "name": "Marxismo-Leninismo",
+                "desc": "El marxismo-leninismo es una forma de marxismo que se forjó en el siglo XX en la Unión Soviética. Los marxistas-leninistas favorecen fuertemente el uso de un partido político comunista como plataforma para lograr la revolución y establecer el socialismo. Muchos marxistas-leninistas son algo más nacionalistas y patriotas que muchos otros marxistas, y pueden favorecer el progreso industrial por encima de los objetivos medioambientales.\n"
             }
         },
         "stats": {
@@ -57,6 +61,10 @@ ideologies = [
 			"sh": {
                 "name": "Ortodoksni Marksizam",
                 "desc": "Ortodoksni marksizam je oblik marksizma koji usvaja gledišta u skladu sa marksističkom teorijom onakvom kakva je izvorno napisana, pogotovo na temu dijalektičkog materijalizma. Ortodoksni marksisti su revolucionarni, internacionalisti i smatraju da neindustrijalizovana društva ne mogu postići socijalizam."
+            },
+            "es": {
+                "name": "Marxismo Ortodoxo",
+                "desc": "El marxismo ortodoxo es una forma de marxismo que adopta puntos de vista que se ajustan a la teoría marxista tal como fue escrita originalmente, particularmente en el tema del materialismo dialéctico. Los marxistas ortodoxos son altamente revolucionarios e internacionalistas y sostienen que las sociedades no industriales son incapaces de lograr el socialismo."
             }
         },
         "stats": {
@@ -92,6 +100,10 @@ ideologies = [
 			"sh": {
                 "name": "Eko-Marksizam",
                 "desc": "Eko-marksizam je oblik ortodoksnog marksizma sa naglaskom na ekološka pitanja prisutniji u savremenom svijetu. Eko-marksisti su uglavnom naklonjeni centralnom ekonomskom planiranju kao metodi borbe sa klimatskim problemima."
+            },
+            "es": {
+                "name": "Eco-Marxismo",
+                "desc": "El ecomarxismo es una forma de marxismo ortodoxo que se encuentra más comúnmente en los días modernos y que pone un énfasis particular en las cuestiones ambientales. Los ecomarxistas generalmente favorecen la planificación económica central como una forma de combatir los problemas climáticos."
             }
         },
         "stats": {
@@ -127,6 +139,10 @@ ideologies = [
 			"sh": {
                 "name": "Centristički Marksizam",
                 "desc": "Centristički marksizam je oblik marksizma koji usvaja marksističke poglede na društvo i ekonomiju, suzdržavajući se od zauzimanja zaključnih položaja po pitanju revolucije i reformizma. Mnogi centristički marksisti su donekle više nacionalistički od drugih marksista."
+            },
+            "es": {
+                "name": "Marxismo Centralista",
+                "desc": "El marxismo centrista es una forma de marxismo que adopta puntos de vista marxistas sobre la sociedad y la economía y que, al mismo tiempo, se abstiene de adoptar una posición definitiva sobre la revolución y el reformismo. Muchos marxistas centristas pueden ser también más nacionalistas que otros marxistas."
             }
         },
         "stats": {
@@ -162,6 +178,10 @@ ideologies = [
 			"sh": {
                 "name": "Komunizam Radničkih Savjeta",
                 "desc": "Komunizam radničkih savjeta je oblik marksizma koji zagovara za to da radnički savjeti budu temelj socijalističkog društva. Komunisti radničkih savjeta se uglavnom suprotstavljaju postojanju snažnog uticaja od strane političkih partija unutuar socijalističkog političkog sistema, naklonjeni demokratiji radničkih savjeta."
+            },
+            "es": {
+                "name": "Comunismo consejista",
+                "desc": "El comunismo de consejo es una forma de marxismo que aboga por que los consejos de trabajadores sean la base de una sociedad socialista. Los comunistas de consejo generalmente se oponen a la existencia de una fuerte influencia de los partidos políticos dentro del sistema político socialista, favoreciendo la democracia de consejo."
             }
         },
         "stats": {
@@ -197,6 +217,10 @@ ideologies = [
 			"sh": {
                 "name": "Ljevi Komunizam",
                 "desc": "Ljevi komunizam je oblik marksizma koji se naginje ka takozvanim ultraljevičarskim položajima. Oni uključuju bezuslovnu podršku za revoluciju i internacionalizam, odbacivanje sindikata i učestvovanja u liberalnoj demokratiji, i odbacivanje nacionalnog oslobođenja i samoopredeljenja."
+            },
+            "es": {
+                "name": "Comunismo Izquierdista",
+                "desc": "El Comunismo de Izquierda es una forma de marxismo que se inclina hacia las llamadas posiciones ultraizquierdistas. Estas incluyen el apoyo incondicional a la revolución y al internacionalismo, el rechazo a los sindicatos y a la participación en la democracia liberal, y el rechazo a la liberación nacional y a la autodeterminación."
             }
         },
         "stats": {
@@ -232,6 +256,10 @@ ideologies = [
 			"sh": {
                 "name": "Anarho-Komunizam",
                 "desc": "Anarho-komunizam je oblik anarhizma koji zagovara ukidanje kapitalizma i države, kao i kolektivno vlasništvo proizvodnih sredstava. Anarho-komunisti podržavaju decentraliziranu ekonomiju i vlast, pri čemu je anarho-sindikalizam čest način organizovanja takvog društva."
+            },
+            "es": {
+                "name": "Anarco-Comunismo",
+                "desc": "El anarco-comunismo es una forma de anarquismo que aboga por la abolición del capitalismo y del Estado, así como por la propiedad colectiva de los medios de producción. Los anarcomunistas apoyan una economía y un gobierno descentralizados, siendo el anarcosindicalismo una forma común de organizar dicha sociedad."
             }
         },
         "stats": {
@@ -267,6 +295,10 @@ ideologies = [
 			"sh": {
                 "name": "Eko-Anarhizam",
                 "desc": "Eko-anarhizam, ili zeleni anarhizam, je oblik anarhizma sa posebnim naglaskom na ekološka pitanja. Često se dovodi u vezu sa više izraženim ideologijama kao što je anarho-sindikalizam. Eko-anarhisti su uglavnom revolucionarni i podržavaju upotrijebu decentralizirane egalitarne ekonomije da bi se dostigli ekološki ciljevi."
+            },
+            "es": {
+                "name": "Eco-Anarquismo",
+                "desc": "El Eco-Anarquismo, o Anarquismo Verde, es una forma de anarquismo que pone un énfasis particular en los temas ambientales. A menudo se vincula con ideologías más distintivas como el Anarcosindicalismo. Los Eco-Anarquistas son generalmente revolucionarios y apoyan el uso de una economía descentralizada e igualitaria para lograr objetivos ambientales."
             }
         },
         "stats": {
@@ -302,6 +334,10 @@ ideologies = [
 			"sh": {
                 "name": "Tržišni Anarhizam",
                 "desc": "Tržišni anarhizam je oblik anarhizma koji miješa anarhističke ciljeve kao što su ukidanje hierarhije, države i kapitalizma sa povišenim individualizmom i umjerenim reformističkim pristupom. Ovo se ne bi trebalo pomiješati sa anarho-kapitalizmom."
+            },
+            "es": {
+                "name": "Anarquismo de Mercado",
+                "desc": "El anarquismo de mercado es una forma de anarquismo que mezcla objetivos anarquistas como la abolición de la jerarquía, el estado y el capitalismo con un elevado individualismo y un enfoque reformista moderado. Esto no debe ser confundido con el Anarco-Capitalismo."
             }
         },
         "stats": {
@@ -337,6 +373,10 @@ ideologies = [
 			"sh": {
                 "name": "Utopijski Socijalizam",
                 "desc": "Utopijski socijalizam je oblik premarksističkog socijalizma koji vjeruje u egalitarnu, moralističku i idealističku osnovu za socijalističko društvo. Utopijski socijalisti uglavnom odbacuju nasilnu revoluciju i često vjeruju da je vladajuću klasu moguće ubjediti da prihvati socijalizam."
+            },
+            "es": {
+                "name": "Socialismo Utópico",
+                "desc": "El socialismo utópico es una forma de socialismo pre-marxista que cree en una base igualitaria, moralista e idealista para una sociedad socialista. Los socialistas utópicos generalmente rechazan la revolución violenta y a menudo creen que la clase dirigente puede ser convencida de adoptar el socialismo."
             }
         },
         "stats": {
@@ -372,6 +412,10 @@ ideologies = [
 			"sh": {
                 "name": "Demokratski Socijalizam",
                 "desc": "Demokratski socijalizam je oblik socijalizma koji strijemi da upotrijebi liberalnu demokratiju kao sredstvo za dostizanje socijalističke ekonomije i društva. Demokratski socijalisti odbacuju revoluciju i centralno planiranu ekonomiju, umjesto toga podržavajući umjereno javno vlasništvo u obliku komunalnih usluga i demokratskog samoupravljanja na radnom mjestu."
+            },
+            "es": {
+                "name": "Socialismo Democrático",
+                "desc": "El Socialismo Democrático es una forma de socialismo que busca utilizar la democracia liberal como medio para lograr una economía y una sociedad socialista. Los socialistas democráticos rechazan la revolución y la economía de planificación centralizada, y en su lugar apoyan la propiedad social moderada en forma de servicios públicos y autogestión democrática en el lugar de trabajo."
             }
         },
         "stats": {
@@ -407,6 +451,10 @@ ideologies = [
 			"sh": {
                 "name": "Socijaldemokratija",
                 "desc": "Socijaldemokratija je ideologija ljevog centra koja zagovara miješanje ljevo naslonjenih vrijednosti kao što je socijalna zaštita i regulacija korporacija sa kapitalizmom i liberalnom demokratijom u obliku miješane ekonomije. Mnogi savremeni socijaldemokrate su naklonjeni kejnezijskoj ekonomiji."
+            },
+            "es": {
+                "name": "Socialdemocracia",
+                "desc": "La socialdemocracia es una ideología de centro-izquierda que aboga por mezclar los valores de la izquierda, como el bienestar social y la regulación corporativa, con el capitalismo y la democracia liberal en forma de una economía mixta. Muchos socialdemócratas modernos favorecen la economía keynesiana."
             }
         },
         "stats": {
@@ -442,6 +490,10 @@ ideologies = [
 			"sh": {
                 "name": "Ljevi Nacionalizam",
                 "desc": "Ljevi nacionalizam je ideologija koja miješa ljevičarsku ekonomsku politiku sa ne-ksenofobičnim nacionalizmom i patriotizmom. Mnogi ljevičarski nacionalisti istovremeno podržavaju internacionalnu solidarnost, i mogu podržavati oružanu borbu."
+            },
+            "es": {
+                "name": "Nacionalismo de Izquierdas",
+                "desc": "El nacionalismo de izquierdas es una ideología que mezcla la economía de izquierdas con el nacionalismo no xenófobo y el patriotismo. Muchos nacionalistas de izquierda apoyan simultáneamente la solidaridad internacional y pueden apoyar la lucha armada."
             }
         },
         "stats": {
