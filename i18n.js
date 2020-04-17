@@ -22,29 +22,29 @@ const languages = [
         "name": "english",
         "code": "en"
     },
+	{
+        "name": "español",
+        "code": "es"
+    },
     {
         "name": "deutsch",
         "code": "de"
     },
-    {
-        "name": "한국어",
-        "code": "ko"
-    },
-    {
+	{
         "name": "ру́сский",
         "code": "ru"
-    },
-    {
-        "name": "简体中文",
-        "code": "cn"
     },
 	{
         "name": "srpskohrvatski",
         "code": "sh"
     },
+	{
+        "name": "简体中文",
+        "code": "cn"
+    },
     {
-        "name": "spanish",
-        "code": "es"
+        "name": "한국어",
+        "code": "ko"
     }
 ]
 const i18n = {
