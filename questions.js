@@ -1373,7 +1373,7 @@ questions = [
             "ko": "사회주의 정부는 어떤 상황에서도 종교적 혹은 문화적 전통을 침해할 권리가 없다.",
             "ru": "Социалистическое правительство не имеет права нарушать религиозные или культурные традиции ни при каких обстоятельствах.",
             "cn": "社会主义政府无权在任何情况下破坏宗教或文化传统。",
-			"sh": "Socijalistička vlada nema pravo da naruši vjerske ili kulture običaje u bilo kojoj situaciji.",
+			"sh": "Socijalistička vlada nema pravo da naruši vjerske ili kulturne običaje u bilo kojoj situaciji.",
             "es": "Un gobierno socialista no tiene derecho a perturbar las tradiciones religiosas o culturales en ninguna situación."
         },
         "effect": {
