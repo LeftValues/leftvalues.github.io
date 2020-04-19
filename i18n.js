@@ -31,6 +31,10 @@ const languages = [
         "code": "de"
     },
 	{
+        "name": "português",
+        "code": "pt"
+    },
+	{
         "name": "ру́сский",
         "code": "ru"
     },
@@ -69,7 +73,8 @@ const i18n = {
         "ru": "Загрузка...",
         "cn": "载入中...",
 		"sh": "Učitavanje...",
-        "es": "Cargando..."
+        "es": "Cargando...",
+		"pt": "Carregando..."
     },
     "quiz-strongly-agree": {
         "en": "Strongly Agree",
@@ -78,7 +83,8 @@ const i18n = {
         "ru": "Полностью согласен",
         "cn": "强烈同意",
 		"sh": "Potpuno Se Slažem",
-        "es": "Muy a favor"
+        "es": "Muy a favor",
+		"pt": "Concordo plenamente"
     },
     "quiz-agree": {
         "en": "Agree",
@@ -87,7 +93,8 @@ const i18n = {
         "ru": "Скорее согласен",
         "cn": "同意",
 		"sh": "Donekle Se Slažem",
-        "es": "A favor"
+        "es": "A favor",
+		"pt": "Concordo"
     },
     "quiz-neutral": {
         "en": "Neutral/Unsure",
@@ -96,7 +103,8 @@ const i18n = {
         "ru": "Не знаю/Не уверен",
         "cn": "中立/不确定",
 		"sh": "Nemam Mišljenje/Ne znam",
-        "es": "Neutral/No seguro"
+        "es": "Neutral/No seguro",
+		"pt": "Neutro/Incerto"
     },
     "quiz-disagree": {
         "en": "Disagree",
@@ -105,7 +113,8 @@ const i18n = {
         "ru": "Скорее не согласен",
         "cn": "反对",
 		"sh": "Donekle Se Ne Slažem",
-        "es": "En contra"
+        "es": "En contra",
+		"pt": "Discordo"
     },
     "quiz-strongly-disagree": {
         "en": "Strongly Disagree",
@@ -114,7 +123,8 @@ const i18n = {
         "ru": "Полностью не согласен",
         "cn": "强烈反对",
 	    "sh": "Uopšte Se Ne Slažem",
-        "es": "Muy en contra"
+        "es": "Muy en contra",
+		"pt": "Discordo totalmente"
     },
     "quiz-back": {
         "en": "back",
@@ -123,7 +133,8 @@ const i18n = {
         "ru": "Назад",
         "cn": "返回",
 		"sh": "Nazad",
-        "es": "Atrás"
+        "es": "Atrás",
+		"pt": "voltar"
     },
     "quiz-question-of": {
         en(qn, questions) {return `Question ${qn + 1} of ${questions.length}`},
@@ -132,7 +143,8 @@ const i18n = {
         ru(qn, questions) {return `Вопрос ${qn + 1} из ${questions.length}`},
         cn(qn, questions) {return `第 ${qn + 1} 题，共 ${questions.length} 题`},
 		sh(qn, questions) {return `Pitanje ${qn + 1} od ${questions.length}`},
-        es(qn, questions) {return `Pregunta ${qn + 1} de ${questions.length}`}
+        es(qn, questions) {return `Pregunta ${qn + 1} de ${questions.length}`},
+		pt(qn, questions) {return `Pergunta ${qn + 1} de ${questions.length}`}
     },
     // instructions.html
     "inst-h2": {
@@ -142,7 +154,8 @@ const i18n = {
         "ru": "Инструкция",
         "cn": "说明",
 		"sh": "Uputstva",
-        "es": "Instrucciones"
+        "es": "Instrucciones",
+		"pt": "Instruções"
     },
     "inst-p": {
         "en": "You will be presented with a series of statements. For each one, click the button with your opinion on it.",
@@ -151,7 +164,8 @@ const i18n = {
         "ru": "Вам будет предложен ряд утверждений. Для каждого нажмите на кнопку с вашим мнением о нём.",
         "cn": "你将会看到一系列观点。请点击对应按钮选择你对于每个观点的看法。",
 		"sh": "Biće vam predstavljen niz izjava. Za svaku, kliknite dugme na kojem je vaše mišljenje.",
-        "es": "Se le presentará una serie de afirmaciones. Para cada una de ellas, clique en el botón que corresponda a su opinión."
+        "es": "Se le presentará una serie de afirmaciones. Para cada una de ellas, clique en el botón que corresponda a su opinión.",
+		"pt": "Serão apresentados uma série de questionamentos. Para cada um deles, clique no botão que melhor representa sua opinião."
     },
     "inst-gotit": {
         "en": "Got it!",
@@ -160,7 +174,8 @@ const i18n = {
         "ru": "Понял!",
         "cn": "知道了！",
 		"sh": "Razumijem!",
-        "es": "¡Entendido!"
+        "es": "¡Entendido!",
+		"pt": "Entendi!"
     },
     "inst-nvm": {
         "en": "Wait, nevermind!",
@@ -169,7 +184,8 @@ const i18n = {
         "ru": "Вернуться",
         "cn": "等等，还是算了！",
 		"sh": "Čekaj, nema veze!",
-        "es": "Espera, ¡da igual!"
+        "es": "Espera, ¡da igual!",
+		"pt": "Espere, deixa pra lá!"
     },
     // results.html
     "result-h1": {
@@ -179,7 +195,8 @@ const i18n = {
         "ru": "Результаты",
         "cn": "结果",
 		"sh": "Rezultati",
-        "es": "Resultados"
+        "es": "Resultados",
+		"pt": "Resultados"
     },
     "result-url": {
         "en": "<br>You can send these results by copying and pasting the URL at the top of the page or using the image below.",
@@ -188,7 +205,8 @@ const i18n = {
         "ru": "<br>Вы можете отправить эти результаты, скопировав и вставив URL в верхней части страницы или используя изображение ниже.",
         "cn": "<br>你可以通过复制粘贴页面顶端的URL或是使用下方的图片来分享结果。",
 		"sh": "<br>Možete da pošaljete ove rezultate kopirajući URL na vrhu stranice ili koristeći sliku ispod.",
-        "es": "<br>Puede enviar estos resultados copiando y pegando la URL en la parte superior de la página o usando la imagen de abajo."
+        "es": "<br>Puede enviar estos resultados copiando y pegando la URL en la parte superior de la página o usando la imagen de abajo.",
+		"pt": "<br>Podes compartilhar os resultados através da cópia da URL no navegador, ou através da imagem abaixo."
     },
     "result-h2-match": {
         "en": "Closest Match: <span class='weight-300' id='ideology-label'> </span>",
@@ -197,7 +215,8 @@ const i18n = {
         "ru": "Ближайшее совпадение: <span class='weight-300' id='ideology-label'> </span>",
         "cn": "最接近的匹配: <span class='weight-300' id='ideology-label'> </span>",
 		"sh": "Najbliže podudaranje: <span class='weight-300' id='ideology-label'> </span>",
-        "es": "Emparejamiento más cercano: <span class='weight-300' id='ideology-label'> </span>"
+        "es": "Emparejamiento más cercano: <span class='weight-300' id='ideology-label'> </span>",
+		"pt": "Correspondência mais próxima: <span class='weight-300' id='ideology-label'> </span>"
     },
     "result-h2-next-matches": {
         "en": "Next closest matches",
@@ -206,7 +225,8 @@ const i18n = {
         "ru": "Следующие ближайшие совпадения",
         "cn": "次接近匹配",
 		"sh": "Sledeća najbliža podudaranja",
-        "es": "Siguiente emparejamiento más cercano"
+        "es": "Siguiente emparejamiento más cercano",
+		"pt": "Próximas correspondencias aproximadas"
     },
     "next-matches-percent": {
         "en": "With your closest match as 100% and farthest as 0%, here is how closely you matched the other ideologies.",
@@ -215,7 +235,8 @@ const i18n = {
         "ru": "С вашим самым близким соответствием в 100% и самым дальним на 0%, вот как близко вы подходите к другим идеологиям.",
         "cn": "这是你与其他意识形态之间的匹配程度，以100%表示完全符合，0%表示完全不符合。",
 		"sh": "Sa vašom najbližom na 100% i najdaljom na 0%, evo koliko su vam bliske ostale ideologije.",
-        "es": "Con tu emparejamiento más cercano como 100% y el más lejano como 0%, así es como de cerca se te ha emparejado de las otras ideologías"
+        "es": "Con tu emparejamiento más cercano como 100% y el más lejano como 0%, así es como de cerca se te ha emparejado de las otras ideologías",
+		"pt": "Onde o 100% representa sua correspondência mais próxima e o 0% a mais distante, isto é o quão próximo das demais ideologias você está."
     },
     "result-h2-score": {
         "en": "I don't like my scores!",
@@ -224,7 +245,8 @@ const i18n = {
         "ru": "Мне не нравятся мои результаты!",
         "cn": "我不喜欢我的分数！",
 		"sh": "Ne sviđaju mi se moji rezultati!",
-        "es": "¡No me gustan mis resultados!"
+        "es": "¡No me gustan mis resultados!",
+		"pt": "Não gosto dos meus resultados!"
     },
     "result-issues": {
         "en": "Please remember that you are not intended to get a 100% score in any of the categories. The point of the quiz is to challenge your views. If you have any suggestions or constructive criticism please fill out this <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>short form</a> or open an issue on the <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub Page</a>.",
@@ -233,7 +255,8 @@ const i18n = {
         "ru": "Пожалуйста, помните, что вы не намерены получить 100%-ый результат ни в одной из осей. Смысл викторины заключается в том, чтобы оспорить ваши взгляды. Если у вас какие-либо предложения или конструктивная критика, то, пожалуйста, заполните эту <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>короткую форму</a> или откройте вкладку ''issue'' на <a href='https://github.com/LeftValues/leftvalues.github.io'>странице GitHub</a>.",
         "cn": "这个测试的目的在于表达你的观点，切记不要在任何一类（意识形态）中去有意取得满分。如果你有任何意见或建议，请填写<a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>这份表格</a>或是在<a href='https://github.com/LeftValues/leftvalues.github.io'>该项目的GitHub Page</a>上开个issue。",
 		"sh": "Imajte na umu da cilj nije da dobijete 100% na bilo kojoj kategoriji. Smisao kviza je da izazove vaše mišljenje. Ako imate bilo kakve prijedloge ili konstruktivnu kritiku molimo vas da ispunite ovaj <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>kratki formular</a> ili otvorite pitanje na <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub stranici</a>.",
-        "es": "Por favor, recuerde que no se pretende obtener una puntuación del 100% en ninguna de las categorías. El punto del test es desafiar su punto de vista. Si tiene alguna sugerencia o crítica contructiva, por favor rellene este <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>corto formulario</a> o habrá un <i>issue</i> en nuestra <a href='https://github.com/LeftValues/leftvalues.github.io'>página de GitHub</a>."
+        "es": "Por favor, recuerde que no se pretende obtener una puntuación del 100% en ninguna de las categorías. El punto del test es desafiar su punto de vista. Si tiene alguna sugerencia o crítica contructiva, por favor rellene este <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>corto formulario</a> o habrá un <i>issue</i> en nuestra <a href='https://github.com/LeftValues/leftvalues.github.io'>página de GitHub</a>.",
+		"pt": "Lembre-se de que não se pretende obter uma pontuação de 100% em nenhuma das categorias. O objetivo do teste é desafiar seu ponto de vista. Se você tiver alguma sugestão ou crítica construtiva, preencha este <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>pequeno formulário curto</a> ou relate um <i>\"issue\"</i> em nosso <a href=' https://github.com/LeftValues/leftvalues.github.io'>GitHub</a>."
     },
     "result-a-label": {
         "en": ["Extremely Revolutionary","Very Revolutionary","Revolutionary","Neutral","Reformist","Very Reformist","Extremely Reformist"],
@@ -242,7 +265,8 @@ const i18n = {
         "ru": ["Крайне Революционный","Очень Революционный","Революционный","Нейтральный","Реформистский","Очень Реформистский","Крайне Реформистский"],
         "cn": ["极端革命派","非常革命派","革命派","中立","改良派","非常改良派","极端改良派"],
 		"sh": ["Izuzetno Revolucionarni","Vrlo Revolucionarni","Revolucionarni","Neutralni","Reformistički","Vrlo Reformistički","Izuzetno Reformistički"],
-        "es": ["Extremadamente Revolucionario", "Muy Revolucionario", "Revolucionario", "Neutral", "Reformista","Muy Reformista","Extremadamente Reformista"]
+        "es": ["Extremadamente Revolucionario", "Muy Revolucionario", "Revolucionario", "Neutral", "Reformista","Muy Reformista","Extremadamente Reformista"],
+		"pt": ["Extremamente Revolucionário", "Muito Revolucionário", "Revolucionário", "Neutro", "Reformista", "Muito Reformista", "Extremamente Reformista"]
     },
     "result-b-label": {
         "en": ["Extremely Scientific","Very Scientific","Scientific","Neutral","Utopian","Very Utopian","Extremely Utopian"],
@@ -251,7 +275,8 @@ const i18n = {
         "ru": ["Крайне Научный","Очень Научный","Научный","Нейтральный","Утопичный","Очень Утопичный","Крайне Утопичный"],
         "cn": ["极端科学社会主义","非常科学社会主义","科学社会主义","中立","空想社会主义","非常空想社会主义","极端空想社会主义"],
 		"sh": ["Izuzetno Naučni","Vrlo Naučni","Naučni","Neutralni","Utopijski","Vrlo Utopijski","Izuzetno Utopijski"],
-        "es": ["Extremadamente Científico", "Muy Científico","Científico", "Neutral","Utopista", "Muy Utopista", "Extremadamente Utopista"]
+        "es": ["Extremadamente Científico", "Muy Científico","Científico", "Neutral","Utopista", "Muy Utopista", "Extremadamente Utopista"],
+		"pt": ["Extremamente científico", "Muito científico", "Científico", "Neutro", "Utópico", "Muito utópico", "Extremamente utópico"]
     },
     "result-c-label": {
         "en": ["Extremely Centralist","Very Centralist","Centralist","Neutral","Decentralist","Very Decentralist","Extremely Decentralist"],
@@ -260,7 +285,9 @@ const i18n = {
         "ru": ["Крайне Централизованный","Очень Централизованный","Централизованный","Нейтральный","Децентрализованный","Очень Децентрализованный","Крайне Децентрализованный"],
         "cn": ["极端集权","非常集权","集权","中立","分权","非常分权","极端分权"],
 		"sh": ["Izuzetno Centralistički","Vrlo Centralistički","Centralistički","Neutralni","Decentralistički","Vrlo Decentralistički","Izuzetno Decentralistički"],
-        "es": ["Extramadamente Centralista", "Muy Centralista", "Centralista","Neutral","Descentralista", "Muy Descentralista", "Extremadamente Descentralista"]
+        "es": ["Extramadamente Centralista", "Muy Centralista", "Centralista","Neutral","Descentralista", "Muy Descentralista", "Extremadamente Descentralista"],
+		"pt": ["Extremamente centralista", "Muito centralista", "Centralista", "Neutro", "Descentralista", "Muito descentralista", "Extremamente descentralista"]
+		
     },
     "result-d-label": {
         "en": ["Extremely Internationalist","Very Internationalist","Internationalist","Neutral","Nationalist","Very Nationalist","Extremely Nationalist"],
@@ -269,7 +296,8 @@ const i18n = {
         "ru": ["Крайне Интернациональный","Очень Интернациональный","Интернациональный","Нейтральный","Национальный","Очень Национальный","Крайне Национальный"],
         "cn": ["极端国际主义","非常国际主义","国际主义","中立","民族主义","非常民族主义","极端民族主义"],
 		"sh": ["Izuzetno Internacionalistički","Vrlo Internacionalistički","Internacionalistički","Neutralni","Nacionalistički","Vrlo Nacionalistički","Izuzetno Nacionalistički"],
-        "es": ["Extremadamente Internacionalista", "Muy Internacionalista", "Internacionalista","Neutral","Nacionalista","Muy Nacionalista","Extremadamente Nacionalista"]
+        "es": ["Extremadamente Internacionalista", "Muy Internacionalista", "Internacionalista","Neutral","Nacionalista","Muy Nacionalista","Extremadamente Nacionalista"],
+		"pt": ["Extremamente Internacionalista", "Muito Internacionalista", "Internacionalista", "Neutro", "Nacionalista", "Muito Nacionalista", "Extremamente Nacionalista"]
     },
     "result-e-label": {
         "en": ["Extremely Partisan","Very Partisan","Partisan","Neutral","Unionist","Very Unionist","Extremely Unionist"],
@@ -278,7 +306,8 @@ const i18n = {
         "ru": ["Крайне Партийный","Очень Партийный","Партийный","Нейтральный","Профсоюзный","Очень Профсоюзный","Крайне Профсоюзный"],
         "cn": ["极端倾向党派","非常倾向党派","倾向党派","中立","倾向工会","非常倾向工会","极端倾向工会"],
 		"sh": ["Izuzetno Partijski","Vrlo Partijski","Partijski","Neutralni","Sindikatski","Vrlo Sindikatski","Izuzetno Sindikatski"],
-        "es": ["Extremadamente Partidista","Muy Partidista", "Partidista","Neutral","Sindicalista", "Muy Sindicalista", "Extremadamente Sindicalista"]
+        "es": ["Extremadamente Partidista","Muy Partidista", "Partidista","Neutral","Sindicalista", "Muy Sindicalista", "Extremadamente Sindicalista"],
+		"pt": ["Extremamente Partidário", "Muito Partidário", "Partidário", "Neutro", "Sindicalista", "Muito Sindicalista", "Extremamente Sindicalista"]
     },
     "result-f-label": {
         "en": ["Extremely Productivist","Very Productivist","Productivist","Neutral","Ecological","Very Ecological","Extremely Ecological"],
@@ -287,7 +316,8 @@ const i18n = {
         "ru": ["Крайне Производственный","Очень Производственный","Производственный","Нейтральный","Экологический","Очень Экологический","Крайне Экологический"],
         "cn": ["极端生产主义","非常生产主义","生产主义","中立","生态主义","非常生态主义","极端生态主义"],
 		"sh": ["Izuzetno Proizvođački","Vrlo Proizvođački","Proizvođački","Neutralni","Ekološki","Vrlo Ekološki","Izuzetno Ekološki"],
-        "es": ["Extramadamente Productivista", "Muy Productivista", "Productivista","Neutral", "Ecologista","Muy Ecologista","Extremadamente Ecologista"]
+        "es": ["Extramadamente Productivista", "Muy Productivista", "Productivista","Neutral", "Ecologista","Muy Ecologista","Extremadamente Ecologista"],
+		"pt": ["Extremamente produtivista", "Muito produtivista", "Produtivista", "Neutro", "Ecologista", "Muito ecologista", "Extremamente ecologista"]
 
     },
     "result-g-label": {
@@ -297,8 +327,9 @@ const i18n = {
         "ru": ["Крайне Консервативный", "Очень Консервативный", "Консервативный", "Нейтральный", "Прогрессивный", "Очень Прогрессивный", "Крайне Прогрессивный"],
         "cn": ["极端保守主义","非常保守主义","保守主义","中立","进步主义","非常进步主义","极端进步主义"],
 		"sh": ["Izuzetno Konzervativni","Vrlo Konzervativni","Konzervativni","Neutralni","Progresivni","Vrlo Progresivni","Izuzetno Progresivni"],
-        "es": ["Extremadamente Conservador", "Muy Conservador","Conservador","Neutral","Progresista","Muy Progresista","Extremadamente Progresista"]
-    },
+        "es": ["Extremadamente Conservador", "Muy Conservador","Conservador","Neutral","Progresista","Muy Progresista","Extremadamente Progresista"],
+		"pt": ["Extremamente Conservador", "Muito Conservador", "Conservador", "Neutro", "Progressista", "Muito Progressista", "Extremamente Progressista"]
+	},
     "result-back": {
         "en": "Back",
         "de": "Zurück",
@@ -306,7 +337,8 @@ const i18n = {
         "ru": "Назад",
         "cn": "返回",
 		"sh": "Nazad",
-        "es": "Atrás"
+        "es": "Atrás",
+		"pt": "Voltar"
     },
     // index.html
     "index-b-start": {
@@ -316,7 +348,8 @@ const i18n = {
         "ru": "Начать тест",
         "cn": "点击这里开始！",
 		"sh": "Kliknite ovdje da započnete test!",
-        "es": "¡Click aquí para empezar!"
+        "es": "¡Click aquí para empezar!",
+		"pt": "Clique aqui para começar!"
     },
     "index-h2-whatis" : {
         "en": "What is LeftValues?",
@@ -325,7 +358,8 @@ const i18n = {
         "ru": "Что такое LeftValues?",
         "cn": "LeftValues是什么？",
 		"sh": "Šta je LeftValues?",
-        "es": "¿Qué es LeftValues?"
+        "es": "¿Qué es LeftValues?",
+		"pt": "O que é LeftValues?"
     },
     "index-p-answer": {
         "en": "LeftValues is a leftist quiz inspired by and based upon the <a href='https://8values.github.io/'>8values</a> quiz that seeks to identify your position on the left-wing spectrum. " + 
@@ -349,7 +383,10 @@ const i18n = {
         "U testu su <b><u><span id='numOfQuestions'></span></u></b> pitanja.",
         "es": "LeftValues es un test de izquierdas inspirado y basado en el cuestionario <a href='https://8values.github.io/'>8values</a>, que busca identificar tu posición en el espectro de la izquierda." +
             "Si no eres de izquierdas, este test no es para ti. Se le presentará una afirmación y luego responderá con su opinión sobre la declaración, desde <b>Muy a favor</b> hasta <b>Muy en contra</b>, con cada respuesta afectando a su puntuación. Las preguntas de cada eje se presentan en orden, en lugar de dispersas. Al final de la prueba, sus respuestas serán comparadas con el máximo posible para cada valor, dándole así un porcentaje. ¡Responda honestamente!<br/><br/>"+
-            "Hay <b><u><span id='numOfQuestions'></span></u></b> preguntas en este test."
+            "Hay <b><u><span id='numOfQuestions'></span></u></b> preguntas en este test.",
+		"pt": "O LeftValues é um teste de esquerda, inspirado e baseado no questionário <a href='https://8values.github.io/'>8values</a>, que procura identificar sua posição no espectro de esquerda." +
+             "Se você não é da esquerda, este teste não é para você. Você receberá uma afirmação e responderá com sua opinião sobre a afirmação, com posições de <b>Fortemente a favor</b> até <b>Fortemente contra</ b >, com cada resposta afetando sua pontuação. As perguntas em cada eixo são apresentadas em ordem, em vez de dispersas. No final do teste, suas respostas serão comparadas com o máximo possível para cada valor, fornecendo um percentual. Responda honestamente!<br/><br/> "+
+             "Há <b><u><span id='numOfQuestions'></span></u></b> perguntas neste teste."	
     },
     "index-h2-whatvalues": {
         "en": "What are the values?",
@@ -358,7 +395,8 @@ const i18n = {
         "ru": "За что отвечают значения?",
         "cn": "这些意识形态都有哪些？",
 		"sh": "Koje su vrijednosti u pitanju?",
-        "es": "¿Qué son los valores?"
+        "es": "¿Qué son los valores?",
+		"pt": "O que representam estes valores?"
     },
     "index-sixaxes": {
         "en": "There are currently seven axes, each of which has two opposing values. They are:",
@@ -367,7 +405,8 @@ const i18n = {
         "ru": "Есть семь независимых осей, и каждая имеет две противоположные ценности, присвоенные им.",
         "cn": "当前一共有七个坐标轴，其各自代表了一对相反的意识形态。它们是：",
 		"sh": "Trenutno postoji sedam osa sa suprotstavljenim vrijednostima. To su:",
-        "es": "Actualmente hay siete ejes, los cuales tienen dos valores opuestos. Estos son:"
+        "es": "Actualmente hay siete ejes, los cuales tienen dos valores opuestos. Estos son:",
+		"pt": "Atualmente existem sete eixos, os quais apresentam valores em opsição. São eles:"
     },
     "index-rev-desc": {
         "en": "<b style='color:#890000;'>Revolution</b> <b>vs.</b> <b style='color:#FC5959;'>Reform</b><br/>" +
@@ -383,7 +422,9 @@ const i18n = {
 		"sh": "<b style='color:#890000;'>Revolucija</b> <b>protiv</b> <b style='color:#FC5959;'>Reforme</b><br/>" +
 		"Oni sa višom vrijednošću revolucije inače podržavaju brzo i radikalno svrgavanje kapitalističkog sistema putem masovnog ustanka. Oni sa višom vrijednošću reforme inače preferiraju uvođenje postepenih promjena u kapitalističke strukture, kao što je liberalna demokratija, sa eventualnim ciljem dostizanja socijalizma.",
         "es": "<b style='color:#890000;'>Revolución</b> <b>vs.</b> <b style='color:#FC5959;'>Reforma</b><br/>" +
-            "Aquellos con una puntación más alta en revolución tienden a apoyar un derrocamiento radical y rápido del sistema capitalista a través de un levantamiento de masas. Aquellos con una mayor puntuación en reforma tienden a favorecer la introducción de cambios graduales dentro de las estructuras capitalistas, como la democracia liberal, con el objetivo final de alcanzar el socialismo."
+            "Aquellos con una puntación más alta en revolución tienden a apoyar un derrocamiento radical y rápido del sistema capitalista a través de un levantamiento de masas. Aquellos con una mayor puntuación en reforma tienden a favorecer la introducción de cambios graduales dentro de las estructuras capitalistas, como la democracia liberal, con el objetivo final de alcanzar el socialismo.",
+		"pt": "<b style='color:#890000;'>Revolução</b> <b>vs.</b> <b style='color:#FC5959;'>Reforma</b><br/>" +
+             "Aqueles com uma pontuação de revolução mais alta tendem a apoiar uma derrubada radical e rápida do sistema capitalista através de um levante em massa. Aqueles com uma pontuação de reforma mais alta tendem a favorecer a introdução de mudanças graduais nas estruturas capitalistas, como democracia liberal, com o objetivo final de alcançar o socialismo."
     },
     "index-sci-desc": {
         "en": "<b style='color:#88232B;'>Scientific</b> <b>vs.</b> <b style='color:#7F0037;'>Utopian</b><br/>" +
@@ -398,7 +439,9 @@ const i18n = {
 		"sh": "<b style='color:#88232B;'>Naučni Pristup</b> <b>protiv</b> <b style='color:#7F0037;'>Utopizma</b><br/>" +
         "Oni sa višom naučnom vrijednošću inače podržavaju Marksističku analizu društva na osnovi dijalektičkog materijalizma. Oni sa višom utopijskom vrijednošću inače vjeruju u više idealističku analizu društva i odbacuju materijalističke pristupe.",
         "es": "<b style='color:#88232B;'>Científico</b> <b>vs.</b> <b style='color:#7F0037;'>Utópico</b><br/>" +
-            "Aquellos con una puntuación más alta en lo científico tienden a apoyar o simpatizar con el análisis marxista de la sociedad en la línea del materialismo dialéctico. Aquellos con una mayor puntuación en lo utópico tienden a creer en un análisis más idealista de la sociedad y rechazan los enfoques materialistas."
+            "Aquellos con una puntuación más alta en lo científico tienden a apoyar o simpatizar con el análisis marxista de la sociedad en la línea del materialismo dialéctico. Aquellos con una mayor puntuación en lo utópico tienden a creer en un análisis más idealista de la sociedad y rechazan los enfoques materialistas.",
+		"pt": "<b style='color:#88232B;'>Científico</b> <b>vs.</b> <b style='color:#7F0037;'>utópico</b><br/>" +
+             "Aqueles com uma pontuação científica mais alta tendem a apoiar ou simpatizar com a análise marxista da sociedade ao longo das linhas do materialismo dialético. Aqueles com uma pontuação utópica mais alta tendem a acreditar em uma análise mais idealista da sociedade e rejeitam abordagens materialistas."	
 
     },
     "index-cent-desc": {
@@ -414,7 +457,9 @@ const i18n = {
 		"sh": "<b style='color:#560000;'>Centralizam</b> <b>protiv</b> <b style='color:#000000;'>Decentralizma</b><br/>" + 
         "Oni sa višom vrijednošću centralizma inače podržavaju ekonomsku strukturu zasnovanu na nacionalnom planiranju. Oni sa višom vrijednošću decentralizma inače podržavaju ekonomsku strukturu zasnovanu na decentraliziranom planiranju, uglavnom na lokalnom nivou.",
         "es": "<b style='color:#560000;'>Centralismo</b> <b>vs.</b> <b style='color:#000000;'>Descentralismo</b><br/>" +
-            "Aquellos con una puntuación más alta en el centralismo tienden a apoyar una estructura económica basada en la planificación nacional centralizada. Aquellos con una mayor puntuación en lo descentralizado tienden a apoyar una estructura económica basada en una planificación descentralizada, generalmente a una escala más localizada"
+            "Aquellos con una puntuación más alta en el centralismo tienden a apoyar una estructura económica basada en la planificación nacional centralizada. Aquellos con una mayor puntuación en lo descentralizado tienden a apoyar una estructura económica basada en una planificación descentralizada, generalmente a una escala más localizada",
+		"pt": "<b style='color:#560000;'>Centralismo</b> <b>vs.</b> <b style='color:#000000;'>Descentralismo</b><br/>" +
+             "Aqueles com uma pontuação mais alta em centralismo tendem a apoiar uma estrutura econômica baseada no planejamento nacional centralizado. Aqueles com uma pontuação mais alta na descentralização tendem a apoiar uma estrutura econômica baseada no planejamento descentralizado, em geral numa escala local."	
 
     },
     "index-int-desc": {
@@ -430,7 +475,9 @@ const i18n = {
 		"sh": "<b style='color:#782F52;'>Internacionalizam</b> <b>protiv</b> <b style='color:#7F3300;'>Nacionalizma</b><br/>" +
         "Oni sa višom vrijednošću internacionalizma inače podržavaju formiranje međunarodnog socijalističkog pokreta, često sa eventualnim ciljem ukidanja nacija. Oni sa višom vrijednošću nacionalizma inače prioritiziraju građenje socijalizma unutar postojećih granica i odbijaju cilj svjetske socijalističke republike.",
         "es": "<b style='color:#782F52;'>Internacional</b> <b>vs.</b> <b style='color:#7F3300;'>Nacional</b><br/>" +
-            "Aquellos con una puntuación más alta en lo internacional tienden a apoyar la formación de un movimiento socialista internacional, a menudo con el objetivo final de abolir las naciones. Aquellos con una mayor puntuación en lo nacional tienden a priorizar la construcción del socialismo dentro de las fronteras existentes y rechazan el objetivo de una república socialista mundial."
+            "Aquellos con una puntuación más alta en lo internacional tienden a apoyar la formación de un movimiento socialista internacional, a menudo con el objetivo final de abolir las naciones. Aquellos con una mayor puntuación en lo nacional tienden a priorizar la construcción del socialismo dentro de las fronteras existentes y rechazan el objetivo de una república socialista mundial.",
+		"pt": "<b style='color:#782F52;'>Internacional</b> <b>vs.</b> <b style='color:#7F3300;'>Nacional</b><br/> "+
+             "Aqueles com pontuações maiores em internacional tendem a apoiar a formação de um movimento socialista internacionalista, geralmente com o objetivo final de abolir ou abstrair nações. Aqueles com pontuações maiores em nacional tendem a priorizar a construção do socialismo dentro das fronteiras existentes em uma região/país e rejeitam o objetivo de uma república socialista mundial."
 
     },
     "index-party-desc": {
@@ -446,7 +493,9 @@ const i18n = {
 		"sh": "<b style='color:#963B33;'>Partija</b> <b>protiv</b> <b style='color:#7F333B;'>Sindikata</b><br/>" +
         "Oni sa višom vrijednošću partije inače preferiraju političke partije kao osnovu socijalističkog pokreta. Oni sa višom vrijednošću sindikata inače podržavaju upotrijebu radničkih sindikata i drugih oblika masovnog organizovanja kao osnovu socijalističkog pokreta. Biti za partiju ne znaći nužno da ste protiv sindikata ili obrnuto, ovo je jednostavno pitanje preference.",
         "es": "<b style='color:#963B33;'>Partido</b> <b>vs.</b> <b style='color:#7F333B;'>Sindicato</b><br/>" +
-            "Aquellos con una puntuación más alta en el partido tienden a favorecer el uso de los partidos políticos como base de un movimiento socialista. Aquellos con una mayor puntuación en sindicato tienden a favorecer el uso de los sindicatos y otras formas de organización de masas como base de un movimiento socialista. Estar a favor del partido no significa necesariamente que te opongas a los sindicatos y viceversa, se trata más bien de una preferencia."
+            "Aquellos con una puntuación más alta en el partido tienden a favorecer el uso de los partidos políticos como base de un movimiento socialista. Aquellos con una mayor puntuación en sindicato tienden a favorecer el uso de los sindicatos y otras formas de organización de masas como base de un movimiento socialista. Estar a favor del partido no significa necesariamente que te opongas a los sindicatos y viceversa, se trata más bien de una preferencia.",
+		"pt": "<b style='color:#963B33;'>Partidário</b> <b>vs.</b> <b style='color:#7F333B;'>Sindicalista</b><br/>" +
+             "Aqueles com maior pontuação partidária tendem a favorecer o uso de partidos políticos como base de um movimento socialista. Aqueles com maior pontuação sindicalista tendem a favorecer o uso de sindicatos e outras formas horizontais de organização de massa como base de um movimento socialista. Ser pró-partido não significa necessariamente que você se opõe aos sindicatos e vice-versa, é uma questão de preferência."	
     },
     "index-prod-desc": {
         "en": "<b style='color:#804E00;'>Production</b> <b>vs.</b> <b style='color:#76890B;'>Nature</b><br/>" +
@@ -461,7 +510,9 @@ const i18n = {
 		"sh": "<b style='color:#804E00;'>Proizvodnja</b> <b>protiv</b> <b style='color:#76890B;'>Prirode</b><br/>" +
         "Oni sa višom vrijednošću proizvodnje inače prioritiziraju industrijsku proizvodnju i samoodrživost nad ekološkim ciljevima. Oni sa višom vrijednošću prirode (odnosno ekologije) inače podržavaju ekonomiju orijentisanu očuvanju okoline.",
         "es": "<b style='color:#804E00;'>Producción</b> <b>vs.</b> <b style='color:#76890B;'>Ecología</b><br/>" +
-            "Aquellos con una puntuación más alta en la producción tienden a priorizar la producción industrial y la autosostenibilidad por encima de los objetivos ecológicos. Aquellos con una mayor puntuación en la ecología tienden a apoyar una economía orientada al medio ambiente con estrictas protecciones ecológicas"
+            "Aquellos con una puntuación más alta en la producción tienden a priorizar la producción industrial y la autosostenibilidad por encima de los objetivos ecológicos. Aquellos con una mayor puntuación en la ecología tienden a apoyar una economía orientada al medio ambiente con estrictas protecciones ecológicas",
+		"pt": "<b style='color:#804E00;'>Produção</b> <b>vs.</b> <b style='color:#76890B;'>Ecologia</b><br/>" +
+             "Aqueles com maior pontuação em produção tendem a priorizar a produção industrial e a auto-sustentabilidade em relação aos objetivos ecológicos. Aqueles com maior pontuação ecológica tendem a apoiar uma economia orientada para o meio ambiente com rígidas proteções ecológicas."	
     },
     "index-cons-desc": {
         "en": "<b style='color:#27577A;'>Conservative</b> <b>vs.</b> <b style='color:#C4A717;'>Progressive</b><br/>" +
@@ -476,8 +527,9 @@ const i18n = {
 		"sh": "<b style='color:#27577A;'>Konzervativnost</b> <b>protiv</b> <b style='color:#C4A717;'>Progresivnosti</b><br/>" +
         "Oni sa višom vrijednošću konzervativnosti inače podržavaju više društveno konzervativnu politiku. Oni sa višom progresivnom vrijednošću inače podržavaju više društveno progresivnu politiku.",
         "es": "<b style='color:#27577A;'>Conservador</b> <b>vs.</b> <b style='color:#C4A717;'>Progresista</b><br/>" +
-            "Aquellos con una puntuación más alta en lo conservador tienden a favorecer políticas y puntos de vista socialmente más conservadores. Aquellos con una mayor puntuación en progresismo tienden a apoyar políticas y puntos de vista más progresistas."
-
+            "Aquellos con una puntuación más alta en lo conservador tienden a favorecer políticas y puntos de vista socialmente más conservadores. Aquellos con una mayor puntuación en progresismo tienden a apoyar políticas y puntos de vista más progresistas.",
+		"pt": "<b style='color:#27577A;'>Conservador</b> <b>vs.</b> <b style='color:#C4A717;'>Progressista</b><br/>" +
+              "Aqueles com uma pontuação conservadora mais alta tendem a favorecer políticas e pontos de vista socialmente mais conservadores. Aqueles com uma pontuação mais alta no progressismo tendem a apoiar políticas e pontos de vista mais progressistas."	
     },
     "index-h2-closest": {
         "en": "What does \"Closest Match\" mean in the results?",
@@ -486,7 +538,8 @@ const i18n = {
         "ru": "Что означает \"Ближайшее совпадение\" в результатах?",
         "cn": "结果中的\“最接近的匹配\”意味着什么？",
 		"sh": "Šta \"Najbliže Podudaranje\" znači u rezultatima?",
-        "es": "¿Qué significa el \"Emparejamiento más Cercano\" en estos resultados?"
+        "es": "¿Qué significa el \"Emparejamiento más Cercano\" en estos resultados?",
+		"pt": "O que significa a \"Correspondência mais próxima\" nos resultados?"
     },
     "index-p-similar": {
         "en": "Similar to 8values, this quiz will attempt to match you with a specific leftist ideology. There are currently thirteen possible ideologies, with more to come in the future. This is a work in progress and may not work as intended. Suggestions are very welcome. The current ideologies are: Marxism-Leninism, Orthodox Marxism, Eco-Marxism, Centrist Marxism, Council Communism, Left Communism, Anarcho-Communism, Eco-Anarchism, Market Anarchism, Utopian Socialism, Democratic Socialism, Social Democracy and Left-Wing Nationalism.",
@@ -495,7 +548,8 @@ const i18n = {
         "ru": "Подобно 8values, эта викторина также пытается сопоставить вас с политической идеологией. В настоящее время в тесте существует тринадцать идеологий, и в будущем их будет ещё больше. Это незавершённая работа и гораздо менее точная, чем значения и оси, так что не воспринимайте её слишком серьезно. Предложения по улучшению также очень приветствуются. В настоящее время существуют следующие идеологии: Марксизм-ленинизм, Ортодоксальный марксизм, Экосоциализм, Центристский марксизм, Коммунизм рабочих советов, Левый коммунизм, Анархо-коммунизм, Зелёный анархизм, Рыночный анархизм, Утопический социализм, Демократический социализм, Социал-демократия и Левый национализм.",
         "cn": "类似8Values，这个测验试图将你与某一种左派意识形态相匹配。当前提供测试13种意识形态，未来还会有更多。这是一个正在进行的项目，（测评结果）可能会出现与您预期不一致的情况。欢迎您提出宝贵建议。当前提供测试的意识形态有:<br/>马克思列宁主义（Marxism-Leninism）、正统马克思主义（Orthodox Marxism）、生态马克思主义（Eco-Marxism）、中间派马克思主义（Centrist Marxism）、委员会共产主义（Council Communism）、左翼共产主义（Left Communism）、无政府共产主义（Anarcho-Communism）、生态无政府主义（Eco-Anarchism）、市场无政府主义（Market Anarchism）、空想社会主义（Utopian Socialism）、民主社会主义（Democratic Socialism）、社会民主主义（Social Democracy）和左翼民族主义（Left-Wing Nationalism）。",
 		"sh": "Slično kao i u 8values, ovaj kviz će pokušati da odredi vama najbližu specifičnu ljevičarsku idelogiju. Trenutno ih je 13, i više će biti dodano u budućnosti. Prijedlozi su dobrodošli. Trenutno, ideologije su: Marksizam-Lenjinizam, Ortodoksni Marksizam, Eko-Marksizam, Centristički Marksizam, Komunizam Radničkih Savjeta, Ljevi Komunizam, Anarho-Komunizam, Eko-Anarhizam, Tržišni Anarhizam, Utopijski Socijalizam, Demokratski Socijalizam, Socijaldemokratija i Ljevi Nacionalizam.",
-        "es": "Similar a 8values, este test trata de emparejarle con una ideología izquierdista específica. Actualmente hay trece ideologías posibles, con más por venir en el futuro. Este es un trabajo en progreso y puede que no funcione como está planeado. Las sugerencias son muy bienvenidas. Las ideologías actuales son: Marxismo-Leninismo, Marxismo Ortodoxo, Eco-Marxismo, Marxismo Centralista, Comunismo Consejista, Comunismo de Izquierdas, Anarco-Comunismo, Eco-Anarquismo, Anarquismo de Mercado, Socialismo Utópico, Socialismo Democrático, Socialdemocracia y Nacionalismo de Izquierda."
+        "es": "Similar a 8values, este test trata de emparejarle con una ideología izquierdista específica. Actualmente hay trece ideologías posibles, con más por venir en el futuro. Este es un trabajo en progreso y puede que no funcione como está planeado. Las sugerencias son muy bienvenidas. Las ideologías actuales son: Marxismo-Leninismo, Marxismo Ortodoxo, Eco-Marxismo, Marxismo Centralista, Comunismo Consejista, Comunismo de Izquierdas, Anarco-Comunismo, Eco-Anarquismo, Anarquismo de Mercado, Socialismo Utópico, Socialismo Democrático, Socialdemocracia y Nacionalismo de Izquierda.",
+		"pt": "Semelhante aos 8values, este teste tenta localizá-lo apenas nos quadrantes de esquerda ideológica. Atualmente, existem treze ideologias possíveis, com mais por vir no futuro. Este é um trabalho em andamento e pode não funcionar conforme o planejado. Sugestões são muito bem-vindas. As ideologias atuais são: Marxismo-Leninismo, Marxismo Ortodoxo, Eco-Marxismo, Marxismo Centralista, Comunismo de Conselho, Comunismo de Esquerda, Anarco-Comunismo, Eco-Anarquismo, Anarquismo de Mercado, Socialismo Utópico, Socialismo Democrático, Social-Democracia e Nacionalismo de Esquerda."
 
     },
     "index-h2-scores": {
@@ -505,7 +559,8 @@ const i18n = {
         "ru": "Мне не нравятся мои результаты!",
         "cn": "我不喜欢我的分数！",
 		"sh": "Ne sviđaju mi se moji rezultati!",
-        "es": "¡No me gustan mis puntuaciones!"
+        "es": "¡No me gustan mis puntuaciones!",
+		"pt": "Não gostei dos resultados!"
     },
     "index-p-scores": {
         "en": "Please remember that you are not intended to get a 100% score in any of the categories. The point of the quiz is to challenge your views. If you have any suggestions or constructive criticism please fill out this <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>short form</a> or open an issue on the <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub Page</a>.",
@@ -514,7 +569,8 @@ const i18n = {
         "ru": "Пожалуйста, помните, что вы не намерены получить 100%-ый результат ни в одной из осей. Смысл викторины заключается в том, чтобы оспорить ваши взгляды. Если у вас какие-либо предложения или конструктивная критика, то, пожалуйста, заполните эту <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>короткую форму</a> или откройте вкладку ''issue'' на <a href='https://github.com/LeftValues/leftvalues.github.io'>странице GitHub</a>.",
         "cn": "这个测试的目的在于表达你的观点，切记不要在任何一类（意识形态）中去有意取得满分。如果你有任何意见或建议，请填写<a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>这份表格</a>或是在<a href='https://github.com/LeftValues/leftvalues.github.io'>该项目的GitHub Page</a>上开个issue。",
 		"sh": "Imajte na umu da cilj nije da dobijete 100% na bilo kojoj kategoriji. Smisao kviza je da izazove vaše mišljenje. Ako imate bilo kakve prijedloge ili konstruktivnu kritiku molimo vas da ispunite ovaj <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>kratki formular</a> ili otvorite pitanje na <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub stranici</a>.",
-        "es": "Por favor, recuerde que no se pretende obtener puntuaciones del 100% en ninguna de las categorías. El punto del test es desafiar sus puntos de vista. Si tiene alguna sugerencia o crítica constructiva, por favor llene este <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>corto formulario</a> o abra un <i>issue</i> en la <a href='https://github.com/LeftValues/leftvalues.github.io'>página de GitHub</a>."
+        "es": "Por favor, recuerde que no se pretende obtener puntuaciones del 100% en ninguna de las categorías. El punto del test es desafiar sus puntos de vista. Si tiene alguna sugerencia o crítica constructiva, por favor llene este <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>corto formulario</a> o abra un <i>issue</i> en la <a href='https://github.com/LeftValues/leftvalues.github.io'>página de GitHub</a>.",
+		"pt": "Lembre-se de que não se pretende obter 100% de pontuação em nenhuma das categorias. O objetivo deste teste é desafiar seus pontos de vista. Se você tiver alguma sugestão ou crítica construtiva, preencha este <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>pequeno formulário</a> ou abra um <i>\"issue\"</i> no <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub</a>."
     },
     "index-h2-tracked": {
         "en": "Am I being tracked?",
@@ -523,7 +579,8 @@ const i18n = {
         "ru": "За мной следят?",
         "cn": "我被追踪了吗？",
 		"sh": "Da li me stranica prati?",
-        "es": "¿Se me está rastreando?"
+        "es": "¿Se me está rastreando?",
+		"pt": "Estou sendo rastreado?"
     },
     "index-p-tracked": {
         "en": "LeftValues does utilize very basic tracking to get an idea of the amount of visitors. No personal information is collected and answers/results are not saved. If you do not believe me, the code is open source and available for all to see. For transparency purposes, the collected data for the first week since release can be viewed on this <a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Google Document</a>.",
@@ -532,7 +589,8 @@ const i18n = {
         "ru": "LeftValues использует очень простое отслеживание, чтобы получить представление о количестве посетителей. Личная информация не собирается, а ответы/результаты не сохраняются. Если вы нам не верите, код открыт и доступен для всех. В целях обеспечения прозрачности, собранные данные за первую неделю с момента выпуска можно просмотреть в этом <a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Гугл-документе</a>.",
         "cn": "LeftValues确实采集了一些非常基本的信息来统计访问者数量。但我们不会收集任何个人信息，也不会保存答案/结果。如果你不相信这一点，本项目的开源代码对所有人开放查阅，欢迎查看。为了透明起见，发布后第一周收集的数据可以在这份<a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Google文档</a>中查看。",		    
 		"sh": "LeftValues koristi vrlo osnovno praćenje broja posjetioca. Ne sakuplja lične podakte i odgovori/rezultati nisu sačuvani. Ako nam ne vjerujete, kod je open source i dostupan svima na pregled. Radi transparentnost, prikupljeni podaci za prvu sedmicu od objave mogu se vidjeti u ovom <a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Google dokumentu</a>.",
-        "es": "LeftValues utiliza un rastreo muy básico para tener una idea de la cantidad de visitantes. No se recoge información personal y no se guardan las respuestas/resultados. Si no me creen, el código es de código abierto y está disponible para que todos lo vean. Por propósitos de transparencia, los datos recogidos durante la primera semana desde su publicación pueden ser vistos en este <a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Documento de Google</a>."
+        "es": "LeftValues utiliza un rastreo muy básico para tener una idea de la cantidad de visitantes. No se recoge información personal y no se guardan las respuestas/resultados. Si no me creen, el código es de código abierto y está disponible para que todos lo vean. Por propósitos de transparencia, los datos recogidos durante la primera semana desde su publicación pueden ser vistos en este <a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Documento de Google</a>.",
+		"pt": "LeftValues utiliza um rastreamento muito básico para ter uma idéia do número de visitantes. Nenhuma informação pessoal é coletada e as respostas/resultados não são salvos. Se você não acredita em mim, o código é de código aberto e disponível para todos verem. Para fins de transparência, os dados coletados durante a primeira semana desde sua publicação podem ser vistos neste <a href='https://docs.google.com/document/d/1pcnZdMkEmGXgLMS8izvqd_JEcgjuFgUnfqCRO32q2go/edit?usp=sharing'>Documento do Google</a>."
 
     }
 }
