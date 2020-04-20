@@ -72,7 +72,7 @@ ideologies = [
             },
 			"pt": {
                 "name": "Marxismo Ortodoxo",
-                "desc":  "O marxismo ortodoxo é uma forma de marxismo que adota visões que se adequam à teoria marxista como foi originalmente escrita, particularmente sobre o materialismo dialético. Os marxistas ortodoxos são altamente revolucionários e internacionalistas e argumentam que sociedades não industriais são incapazes de alcançar o socialismo ".
+                "desc":  "O marxismo ortodoxo é uma forma de marxismo que adota visões que se adequam à teoria marxista como foi originalmente escrita, particularmente sobre o materialismo dialético. Os marxistas ortodoxos são altamente revolucionários e internacionalistas e argumentam que sociedades não industriais são incapazes de alcançar o socialismo. "
             }
         },
         "stats": {
@@ -288,7 +288,7 @@ ideologies = [
             },
 			"pt": {
 				"name": "Anarco-Comunismo",
-				"desc": "O anarco-comunismo é uma forma de anarquismo que defende a abolição do capitalismo, abolição do estado e propriedade coletiva dos meios de produção. Os anarcomunistas apóiam uma economia e governo descentralizados, sendo o anarco-sindicalismo uma maneira comum de organizar essa sociedade.".
+				"desc": "O anarco-comunismo é uma forma de anarquismo que defende a abolição do capitalismo, abolição do estado e propriedade coletiva dos meios de produção. Os anarcomunistas apóiam uma economia e governo descentralizados, sendo o anarco-sindicalismo uma maneira comum de organizar essa sociedade."
 			}
         },
         "stats": {
@@ -331,7 +331,7 @@ ideologies = [
             },
 			"pt": {
 				"name": "Eco-Anarquismo",
-				"desc": "Eco-anarquismo, ou anarquismo verde, é uma forma de anarquismo que coloca ênfase particular em questões ambientais. É frequentemente associada a ideologias mais distintas, como o anarco-sindicalismo. Os eco-anarquistas geralmente são revolucionários e apoiam a utilização de uma economia descentralizada e igualitária para alcançar objetivos ambientais ".
+				"desc": "Eco-anarquismo, ou anarquismo verde, é uma forma de anarquismo que coloca ênfase particular em questões ambientais. É frequentemente associada a ideologias mais distintas, como o anarco-sindicalismo. Os eco-anarquistas geralmente são revolucionários e apoiam a utilização de uma economia descentralizada e igualitária para alcançar objetivos ambientais. "
 			}
         },
         "stats": {
