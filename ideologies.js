@@ -26,7 +26,11 @@ ideologies = [
             "es": {
                 "name": "Marxismo-Leninismo",
                 "desc": "El marxismo-leninismo es una forma de marxismo que se forjó en el siglo XX en la Unión Soviética. Los marxistas-leninistas favorecen fuertemente el uso de un partido político comunista como plataforma para lograr la revolución y establecer el socialismo. Muchos marxistas-leninistas son algo más nacionalistas y patriotas que muchos otros marxistas, y pueden favorecer el progreso industrial por encima de los objetivos medioambientales.\n"
-            }
+            },
+			"pt": {
+                "name": "Marxismo-Leninismo",
+                "desc": "O marxismo-leninismo é uma forma de marxismo que foi forjada no século 20. na União Soviética. Os marxistas-leninistas são fortemente a favor do uso de um partido político comunista como plataforma para alcançar a revolução e estabelecer o socialismo. Muitos marxistas-leninistas são um pouco mais nacionalistas e patrióticos do que muitos outros marxistas, e podem favorecer o progresso industrial em detrimento dos objetivos ambientais.\n "
+            }	
         },
         "stats": {
             "a": 80,
@@ -65,6 +69,10 @@ ideologies = [
             "es": {
                 "name": "Marxismo Ortodoxo",
                 "desc": "El marxismo ortodoxo es una forma de marxismo que adopta puntos de vista que se ajustan a la teoría marxista tal como fue escrita originalmente, particularmente en el tema del materialismo dialéctico. Los marxistas ortodoxos son altamente revolucionarios e internacionalistas y sostienen que las sociedades no industriales son incapaces de lograr el socialismo."
+            },
+			"pt": {
+                "name": "Marxismo Ortodoxo",
+                "desc":  "O marxismo ortodoxo é uma forma de marxismo que adota visões que se adequam à teoria marxista como foi originalmente escrita, particularmente sobre o materialismo dialético. Os marxistas ortodoxos são altamente revolucionários e internacionalistas e argumentam que sociedades não industriais são incapazes de alcançar o socialismo ".
             }
         },
         "stats": {
@@ -104,6 +112,10 @@ ideologies = [
             "es": {
                 "name": "Eco-Marxismo",
                 "desc": "El ecomarxismo es una forma de marxismo ortodoxo que se encuentra más comúnmente en los días modernos y que pone un énfasis particular en las cuestiones ambientales. Los ecomarxistas generalmente favorecen la planificación económica central como una forma de combatir los problemas climáticos."
+            },
+			"pt": {
+                "name": "Eco-Marxismo",
+                "desc": "O eco-marxismo é uma forma de marxismo ortodoxo mais comumente encontrada nos dias modernos e com uma ênfase particular nas questões ambientais. Os eco-marxistas geralmente favorecem o planejamento econômico central como uma maneira de combater os problemas climáticos. "
             }
         },
         "stats": {
@@ -143,7 +155,12 @@ ideologies = [
             "es": {
                 "name": "Marxismo Centralista",
                 "desc": "El marxismo centrista es una forma de marxismo que adopta puntos de vista marxistas sobre la sociedad y la economía y que, al mismo tiempo, se abstiene de adoptar una posición definitiva sobre la revolución y el reformismo. Muchos marxistas centristas pueden ser también más nacionalistas que otros marxistas."
-            }
+            },
+			"pt": {
+				"name": "Marxismo Centralista",
+				"desc": "O marxismo centrista é uma forma de marxismo que adota visões marxistas sobre a sociedade e a economia, ao mesmo tempo que se abstém de assumir uma posição definitiva sobre revolução e reformismo. Muitos marxistas centristas podem também ser mais nacionalista do que outros marxistas."
+			}
+
         },
         "stats": {
             "a": 40,
@@ -182,7 +199,11 @@ ideologies = [
             "es": {
                 "name": "Comunismo consejista",
                 "desc": "El comunismo de consejo es una forma de marxismo que aboga por que los consejos de trabajadores sean la base de una sociedad socialista. Los comunistas de consejo generalmente se oponen a la existencia de una fuerte influencia de los partidos políticos dentro del sistema político socialista, favoreciendo la democracia de consejo."
-            }
+            },
+			"pt": {
+				"name": "Comunismo de conselhos",
+				"desc": "O comunismo de conselho, também denominado Concelhismo, é uma forma de marxismo que defende que os conselhos dos trabalhadores sejam a base de uma sociedade socialista. Os comunistas do conselho geralmente se opõem à existência de uma forte influência dos partidos políticos dentro do sistema politico socialista, favorecendo a democracia de conselhos."
+			}
         },
         "stats": {
             "a": 90,
@@ -221,7 +242,11 @@ ideologies = [
             "es": {
                 "name": "Comunismo Izquierdista",
                 "desc": "El Comunismo de Izquierda es una forma de marxismo que se inclina hacia las llamadas posiciones ultraizquierdistas. Estas incluyen el apoyo incondicional a la revolución y al internacionalismo, el rechazo a los sindicatos y a la participación en la democracia liberal, y el rechazo a la liberación nacional y a la autodeterminación."
-            }
+            },
+			"pt": {
+				"name": "Comunismo de esquerda",
+				"desc":  "O comunismo de esquerda é uma forma de marxismo que se inclina para as chamadas posições de extrema esquerda. Isso inclui apoio incondicional à revolução e ao internacionalismo, rejeição de sindicatos e da participação na democracia liberal, além da rejeição à libertação nacional e a autodeterminação. "
+			}
         },
         "stats": {
             "a": 100,
@@ -260,7 +285,11 @@ ideologies = [
             "es": {
                 "name": "Anarco-Comunismo",
                 "desc": "El anarco-comunismo es una forma de anarquismo que aboga por la abolición del capitalismo y del Estado, así como por la propiedad colectiva de los medios de producción. Los anarcomunistas apoyan una economía y un gobierno descentralizados, siendo el anarcosindicalismo una forma común de organizar dicha sociedad."
-            }
+            },
+			"pt": {
+				"name": "Anarco-Comunismo",
+				"desc": "O anarco-comunismo é uma forma de anarquismo que defende a abolição do capitalismo, abolição do estado e propriedade coletiva dos meios de produção. Os anarcomunistas apóiam uma economia e governo descentralizados, sendo o anarco-sindicalismo uma maneira comum de organizar essa sociedade.".
+			}
         },
         "stats": {
             "a": 80,
@@ -299,7 +328,11 @@ ideologies = [
             "es": {
                 "name": "Eco-Anarquismo",
                 "desc": "El Eco-Anarquismo, o Anarquismo Verde, es una forma de anarquismo que pone un énfasis particular en los temas ambientales. A menudo se vincula con ideologías más distintivas como el Anarcosindicalismo. Los Eco-Anarquistas son generalmente revolucionarios y apoyan el uso de una economía descentralizada e igualitaria para lograr objetivos ambientales."
-            }
+            },
+			"pt": {
+				"name": "Eco-Anarquismo",
+				"desc": "Eco-anarquismo, ou anarquismo verde, é uma forma de anarquismo que coloca ênfase particular em questões ambientais. É frequentemente associada a ideologias mais distintas, como o anarco-sindicalismo. Os eco-anarquistas geralmente são revolucionários e apoiam a utilização de uma economia descentralizada e igualitária para alcançar objetivos ambientais ".
+			}
         },
         "stats": {
             "a": 80,
@@ -338,7 +371,12 @@ ideologies = [
             "es": {
                 "name": "Anarquismo de Mercado",
                 "desc": "El anarquismo de mercado es una forma de anarquismo que mezcla objetivos anarquistas como la abolición de la jerarquía, el estado y el capitalismo con un elevado individualismo y un enfoque reformista moderado. Esto no debe ser confundido con el Anarco-Capitalismo."
-            }
+            },
+			"pt": {
+				"name": "Anarquismo de Mercado",
+				"desc": "O anarquismo de mercado é uma forma de anarquismo que mistura objetivos anarquistas, como a abolição da hierarquia, estado e capitalismo, com alto individualismo e uma abordagem reformista moderada, não devendo ser confundido com o 'anarco'-capitalismo."
+			}
+
         },
         "stats": {
             "a": 20,
@@ -377,7 +415,11 @@ ideologies = [
             "es": {
                 "name": "Socialismo Utópico",
                 "desc": "El socialismo utópico es una forma de socialismo pre-marxista que cree en una base igualitaria, moralista e idealista para una sociedad socialista. Los socialistas utópicos generalmente rechazan la revolución violenta y a menudo creen que la clase dirigente puede ser convencida de adoptar el socialismo."
-            }
+            },
+			"pt": {
+				"name": "Socialismo Utópico",
+				"desc": "O socialismo utópico é uma forma de socialismo pré-marxista que acredita em uma base igualitária, moralista e idealista para uma sociedade socialista. Os socialistas utópicos geralmente rejeitam a revolução violenta e geralmente acreditam que a classe dominante pode ser convencida de que adotar o socialismo."
+			}
         },
         "stats": {
             "a": 30,
@@ -416,7 +458,11 @@ ideologies = [
             "es": {
                 "name": "Socialismo Democrático",
                 "desc": "El Socialismo Democrático es una forma de socialismo que busca utilizar la democracia liberal como medio para lograr una economía y una sociedad socialista. Los socialistas democráticos rechazan la revolución y la economía de planificación centralizada, y en su lugar apoyan la propiedad social moderada en forma de servicios públicos y autogestión democrática en el lugar de trabajo."
-            }
+            },
+			"pt": {
+				"name": "Socialismo Democrático",
+				"desc": "O socialismo democrático é uma forma de socialismo que busca usar a democracia liberal como meio de alcançar uma economia e uma sociedade socialistas. Os socialistas democráticos rejeitam a revolução e a economia planejada centralmente, em vez disso, apóiam moderadas propriedade social na forma de serviços públicos e autogestão democrática no local de trabalho. "
+			}
         },
         "stats": {
             "a": 30,
@@ -455,7 +501,12 @@ ideologies = [
             "es": {
                 "name": "Socialdemocracia",
                 "desc": "La socialdemocracia es una ideología de centro-izquierda que aboga por mezclar los valores de la izquierda, como el bienestar social y la regulación corporativa, con el capitalismo y la democracia liberal en forma de una economía mixta. Muchos socialdemócratas modernos favorecen la economía keynesiana."
-            }
+            },
+			"pt": {
+				"name": "Socialdemocracia",
+				"desc": "A social-democracia é uma ideologia de centro-esquerda que defende a mistura de valores de esquerda, como bem-estar social e regulamentação corporativa, com capitalismo e democracia liberal na forma de uma economia mista. Muitos social-democratas modernos preferem uma economia keynesiana. "
+			}
+
         },
         "stats": {
             "a": 20,
@@ -494,7 +545,11 @@ ideologies = [
             "es": {
                 "name": "Nacionalismo de Izquierdas",
                 "desc": "El nacionalismo de izquierdas es una ideología que mezcla la economía de izquierdas con el nacionalismo no xenófobo y el patriotismo. Muchos nacionalistas de izquierda apoyan simultáneamente la solidaridad internacional y pueden apoyar la lucha armada."
-            }
+            },
+			"pt": {
+				"name": "Nacionalismo de esquerda",
+				"desc": "O nacionalismo de esquerda é uma ideologia que mistura economia de esquerda com patriotismo e nacionalismo não-xenofóbico. Muitos nacionalistas de esquerda apóiam simultaneamente a solidariedade internacional e podem apoiar a luta armada."
+			}
         },
         "stats": {
             "a": 60,
