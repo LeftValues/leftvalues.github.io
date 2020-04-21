@@ -65,8 +65,9 @@ const i18n = {
         return i18n[name]["en"]  
     },
     "lang": userLang,
-    // quiz.html
-    "quiz-loading": {
+    
+	// quiz.html
+    	"quiz-loading": {
 		"en": "Loading…",
         "de": "Laden…",
         "ko": "로딩중...",
@@ -226,7 +227,7 @@ const i18n = {
         "cn": "次接近匹配",
 		"sh": "Sledeća najbliža podudaranja",
         "es": "Siguiente emparejamiento más cercano",
-		"pt": "Próximas correspondencias aproximadas"
+		"pt": "Próximas correspondências aproximadas"
     },
     "next-matches-percent": {
         "en": "With your closest match as 100% and farthest as 0%, here is how closely you matched the other ideologies.",
@@ -256,7 +257,7 @@ const i18n = {
         "cn": "这个测试的目的在于表达你的观点，切记不要在任何一类（意识形态）中去有意取得满分。如果你有任何意见或建议，请填写<a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>这份表格</a>或是在<a href='https://github.com/LeftValues/leftvalues.github.io'>该项目的GitHub Page</a>上开个issue。",
 		"sh": "Imajte na umu da cilj nije da dobijete 100% na bilo kojoj kategoriji. Smisao kviza je da izazove vaše mišljenje. Ako imate bilo kakve prijedloge ili konstruktivnu kritiku molimo vas da ispunite ovaj <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>kratki formular</a> ili otvorite pitanje na <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub stranici</a>.",
         "es": "Por favor, recuerde que no se pretende obtener una puntuación del 100% en ninguna de las categorías. El punto del test es desafiar su punto de vista. Si tiene alguna sugerencia o crítica contructiva, por favor rellene este <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>corto formulario</a> o habrá un <i>issue</i> en nuestra <a href='https://github.com/LeftValues/leftvalues.github.io'>página de GitHub</a>.",
-		"pt": "Lembre-se de que não se pretende obter uma pontuação de 100% em nenhuma das categorias. O objetivo do teste é desafiar seu ponto de vista. Se você tiver alguma sugestão ou crítica construtiva, preencha este <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>pequeno formulário curto</a> ou relate um <i>\"issue\"</i> em nosso <a href=' https://github.com/LeftValues/leftvalues.github.io'>GitHub</a>."
+		"pt": "Lembre-se de que não se pretende obter uma pontuação de 100% em nenhuma das categorias. O objetivo do teste é desafiar seu ponto de vista. Se você tiver alguma sugestão ou crítica construtiva, preencha este <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>pequeno formulário curto</a> ou relate um <i>\"issue\"</i> em nosso <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub</a>."
     },
     "result-a-label": {
         "en": ["Extremely Revolutionary","Very Revolutionary","Revolutionary","Neutral","Reformist","Very Reformist","Extremely Reformist"],
@@ -266,7 +267,7 @@ const i18n = {
         "cn": ["极端革命派","非常革命派","革命派","中立","改良派","非常改良派","极端改良派"],
 		"sh": ["Izuzetno Revolucionarni","Vrlo Revolucionarni","Revolucionarni","Neutralni","Reformistički","Vrlo Reformistički","Izuzetno Reformistički"],
         "es": ["Extremadamente Revolucionario", "Muy Revolucionario", "Revolucionario", "Neutral", "Reformista","Muy Reformista","Extremadamente Reformista"],
-		"pt": ["Extremamente Revolucionário", "Muito Revolucionário", "Revolucionário", "Neutro", "Reformista", "Muito Reformista", "Extremamente Reformista"]
+		"pt": ["Extremamente Revolucionário","Muito Revolucionário","Revolucionário","Neutro","Reformista","Muito Reformista","Extremamente Reformista"]
     },
     "result-b-label": {
         "en": ["Extremely Scientific","Very Scientific","Scientific","Neutral","Utopian","Very Utopian","Extremely Utopian"],
