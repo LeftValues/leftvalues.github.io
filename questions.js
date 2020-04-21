@@ -1414,15 +1414,15 @@ questions = [
         }
     },
     {
-        "question": "Ethnic minorities should be considered equal to the majority population.",
+        "question": "Minority populations should receive special legal protections.",
         "i18n": {
-            "de": "Ethnische Minderheiten sollten der Mehrheitsbevölkerung gleichgestellt werden.",
-            "ko": "소수 민족은 대다수의 인구와 동등하게 대우받아야 한다.",
-            "ru": "Этнические меньшинства должны считаться равными бóльшей части населения.",
-            "cn": "少数民族应被视为与多数民族是平等的。",
-			"sh": "Etničke manjine bi se trebale smatrati jednakim većinskom stanovništvu.",
-            "es": "Las minorías étnicas deben considerarse iguales a la población mayoritaria.",
-			"pt": "As minorias étnicas devem ser consideradas iguais à maioria da população. "
+            "de": "Minderheiten sollten besonderen rechtlichen Schutz erhalten.",
+            "ko": "소수 민족은 특별한 법적 보호를 받아야합니다.",
+            "ru": "Меньшинства должны получить особую правовую защиту.",
+            "cn": "少数民族应受到特别的法律保护。",
+			"sh": "Manjinska stanovništva bi trebala biti posebno legalno zaštićena.",
+            "es": "Las poblaciones minoritarias deben recibir protecciones legales especiales.",
+			"pt": "As populações minoritárias devem receber proteções legais especiais."
         },
         "effect": {
             "a": 0,
