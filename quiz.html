@@ -1,123 +1,135 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7CRoboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
-<title>LeftValues Quiz</title>
-<link rel="icon" type="image/png" href="icon.png">
-<link rel="shortcut icon" type="image/png" href="icon.png">
-<meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7CRoboto:400,700" rel="stylesheet">
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <title>LeftValues Quiz</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+    <meta charset="utf-8">
 </head>
+
 <body>
-<script type="application/javascript"
-        src="questions.js">
-</script>
-<h1>LeftValues</h1>
-<select id="langPicker"></select>
-<hr>
-<h2 data-i18n="quiz-loading" style="text-align:center;" id="question-number">Loading...</h2>
-<p class="question" id="question-text"></p>
-<button data-i18n="quiz-strongly-agree" class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
-<button data-i18n="quiz-agree" class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Agree</button> <br>
-<button data-i18n="quiz-neutral" class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
-<button data-i18n="quiz-disagree" class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
-<button data-i18n="quiz-strongly-disagree" class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
-<button data-i18n="quiz-back" class="small_button" onclick="prev_question()" id="back_button">Back</button>
-<button data-i18n="quiz-back" class="small_button_off" id="back_button_off">Back</button>
-<br>
+    <script type="application/javascript" src="questions.js">
+    </script>
+    <h1>LeftValues</h1>
+    <select id="langPicker"></select>
+    <hr>
+    <h2 data-i18n="quiz-loading" style="text-align:center;" id="question-number">Loading...</h2>
+    <p class="question" id="question-text"></p>
+    <button data-i18n="quiz-strongly-agree" class="button" onclick="next_question( 1.0)"
+        style="background-color: #1b5e20;">Strongly Agree</button> <br>
+    <button data-i18n="quiz-agree" class="button" onclick="next_question( 0.5)"
+        style="background-color: #4caf50;">Agree</button> <br>
+    <button data-i18n="quiz-neutral" class="button" onclick="next_question( 0.0)"
+        style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
+    <button data-i18n="quiz-disagree" class="button" onclick="next_question(-0.5)"
+        style="background-color: #f44336;">Disagree</button> <br>
+    <button data-i18n="quiz-strongly-disagree" class="button" onclick="next_question(-1.0)"
+        style="background-color: #b71c1c;">Strongly Disagree</button> <br>
+    <button data-i18n="quiz-back" class="small_button" onclick="prev_question()" id="back_button">Back</button>
+    <button data-i18n="quiz-back" class="small_button_off" id="back_button_off">Back</button>
+    <br>
 
-<!-- Privacy respecting Statcounter code for LeftValues http://leftvalues.github.io -->
-<script type="text/javascript">
-var sc_project=12079783; 
-var sc_invisible=1; 
-var sc_security="fa5443fa"; 
-var sc_https=1;
-if(navigator.doNotTrack != 1) {
-var statcounterscript=document.createElement('script');
-statcounterscript.setAttribute("type","text/javascript");
-statcounterscript.setAttribute("src", "https://www.statcounter.com/counter/counter.js");
-document.getElementsByTagName("body")[0].appendChild(statcounterscript);
-}
-</script>
-<!-- End of Statcounter Code -->
+    <!-- Privacy respecting Statcounter code for LeftValues http://leftvalues.github.io -->
+    <script type="text/javascript">
+        var sc_project = 12079783;
+        var sc_invisible = 1;
+        var sc_security = "fa5443fa";
+        var sc_https = 1;
+        if (navigator.doNotTrack != 1) {
+            var statcounterscript = document.createElement('script');
+            statcounterscript.setAttribute("type", "text/javascript");
+            statcounterscript.setAttribute("src", "https://www.statcounter.com/counter/counter.js");
+            document.getElementsByTagName("body")[0].appendChild(statcounterscript);
+        }
+    </script>
+    <!-- End of Statcounter Code -->
 
-<!-- JavaScript for the test itself -->
-<script type="application/javascript" src="i18n.js"></script>
-<script>
-    var max_a, max_b, max_c, max_d, max_e, max_f, max_g// Max possible scores
-    max_a = max_b = max_c = max_d = max_e = max_f = max_g = 0
-    var a, b, c, d, e, f, g // User's scores
-    a = b = c = d = e = f = g = 0
-    var qn = 0 // Question number
-    var prev_answer = null
-    init_question();
-    for (var i = 0; i < questions.length; i++) {
-        max_a += Math.abs(questions[i].effect.a)
-        max_b += Math.abs(questions[i].effect.b)
-        max_c += Math.abs(questions[i].effect.c)
-        max_d += Math.abs(questions[i].effect.d)
-		max_e += Math.abs(questions[i].effect.e)
-		max_f += Math.abs(questions[i].effect.f)
-		max_g += Math.abs(questions[i].effect.g)
-    }
-    function init_question() {
-        document.getElementById("question-text").innerHTML = (userLang in questions[qn].i18n) ? questions[qn].i18n[userLang] : questions[qn].question
-        document.getElementById("question-number").innerHTML = i18n.getString("quiz-question-of", [qn, questions])
-        if (prev_answer == null) {
-            document.getElementById("back_button").style.display = 'none'
-            document.getElementById("back_button_off").style.display = 'block'
-        } else {
-            document.getElementById("back_button").style.display = 'block'
-            document.getElementById("back_button_off").style.display = 'none'
+    <!-- JavaScript for the test itself -->
+    <script type="application/javascript" src="i18n.js"></script>
+    <script>
+        var max_a, max_b, max_c, max_d, max_e, max_f, max_g // Max possible scores
+        max_a = max_b = max_c = max_d = max_e = max_f = max_g = 0
+        var a, b, c, d, e, f, g // User's scores
+        a = b = c = d = e = f = g = 0
+        var qn = 0 // Question number
+        var prev_answer = null
+        init_question();
+        for (var i = 0; i < questions.length; i++) {
+            max_a += Math.abs(questions[i].effect.a)
+            max_b += Math.abs(questions[i].effect.b)
+            max_c += Math.abs(questions[i].effect.c)
+            max_d += Math.abs(questions[i].effect.d)
+            max_e += Math.abs(questions[i].effect.e)
+            max_f += Math.abs(questions[i].effect.f)
+            max_g += Math.abs(questions[i].effect.g)
         }
 
-    }
+        function init_question() {
+            document.getElementById("question-text").innerHTML = (userLang in questions[qn].i18n) ? questions[qn].i18n[
+                userLang] : questions[qn].question
+            document.getElementById("question-number").innerHTML = i18n.getString("quiz-question-of", [qn, questions])
+            if (prev_answer == null) {
+                document.getElementById("back_button").style.display = 'none'
+                document.getElementById("back_button_off").style.display = 'block'
+            } else {
+                document.getElementById("back_button").style.display = 'block'
+                document.getElementById("back_button_off").style.display = 'none'
+            }
 
-    function next_question(mult) {
-        a += mult*questions[qn].effect.a
-        b += mult*questions[qn].effect.b
-        c += mult*questions[qn].effect.c
-        d += mult*questions[qn].effect.d
-		e += mult*questions[qn].effect.e
-		f += mult*questions[qn].effect.f
-		g += mult*questions[qn].effect.g
-        qn++
-        prev_answer = mult
-        if (qn < questions.length) {
+        }
+
+        function next_question(mult) {
+            a += mult * questions[qn].effect.a
+            b += mult * questions[qn].effect.b
+            c += mult * questions[qn].effect.c
+            d += mult * questions[qn].effect.d
+            e += mult * questions[qn].effect.e
+            f += mult * questions[qn].effect.f
+            g += mult * questions[qn].effect.g
+            qn++
+            prev_answer = mult
+            if (qn < questions.length) {
+                init_question()
+            } else {
+                results()
+            }
+        }
+
+        function prev_question() {
+            if (prev_answer == null) {
+                return
+            }
+            qn--
+            a -= prev_answer * questions[qn].effect.a
+            b -= prev_answer * questions[qn].effect.b
+            c -= prev_answer * questions[qn].effect.c
+            d -= prev_answer * questions[qn].effect.d
+            e -= prev_answer * questions[qn].effect.e
+            f -= prev_answer * questions[qn].effect.f
+            g -= prev_answer * questions[qn].effect.g
+            prev_answer = null
             init_question()
-        } else {
-            results()
-        }
-    }
-    function prev_question() {
-        if (prev_answer == null) {
-            return
-        }
-        qn--
-        a -= prev_answer * questions[qn].effect.a
-        b -= prev_answer * questions[qn].effect.b
-        c -= prev_answer * questions[qn].effect.c
-        d -= prev_answer * questions[qn].effect.d
-		e -= prev_answer * questions[qn].effect.e
-		f -= prev_answer * questions[qn].effect.f
-		g -= prev_answer * questions[qn].effect.g
-        prev_answer = null
-        init_question()
 
-    }
-    function calc_score(score,max) {
-        return (100*(max+score)/(2*max)).toFixed(1)
-    }
-    function results() {
-        location.href = `results.html`
-            + `?a=${calc_score(a,max_a)}`
-            + `&b=${calc_score(b,max_b)}`
-            + `&c=${calc_score(c,max_c)}`
-            + `&d=${calc_score(d,max_d)}`
-			+ `&e=${calc_score(e,max_e)}`
-			+ `&f=${calc_score(f,max_f)}`
-			+ `&g=${calc_score(g,max_g)}`
-    }
-</script>
+        }
+
+        function calc_score(score, max) {
+            return (100 * (max + score) / (2 * max)).toFixed(1)
+        }
+
+        function results() {
+            location.href = `results.html` +
+                `?a=${calc_score(a,max_a)}` +
+                `&b=${calc_score(b,max_b)}` +
+                `&c=${calc_score(c,max_c)}` +
+                `&d=${calc_score(d,max_d)}` +
+                `&e=${calc_score(e,max_e)}` +
+                `&f=${calc_score(f,max_f)}` +
+                `&g=${calc_score(g,max_g)}`
+        }
+    </script>
 </body>
+
 </html>
