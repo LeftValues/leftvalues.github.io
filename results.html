@@ -225,206 +225,206 @@
         setBarValue('progressive', progressive)
 
         loadTranslation().then(() => {
-        document.getElementById('a-label').innerHTML = setLabel(revolution, i18n.getString(
-            'result_a_label'))
-        document.getElementById('b-label').innerHTML = setLabel(scientific, i18n.getString(
-            'result_b_label'))
-        document.getElementById('c-label').innerHTML = setLabel(central, i18n.getString('result_c_label'))
-        document.getElementById('d-label').innerHTML = setLabel(international, i18n.getString(
-            'result_d_label'))
-        document.getElementById('e-label').innerHTML = setLabel(party, i18n.getString('result_e_label'))
-        document.getElementById('f-label').innerHTML = setLabel(industry, i18n.getString('result_f_label'))
-        document.getElementById('g-label').innerHTML = setLabel(conservative, i18n.getString(
-            'result_g_label'))
+            document.getElementById('a-label').innerHTML = setLabel(revolution, i18n.getString(
+                'result_a_label'))
+            document.getElementById('b-label').innerHTML = setLabel(scientific, i18n.getString(
+                'result_b_label'))
+            document.getElementById('c-label').innerHTML = setLabel(central, i18n.getString('result_c_label'))
+            document.getElementById('d-label').innerHTML = setLabel(international, i18n.getString(
+                'result_d_label'))
+            document.getElementById('e-label').innerHTML = setLabel(party, i18n.getString('result_e_label'))
+            document.getElementById('f-label').innerHTML = setLabel(industry, i18n.getString('result_f_label'))
+            document.getElementById('g-label').innerHTML = setLabel(conservative, i18n.getString(
+                'result_g_label'))
 
-        let ideology = ''
-        let ideodesc = ''
-        const ideologyIndexAndDistance = []
-        var closestMatch = {}
+            let ideology = ''
+            let ideodesc = ''
+            const ideologyIndexAndDistance = []
+            var closestMatch = {}
 
-        let index = 0
-        for (const name of Object.keys(ideologies)) {
-            let dist = 0
-            dist += Math.pow(Math.abs(ideologies[name].a - revolution), 2)
-            dist += Math.pow(Math.abs(ideologies[name].c - central), 2)
-            dist += Math.pow(Math.abs(ideologies[name].b - scientific), 2)
-            dist += Math.pow(Math.abs(ideologies[name].d - international), 2)
-            dist += Math.pow(Math.abs(ideologies[name].e - party), 2)
-            dist += Math.pow(Math.abs(ideologies[name].f - industry), 2)
-            dist += Math.pow(Math.abs(ideologies[name].g - conservative), 2)
+            let index = 0
+            for (const name of Object.keys(ideologies)) {
+                let dist = 0
+                dist += Math.pow(Math.abs(ideologies[name].a - revolution), 2)
+                dist += Math.pow(Math.abs(ideologies[name].c - central), 2)
+                dist += Math.pow(Math.abs(ideologies[name].b - scientific), 2)
+                dist += Math.pow(Math.abs(ideologies[name].d - international), 2)
+                dist += Math.pow(Math.abs(ideologies[name].e - party), 2)
+                dist += Math.pow(Math.abs(ideologies[name].f - industry), 2)
+                dist += Math.pow(Math.abs(ideologies[name].g - conservative), 2)
 
-            // ideologyToDistance[name] = dist
-            ideologyIndexAndDistance.push({
-            distance: dist,
-            name,
-            index
+                // ideologyToDistance[name] = dist
+                ideologyIndexAndDistance.push({
+                distance: dist,
+                name,
+                index
+                })
+                index++
+            }
+
+            ideologyIndexAndDistance.sort(function (a, b) {
+                return a.distance - b.distance
             })
-            index++
-        }
 
-        ideologyIndexAndDistance.sort(function (a, b) {
-            return a.distance - b.distance
-        })
+            const distances = ideologyIndexAndDistance.map(function (indexAndDistance) {
+                return indexAndDistance.distance
+            })
 
-        const distances = ideologyIndexAndDistance.map(function (indexAndDistance) {
-            return indexAndDistance.distance
-        })
+            const closestDistance = distances[0]
+            const farthestDistance = distances[distances.length - 1]
+            const distanceSpan = farthestDistance - closestDistance
 
-        const closestDistance = distances[0]
-        const farthestDistance = distances[distances.length - 1]
-        const distanceSpan = farthestDistance - closestDistance
+            closestMatch = ideologyIndexAndDistance[0]
+            document.getElementById('ideology-label').innerHTML = getIdeologyNameByIndex(closestMatch.name)
+            document.getElementById('ideodesc-label').innerHTML = getIdeologyDescriptionByIndex(closestMatch
+                .name)
 
-        closestMatch = ideologyIndexAndDistance[0]
-        document.getElementById('ideology-label').innerHTML = getIdeologyNameByIndex(closestMatch.name)
-        document.getElementById('ideodesc-label').innerHTML = getIdeologyDescriptionByIndex(closestMatch
-            .name)
+            const nextMatches = document.getElementById('next-matches')
+            nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function (indexAndDistance) {
+                const name = indexAndDistance.name
+                ideology = getIdeologyNameByIndex(name)
+                ideodesc = getIdeologyDescriptionByIndex(name)
+                const relativeDistance = 1 - (indexAndDistance.distance - closestDistance) /
+                                distanceSpan
+                const relativeDistancePercent = Math.round(relativeDistance * 1000) / 10
+                return '<dt>' + ideology + ': ' + relativeDistancePercent + '%</dt>' +
+                                '<dd>' + ideodesc + '</dd>'
+            }).join('\n')
 
-        const nextMatches = document.getElementById('next-matches')
-        nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function (indexAndDistance) {
-            const name = indexAndDistance.name
-            ideology = getIdeologyNameByIndex(name)
-            ideodesc = getIdeologyDescriptionByIndex(name)
-            const relativeDistance = 1 - (indexAndDistance.distance - closestDistance) /
-                            distanceSpan
-            const relativeDistancePercent = Math.round(relativeDistance * 1000) / 10
-            return '<dt>' + ideology + ': ' + relativeDistancePercent + '%</dt>' +
-                            '<dd>' + ideodesc + '</dd>'
-        }).join('\n')
+            const c = document.getElementById('banner')
+            const ctx = c.getContext('2d')
+            ctx.fillStyle = '#EEEEEE'
+            ctx.fillRect(0, 0, 800, 1000)
 
-        const c = document.getElementById('banner')
-        const ctx = c.getContext('2d')
-        ctx.fillStyle = '#EEEEEE'
-        ctx.fillRect(0, 0, 800, 1000)
+            let img = document.getElementById('img-revolution')
+            ctx.drawImage(img, 20, 170, 100, 100)
+            img = document.getElementById('img-reform')
+            ctx.drawImage(img, 680, 170, 100, 100)
+            img = document.getElementById('img-scientific')
+            ctx.drawImage(img, 20, 290, 100, 100)
+            img = document.getElementById('img-utopian')
+            ctx.drawImage(img, 680, 290, 100, 100)
+            img = document.getElementById('img-central')
+            ctx.drawImage(img, 20, 410, 100, 100)
+            img = document.getElementById('img-decentral')
+            ctx.drawImage(img, 680, 410, 100, 100)
+            img = document.getElementById('img-international')
+            ctx.drawImage(img, 20, 530, 100, 100)
+            img = document.getElementById('img-national')
+            ctx.drawImage(img, 680, 530, 100, 100)
+            img = document.getElementById('img-party')
+            ctx.drawImage(img, 20, 650, 100, 100)
+            img = document.getElementById('img-union')
+            ctx.drawImage(img, 680, 650, 100, 100)
+            img = document.getElementById('img-industry')
+            ctx.drawImage(img, 20, 770, 100, 100)
+            img = document.getElementById('img-ecology')
+            ctx.drawImage(img, 680, 770, 100, 100)
+            img = document.getElementById('img-conservative')
+            ctx.drawImage(img, 20, 890, 100, 100)
+            img = document.getElementById('img-progressive')
+            ctx.drawImage(img, 680, 890, 100, 100)
 
-        let img = document.getElementById('img-revolution')
-        ctx.drawImage(img, 20, 170, 100, 100)
-        img = document.getElementById('img-reform')
-        ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById('img-scientific')
-        ctx.drawImage(img, 20, 290, 100, 100)
-        img = document.getElementById('img-utopian')
-        ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById('img-central')
-        ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById('img-decentral')
-        ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById('img-international')
-        ctx.drawImage(img, 20, 530, 100, 100)
-        img = document.getElementById('img-national')
-        ctx.drawImage(img, 680, 530, 100, 100)
-        img = document.getElementById('img-party')
-        ctx.drawImage(img, 20, 650, 100, 100)
-        img = document.getElementById('img-union')
-        ctx.drawImage(img, 680, 650, 100, 100)
-        img = document.getElementById('img-industry')
-        ctx.drawImage(img, 20, 770, 100, 100)
-        img = document.getElementById('img-ecology')
-        ctx.drawImage(img, 680, 770, 100, 100)
-        img = document.getElementById('img-conservative')
-        ctx.drawImage(img, 20, 890, 100, 100)
-        img = document.getElementById('img-progressive')
-        ctx.drawImage(img, 680, 890, 100, 100)
+            ctx.fillStyle = '#222222'
+            ctx.fillRect(120, 180, 560, 80)
+            ctx.fillRect(120, 300, 560, 80)
+            ctx.fillRect(120, 420, 560, 80)
+            ctx.fillRect(120, 540, 560, 80)
+            ctx.fillRect(120, 660, 560, 80)
+            ctx.fillRect(120, 780, 560, 80)
+            ctx.fillRect(120, 900, 560, 80)
+            ctx.fillStyle = '#890000'
+            ctx.fillRect(120, 184, 5.6 * revolution - 2, 72)
+            ctx.fillStyle = '#FC5959'
+            ctx.fillRect(682 - 5.6 * reform, 184, 5.6 * reform - 2, 72)
+            ctx.fillStyle = '#88232B'
+            ctx.fillRect(120, 304, 5.6 * scientific - 2, 72)
+            ctx.fillStyle = '#7F0037'
+            ctx.fillRect(682 - 5.6 * utopian, 304, 5.6 * utopian - 2, 72)
+            ctx.fillStyle = '#560000'
+            ctx.fillRect(120, 424, 5.6 * central - 2, 72)
+            ctx.fillStyle = '#000000'
+            ctx.fillRect(682 - 5.6 * decentral, 424, 5.6 * decentral - 2, 72)
+            ctx.fillStyle = '#782F52'
+            ctx.fillRect(120, 544, 5.6 * international - 2, 72)
+            ctx.fillStyle = '#7F3300'
+            ctx.fillRect(682 - 5.6 * national, 544, 5.6 * national - 2, 72)
+            ctx.fillStyle = '#963B33'
+            ctx.fillRect(120, 664, 5.6 * party - 2, 72)
+            ctx.fillStyle = '#7F333B'
+            ctx.fillRect(682 - 5.6 * union, 664, 5.6 * union - 2, 72)
+            ctx.fillStyle = '#804E00'
+            ctx.fillRect(120, 784, 5.6 * industry - 2, 72)
+            ctx.fillStyle = '#76890B'
+            ctx.fillRect(682 - 5.6 * ecology, 784, 5.6 * ecology - 2, 72)
+            ctx.fillStyle = '#27577A'
+            ctx.fillRect(120, 904, 5.6 * conservative - 2, 72)
+            ctx.fillStyle = '#C4A717'
+            ctx.fillRect(682 - 5.6 * progressive, 904, 5.6 * progressive - 2, 72)
+            ctx.fillStyle = '#222222'
+            ctx.font = '700 80px Montserrat'
+            ctx.textAlign = 'left'
+            ctx.fillText('LeftValues', 20, 90)
+            ctx.font = '50px Montserrat'
+            ctx.fillText(getIdeologyNameByIndex(closestMatch.name), 20, 140)
 
-        ctx.fillStyle = '#222222'
-        ctx.fillRect(120, 180, 560, 80)
-        ctx.fillRect(120, 300, 560, 80)
-        ctx.fillRect(120, 420, 560, 80)
-        ctx.fillRect(120, 540, 560, 80)
-        ctx.fillRect(120, 660, 560, 80)
-        ctx.fillRect(120, 780, 560, 80)
-        ctx.fillRect(120, 900, 560, 80)
-        ctx.fillStyle = '#890000'
-        ctx.fillRect(120, 184, 5.6 * revolution - 2, 72)
-        ctx.fillStyle = '#FC5959'
-        ctx.fillRect(682 - 5.6 * reform, 184, 5.6 * reform - 2, 72)
-        ctx.fillStyle = '#88232B'
-        ctx.fillRect(120, 304, 5.6 * scientific - 2, 72)
-        ctx.fillStyle = '#7F0037'
-        ctx.fillRect(682 - 5.6 * utopian, 304, 5.6 * utopian - 2, 72)
-        ctx.fillStyle = '#560000'
-        ctx.fillRect(120, 424, 5.6 * central - 2, 72)
-        ctx.fillStyle = '#000000'
-        ctx.fillRect(682 - 5.6 * decentral, 424, 5.6 * decentral - 2, 72)
-        ctx.fillStyle = '#782F52'
-        ctx.fillRect(120, 544, 5.6 * international - 2, 72)
-        ctx.fillStyle = '#7F3300'
-        ctx.fillRect(682 - 5.6 * national, 544, 5.6 * national - 2, 72)
-        ctx.fillStyle = '#963B33'
-        ctx.fillRect(120, 664, 5.6 * party - 2, 72)
-        ctx.fillStyle = '#7F333B'
-        ctx.fillRect(682 - 5.6 * union, 664, 5.6 * union - 2, 72)
-        ctx.fillStyle = '#804E00'
-        ctx.fillRect(120, 784, 5.6 * industry - 2, 72)
-        ctx.fillStyle = '#76890B'
-        ctx.fillRect(682 - 5.6 * ecology, 784, 5.6 * ecology - 2, 72)
-        ctx.fillStyle = '#27577A'
-        ctx.fillRect(120, 904, 5.6 * conservative - 2, 72)
-        ctx.fillStyle = '#C4A717'
-        ctx.fillRect(682 - 5.6 * progressive, 904, 5.6 * progressive - 2, 72)
-        ctx.fillStyle = '#222222'
-        ctx.font = '700 80px Montserrat'
-        ctx.textAlign = 'left'
-        ctx.fillText('LeftValues', 20, 90)
-        ctx.font = '50px Montserrat'
-        ctx.fillText(getIdeologyNameByIndex(closestMatch.name), 20, 140)
+            ctx.fillStyle = '#dddddd'
+            ctx.textAlign = 'left'
+            if (revolution > 30) {
+                ctx.fillText(revolution + '%', 130, 237.5)
+            }
+            if (scientific > 30) {
+                ctx.fillText(scientific + '%', 130, 357.5)
+            }
+            if (central > 30) {
+                ctx.fillText(central + '%', 130, 477.5)
+            }
+            if (international > 30) {
+                ctx.fillText(international + '%', 130, 597.5)
+            }
+            if (party > 30) {
+                ctx.fillText(party + '%', 130, 717.5)
+            }
+            if (industry > 30) {
+                ctx.fillText(industry + '%', 130, 837.5)
+            }
+            if (conservative > 30) {
+                ctx.fillText(conservative + '%', 130, 957.5)
+            }
+            ctx.textAlign = 'right'
+            if (reform > 30) {
+                ctx.fillText(reform + '%', 670, 237.5)
+            }
+            if (utopian > 30) {
+                ctx.fillText(utopian + '%', 670, 357.5)
+            }
+            if (decentral > 30) {
+                ctx.fillText(decentral + '%', 670, 477.5)
+            }
+            if (national > 30) {
+                ctx.fillText(national + '%', 670, 597.5)
+            }
+            if (union > 30) {
+                ctx.fillText(union + '%', 670, 717.5)
+            }
+            if (ecology > 30) {
+                ctx.fillText(ecology + '%', 670, 837.5)
+            }
+            if (progressive > 30) {
+                ctx.fillText(progressive + '%', 670, 957.5)
+            }
 
-        ctx.fillStyle = '#dddddd'
-        ctx.textAlign = 'left'
-        if (revolution > 30) {
-            ctx.fillText(revolution + '%', 130, 237.5)
-        }
-        if (scientific > 30) {
-            ctx.fillText(scientific + '%', 130, 357.5)
-        }
-        if (central > 30) {
-            ctx.fillText(central + '%', 130, 477.5)
-        }
-        if (international > 30) {
-            ctx.fillText(international + '%', 130, 597.5)
-        }
-        if (party > 30) {
-            ctx.fillText(party + '%', 130, 717.5)
-        }
-        if (industry > 30) {
-            ctx.fillText(industry + '%', 130, 837.5)
-        }
-        if (conservative > 30) {
-            ctx.fillText(conservative + '%', 130, 957.5)
-        }
-        ctx.textAlign = 'right'
-        if (reform > 30) {
-            ctx.fillText(reform + '%', 670, 237.5)
-        }
-        if (utopian > 30) {
-            ctx.fillText(utopian + '%', 670, 357.5)
-        }
-        if (decentral > 30) {
-            ctx.fillText(decentral + '%', 670, 477.5)
-        }
-        if (national > 30) {
-            ctx.fillText(national + '%', 670, 597.5)
-        }
-        if (union > 30) {
-            ctx.fillText(union + '%', 670, 717.5)
-        }
-        if (ecology > 30) {
-            ctx.fillText(ecology + '%', 670, 837.5)
-        }
-        if (progressive > 30) {
-            ctx.fillText(progressive + '%', 670, 957.5)
-        }
-
-        ctx.fillStyle = '#222222'
-        ctx.font = '300 30px Montserrat'
-        ctx.fillText('leftvalues.github.io', 780, 60)
-        ctx.textAlign = 'center'
-        ctx.fillText('' + document.getElementById('a-label').innerHTML, 400, 175)
-        ctx.fillText('' + document.getElementById('b-label').innerHTML, 400, 295)
-        ctx.fillText('' + document.getElementById('c-label').innerHTML, 400, 415)
-        ctx.fillText('' + document.getElementById('d-label').innerHTML, 400, 535)
-        ctx.fillText('' + document.getElementById('e-label').innerHTML, 400, 655)
-        ctx.fillText('' + document.getElementById('f-label').innerHTML, 400, 775)
-        ctx.fillText('' + document.getElementById('g-label').innerHTML, 400, 895)
+            ctx.fillStyle = '#222222'
+            ctx.font = '300 30px Montserrat'
+            ctx.fillText('leftvalues.github.io', 780, 60)
+            ctx.textAlign = 'center'
+            ctx.fillText('' + document.getElementById('a-label').innerHTML, 400, 175)
+            ctx.fillText('' + document.getElementById('b-label').innerHTML, 400, 295)
+            ctx.fillText('' + document.getElementById('c-label').innerHTML, 400, 415)
+            ctx.fillText('' + document.getElementById('d-label').innerHTML, 400, 535)
+            ctx.fillText('' + document.getElementById('e-label').innerHTML, 400, 655)
+            ctx.fillText('' + document.getElementById('f-label').innerHTML, 400, 775)
+            ctx.fillText('' + document.getElementById('g-label').innerHTML, 400, 895)
         })
     </script>
 </body>
