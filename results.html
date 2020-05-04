@@ -17,7 +17,7 @@
     <select id="langPicker"></select>
     <hr>
 
-    <h1 data-i18n="result-h1">Results</h1>
+    <h1 data-i18n="result_h1">Results</h1>
 
     <h2><span class="weight-300" id="a-label"></span></h2>
     <div class="axis">
@@ -96,25 +96,25 @@
         </div>
         <img id="img-progressive" src="value_images/progressive.png" height="128pt" />
     </div>
-    <h2 data-i18n="result-h2-match">Closest Match:<span class="weight-300" id="ideology-label"></span></h2>
+    <h2 data-i18n="result_h2_match">Closest Match:<span class="weight-300" id="ideology-label"></span></h2>
     <h3><span class="weight-300" id="ideodesc-label"></span></h3>
-    <p data-i18n="result-url"><br>You can send these results by copying and pasting the URL at the top of the page or
+    <p data-i18n="result_url"><br>You can send these results by copying and pasting the URL at the top of the page or
         using the image below.</p>
 
-    <h2 data-i18n="result-h2-next-matches">Next closest matches</h2>
-    <p data-i18n="next-matches-percent">With your closest match as 100% and farthest as 0%, here is how closely you
+    <h2 data-i18n="result_h2_next_matches">Next closest matches</h2>
+    <p data-i18n="next_matches_percent">With your closest match as 100% and farthest as 0%, here is how closely you
         matched the other ideologies.</p>
 
     <dl id="next-matches"></dl>
 
-    <h2 data-i18n="result-h2-score">I don't like my scores!</h2>
-    <p data-i18n="result-issues">Please remember that you are not intended to get a 100% score in any of the categories.
+    <h2 data-i18n="result_h2_score">I don't like my scores!</h2>
+    <p data-i18n="result_issues">Please remember that you are not intended to get a 100% score in any of the categories.
         The point of the quiz is to challenge your views. If you have any suggestions or constructive criticism please
         fill out this <a href="https://forms.gle/6WZYMb5GXkkDLhxr5">short form</a> or open an issue on the <a
             href="https://github.com/LeftValues/leftvalues.github.io">GitHub Page</a>.</p>
     <hr />
     <canvas id="banner" width=800 height=1000 style="font-family:Montserrat"></canvas>
-    <button data-i18n="result-back" class="button" onclick="location.href='index.html';"
+    <button data-i18n="result_back" class="button" onclick="location.href='index.html';"
         style="background-color: #2196f3;">Back</button> <br>
     <!-- Privacy respecting Statcounter code for LeftValues http://leftvalues.github.io -->
     <script type="text/javascript">
@@ -156,6 +156,7 @@
         }
 
         function setLabel(val, ary) {
+            ary = ary.split(',')
             if (val > 100) {
                 return ""
             } else
@@ -222,63 +223,74 @@
         setBarValue("conservative", conservative)
         setBarValue("progressive", progressive)
 
-        document.getElementById("a-label").innerHTML = setLabel(revolution, i18n.getString("result-a-label"))
-        document.getElementById("b-label").innerHTML = setLabel(scientific, i18n.getString("result-b-label"))
-        document.getElementById("c-label").innerHTML = setLabel(central, i18n.getString("result-c-label"))
-        document.getElementById("d-label").innerHTML = setLabel(international, i18n.getString("result-d-label"))
-        document.getElementById("e-label").innerHTML = setLabel(party, i18n.getString("result-e-label"))
-        document.getElementById("f-label").innerHTML = setLabel(industry, i18n.getString("result-f-label"))
-        document.getElementById("g-label").innerHTML = setLabel(conservative, i18n.getString("result-g-label"))
+        loadTranslation().then(() => {
+            console.log(i18n.getString(
+                "result_a_label"))
+            document.getElementById("a-label").innerHTML = setLabel(revolution, i18n.getString(
+                "result_a_label"))
+            document.getElementById("b-label").innerHTML = setLabel(scientific, i18n.getString(
+                "result_b_label"))
+            document.getElementById("c-label").innerHTML = setLabel(central, i18n.getString("result_c_label"))
+            document.getElementById("d-label").innerHTML = setLabel(international, i18n.getString(
+                "result_d_label"))
+            document.getElementById("e-label").innerHTML = setLabel(party, i18n.getString("result_e_label"))
+            document.getElementById("f-label").innerHTML = setLabel(industry, i18n.getString("result_f_label"))
+            document.getElementById("g-label").innerHTML = setLabel(conservative, i18n.getString(
+                "result_g_label"))
 
-        ideology = ""
-        ideodesc = ""
-        ideodist = Infinity
-        ideologyToDistance = {};
-        sortedIdeologies = [];
-        ideologyIndexAndDistance = [];
-        for (var i = 0; i < ideologies.length; i++) {
-            dist = 0
-            dist += Math.pow(Math.abs(ideologies[i].stats.a - revolution), 2)
-            dist += Math.pow(Math.abs(ideologies[i].stats.c - central), 2)
-            dist += Math.pow(Math.abs(ideologies[i].stats.b - scientific), 2)
-            dist += Math.pow(Math.abs(ideologies[i].stats.d - international), 2)
-            dist += Math.pow(Math.abs(ideologies[i].stats.e - party), 2)
-            dist += Math.pow(Math.abs(ideologies[i].stats.f - industry), 2)
-            dist += Math.pow(Math.abs(ideologies[i].stats.g - conservative), 2)
+            ideology = ""
+            ideodesc = ""
+            ideodist = Infinity
+            ideologyToDistance = {};
+            sortedIdeologies = [];
+            ideologyIndexAndDistance = [];
+            for (var i = 0; i < ideologies.length; i++) {
+                dist = 0
+                dist += Math.pow(Math.abs(ideologies[i].stats.a - revolution), 2)
+                dist += Math.pow(Math.abs(ideologies[i].stats.c - central), 2)
+                dist += Math.pow(Math.abs(ideologies[i].stats.b - scientific), 2)
+                dist += Math.pow(Math.abs(ideologies[i].stats.d - international), 2)
+                dist += Math.pow(Math.abs(ideologies[i].stats.e - party), 2)
+                dist += Math.pow(Math.abs(ideologies[i].stats.f - industry), 2)
+                dist += Math.pow(Math.abs(ideologies[i].stats.g - conservative), 2)
 
-            ideologyToDistance[ideologies[i].name] = dist;
-            ideologyIndexAndDistance.push({
-                index: i,
-                distance: dist
+                ideologyToDistance[ideologies[i].name] = dist;
+                ideologyIndexAndDistance.push({
+                    index: i,
+                    distance: dist
+                });
+            }
+
+            ideologyIndexAndDistance.sort(function (a, b) {
+                return a.distance - b.distance;
             });
-        }
 
-        ideologyIndexAndDistance.sort(function (a, b) {
-            return a.distance - b.distance;
-        });
+            distances = ideologyIndexAndDistance.map(function (indexAndDistance) {
+                return indexAndDistance.distance;
+            });
 
-        distances = ideologyIndexAndDistance.map(function (indexAndDistance) {
-            return indexAndDistance.distance;
-        });
+            closestDistance = distances[0];
+            farthestDistance = distances[distances.length - 1];
+            distanceSpan = farthestDistance - closestDistance;
 
-        closestDistance = distances[0];
-        farthestDistance = distances[distances.length - 1];
-        distanceSpan = farthestDistance - closestDistance;
+            closestMatch = ideologyIndexAndDistance[0];
+            document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.index);
+            document.getElementById("ideodesc-label").innerHTML = getIdeologyDescriptionByIndex(closestMatch
+                .index);
 
-        closestMatch = ideologyIndexAndDistance[0];
-        document.getElementById("ideology-label").innerHTML = getIdeologyNameByIndex(closestMatch.index);
-        document.getElementById("ideodesc-label").innerHTML = getIdeologyDescriptionByIndex(closestMatch.index);
+            nextMatches = document.getElementById('next-matches');
+            nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function (indexAndDistance) {
+                i = indexAndDistance.index;
+                ideology = getIdeologyNameByIndex(i);
+                ideodesc = getIdeologyDescriptionByIndex(i);
+                relativeDistance = 1 - (indexAndDistance.distance - closestDistance) / distanceSpan;
+                relativeDistancePercent = Math.round(relativeDistance * 1000) / 10;
+                return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
+                    "<dd>" + ideodesc + "</dd>";
+            }).join("\n");
 
-        nextMatches = document.getElementById('next-matches');
-        nextMatches.innerHTML = ideologyIndexAndDistance.slice(1).map(function (indexAndDistance) {
-            i = indexAndDistance.index;
-            ideology = getIdeologyNameByIndex(i);
-            ideodesc = getIdeologyDescriptionByIndex(i);
-            relativeDistance = 1 - (indexAndDistance.distance - closestDistance) / distanceSpan;
-            relativeDistancePercent = Math.round(relativeDistance * 1000) / 10;
-            return "<dt>" + ideology + ": " + relativeDistancePercent + "%</dt>" +
-                "<dd>" + ideodesc + "</dd>";
-        }).join("\n");
+        })
+
 
         function createImage(src, x, y, w, h) {
             img = new Image()

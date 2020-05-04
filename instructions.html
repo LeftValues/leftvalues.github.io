@@ -15,16 +15,19 @@
     <h1>LeftValues</h1>
     <select id="langPicker"></select>
     <hr>
-    <h2 data-i18n="inst-h2" style="text-align:center;">Instructions</h2>
-    <p data-i18n="inst-p" class="question">You will be presented with a series of statements. For each one, click the
+    <h2 data-i18n="inst_h2" style="text-align:center;">Instructions</h2>
+    <p data-i18n="inst_p" class="question">You will be presented with a series of statements. For each one, click the
         button with your opinion on it.</p>
-    <button data-i18n="inst-gotit" class="button" onclick="location.href='quiz.html';"
+    <button data-i18n="inst_gotit" class="button" onclick="location.href='quiz.html';"
         style="background-color: #2196f3;">Got it!</button> <br>
-    <button data-i18n="inst-nvm" class="button" onclick="location.href='index.html';"
+    <button data-i18n="inst_nvm" class="button" onclick="location.href='index.html';"
         style="background-color: #f44336;">Wait, nevermind!</button> <br>
-
+    <!-- End of Statcounter Code -->
+    <!-- JavaScript for the test itself -->
+    <script type="application/javascript" src="i18n.js"></script>
     <!-- Privacy respecting Statcounter code for LeftValues http://leftvalues.github.io -->
     <script type="text/javascript">
+        loadTranslation()
         var sc_project = 12079783;
         var sc_invisible = 1;
         var sc_security = "fa5443fa";
@@ -36,9 +39,6 @@
             document.getElementsByTagName("body")[0].appendChild(statcounterscript);
         }
     </script>
-    <!-- End of Statcounter Code -->
-    <!-- JavaScript for the test itself -->
-    <script type="application/javascript" src="i18n.js"></script>
 </body>
 
 </html>
