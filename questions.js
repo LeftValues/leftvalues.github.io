@@ -680,7 +680,7 @@ questions = [
         "i18n": {
             "de": "Die globale sozialistische Bewegung sollte von einer einzigen Partei oder Organisation geführt werden.",
             "ko": "국제 사회주의 운동은 단일 정당 혹은 조직에 의해 주도되어야 한다.",
-            "ru": " Глобальное социалистическое движение должно возглавляться одной партией или организацией.",
+            "ru": "Глобальное социалистическое движение должно возглавляться одной партией или организацией.",
             "cn": "全球的社会主义运动应当由一个政党或组织领导。",
 			"sh": "Globalni socijalistički pokret bi trebala predvoditi samo jedna partija ili organizacija.",
             "es": "El movimiento socialista mundial debe ser dirigido por un solo partido u organización.",
@@ -691,7 +691,7 @@ questions = [
             "b": 0,
             "c": 0,
             "d": 5,
-            "e": 0,
+            "e": 5,
             "f": 0,
             "g": 0
         }
@@ -1241,7 +1241,7 @@ questions = [
             "d": 0,
             "e": 0,
             "f": -5,
-            "g": 5
+            "g": 0
         }
     },
     {
