@@ -154,8 +154,9 @@
     <script type="application/javascript" src="questions.js"></script>
     <script type="application/javascript" src="i18n.js"></script>
     <script type="text/javascript">
-        loadTranslation()
-        document.getElementById("numOfQuestions").innerHTML = questions.length
+        loadTranslation().then(() => {
+            document.getElementById("numOfQuestions").innerHTML = Object.size(questions)
+        })
     </script>
 </body>
 

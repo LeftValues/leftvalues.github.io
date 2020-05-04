@@ -58,15 +58,6 @@
         let qn = 0 // Question number
         let prevAnswer = null
 
-        Object.size = function (obj) {
-        let size = 0
-        let key
-        for (key in obj) {
-            if (obj.hasOwnProperty(key)) size++
-        }
-        return size
-        }
-
         function initQuestion () {
         document.getElementById('question-text').innerHTML = i18n.getString(`question_${qn}`)
         document.getElementById('question-number').innerHTML = i18n.getString('quiz_question_of', {

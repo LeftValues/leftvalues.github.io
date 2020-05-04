@@ -649,3 +649,12 @@ const questions = { // eslint-disable-line no-unused-vars
     g: -10
   }
 }
+
+Object.size = function (obj) {
+  let size = 0
+  let key
+  for (key in obj) {
+    if (obj.hasOwnProperty(key)) size++
+  }
+  return size
+}
