@@ -293,7 +293,7 @@ const questions = { // eslint-disable-line no-unused-vars
     b: 0,
     c: 0,
     d: 5,
-    e: 0,
+    e: 5,
     f: 0,
     g: 0
   },
@@ -493,7 +493,7 @@ const questions = { // eslint-disable-line no-unused-vars
     d: 0,
     e: 0,
     f: -5,
-    g: 0
+    g: -5
   },
   question_55: {
     a: 0,
@@ -502,7 +502,7 @@ const questions = { // eslint-disable-line no-unused-vars
     d: 0,
     e: 0,
     f: -5,
-    g: 0
+    g: -5
   },
   question_56: {
     a: 0,
@@ -529,7 +529,7 @@ const questions = { // eslint-disable-line no-unused-vars
     d: 0,
     e: 0,
     f: -5,
-    g: 5
+    g: 0
   },
   question_59: {
     a: 0,
