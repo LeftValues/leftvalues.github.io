@@ -119,6 +119,7 @@ const getl10n = async (code) => {
 async function loadTranslation () { // eslint-disable-line no-unused-vars
   return Promise.all([
     getl10n('en'),
+    getl10n('es'),
     getl10n('de'),
     getl10n('cn'),
     getl10n('fr'),

@@ -18,17 +18,17 @@
     <hr>
     <h2 data-i18n="quiz_loading" style="text-align:center;" id="question-number">Loading...</h2>
     <p class="question" id="question-text"></p>
-    <button data-i18n="quiz_strongly_agree" class="button" onclick="next_question( 1.0)"
+    <button data-i18n="quiz_strongly_agree" class="button" onclick="nextQuestion( 1.0)"
         style="background-color: #1b5e20;">Strongly Agree</button> <br>
-    <button data-i18n="quiz_agree" class="button" onclick="next_question( 0.5)"
+    <button data-i18n="quiz_agree" class="button" onclick="nextQuestion( 0.5)"
         style="background-color: #4caf50;">Agree</button> <br>
-    <button data-i18n="quiz_neutral" class="button" onclick="next_question( 0.0)"
+    <button data-i18n="quiz_neutral" class="button" onclick="nextQuestion( 0.0)"
         style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
-    <button data-i18n="quiz_disagree" class="button" onclick="next_question(-0.5)"
+    <button data-i18n="quiz_disagree" class="button" onclick="nextQuestion(-0.5)"
         style="background-color: #f44336;">Disagree</button> <br>
-    <button data-i18n="quiz_strongly_disagree" class="button" onclick="next_question(-1.0)"
+    <button data-i18n="quiz_strongly_disagree" class="button" onclick="nextQuestion(-1.0)"
         style="background-color: #b71c1c;">Strongly Disagree</button> <br>
-    <button data-i18n="quiz_back" class="small_button" onclick="prev_question()" id="back_button">Back</button>
+    <button data-i18n="quiz_back" class="small_button" onclick="prevQuestion()" id="back_button">Back</button>
     <button data-i18n="quiz_back" class="small_button_off" id="back_button_off">Back</button>
     <br>
 
@@ -50,97 +50,96 @@
     <!-- JavaScript for the test itself -->
     <script type="application/javascript" src="i18n.js"></script>
     <script>
-        var max_a, max_b, max_c, max_d, max_e, max_f, max_g // Max possible scores
-        max_a = max_b = max_c = max_d = max_e = max_f = max_g = 0
-        var a, b, c, d, e, f, g // User's scores
+        /* global i18n, loadTranslation, questions */
+        let maxA, maxB, maxC, maxD, maxE, maxF, maxG // Max possible scores
+        maxA = maxB = maxC = maxD = maxE = maxF = maxG = 0
+        let a, b, c, d, e, f, g // User's scores
         a = b = c = d = e = f = g = 0
-        var qn = 0 // Question number
-        var prev_answer = null
+        let qn = 0 // Question number
+        let prevAnswer = null
 
         Object.size = function (obj) {
-            var size = 0,
-                key;
-            for (key in obj) {
-                if (obj.hasOwnProperty(key)) size++;
-            }
-            return size;
-        };
-
-        function init_question() {
-            document.getElementById("question-text").innerHTML = i18n.getString(`question_${qn}`)
-            document.getElementById("question-number").innerHTML = i18n.getString("quiz_question_of", {
-                count: qn + 1,
-                total: Object.size(questions)
-            })
-            if (prev_answer == null) {
-                document.getElementById("back_button").style.display = 'none'
-                document.getElementById("back_button_off").style.display = 'block'
-            } else {
-                document.getElementById("back_button").style.display = 'block'
-                document.getElementById("back_button_off").style.display = 'none'
-            }
-
+        let size = 0
+        let key
+        for (key in obj) {
+            if (obj.hasOwnProperty(key)) size++
+        }
+        return size
         }
 
-        function next_question(mult) {
-            a += mult * questions[`question_${qn}`].a
-            b += mult * questions[`question_${qn}`].b
-            c += mult * questions[`question_${qn}`].c
-            d += mult * questions[`question_${qn}`].d
-            e += mult * questions[`question_${qn}`].e
-            f += mult * questions[`question_${qn}`].f
-            g += mult * questions[`question_${qn}`].g
-            qn++
-            prev_answer = mult
-            if (qn < Object.size(questions)) {
-                init_question()
-            } else {
-                results()
-            }
+        function initQuestion () {
+        document.getElementById('question-text').innerHTML = i18n.getString(`question_${qn}`)
+        document.getElementById('question-number').innerHTML = i18n.getString('quiz_question_of', {
+            count: qn + 1,
+            total: Object.size(questions)
+        })
+        if (prevAnswer == null) {
+            document.getElementById('back_button').style.display = 'none'
+            document.getElementById('back_button_off').style.display = 'block'
+        } else {
+            document.getElementById('back_button').style.display = 'block'
+            document.getElementById('back_button_off').style.display = 'none'
+        }
         }
 
-        function prev_question() {
-            if (prev_answer == null) {
-                return
-            }
-            qn--
-            a -= prev_answer * questions[`question_${qn}`].a
-            b -= prev_answer * questions[`question_${qn}`].b
-            c -= prev_answer * questions[`question_${qn}`].c
-            d -= prev_answer * questions[`question_${qn}`].d
-            e -= prev_answer * questions[`question_${qn}`].e
-            f -= prev_answer * questions[`question_${qn}`].f
-            g -= prev_answer * questions[`question_${qn}`].g
-            prev_answer = null
-            init_question()
-
+        function nextQuestion (mult) { // eslint-disable-line no-unused-vars
+        a += mult * questions[`question_${qn}`].a
+        b += mult * questions[`question_${qn}`].b
+        c += mult * questions[`question_${qn}`].c
+        d += mult * questions[`question_${qn}`].d
+        e += mult * questions[`question_${qn}`].e
+        f += mult * questions[`question_${qn}`].f
+        g += mult * questions[`question_${qn}`].g
+        qn++
+        prevAnswer = mult
+        if (qn < Object.size(questions)) {
+            initQuestion()
+        } else {
+            results()
+        }
         }
 
-        function calc_score(score, max) {
-            return (100 * (max + score) / (2 * max)).toFixed(1)
+        function prevQuestion () { // eslint-disable-line no-unused-vars
+        if (prevAnswer == null) {
+            return
+        }
+        qn--
+        a -= prevAnswer * questions[`question_${qn}`].a
+        b -= prevAnswer * questions[`question_${qn}`].b
+        c -= prevAnswer * questions[`question_${qn}`].c
+        d -= prevAnswer * questions[`question_${qn}`].d
+        e -= prevAnswer * questions[`question_${qn}`].e
+        f -= prevAnswer * questions[`question_${qn}`].f
+        g -= prevAnswer * questions[`question_${qn}`].g
+        prevAnswer = null
+        initQuestion()
         }
 
-        function results() {
-            location.href = `results.html` +
-                `?a=${calc_score(a,max_a)}` +
-                `&b=${calc_score(b,max_b)}` +
-                `&c=${calc_score(c,max_c)}` +
-                `&d=${calc_score(d,max_d)}` +
-                `&e=${calc_score(e,max_e)}` +
-                `&f=${calc_score(f,max_f)}` +
-                `&g=${calc_score(g,max_g)}`
+        function calcScore (score, max) {
+        return (100 * (max + score) / (2 * max)).toFixed(1)
+        }
+
+        function results () {
+        window.location.href = 'results.html' +
+                        `?a=${calcScore(a, maxA)}` +
+                        `&b=${calcScore(b, maxB)}` +
+                        `&c=${calcScore(c, maxC)}` +
+                        `&d=${calcScore(d, maxD)}` +
+                        `&e=${calcScore(e, maxE)}` +
+                        `&f=${calcScore(f, maxF)}` +
+                        `&g=${calcScore(g, maxG)}`
         }
         loadTranslation().then(() => {
-            init_question();
-            for (var i = 0; i < Object.size(questions); i++) {
-                max_a += Math.abs(questions[`question_${i}`].a)
-                max_b += Math.abs(questions[`question_${i}`].b)
-                max_c += Math.abs(questions[`question_${i}`].c)
-                max_d += Math.abs(questions[`question_${i}`].d)
-                max_e += Math.abs(questions[`question_${i}`].e)
-                max_f += Math.abs(questions[`question_${i}`].f)
-                max_g += Math.abs(questions[`question_${i}`].g)
-            }
+        initQuestion()
+        for (let i = 0; i < Object.size(questions); i++) {
+            maxA += Math.abs(questions[`question_${i}`].a)
+            maxB += Math.abs(questions[`question_${i}`].b)
+            maxC += Math.abs(questions[`question_${i}`].c)
+            maxD += Math.abs(questions[`question_${i}`].d)
+            maxE += Math.abs(questions[`question_${i}`].e)
+            maxF += Math.abs(questions[`question_${i}`].f)
+            maxG += Math.abs(questions[`question_${i}`].g)
+        }
         })
     </script>
 </body>
