@@ -2,6 +2,7 @@ html {
     background-color: #bbbbbb;
     padding: 0px;
 }
+
 body {
     width: 80%;
     min-height: calc(100vh - 4em);
@@ -13,6 +14,7 @@ body {
     border-right-style: solid;
     border-width: 20px;
 }
+
 p {
     color: #444444;
     font-family: 'Roboto', sans-serif;
@@ -20,13 +22,16 @@ p {
     line-height: 1;
     margin: 4pt;
 }
+
 body.__i18n-ko p {
     line-height: 140%
 }
+
 p.value-description {
     text-indent: -16pt;
     margin-left: 20pt;
 }
+
 p.question {
     margin: 16pt auto;
     color: #333333;
@@ -45,6 +50,7 @@ p.question {
     text-align: center;
 
 }
+
 h1 {
     color: #222222;
     font-family: 'Montserrat', sans-serif;
@@ -54,6 +60,7 @@ h1 {
     margin-top: 0pt;
     margin-bottom: 0pt;
 }
+
 h2 {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
@@ -62,10 +69,12 @@ h2 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
+
 body.__i18n-ko h2 {
     line-height: 120%;
     margin-top: 0.5em
 }
+
 h3 {
     color: #333333;
     font-family: 'Montserrat', sans-serif;
@@ -74,26 +83,32 @@ h3 {
     margin-top: 12pt;
     margin-bottom: 0pt;
 }
+
 li {
     font-size: 16pt;
     text-indent: 16pt;
 }
+
 dt {
     font-family: 'Montserrat', sans-serif;
 }
+
 dd {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 12pt;
 }
+
 a {
     font-family: inherit;
 }
+
 img.center {
     display: block;
     margin: 1em auto;
     width: 20%;
     min-width: 400pt;
 }
+
 .button {
     background-color: #2196f3;
     font-family: 'Montserrat', sans-serif;
@@ -110,7 +125,9 @@ img.center {
     margin: -2px auto;
     cursor: pointer;
 }
-.small_button, .small_button_off {
+
+.small_button,
+.small_button_off {
     background-color: #333;
     font-family: 'Montserrat', sans-serif;
     border: none;
@@ -126,6 +143,7 @@ img.center {
     margin: -2px auto;
     cursor: pointer;
 }
+
 .small_button_off {
     background-color: #ddd;
     color: #888;
@@ -133,12 +151,14 @@ img.center {
     cursor: not-allowed;
     margin: -4px auto;
 }
+
 div.axis {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 div.bar {
     height: 36pt;
     line-height: 36pt;
@@ -154,6 +174,7 @@ div.bar {
     display: block;
     width: 50%;
 }
+
 div.text-wrapper {
     font-family: 'Montserrat', sans-serif;
     font-size: 36pt;
@@ -161,79 +182,95 @@ div.text-wrapper {
     color: #dddddd;
     display: inline-block;
 }
+
 div.revolution {
     background-color: #890000;
     text-align: left;
     border-right-style: solid;
 }
+
 div.reform {
     background-color: #FC5959;
     text-align: right;
     border-left-style: solid;
 }
+
 div.central {
     background-color: #560000;
     text-align: left;
     border-right-style: solid;
 }
+
 div.decentral {
     background-color: #000000;
     text-align: right;
     border-left-style: solid;
 }
+
 div.utopian {
     background-color: #7F0037;
     text-align: right;
     border-left-style: solid;
 }
+
 div.scientific {
     background-color: #88232B;
     text-align: left;
     border-right-style: solid;
 }
+
 div.national {
     background-color: #7F3300;
     text-align: right;
     border-left-style: solid;
 }
+
 div.international {
     background-color: #782F52;
     text-align: left;
     border-right-style: solid;
 }
+
 div.party {
     background-color: #963B33;
     text-align: left;
     border-right-style: solid;
 }
+
 div.union {
     background-color: #7F333B;
     text-align: right;
     border-left-style: solid;
 }
+
 div.industry {
     background-color: #804E00;
     text-align: left;
     border-right-style: solid;
 }
+
 div.ecology {
     background-color: #76890B;
     text-align: right;
     border-left-style: solid;
 }
+
 div.conservative {
     background-color: #27577A;
     text-align: left;
     border-right-style: solid;
 }
+
 div.progressive {
     background-color: #C4A717;
     text-align: right;
     border-left-style: solid;
 }
+
 span.weight-300 {
     font-weight: 300;
 }
+
 canvas {
     border-color: #444444;
     border-style: solid;
@@ -244,9 +281,10 @@ canvas {
     margin-left: auto;
     margin-right: auto;
 }
+
 #langPicker {
     position: static;
     right: 10em;
-	font-size: 20px;
+    font-size: 20px;
     top: 1em;
 }
