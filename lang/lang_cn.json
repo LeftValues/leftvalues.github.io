@@ -37,7 +37,7 @@
     "index_cent_desc": "<b style='color:{{colors.cent}};'>集权</b> <b>vs.</b> <b style='color:{{colors.dec}};'>分权</b><br/>集权得分较高的人倾向于支持国家领导的计划经济体制。分权得分较高的人倾向于支持地方自理的计划经济体制，通常更重视地方。",
     "index_int_desc": "<b style='color:{{colors.int}};'>国际主义</b> <b>vs.</b> <b style='color:{{colors.syn}};'>民族主义</b><br/>国际主义得分较高的人倾向于支持发起国际社会主义运动，其最终目标往往是消灭“国家”。民族主义得分较高的人倾向于优先在现有国界内建设社会主义，而反对直接推动全世界社会主义共和的目标。",
     "index_party_desc": "<b style='color:{{colors.party}};'>党派</b> <b>vs.</b> <b style='color:{{colors.syn}};'>工会</b><br/>党派得分较高的人倾向于把政党作为社会主义运动的基础。工会得分较高的人倾向于把工会和其他形式的群众组织作为社会主义运动的基础。倾向党派并不一定意味着你反对工会，反之亦然，这更多的是体现一种偏好。",
-    "index_prod_desc": "<b style='color:#804E00;'>生产</b> <b>vs.</b> <b style='color:#76890B;'>自然</b><br/>生产得分较高的人倾向于将工业产出和自给自足置于生态目标之上。自然得分较高的人倾向于支持采取严格的生态保护措施的环境导向型经济。",
+    "index_prod_desc": "<b style='color:{{colors.prod}};'>生产</b> <b>vs.</b> <b style='color:{{colors.eco}};'>自然</b><br/>生产得分较高的人倾向于将工业产出和自给自足置于生态目标之上。自然得分较高的人倾向于支持采取严格的生态保护措施的环境导向型经济。",
     "index_cons_desc": "<b style='color:{{colors.cons}};'>保守主义</b> <b>vs.</b> <b style='color:{{colors.prog}};'>进步主义</b><br/>保守主义得分较高的人倾向于支持更保守的社会政策和观点。进步主义得分较高的人倾向于支持进步的社会政策和观点。",
     "index_h2_closest": "结果中的“最接近的匹配”意味着什么？",
     "index_p_similar": "类似8Values，这个测验试图将你与某一种左派意识形态相匹配。当前提供测试13种意识形态，未来还会有更多。这是一个正在进行的项目，（测评结果）可能会出现与您预期不一致的情况。欢迎您提出宝贵建议。当前提供测试的意识形态有:<br/>马克思列宁主义（Marxism-Leninism）、正统马克思主义（Orthodox Marxism）、生态马克思主义（Eco-Marxism）、中间派马克思主义（Centrist Marxism）、委员会共产主义（Council Communism）、左翼共产主义（Left Communism）、无政府共产主义（Anarcho-Communism）、生态无政府主义（Eco-Anarchism）、市场无政府主义（Market Anarchism）、空想社会主义（Utopian Socialism）、民主社会主义（Democratic Socialism）、社会民主主义（Social Democracy）和左翼民族主义（Left-Wing Nationalism）。",
@@ -142,5 +142,6 @@
     "ideology_Social-Democracy_name": "社会民主主义",
     "ideology_Social-Democracy_desc": "社会民主主义（Social Democracy）是一种中间偏左的意识形态，主张将如社会福利和企业监管等左倾的价值观与资本主义和自由民主制以混合经济的形式结合在一起。许多现代社会民主主义者支持凯恩斯主义经济学。",
     "ideology_Left-Wing-Nationalism_name": "左翼民族主义",
-    "ideology_Left-Wing-Nationalism_desc": "左翼民族主义（Left-Wing Nationalism）是将左翼经济学与非排外的民族主义和爱国主义相结合的一种意识形态。许多左翼民族主义者同时支持国际团结，并可能支持武装斗争。"
+    "ideology_Left-Wing-Nationalism_desc": "左翼民族主义（Left-Wing Nationalism）是将左翼经济学与非排外的民族主义和爱国主义相结合的一种意识形态。许多左翼民族主义者同时支持国际团结，并可能支持武装斗争。",
+    "index_license": "8values是采用MIT许可证授权的，该许可证“无限制地”授予“使用、复制、修改、合并、发布、分发、再授权和/或出售软件的副本”的权利。因此，LeftValues能够在不侵犯任何版权的情况下合法地修改原始的8values。LeftValues也使用了同样的许可证。"
 }
