@@ -62,5 +62,8 @@
     "ideology_Social-Democracy_name": "Social-Démocratie",
     "ideology_Social-Democracy_desc": "undefined",
     "index_p_similar": "Comme 8values, ce questionnaire tente de vous associer à une idéologie gauchiste précise. Il y a actuellement treize idéologies possibles, et plus à l'avenir. C'est un travail en cours risquant de ne pas aboutir comme voulu. Toute suggestion est la bienvenue. Les idéologies actuelles sont le Marxisme-Leninisme, Marxisme Orthodoxe, Eco-Socialisme, Marxisme Centriste, Le Conseillisme, Gauche Communisme, Anarcho-Communisme, Anarchisme Vert, Anarchisme de Marché, Socialisme Utopiste, Socialisme Démocratique, Social-Démocratie et Nationalisme de Gauche.",
-    "result_h2_next_matches": "Autres correspondances similaires"
+    "result_h2_next_matches": "Autres correspondances similaires",
+    "index_sixaxes": "Il y a actuellement sept axes, chacun comprenant deux valeurs opposées:",
+    "result_issues": "Rapplez ous que vous n'ètes pas censé obtenir un score de 100% dans aucune des catégorie. L'objectif de ce questionnaire est de remettre en cause vos opinions. Pour toutes suggestions ou critiques constructives merci de remplir le formulaire suivant <a href='https://forms.gle/6WZYMb5GXkkDLhxr5'>short form</a> ou d'ouvrir un ticket en suivant ce lien <a href='https://github.com/LeftValues/leftvalues.github.io'>GitHub Page</a>.",
+    "next_matches_percent": "Avec votre résultat le plus proche à 100% et le plus éloigné à 0%, Voici dans quelle mesure vous correspondez aux autres idéologies"
 }
