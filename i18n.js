@@ -4,7 +4,7 @@ function getCookie (name) {
   const parts = value.split('; ' + name + '=')
   if (parts.length === 2) return parts.pop().split(';').shift()
 }
-function setCookie (cname, cvalue, exhours) {
+function setCookie (cname, cvalue, exhours = 1) {
   const d = new Date()
   d.setTime(Date.now() + (exhours * 60 * 60 * 1000))
   const expires = 'expires=' + d.toUTCString()
