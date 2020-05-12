@@ -15,7 +15,7 @@ const cookie = {
 }
 
 function saveStats (answer) {
-  if (answer !== null) {
+  if (answer !== false) {
     cookie.questionsAnswered.push({
       questionNumber: cookie.questionNumber,
       answer
@@ -46,6 +46,20 @@ function loadStats () {
   }
 }
 
+function resetStats () {
+  cookie.questionsAnswered = []
+  cookie.questionNumber = 0
+  cookie.a = 0
+  cookie.b = 0
+  cookie.c = 0
+  cookie.d = 0
+  cookie.e = 0
+  cookie.f = 0
+  cookie.g = 0
+  saveStats(false)
+  window.location.reload()
+}
+
 function getLastAnswer (questionNumber) {
   return cookie.questionsAnswered.find(answer => answer.questionNumber === questionNumber)
 }
@@ -59,18 +73,7 @@ function initQuestion () {
     total: Object.size(questions)
   })
   if (cookie.questionNumber >= Object.size(questions)) {
-    // reset cookie
-    cookie.questionsAnswered = []
-    cookie.questionNumber = 0
-    cookie.a = 0
-    cookie.b = 0
-    cookie.c = 0
-    cookie.d = 0
-    cookie.e = 0
-    cookie.f = 0
-    cookie.g = 0
-    saveStats()
-    window.location.reload()
+    resetStats()
   }
   if (getLastAnswer(cookie.questionNumber - 1) == null) {
     document.getElementById('back_button').style.display = 'none'
@@ -103,6 +106,7 @@ function nextQuestion (answer) { // eslint-disable-line no-unused-vars
   if (cookie.questionNumber < Object.size(questions)) {
     initQuestion()
   } else {
+    resetStats()
     results()
   }
 }
