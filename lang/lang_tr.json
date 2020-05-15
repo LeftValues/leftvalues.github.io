@@ -1,1 +1,19 @@
-{}
+{
+    "result_h2_next_matches": "Diğer en yakın eşleşmeler",
+    "result_h2_match": "En yakın eşleşme: <span class='weight-300' id='ideology-label'> </span>",
+    "result_url": "<br>Bu sonuçları, sayfa adresini (URL) veya aşağıdaki sonuç görselini kopyalarak kaydedebilirsiniz.",
+    "result_h1": "Sonuçlar",
+    "inst_nvm": "Vazgeçtim, boşver!",
+    "inst_gotit": "Anladım!",
+    "inst_p": "Size bir dizi ifade sunulacak. Her biri için, fikrinizi belirten seçeneği işaretleyiniz.",
+    "inst_h2": "Talimatlar",
+    "quiz_question_of": "Soru: {{count}}/{{total}}",
+    "quiz_back": "Geri",
+    "quiz_strongly_disagree": "Kesinlikle Katılmıyorum",
+    "quiz_disagree": "Katılmıyorum",
+    "quiz_neutral": "Tarafsızım/Emin Değilim",
+    "quiz_agree": "Katılıyorum",
+    "quiz_strongly_agree": "Kesinlikle Katılıyorum",
+    "quiz_loading": "Yükleniyor...",
+    "language_name": "İngilizce"
+}
