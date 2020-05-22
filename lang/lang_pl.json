@@ -1,1 +1,19 @@
-{}
+{
+    "result_h2_next_matches": "Inne podobne dopasowania",
+    "result_h2_match": "Najbliższe dopasowanie: <span class='weight-300' id='ideology-label'> </span>",
+    "result_url": "<br>Możesz wysłać te wyniki, kopiując i wklejając adres URL u góry strony lub korzystając z poniższego obrazu.",
+    "result_h1": "Wyniki",
+    "inst_nvm": "Czekaj, nieważne!",
+    "inst_gotit": "Rozumiem!",
+    "inst_p": "Otrzymasz serię pytań. Dla każdego kliknij przycisk ze swoją opinią na jego temat.",
+    "inst_h2": "Instrukcje",
+    "quiz_question_of": "Pytanie {{count}} z {{total}}",
+    "quiz_back": "wróć",
+    "quiz_strongly_disagree": "Zdecydowanie się nie zgadzam",
+    "quiz_disagree": "Nie zgadzam się",
+    "quiz_neutral": "Nie mam zdania",
+    "quiz_agree": "Zgadzam się",
+    "quiz_strongly_agree": "Zdecydowanie się zgadzam",
+    "quiz_loading": "Ładowanie...",
+    "language_name": "polish"
+}
