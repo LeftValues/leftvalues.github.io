@@ -115,7 +115,7 @@
     "question_67": "Las poblaciones minoritarias deben recibir protecciones legales especiales.",
     "question_68": "Un gobierno socialista no tiene derecho a perturbar las tradiciones religiosas o culturales en ninguna situación.",
     "question_69": "Las prisiones son instituciones opresivas y anticuadas que deben ser abolidas.",
-    "question_70": "Las políticas de inmigración masiva extranjera son ingenuas y no deben aplicarse.",
+    "question_70": "Las políticas que permiten la migración masiva extranjera son ingenuas y no deben aplicarse.",
     "question_71": "No se puede lograr una sociedad socialista sin hacer también un progreso social significativo.",
     "ideology_Marxism-Leninism_name": "Marxismo-Leninismo",
     "ideology_Marxism-Leninism_desc": "El marxismo-leninismo es una forma de marxismo que se forjó en el siglo XX en la Unión Soviética. Los marxistas-leninistas favorecen fuertemente el uso de un partido político comunista como plataforma para lograr la revolución y establecer el socialismo. Muchos marxistas-leninistas son algo más nacionalistas y patriotas que muchos otros marxistas, y pueden favorecer el progreso industrial por encima de los objetivos medioambientales.",
@@ -142,5 +142,6 @@
     "ideology_Social-Democracy_name": "Socialdemocracia",
     "ideology_Social-Democracy_desc": "La socialdemocracia es una ideología de centro-izquierda que aboga por mezclar los valores de la izquierda, como el bienestar social y la regulación corporativa, con el capitalismo y la democracia liberal en forma de una economía mixta. Muchos socialdemócratas modernos favorecen la economía keynesiana.",
     "ideology_Left-Wing-Nationalism_name": "Nacionalismo de Izquierdas",
-    "ideology_Left-Wing-Nationalism_desc": "El nacionalismo de izquierdas es una ideología que mezcla la economía de izquierdas con el nacionalismo no xenófobo y el patriotismo. Muchos nacionalistas de izquierda apoyan simultáneamente la solidaridad internacional y pueden apoyar la lucha armada."
+    "ideology_Left-Wing-Nationalism_desc": "El nacionalismo de izquierdas es una ideología que mezcla la economía de izquierdas con el nacionalismo no xenófobo y el patriotismo. Muchos nacionalistas de izquierda apoyan simultáneamente la solidaridad internacional y pueden apoyar la lucha armada.",
+    "index_license": "8values esta bajo la licencia MIT, la cual permite \"sin restricción\" el derecho a \"usar, copiar, modificar, mezclar, publicar, distribuir, sublicensiar y/o vender copias del software\". Así, LeftValues esta en la capacidad legal de modificar el software original (8values) sin infringir ningún derecho de autor. LeftValues también utiliza esta licencia."
 }
