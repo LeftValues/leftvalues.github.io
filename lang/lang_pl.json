@@ -15,7 +15,7 @@
     "quiz_agree": "Zgadzam się",
     "quiz_strongly_agree": "Zdecydowanie się zgadzam",
     "quiz_loading": "Ładowanie...",
-    "language_name": "polish",
+    "language_name": "polski",
     "index_p_answer": "LeftValues to lewicowy quiz inspirowany i oparty na quizie <a href='https://8values.github.io/'>8values</a>, który ma na celu określenie twojej pozycji w spektrum lewicowym. Jeśli nie jesteś lewicowy, ten quiz oczywiście nie jest dla ciebie odpowiedni. Otrzymasz kwestię, a następnie odpowiesz swoją opinią na temat tej kwestii, od <b>Zdecydowanie się zgadzam</b> do <b>Zdecydowanie się nie zgadzam</b>, przy czym każda odpowiedź ma nieznaczny wpływ na Twoje wyniki. Pytania dla każdej osi są przedstawione w kolejności, a nie rozproszone. Pod koniec quizu twoje odpowiedzi zostaną porównane z maksymalnym możliwymi dla każdej wartości, dając w ten sposób procent. Odpowiedz szczerze!<br/><br/>W teście występuje <b><u><span id='numOfQuestions'></span></u></b> kwestii.",
     "ideology_Orthodox-Marxism_name": "Marksizm Ortodoksyjny",
     "index_p_similar": "Podobnie jak 8values, ten quiz będzie próbował dopasować Cię do konkretnej lewicowej ideologii. Istnieje obecnie trzynaście możliwych ideologii, a kolejne będą w przyszłości. Jest to praca w toku i może nie działać zgodnie z przeznaczeniem. Sugestie są bardzo mile widziane. Obecne ideologie to: Marksizm-Leninizm, Marksizm Ortodoksyjny, Eko-Marksizm, Marksizm Centrystyczny, Komunizm Rad Pracowniczych, Lewicowy Komunizm, Anarcho-Komunizm, Eko-Anarchizm, Anarchizm Rynkowy, Utopijny Socjalizm, Socjalizm Demokratyczny, Socjaldemokracja i Lewicowy Nacjonalizm.",
