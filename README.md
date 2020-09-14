@@ -7,6 +7,7 @@ The LeftValues Quiz measures and analyzes various aspects of left-wing political
 ### Contributions
 
 The primary way of contributing to LeftValues is through translating into other languages, which is handled over the [WebLate](https://l10n.dmnd.sh/engage/leftvalues/) application. To see an explanation for how this process works, see the [contributing guidelines](https://github.com/LeftValues/leftvalues.github.io/blob/master/CONTRIBUTING.md).
+#### We are currently looking especially for a French translator!
 
 ### License
 
