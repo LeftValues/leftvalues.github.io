@@ -3,7 +3,7 @@ const ideologies = { // eslint-disable-line no-unused-vars
     a: 80,
     b: 80,
     c: 80,
-    d: 70,
+    d: 60,
     e: 90,
     f: 70,
     g: 40
