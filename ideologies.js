@@ -2,11 +2,11 @@ const ideologies = { // eslint-disable-line no-unused-vars
   'Marxism-Leninism': {
     a: 80,
     b: 80,
-    c: 90,
-    d: 50,
+    c: 80,
+    d: 70,
     e: 90,
     f: 70,
-    g: 50
+    g: 40
   },
   'Orthodox-Marxism': {
     a: 80,
