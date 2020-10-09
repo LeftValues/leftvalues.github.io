@@ -578,7 +578,7 @@ const questions = { // eslint-disable-line no-unused-vars
   },
   question_64: {
     a: 0,
-    b: 5,
+    b: 0,
     c: 0,
     d: 0,
     e: 0,
