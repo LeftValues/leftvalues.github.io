@@ -36,19 +36,19 @@ const ideologies = { // eslint-disable-line no-unused-vars
     g: 40
   },
   'Council-Communism': {
-    a: 90,
+    a: 100,
     b: 70,
-    c: 30,
+    c: 40,
     d: 80,
-    e: 40,
+    e: 50,
     f: 50,
     g: 30
   },
   'Left-Communism': {
-    a: 100,
+    a: 90,
     b: 60,
     c: 50,
-    d: 80,
+    d: 90,
     e: 80,
     f: 50,
     g: 30
