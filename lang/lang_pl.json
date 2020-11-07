@@ -14,7 +14,7 @@
     "quiz_neutral": "Nie mam zdania",
     "quiz_agree": "Zgadzam się",
     "quiz_strongly_agree": "Zdecydowanie się zgadzam",
-    "quiz_loading": "Ładowanie...",
+    "quiz_loading": "Ładowanie…",
     "language_name": "polski",
     "index_p_answer": "LeftValues to lewicowy quiz inspirowany i oparty na quizie <a href='https://8values.github.io/'>8values</a>, który ma na celu określenie twojej pozycji w spektrum lewicowym. Jeśli nie jesteś lewicowy, ten quiz oczywiście nie jest dla ciebie odpowiedni. Otrzymasz kwestię, a następnie odpowiesz swoją opinią na temat tej kwestii, od <b>Zdecydowanie się zgadzam</b> do <b>Zdecydowanie się nie zgadzam</b>, przy czym każda odpowiedź ma nieznaczny wpływ na Twoje wyniki. Pytania dla każdej osi są przedstawione w kolejności, a nie rozproszone. Pod koniec quizu twoje odpowiedzi zostaną porównane z maksymalnym możliwymi dla każdej wartości, dając w ten sposób procent. Odpowiedz szczerze!<br/><br/>W teście występuje <b><u><span id='numOfQuestions'></span></u></b> kwestii.",
     "ideology_Orthodox-Marxism_name": "Marksizm Ortodoksyjny",
