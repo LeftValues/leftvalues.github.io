@@ -33,7 +33,7 @@ const ideologies = { // eslint-disable-line no-unused-vars
     d: 60,
     e: 70,
     f: 50,
-    g: 40
+    g: 30
   },
   'Council-Communism': {
     a: 100,
