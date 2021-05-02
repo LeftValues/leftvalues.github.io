@@ -55,13 +55,14 @@
         maxA = maxB = maxC = maxD = maxE = maxF = maxG = 0
         let a, b, c, d, e, f, g // User's scores
         a = b = c = d = e = f = g = 0
-        let qn = 0 // Question number
+        let qn = [] // Array of question numbers
+        let qi = 0 // Question index
         let prevAnswer = null
 
         function initQuestion () {
-        document.getElementById('question-text').innerHTML = i18n.getString(`question_${qn}`)
+        document.getElementById('question-text').innerHTML = i18n.getString(`question_${qn[qi]}`)
         document.getElementById('question-number').innerHTML = i18n.getString('quiz_question_of', {
-            count: qn + 1,
+            count: qn[qi] + 1,
             total: Object.size(questions)
         })
         if (prevAnswer == null) {
@@ -74,16 +75,16 @@
         }
 
         function nextQuestion (mult) { // eslint-disable-line no-unused-vars
-        a += mult * questions[`question_${qn}`].a
-        b += mult * questions[`question_${qn}`].b
-        c += mult * questions[`question_${qn}`].c
-        d += mult * questions[`question_${qn}`].d
-        e += mult * questions[`question_${qn}`].e
-        f += mult * questions[`question_${qn}`].f
-        g += mult * questions[`question_${qn}`].g
-        qn++
+        a += mult * questions[`question_${qn[qi]}`].a
+        b += mult * questions[`question_${qn[qi]}`].b
+        c += mult * questions[`question_${qn[qi]}`].c
+        d += mult * questions[`question_${qn[qi]}`].d
+        e += mult * questions[`question_${qn[qi]}`].e
+        f += mult * questions[`question_${qn[qi]}`].f
+        g += mult * questions[`question_${qn[qi]}`].g
+        qi++
         prevAnswer = mult
-        if (qn < Object.size(questions)) {
+        if (qn[qi] < Object.size(questions)) {
             initQuestion()
         } else {
             results()
@@ -94,20 +95,36 @@
         if (prevAnswer == null) {
             return
         }
-        qn--
-        a -= prevAnswer * questions[`question_${qn}`].a
-        b -= prevAnswer * questions[`question_${qn}`].b
-        c -= prevAnswer * questions[`question_${qn}`].c
-        d -= prevAnswer * questions[`question_${qn}`].d
-        e -= prevAnswer * questions[`question_${qn}`].e
-        f -= prevAnswer * questions[`question_${qn}`].f
-        g -= prevAnswer * questions[`question_${qn}`].g
+        qi--
+        a -= prevAnswer * questions[`question_${qn[qi]}`].a
+        b -= prevAnswer * questions[`question_${qn[qi]}`].b
+        c -= prevAnswer * questions[`question_${qn[qi]}`].c
+        d -= prevAnswer * questions[`question_${qn[qi]}`].d
+        e -= prevAnswer * questions[`question_${qn[qi]}`].e
+        f -= prevAnswer * questions[`question_${qn[qi]}`].f
+        g -= prevAnswer * questions[`question_${qn[qi]}`].g
         prevAnswer = null
         initQuestion()
         }
 
         function calcScore (score, max) {
         return (100 * (max + score) / (2 * max)).toFixed(1)
+        }
+
+        function populateQn() {
+            // Fill with incrementing numbers representing question numbers.
+            for (let questionCount = 0; questionCount < questions.size(); questionCount++) {
+                qn.push(questionCount)
+            }
+            // Shuffle qn
+            for (let currentIndex = questionCount.size() - 1; currentIndex > 0; currentIndex--) {
+                randomIndex = Math.floor(Math.random() * i)
+                
+                // Swap question order
+                let temp = qn[currentIndex]
+                qn[currentIndex] = qn[randomIndex]
+                qn[randomIndex] = temp
+            }
         }
 
         function results () {
