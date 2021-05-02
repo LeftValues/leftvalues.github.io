@@ -1,6 +1,6 @@
 {
     "language_name": "srpskohrvatski",
-    "quiz_loading": "Učitavanje...",
+    "quiz_loading": "Učitavanje…",
     "quiz_strongly_agree": "Potpuno Se Slažem",
     "quiz_agree": "Donekle Se Slažem",
     "quiz_neutral": "Nemam Mišljenje/Ne znam",
@@ -126,7 +126,7 @@
     "ideology_Centrist-Marxism_name": "Centristički Marksizam",
     "ideology_Centrist-Marxism_desc": "Centristički marksizam je oblik marksizma koji usvaja marksističke poglede na društvo i ekonomiju, suzdržavajući se od zauzimanja zaključnih položaja po pitanju revolucije i reformizma. Mnogi centristički marksisti su donekle više nacionalistički od drugih marksista.",
     "ideology_Council-Communism_name": "Komunizam Radničkih Savjeta",
-    "ideology_Council-Communism_desc": "Komunizam radničkih savjeta je oblik marksizma koji zagovara za to da radnički savjeti budu temelj socijalističkog društva. Komunisti radničkih savjeta se uglavnom suprotstavljaju postojanju snažnog uticaja od strane političkih partija unutuar socijalističkog političkog sistema, naklonjeni demokratiji radničkih savjeta.",
+    "ideology_Council-Communism_desc": "Vijećnički komunizam je oblik komunizma koji se pojavio u Njemačkoj i Nizozemskoj u ranom 20. vijeku. Vijećnički komunisti odbijaju učestvovati u liberalnoj demokratiji, podržavaju spontane revolucije, i žele smanjiti uticaj partije u korist radničkih vijeća.",
     "ideology_Left-Communism_name": "Ljevi Komunizam",
     "ideology_Left-Communism_desc": "Ljevi komunizam je oblik marksizma koji se naginje ka takozvanim ultraljevičarskim položajima. Oni uključuju bezuslovnu podršku za revoluciju i internacionalizam, odbacivanje sindikata i učestvovanja u liberalnoj demokratiji, i odbacivanje nacionalnog oslobođenja i samoopredeljenja.",
     "ideology_Anarcho-Communism_name": "Anarho-Komunizam",

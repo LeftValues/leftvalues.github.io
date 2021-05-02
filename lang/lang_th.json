@@ -1,0 +1,21 @@
+{
+    "ideology_Social-Democracy_name": "",
+    "ideology_Democratic-Socialism_name": "",
+    "result_h2_match": "",
+    "result_h2_score": "ฉันไม่พอใจกับผลลัพธ์นี้!",
+    "result_url": "คุณสามารถแชร์ผลลัพธ์นี้ได้โดยคัดลอก URL ด้านบนสุดของหน้านี้หรือบันทึกภาพจากรูปด้านล่าง",
+    "result_h1": "ผลลัพธ์",
+    "inst_nvm": "ไว้ทีหลังแล้วกัน!",
+    "inst_gotit": "เข้าใจแล้ว!",
+    "inst_p": "คุณจะได้อ่านชุดข้อความจำนวนหนึ่ง จงเลือกสิ่งที่ตรงกับความคิดเห็นของคุณมากที่สุดสำหรับแต่ละคำถาม",
+    "inst_h2": "คำแนะนำ",
+    "quiz_question_of": "คำถามที่ {{count}} จาก {{total}}",
+    "quiz_back": "ย้อนกลับ",
+    "quiz_strongly_disagree": "ไม่เห็นด้วยอย่างยิ่ง",
+    "quiz_disagree": "ไม่เห็นด้วย",
+    "quiz_strongly_agree": "เห็นด้วยอย่างยิ่ง",
+    "quiz_neutral": "กลางๆ / ไม่แน่ใจ",
+    "quiz_agree": "เห็นด้วย",
+    "quiz_loading": "กำลังโหลด…",
+    "language_name": "ภาษาไทย"
+}

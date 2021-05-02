@@ -1,0 +1,22 @@
+{
+    "quiz_disagree": "لا أوافق",
+    "quiz_strongly_agree": "أوافق بشدة",
+    "quiz_agree": "أوافق",
+    "quiz_neutral": "محايد / غير متأكد",
+    "quiz_strongly_disagree": "لا أوافق بشدة",
+    "quiz_back": "رجوع",
+    "inst_h2": "التعليمات",
+    "result_h1": "النتائج",
+    "inst_nvm": "انتظر ، فما باللك!",
+    "quiz_question_of": "السؤال {{count}} من {{total}}",
+    "result_back": "الرجوع",
+    "index_b_start": "اضغط هنا للبدأ!",
+    "result_h2_score": "لا أحب درجاتي!",
+    "result_b_label": "علمي للغاية ،علمي كثيراً ،علمي ،محايد ،طوباوي ،طوباوي كثيراً ،طوباوي للغاية",
+    "language_name": "العربية",
+    "result_a_label": "ثوري للغاية ،ثوري كثيراً ،ثوري ، محايد، إصلاحي، إصلاحي كثيراً، إصلاحي للغاية",
+    "quiz_loading": "جاري التحميل…",
+    "index_h2_whatis": "ما هي LeftValues؟",
+    "result_h2_match": "أقرب تطابق:<span class='weight-300' id='ideology-label'> </span>",
+    "inst_gotit": "فهمت!"
+}
