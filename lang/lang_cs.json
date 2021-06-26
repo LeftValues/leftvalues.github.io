@@ -131,5 +131,17 @@
     "quiz_disagree": "Nesouhlasím",
     "quiz_neutral": "Ani jedno/nevím",
     "quiz_agree": "Souhlasím",
-    "quiz_loading": "Načítání…"
+    "quiz_loading": "Načítání…",
+    "result_e_label": "extrémně partyzánský,velmi partyzánský,partizánský,neutrální,odborový,velmi odborový,extrémně odborový",
+    "index_p_similar": "Podobně jako 8values, tento kvíz se bude snažit Vás přiřadit k určité levicové ideologii. Teď je v tomto kvízu třináct ideologií, další příjdou v budoucnu. Tato funkce je právě rozpracovaná a nemusí fungovat správně. Návrhy jsou vítané. Ideologiemi teď zastoupenými v tomto testu jsou: marxismus-leninismus, klasický marxismus, ekologický marxismus, centristický marxismus, radní komunismus, levicový komunismus, anarcho-komunismus, ekologický anarchismus, tržní anarchismus, utopický socialismus, demokratický socialismus, sociální demokracie a levicový nacionalismus.",
+    "index_party_desc": "<b style='color:{{colors.party}};'>Strana</b> <b>vs.</b> <b style='color:{{colors.syn}};'>odbor</b><br/>Lidé s vyšším partyzánským skóre mají tendenci podporovat politické strany jako základ socialistického hnutí. Ti s vyšším odborářským skóre mají spíše tendenci podporovat odbory a ostatní způsoby hromadné organizace jako základ socialistického hnutí. Podporovat stranu neznamená, že odmítáte odbory (a naopak), je to spíše o preferenci.",
+    "index_prod_desc": "<b style='color:{{colors.prod}};'>Výroba</b> <b>vs.</b> <b style='color:{{colors.eco}};'>příroda</b><br/>Lidé s vyšším industriálním skóre mají tendenci podporovat tovarní výrobu a ekonomickou samostatnost spíše než ekologické cíle. Ti s vyšším ekologickým skóre mají tendenci spíše podporovat ekonomii orientovanou k životnímu prostředí s ekologickými zákony na ochranu prostředí.",
+    "question_57": "Abychom zmírnili vykořisťování přírody, musíme radikálně změnit náš jídelníček.",
+    "question_61": "Musíme akceptovat, že socialistické státy 20. století se příliš nestaraly o problémy životního prostředí.",
+    "ideology_Council-Communism_name": "Radní komunismus",
+    "ideology_Orthodox-Marxism_desc": "Klasický marxismus je forma marxismu, adoptující názory vyhovující originální marxistické teorii, zvláště na poli dialektického materialismu. Ortodoxní marxisté jsou vysoce revoluční a internacionalističtí a věří, že nevyspělé státy nemohou dosáhnout socialismu.",
+    "ideology_Eco-Marxism_desc": "Ekologický marxismus je forma klasického marxismu běžnější v dnešní dobu, dávající důraz na problémy životního prostředí. Eko-marxisté většinou podporují centrální ekonomické plánování jako způsob boje se změnou klimatu.",
+    "ideology_Council-Communism_desc": "Odborový komunismus je forma levicového komunismu, která byla vytovřena v Německu a Holandsku na začátku 20. století. Odboroví komunisté odmítají účast v liberální demokracii, podporují spontánní revoluce a věří v zbavování moci politických stran ve prospěch odborů.",
+    "ideology_Marxism-Leninism_desc": "Marxismus-leninismus je forma marxismu, která byla vytvořena ve dvacátém století v Sovětském svazu. Zastánci marxismu-leninismu velmi podporují použití socialistické strany jako platformy pro dosažení revoluce a následně i socialismu. Mnoho marxistů-leninistů je také více nacionalistických než ostatní marxisté, a několik podporuje spíše industriální pokrok než ekologické smýšlení.",
+    "ideology_Centrist-Marxism_desc": "Centristický marxismus je forma marxismu, která adoptuje marxistické názory na společnost a ekonomii s tím, že nemají defintivní postoj na eformu a revoluci. Mnoho centristických marxistů je také více nacionalistických, než jsou ostatní marxisté."
 }
