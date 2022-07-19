@@ -15,7 +15,7 @@ function setBodyClassUserLang (userLang) {
 }
 
 const langElements = document.querySelectorAll('[data-i18n]')
-const userLang = getCookie('lang') || navigator.language || navigator.userLanguage
+const userLang = (getCookie('lang') || navigator.language || navigator.userLanguage).replace(/-.*/, "")
 setBodyClassUserLang(userLang)
 
 const langPicker = document.getElementById('langPicker')
@@ -121,6 +121,7 @@ async function loadTranslation () { // eslint-disable-line no-unused-vars
     getl10n('en'),
     getl10n('es'),
     getl10n('de'),
+    getl10n('uk'),
     getl10n('cn'),
     getl10n('ko'),
     getl10n('pt'),
