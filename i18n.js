@@ -131,7 +131,9 @@ async function loadTranslation () { // eslint-disable-line no-unused-vars
     getl10n('ja'),
     getl10n('cs'),
     getl10n('it'),
-    getl10n('el')
+    getl10n('el'),
+    getl10n('oc'),
+    getl10n('uk')
   ]).then(() => {
     console.log(i18n)
 
