@@ -15,7 +15,7 @@ function setBodyClassUserLang (userLang) {
 }
 
 const langElements = document.querySelectorAll('[data-i18n]')
-const userLang = getCookie('lang') || navigator.language || navigator.userLanguage
+const userLang = (getCookie('lang') || navigator.language || navigator.userLanguage).replace(/-.*/, "")
 setBodyClassUserLang(userLang)
 
 const langPicker = document.getElementById('langPicker')
