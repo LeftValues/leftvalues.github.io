@@ -14,6 +14,11 @@
     "quiz_neutral": "Tarafsızım/Emin Değilim",
     "quiz_agree": "Katılıyorum",
     "quiz_strongly_agree": "Kesinlikle Katılıyorum",
-    "quiz_loading": "Yükleniyor...",
-    "language_name": "türkçe"
+    "quiz_loading": "Yükleniyor…",
+    "language_name": "türkçe",
+    "result_a_label": "Aşırı Devrimci, Çok Devrimci, Devrimci, Tarafsız, Reformist, Çok Reformist, Aşırı Reformist",
+    "result_b_label": "Aşırı Bilimsel,Çok Bilimsel,Bilimsel,Nötr,Ütopik,Çok Ütopik,Aşırı Ütopik",
+    "result_c_label": "Aşırı Merkeziyetçi, Çok Merkeziyetçi, Merkeziyetçi, Nötr, Ademimerkeziyetçi, Çok Ademimerkeziyetçi, Aşırı Ademimerkeziyetçi",
+    "result_d_label": "Aşırı Enternasyonalist, Çok Enternasyonalist, Enternasyonalist, Tarafsız, Milliyetçi, Çok Milliyetçi, Aşırı Milliyetçi",
+    "result_h2_score": "Sonucumu beğenmedim!"
 }
