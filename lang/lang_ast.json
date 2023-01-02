@@ -33,10 +33,10 @@
     "index_h2_closest": "¿Que significa «La coincidencia más cercana» nos resultaos?",
     "index_sixaxes": "Hai trés exes, caún tien valores opuestos. Esos valores son:",
     "index_h2_whatis": "¿Qué ye LeftValues?",
-    "index_b_start": "¡Primi equí pa comenzar!",
+    "index_b_start": "¡Calca equí pa comenzar!",
     "result_back": "Atrás",
     "result_h2_next_matches": "Les coincidencies siguiente mas cercanes",
-    "result_h2_match": "Coincidencia más cercana<span class='weight-300' id='ideology-label'></span>",
+    "result_h2_match": "Coincidencia más cercana: <span class='weight-300' id='ideology-label'></span>",
     "result_url": "<br>Pues unviar los resultaos pente la función de copiar y apegar la URL de lo cimero de la páxina o l'usu de la imaxe d'abaxo.",
     "result_h1": "Resultaos",
     "inst_gotit": "¡Entiéndolo!",
@@ -82,5 +82,8 @@
     "ideology_Social-Democracy_desc": "La socialdemocracia ye una ideoloxía de centru-esquierda que defende mecer los valores d'esquierda como'l bienestar social y la regulación d'empreses col capitalismu y la democracia lliberal en forma d'una economía mesta. Munches socialdemocracies tán a favor del keynesianismu.",
     "ideology_Democratic-Socialism_desc": "",
     "ideology_Council-Communism_name": "Comunismu de conseyos",
-    "ideology_Left-Communism_name": "Esquierda comunista"
+    "ideology_Left-Communism_name": "Esquierda comunista",
+    "question_14": "",
+    "question_18": "",
+    "ideology_Left-Wing-Nationalism_desc": ""
 }
